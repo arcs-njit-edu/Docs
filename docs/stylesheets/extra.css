@@ -1,0 +1,10 @@
+[data-md-color-scheme="default"]  {
+  --md-primary-fg-color:        #CC0000;
+  --md-primary-fg-color--light: #CC0000;
+  --md-primary-fg-color--dark:  #CC0000;
+}
+
+.md-grid {
+  max-width: initial;
+}
+  
