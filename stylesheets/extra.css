@@ -1,0 +1,10 @@
+:root {
+  --md-primary-fg-color:        #d8272d;
+  --md-primary-fg-color--light: #d8272d;
+  --md-primary-fg-color--dark:  indigo;
+  --md-footer-bg-color:         #d8272d;
+}
+
+.md-grid {
+  max-width: initial;
+}
