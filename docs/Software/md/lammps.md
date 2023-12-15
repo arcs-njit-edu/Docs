@@ -35,11 +35,7 @@ parallel particle simulator at the atomic, meso, or continuum scale.
 
 ## Application Information, Documentation and Support
 
-The official LAMMPS is available at [LAMMPS Online Manual](https://lammps.sandia.gov/doc/Manual.html). 
-LAMMPS has a large user base and a good user support. 
-Question related to using LAMMPS can be posted to the [LAMMPS User forum](https://matsci.org/c/lammps/40). 
-Archived [user mailing list](https://sourceforge.net/p/lammps/mailman/lammps-users/) are also useful to resolve 
-some of the common user issues. 
+The official LAMMPS is available at [LAMMPS Online Manual](https://lammps.sandia.gov/doc/Manual.html). LAMMPS has a large user base and a good user support. Question related to using LAMMPS can be posted to the [LAMMPS User forum](https://matsci.org/c/lammps/40). Archived [user mailing list](https://sourceforge.net/p/lammps/mailman/lammps-users/) are also useful to resolve some of the common user issues. 
 
 !!! tip
 

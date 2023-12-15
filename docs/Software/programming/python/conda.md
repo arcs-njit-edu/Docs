@@ -1,10 +1,10 @@
-Since Python supports a wide a range additional libraries in machine learning or datas science research, it is not always possible to install every package on HPC. Also, users sometimes need to use a specific version of Python or its libraries to conduct their research. Therefore, in that case users can build their own Python version along with specific library. One of the way to accomplish this is to use Conda.
+Since Python supports a wide range of additional libraries in machine learning or data science research, it is not always possible to install every package on HPC. Also, users sometimes need to use a specific version of Python or its libraries to conduct their research. Therefore, in that case, users can build their own Python version along with a specific library. One of the ways to accomplish this is to use Conda.
 
 # Conda
-Conda as a package manager helps you find and install packages. If you need a package that requires a different version of Python, you do not need to switch to different environment manager, because conda is also an environment manager. 
+Conda as a package manager helps you find and install packages. If you need a package that requires a different version of Python, you do not need to switch to a different environment manager, because conda is also an environment manager. 
 
 ## Availability
-Conda can be accessed on cluster as `Anaconda3` or `Miniconda3` module.
+Conda can be accessed on the cluster as `Anaconda3` or `Miniconda3` module.
 
 === "Wulver"
 
@@ -30,7 +30,7 @@ Conda can be accessed on cluster as `Anaconda3` or `Miniconda3` module.
 
 Users can use conda after using any of the modules mentioned above
 
-module a `Anaconda3` module. Users can use `Anaconda3` to create virtual python environments to manage python modules.
+module a `Anaconda3` module. Users can use `Anaconda3` to create virtual Python environments to manage Python modules.
 
 ## Create and Activate a Conda Virtual Environment
 
@@ -41,33 +41,55 @@ module load Anaconda3
 ```
 
 ### Create Environment with `conda`
-To create an environment use the `conda create` command. Once the environment is created you need to create a file on `$HOME` directory and add the following 
- 
-??? Example "conda3.sh"
-    
-    ```bash
-    # >>> conda initialize >>>
-    # !! Contents within this block are managed by 'conda init' !!
-    __conda_setup="$('conda' 'shell.bash' 'hook' 2> /dev/null)"
-    if [ $? -eq 0 ]; then
-        eval "$__conda_setup"
-    else
-        if [ -f "$EBROOTANACONDA3/etc/profile.d/conda.sh" ]; then
-            . "$EBROOTANACONDA3/etc/profile.d/conda.sh"
-        else
-            export PATH="$EBROOTANACONDA3/bin:$PATH"
-        fi
-    fi
-    unset __conda_setup
-    # <<< conda initialize <<<
-    ```
-Before activating the environment You need to use `source ~/conda3.sh` to activate the path.
+To create an environment use the `conda create` command. Once the environment is created, you need to use `source conda.sh` to activate the path.
+To create an environment use `conda create --name ENV python=3.9` where `ENV` is the name of the environment. You can choose any environment name of your choice.
+
+### Activate and Deactivate Conda Environment
+Once you create an environment, you need to activate the environment to install python packages
+Use `conda activate ENV` to activate the Conda environment (`ENV` is the name of the environment). Following the activation of the conda environment, the name of the environment appears at the left of the hostname in the terminal. 
+
+```bash
+login1-41 ~ >: conda activate ENV
+(ENV) login-41 ~ >:
+```
+
+Once you finish the installation of Python packages, deactivate the conda environment using `conda deactivate ENV`. 
+
+!!! warning
+
+    Please note that you may need to create multiple Conda environments, as some packages may not work in a single environment. For example, if you want to install PyTorch and TensorFlow, it's advisable to create separate environments as sometimes both packages in a single environment can cause errors. To create another environment make sure to deactivate the previous environment by using the `conda deactivate` command. 
+
+## Install Python Packages Via Conda
+Once Conda environment is activated, you can install packages via `conda install package_name` command. For example, if you want to install `matplotlib`, you need to use
+
+```bash
+(ENV) login-41 ~ >: conda install matplotlib
+```
+Make sure to activate the conda environment prior to installing Python packages. 
+
+### Conda Channel
+Conda Channel refers to a repository or collection of software packages that are available for installation using Conda. Conda Channels are used to organize and distribute packages, and they play a crucial role in the Conda ecosystem. Channels can be specified using the `--channel` or `-c` option with the conda install command i.e. 
+`conda install -c channel_name package_name`. In the above example, if you want to specify the channel name to install `matplotlib`, you need to use
+
+```bash
+(ENV) login-41 ~ >: conda install -c conda-forge matplotlib
+```
+This will install `matplotlib` from `conda-forge` channel which is a community-maintained collection of Conda packages where a wide range of packages contributed by the community are available. 
+Users can prioritize channels by listing them in a specific order, so that Conda searches channels in the order they are listed, installing the first version of a package that it finds. To list the channels, create a file `.condarc` in the `$HOME` directory and add the following
+
+```conda
+auto_activate_base: false
+channels:
+  - conda-forge
+  - defaults
+```
+The advantage of using `.condarc` is that you don't have to mention the channel name every time you install a package. However, please note that you still need to use the channel name if you want to install Python packages that require a specific channel other than the default channels (`conda-forge` and `defaults`).
 
 ### Examples
-Here, we provide instructions on how to use `conda` to install application 
+Here, we provide some examples of how to use `conda` to install application 
 
 #### Install TensorFlow with GPU 
-The following example will create a new conda environment based on python 3.9 and install tensorflow in the environment.
+The following example will create a new conda environment based on Python 3.9 and install TensorFlow in the environment.
 
 ```bash
 login1-41 ~ >: module load Anaconda3
@@ -100,11 +122,10 @@ Proceed ([y]/n)?y
 #     $ conda deactivate
 ```
 
-and save this script`conda3.sh` in `$HOME` directory.
 
 Activate the new 'tf' environment
 ```bash
-login1-41 ~ >: source $HOME/conda3.sh
+login1-41 ~ >: source conda.sh
 login1-41 ~ >: conda activate tf
 (tf) login-41 ~ >:
 ```
@@ -145,7 +166,7 @@ Preparing transaction: done
 Verifying transaction: done
 Executing transaction: done
 ```
-Check to see if tensorflow can be loaded
+Check to see if TensorFlow can be loaded
 ```
 (tf) login1-41 ~ >: python
 Python 3.9.13 (main, Oct 13 2022, 21:15:33)
@@ -153,7 +174,7 @@ Python 3.9.13 (main, Oct 13 2022, 21:15:33)
 Type "help", "copyright", "credits" or "license" for more information.
 >>>
 ```
-Simple tensorflow test program to make sure the virtual env can access a gpu. Program is called 
+Simple TensorFlow test program to make sure the virtual env can access a GPU. Program is called 
 ??? Example "tf.gpu.test.py"
 
     ```python
@@ -189,7 +210,7 @@ Simple tensorflow test program to make sure the virtual env can access a gpu. Pr
         module purge > /dev/null 2>&1
         module load wulver # Load slurm, easybuild
         module load Anaconda3
-        source $HOME/conda.sh
+        source conda.sh
         conda activate tf
         srun python tf.gpu.test.py
         ```
@@ -209,7 +230,7 @@ Simple tensorflow test program to make sure the virtual env can access a gpu. Pr
         # Purge any module loaded by default
         module purge > /dev/null 2>&1
         module load Anaconda3
-        source $HOME/conda.sh
+        source $HOME/conda3.sh
         conda activate tf
         srun python tf.gpu.test.py
         ```
@@ -245,15 +266,22 @@ No modules loaded
 2020-07-29 17:14:19.819082: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1247] Created TensorFlow device (/device:GPU:0 with 15064 MB memory) -> physical GPU (device: 0, name: Tesla P100-PCIE-16GB, pci bus id: 0000:02:00.0, compute capability: 6.0)
 Default GPU Device: /device:GPU:0
 ```
+Next, deactivate the environment using `conda deactivate tf` command.
+
 #### Install PyTorch with GPU
 To install PyTorch with GPU, load the `Anaconda3` module as described above and then use the following
 
 ```
 conda create --name torch-cuda python=3.7
+source conda.sh
 conda activate torch-cuda
 conda install -c "nvidia/label/cuda-11.7.0" cuda-toolkit
-conda install pytorch torchvision torchaudio pytorch-cuda=11.7 -c pytorch -c nvidia
+conda install -c pytorch -c nvidia pytorch torchvision torchaudio pytorch-cuda=11.7
 ```
+!!! note
+    
+    In the example above, we mentioned the channel name as we intend to install PyTorch and PyTorch-CUDA from a specific channel. For the default channel please see [Channels](conda.md#conda-channel).
+
 A simple PyTorch test program is given below to check whether PyTorch has been installed properly. Program is called
 
 ??? program "torch_tensor.py"
@@ -330,7 +358,7 @@ User can use the following job script to run the script.
         module purge > /dev/null 2>&1
         module load wulver # Load slurm, easybuild
         module load Anaconda3
-        source $HOME/conda.sh
+        source conda.sh
         conda activate torch-cuda
         srun python touch_tensor.py
         ```
@@ -350,21 +378,24 @@ User can use the following job script to run the script.
         # Purge any module loaded by default
         module purge > /dev/null 2>&1
         module load Anaconda3
-        source $HOME/conda.sh
+        source $HOME/conda3.sh
         conda activate torch-cuda
         srun python touch_tensor.py
         ```
+!!! warning
+
+    When working with Python, it is generally advised to avoid mixing package management tools such as pip and conda within the same environment. Pip and Conda manage dependencies differently, and their conflict can lead to compatibility issues and unexpected behavior. Mixing the two can result in an environment where packages installed with one tool may not interact seamlessly with those installed using the other. 
 
 ### Mamba: The Conda Alternative
 Mamba is a fast, robust, and cross-platform package manager and particularly useful for building complicated environments, where `conda` is unable to 'solve' the required set of packages within a reasonable amount of time.
-User can install packages with `mamba` in the same way as with `conda`.
+Users can install packages with `mamba` in the same way as with `conda`.
 ```bash
 module load Mamba Anaconda3
 
 # create new environment
 mamba create --name env_name python numpy pandas 
-
-# install new pacakge into existing environment
+source conda.sh
+# install a new package into an existing environment
 conda activate env_name
 mamba install scipy
 ```

@@ -28,7 +28,7 @@
 [data-md-color-scheme="njit"] {
   --md-primary-fg-color:                #d8272d;
   --md-primary-fg-color--light:         #d8272d;
-
+  --md-admonition-icon--njit:           url('../img/Logo_NJIT.png');
   /* Code highlighting color shades
   --md-code-hl-color:                  hsla(#{hex2hsl($clr-red-a200)}, 1);
   --md-code-hl-color--light:           hsla(#{hex2hsl($clr-red-a200)}, 0.1);
@@ -58,12 +58,13 @@
 [data-md-color-scheme="slate"] {
   --md-primary-fg-color:                #d8272d;
   --md-primary-fg-color--light:         #d8272d;
+  --md-admonition-icon--njit:           url('../img/Logo_NJIT.png');
   --md-code-hl-color:                   hsla(#{hex2hsl($clr-blue-a200)}, 0.15);
 
   --md-typeset-mark-color:              rgb(0,0,0);
 
   --md-accent-fg-color:                 #d8272d;
-  --md-hue: 360;
+  --md-hue:                             360;
 }
 
 
@@ -71,4 +72,17 @@
   max-width: initial;
 }
 
-
+md-typeset .admonition.njit,
+.md-typeset details.njit {
+  border-color: rgb(84, 15, 17);
+}
+.md-typeset .njit > .admonition-title,
+.md-typeset .njit > summary {
+  background-color: rgba(84, 15, 17, 0.1);
+}
+.md-typeset .njit > .admonition-title::before,
+.md-typeset .njit > summary::before {
+  background-color: #d8272d;
+  -webkit-mask-image: var(--md-admonition-icon--njit);
+          mask-image: var(--md-admonition-icon--njit);
+}

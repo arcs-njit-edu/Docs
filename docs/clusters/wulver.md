@@ -1,6 +1,6 @@
 # Wulver
 
-Wulver is a new cluster anticipated to be available at the end of 2023.
+Wulver is a new cluster anticipated to be available at the end of 2023. To get started with Wulver, please check the details in [get started on Wulver](get_started_on_Wulver.md)
 
 ## Specifications:
 

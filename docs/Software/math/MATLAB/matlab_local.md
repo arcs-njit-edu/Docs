@@ -58,7 +58,7 @@ In the "Connection Details" screen, enter the cluster host, either "lochness.nji
 
 ![matlab_profile5](img/GenericProfile5.png){ width=50% height 50%}
 
-In the "Cluster Details" screen enter the full path to the directory on lochness to store the Matlab job files. In the case the directory is $HOME/MDCS. MDCS stands for Matlab Distributed Computing Server. It is not necessary to name this directory MDCS. This directory can be named anything you wish. To determine the value of $HOME, logon to lochness. For details on how to Logon to Lochness from local computer please see this [link](https://hackmd.io/@absrocks/BJRlQtBVi). Once connected to Lochness run the following:
+In the "Cluster Details" screen enter the full path to the directory on lochness to store the Matlab job files. In the case the directory is $HOME/MDCS. MDCS stands for Matlab Distributed Computing Server. It is not necessary to name this directory MDCS. This directory can be named anything you wish. To determine the value of $HOME, logon to lochness. For details on how to log on to Lochness from local computer please see [Cluster Access](cluster_access.md). Once connected to Lochness run the following:
 
 ```
   login-1-45 ~ >: echo $HOME

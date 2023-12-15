@@ -8,9 +8,10 @@ All software and numerical libraries available at the cluster can be found at `/
     module use /opt/site/easybuild/modules/all/Core
     module use /opt/site/easybuild/modules/all/Compiler
     ```
-If you could not find software or libraries on HPC cluster, please contact us at [hpc@njit.edu](mailto:hpc@njit.edu) to get it installed.
-The installed software or packages can be accessed as [Lmod](https://lmod.readthedocs.io/en/latest) modules.
+If you could not find software or libraries on HPC cluster, please submit a request for [HPC Software Installation](https://njit.service-now.com/sp?id=sc_cat_item&sys_id=0746c1f31b6691d04c82cddf034bcbe2&sysparm_category=405f99b41b5b1d507241400abc4bcb6b) by visiting the [Service Catalog](https://njit.service-now.com/sp?id=sc_category). The list of installed software or packages on HPC cluster can be found in [Software List](#software-list).
+
 ## Modules
+We use Environment Modules to manage the user environment in HPC, which help users to easily load and unload software packages, switch between different versions of software, and manage complex software dependencies. [Lmod](https://lmod.readthedocs.io/en/latest) is an extension of the Environment Modules system, implemented in Lua. It enhances the functionality of traditional Environment Modules by introducing features such as hierarchical module naming, module caching, and improved flexibility in managing environment variables.
 
 ### Access to All Available Modules
 The list of software and libraries installed on Lochness can be accessed by using the following command
@@ -19,7 +20,7 @@ The list of software and libraries installed on Lochness can be accessed by usin
 module av
 ```
 ### Search for Specific Package
-You can check specific packages and list of their versions using `module av`. For example, the list of different versions of Python installed on cluster cna be checked by using,
+You can check specific packages and list of their versions using `module av`. For example, the list of different versions of Python installed on cluster can be checked by using
 ```console
 module av Python
 ```
@@ -71,7 +72,7 @@ This will show the which prerequisite modules need to loaded prior to loading `P
 If you are unsure about the version, you can also use `module spider Python` to see the different versions of Python and prerequisite modules to be loaded. 
 
 ### Load Modules 
-To use specific package you need to use `module load` command which modified the environment to load the software package(s).
+To use specific package, you need to use `module load` command which modified the environment to load the software package(s).
 
 !!! Note
 
@@ -154,7 +155,7 @@ man module
 
 ## Software List
 
-The following applications are installed on Wulver.
+The following applications are installed on Wulver and Lochness.
 
 === "Wulver"
 

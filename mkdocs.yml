@@ -8,6 +8,7 @@ nav:
       - 'about/index.md'
       - 'Contact Us': 'about/contact.md'
     - Clusters:
+      - 'clusters/index.md'
       - 'Wulver': 'clusters/wulver.md'
       - 'Lochness': 'clusters/lochness.md'
       - 'Decommissioned':

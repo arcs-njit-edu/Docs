@@ -1,9 +1,9 @@
-name: ci 
+name: ci
 on:
   push:
     branches:
       - main
-      - alex_patch 
+      - alex_patch
       - abhi_patch
     workflow_dispatch:
       - main
@@ -16,6 +16,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - run: |
+          git rm docs/news
+          rm -rf docs/news
+          git config --global user.email "am2455@njit.edu"
+          git config --global user.name "absrocks"
+          git submodule add https://github.com/arcs-njit-edu/news.git docs/news
+          git submodule update --init --recursive
       - uses: actions/setup-python@v4
         with:
           python-version: 3.x

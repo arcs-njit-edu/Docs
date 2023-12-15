@@ -1,0 +1,5 @@
+﻿File System,Purpose,Quota,Backup
+`$HOME`,Not intended for primary storage,50 GB,Yes
+`/project`,"For primary storage, can be accessed under students' corresponding PI’s UCID in `/project`",2 TB/PI Group,Yes
+`/scratch`,"For temporary storage, can be accessed under students' corresponding PI’s UCID in `/scratch`",No quota,"No, files will be deleted at 30 days interval. "
+`/research`,"For primary storage, can be accessed under students' corresponding PI’s UCID in `/research`, will be available after migration from Lochhness",500 GB/PI Group,Yes
