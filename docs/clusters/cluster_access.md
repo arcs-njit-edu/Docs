@@ -15,9 +15,9 @@ Here we will provide instructions for connecting to NJIT HPC on Mac/Linux and Wi
 === "Mac/Linux"
 
     Open terminal from <kbd>Launchpad</kbd> and select <kbd>terminal</kbd>.
-    Type the following in the terminal by substituting `wulver` or `lochness` for `HPC_HOST` and `ucid` with your NJIT UCID.
+    Type the following in the terminal and replace `$UCID` with your NJIT UCID..
     ```
-      localhost> ssh -X -Y ucid@HPC_HOST.njit.edu  
+      localhost> ssh -X -Y $UCID@wulver.njit.edu  
     ```
     
     Users will be prompted for your password. Enter your NJIT UCID password. Users can omit the `-X -Y` if you are not using a graphic interface. Once the password is provided, User will authenticate via Cisco two-factor authentication (TFA)
@@ -44,7 +44,7 @@ Here we will provide instructions for connecting to NJIT HPC on Mac/Linux and Wi
     
     ![mobaxterm](img/Mobaxterm.png)
     
-    Type `ssh ucid@HPC_HOST.njit.edu`. Replace `ucid` with your NJIT UCID and substitute `wulver` or `lochness` for `HPC_HOST`.
+    Type `ssh $UCID@wulver.njit.edu`. Replace `$UCID` with your NJIT UCID.
     
     ![mobaxterm2](img/Mobaxterm2.png). 
     
@@ -77,32 +77,32 @@ Here we will provide instructions for connecting to NJIT HPC on Mac/Linux and Wi
 
 === "Mac/Linux"
 
-    Users need to use the command in the terminal to transfer in and out the data 
+    Users need to use the command in the terminal to transfer in and out the data.  
 
     ### `rsync`:
     * Transfer the data from local machine to HPC cluster
     ```
-    rsync -avzP /path/to/local/machine ucid@wulver.njit.edu:/path/to/destination
+    rsync -avzP /path/to/local/machine $UCID@wulver.njit.edu:/path/to/destination
     ```
     
     * To transfer the data from HPC cluster to local machine use
     ```
-    rsync -avzP ucid@wulver.njit.edu:/path/to/source /path/to/local/machine
+    rsync -avzP $UCID@wulver.njit.edu:/path/to/source /path/to/local/machine
     ```
     ### `scp`:
     * Copy files from remote machine to local machine
     ```
-    scp [option] [ucid@wulver.njit.edu:path/to/source/file] [target/path]
+    scp [option] [$UCID@wulver.njit.edu:path/to/source/file] [target/path]
     ```
 
     * Copy files from local machine to remote machine
     ```
-    scp [option] [path/to/source/file] [ucid@wulver.njit.edu:target/path] 
+    scp [option] [path/to/source/file] [$UCID@wulver.njit.edu:target/path] 
     ```
 
     * Example of scp:
     ```
-    scp -r example ucid@wulver.njit.edu:/home/dir 
+    scp -r example $UCID@wulver.njit.edu:/home/dir 
     ```
     Copy the “example” folder recursively to `/home/dir`
 
@@ -113,10 +113,10 @@ Here we will provide instructions for connecting to NJIT HPC on Mac/Linux and Wi
     
     ![mobaxterm3](img/Mobaxterm3.png)
     
-    Next, to transfer the data from the local machine to Lochness user needs to select the `Upload to current folder` option, as shown below. Selecting this option will open a dialogue box where user needs to select the files to upload.
+    Next, to transfer the data from the local machine to Wulver user needs to select the `Upload to current folder` option, as shown below. Selecting this option will open a dialogue box where user needs to select the files to upload.
     
     ![mobaxterm4](img/Mobaxterm4.png)
     
-    For transferring the data from Lochness to the local machine user needs to select the directory or the data from the left pane and then select `Download selected files`.
+    For transferring the data from Wulver to the local machine user needs to select the directory or the data from the left pane and then select `Download selected files`.
 
 

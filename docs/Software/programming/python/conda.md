@@ -243,7 +243,7 @@ Default GPU Device: /device:GPU:0
 Next, deactivate the environment using `conda deactivate tf` command.
 
 #### Install PyTorch with GPU
-To install PyTorch with GPU, load the `Miniforge3` module as described above and then use the following
+* To install PyTorch with GPU, load the `Miniforge3` module as described above and then use the following
 
 ```
 conda create --name torch-cuda
@@ -257,7 +257,24 @@ conda install -c pytorch -c nvidia pytorch torchvision torchaudio pytorch-cuda -
     
     In the example above, we mentioned the channel name as we intend to install PyTorch and PyTorch-CUDA from a specific channel. For the default channel please see [Channels](conda.md#conda-channel).
 
-A simple PyTorch test program is given below to check whether PyTorch has been installed properly. Program is called
+* Check the Torch version
+```
+python -c "import torch; print( torch.__version__)"
+```
+* Check the CUDA version
+```
+python -c "import torch; print(torch. version .cuda)"
+```
+* Check whether Torch is compiled with CUDA
+```
+python -c "import torch; print(torch.cuda. is_available())"
+```
+
+!!! important
+    
+    While checking the CUDA version or PyTorch compilation using the commands mentioned above, make sure to start an [interactive session on a GPU node](slurm.md#interactive-session-on-a-compute-node-gpu-nodes); otherwise, the command will not recognize CUDA or the GPU.
+
+* A simple PyTorch test program is given below to check whether PyTorch has been installed properly. Program is called
 
 ??? program "torch_tensor.py"
 

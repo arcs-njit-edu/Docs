@@ -1,8 +1,13 @@
 # Jupyter Notebooks
 The Jupyter Notebook is a web-based interactive computing platform. The notebook combines live code, equations, narrative text, and visualizations. In our cluster, we have JupyterLab which is the next-generation user interface for Project Jupyter offering all the familiar building blocks of the classic Jupyter Notebook (notebook, terminal, text editor, file browser, rich outputs, etc.) in a flexible and powerful user interface. 
 
-## Using JupyterLab
+## Using Jupyter Notebook on Wulver
 
+!!! warning "Jupyter Notebook via slurm on Wulver is deprecated "
+
+    Since two-factor authentication has been implemented on Wulver, the use of Jupyter Notebook via SLURM scripts has been discontinued and is no longer supported. Users should use [OnDemand](ondemand.njit.edu) to use [Jupyter Notebook on Wulver](Notebook.md). First, users need to install Jupyter Notebook in their Conda environment. Once the [Conda Environment](conda.md#activate-and-deactivate-conda-environment) is activated, users can install Jupyter Notebook using the command `conda install -c conda-forge jupyter notebook`. Then, you need to specify the environment in OnDemand to start the Jupyter Notebook session. Check [here](Notebook.md) for details.
+
+<!-- 
 Users can install Jupyter Notebook on the Conda Environment. Once the [Conda Environment](conda.md#activate-and-deactivate-conda-environment) is activated users can install Jupyter Notebook via `conda install -c conda-forge jupyter notebook` command. Here we provide a sample SLURM script on how to start Jupyter Notebook session on Wulver.
 
 ??? example "Sample Batch Script to run Jupyter Notebook"
@@ -60,7 +65,7 @@ Users can install Jupyter Notebook on the Conda Environment. Once the [Conda Env
                      
         ```
 Once you submit this job script, you will see an output file indicating the port number that you need to use to connect to Wulver in a new terminal window. Please follow further instructions from the output file.
-
+-->
 
 ## User Contributed Information
 

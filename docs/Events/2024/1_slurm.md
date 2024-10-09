@@ -26,5 +26,5 @@ Our experienced HPC specialists will guide you through practical examples and pr
 
 ## Registration
 
-Click [here](https://njit-edu.zoom.us/meeting/register/tJUuce6hrjMuH9w5wDehR8emZ2LnymMvVWdx) for the registration.
+Registration is now closed. Check the [HPC training](training.md#2024_Fall) for the webinar recording and slides.
 
