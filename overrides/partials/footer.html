@@ -1,0 +1,18 @@
+<footer class="md-footer">
+    <div class="md-footer-meta md-typeset">
+        <div class="md-footer-meta__inner md-grid">
+            <!-- Copyright and theme information -->
+            <div class="md-copyright">
+                {% if config.copyright %}
+                <div class="md-copyright__highlight">
+                    {{ config.copyright }}
+                </div>
+                {% endif %}
+
+            </div>
+            {% block social %}
+            {% include "partials/social.html" %}
+            {% endblock %}
+        </div>
+    </div>
+</footer>

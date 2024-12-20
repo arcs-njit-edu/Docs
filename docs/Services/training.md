@@ -7,11 +7,34 @@ NJIT HPC provides practical training in high performance computing for students 
 ### 2024 Fall
 <div class="grid cards" markdown>
 
+-   ### [Job Arrays and Advanced Submission Techniques for HPC](3_slurm_advanced.md)
+
+    ---
+
+    This is the final in a series of three webinars in the fall semester. designed to introduce researchers, scientists, and HPC users to the fundamentals of the containers. This session aims to provide useful information on submitting SLURM jobs efficiently by covering job arrays, job dependencies, checkpointing, and addressing common SLURM job issues.
+    
+    #### Key Highlights:
+    * Understanding the concept and benefits of job arrays
+    * Syntax for submitting and managing job arrays
+    * Best practices for efficient array job design
+    * Dependency chains and complex workflows
+    * Resource optimization strategies
+    * Using SLURM's advanced options for improved job control
+    * Checkpointing the jobs and use of 3rd party checkpointing tool
+
+    <iframe src="https://njit.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=dc23dd0c-61c4-4428-ae97-b24a01205af7&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=true&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay" aria-label="Panopto Embedded Video Player" aria-description="Advanced Slurm 1" ></iframe>
+
+    [<span class="octicon--arrow-right-24"></span> Download Slides](../assets/slides/HPC_Advanced_SLURM_11-20-2024.pdf)
+
+</div>
+
+<div class="grid cards" markdown>
+
 -   ### [Introduction to Containers on Wulver](2_containers.md)
 
     ---
 
-    This is the second in a series of three webinars in the fall semester. designed to introduce researchers, scientists, and HPC users to the fundamentals of the containers. Attendees will learn the fundamentals of Singularity, including installation, basic commands, and workflow, as well as how to create and build containers using definition files and existing Docker images. The training will cover executing containerized applications on HPC clusters and integrating with job schedulers like SLURM, while also addressing security considerations and performance optimization techniques.
+    This is the second in a series of three webinars in the fall semester, designed to introduce researchers, scientists, and HPC users to the fundamentals of the containers. Attendees will learn the fundamentals of Singularity, including installation, basic commands, and workflow, as well as how to create and build containers using definition files and existing Docker images. The training will cover executing containerized applications on HPC clusters and integrating with job schedulers like SLURM, while also addressing security considerations and performance optimization techniques.
     
     #### Key Highlights:
     * Introduction to containers and its role in HPC environments

@@ -1,5 +1,7 @@
 # RStudio
 
+<iframe src="https://njit.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=89671266-c103-4443-ac67-b24b003c3903&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=true&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay" aria-label="Panopto Embedded Video Player" aria-description="On-Demand RStudio Default" ></iframe>
+
 ## Launching RStudio
 
 * Navigate to the Interactive Apps section.
@@ -24,7 +26,7 @@ For example, to use a Conda environment, enter:
 
 ## Launching the Session
 
-![Rstudio2](../../assets/ondemand/Rstudio2.png){ width=50% height=50%}
+![Rstudio2](../../assets/ondemand/Rstudio2.png){ width=40% height=20%}
 
 Once clicking **Launch**, the request will be queued, and when resources have been allocated, you will be presented with the option to connect to the session by clicking on the blue Connect to R Studio Server button.
 ![Rstudio3](../../assets/ondemand/Rstudio3.png){ width=50% height=50%}
@@ -41,10 +43,7 @@ It's likely your scripts will require additional R libraries; these can be insta
 If a session exceeds the requested running time, it will be killed. You may receive a message "The previous R session was abnormally terminated...". Click OK to acknowledge the message and continue. To avoid this message, it's good practice to exit the session cleanly when you have finished.
 To cleanly exit R Studio, click `File -> Quit Session...` and then release resources back to the cluster queues by clicking the red Delete button for the relevant session on the My Interactive Sessions page.
 
-Check the following recording below.
 
-<video src="../../../assets/ondemand/ScreenRecording_Rstudio.mov" controls>
-  Your browser does not support the video tag.
-</video>
+
 
 

@@ -9,6 +9,4 @@ Advanced Research Computing Services in collaboration with SchedMD is pleased to
 
 Registration is now closed.
 
-This workshop will be held in-person in **GITC 3700**. 
 
-Stay tuned for detailed agenda.
