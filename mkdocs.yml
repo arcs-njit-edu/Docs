@@ -1,7 +1,7 @@
-site_name: NJIT HPC
+site_name: NJIT HPC Documentation
 site_url: https://arcs-njit-edu.github.io/Docs/
 repo_url: https://github.com/arcs-njit-edu/Docs
-repo_name: arcs-njit-edu/Docs
+#repo_name: arcs-njit-edu/Docs
 
 nav:
     - NJIT HPC: index.md
@@ -27,24 +27,37 @@ nav:
         - 'Usage (this year so far)': 'https://hpc.njit.edu/Monitor/cy2024.html'
     - ...
     - '' : 'website_version.txt'
+    - '' : 'migration/index.md'
+    - '' : 'migration/faqs.md'
+    - '' : 'migration/lochness_filesystem.md'
+    - '' : 'migration/Lochness_node_owners.md'
 
 theme: 
   name: material
   logo: img/Logo_NJIT.png
+  custom_dir: overrides
   favicon: favicon.ico
   palette:
 
+    # Palette toggle for automatic mode
+    #- media: "(prefers-color-scheme)"
+    #  toggle:
+    #    icon: material/brightness-auto
+    #   name: Switch to light mode
+
     # Palette toggle for light mode
-    - scheme: njit #rgb(204,0,0)
-      toggle:
-        icon: material/toggle-switch
-        name: Switch to dark mode
+    #- media: "(prefers-color-scheme: light)"
+    scheme: njit
+     # toggle:
+     #   icon: material/toggle-switch
+     #   name: Switch to dark mode
 
     # Palette toggle for dark mode
-    - scheme: slate
-      toggle:
-        icon: material/toggle-switch-off-outline
-        name: Switch to light mode
+    #- media: "(prefers-color-scheme: dark)"
+    #  scheme: slate
+    #  toggle:
+    #    icon: material/toggle-switch-off-outline
+    #    name: Switch to light mode
   features:
     - navigation.instant
     - navigation.tracking
@@ -57,14 +70,26 @@ theme:
     - content.code.select
     - content.code.annotate
     - content.tabs.link
+    - announce.dismiss
+    - content.tooltips
+    - header.autohide
+
 extra_css:
     - stylesheets/extra.css
 extra:
   social:
-    - icon: fontawesome/brands/github
-      link: https://github.com/arcs-njit-edu/Docs
+    - icon: material/help-box-multiple
+      link: https://nexus.njit.edu/highlander_nexus?id=sc_cat_item&sys_id=3f1dd0320a0a0b99000a53f7604a2ef9
+      name: Contact HPC support
     - icon: fontawesome/solid/paper-plane
       link: mailto:hpc@njit.edu
+      name: Email HPC support
+    - icon: material/web
+      link: https://ondemand.njit.edu
+      name: Open OnDemand
+    - icon: material/chart-areaspline
+      link: https://hpc.njit.edu/Monitor/summary.html
+      name: HPC job metrics
 
 # Extensions
 markdown_extensions:
@@ -114,3 +139,5 @@ plugins:
       blog_dir: news
       authors: false
       archive: false
+
+copyright: New Jersey Institute of Technology High Performance Computing

@@ -40,6 +40,16 @@ hide:
 
     [<span class="octicon--arrow-right-24"></span> Registration and Event Details](3_slurm_advanced.md)
 </div>
+<div class="grid cards" markdown>
+
+-   ### [Intro to MPI Workshop](7_Intro to MPI Workshop.md)
+
+    ---
+    This workshop is designed to provide C and Fortran programmers with a hands-on introduction to MPI programming. Participants will learn to write scalable code using MPI, the standard programming tool for scalable parallel computing
+
+    [<span class="octicon--arrow-right-24"></span> Registration and Event Details](7_Intro to MPI Workshop.md)
+</div>
+
 
 ## 2024 Summer
 

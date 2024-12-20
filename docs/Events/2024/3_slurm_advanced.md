@@ -28,5 +28,5 @@ Elevate your High-Performance Computing skills with our advanced SLURM webinar! 
 
 ## Registration
 
-Click [here](https://njit-edu.zoom.us/meeting/register/tJUuce6hrjMuH9w5wDehR8emZ2LnymMvVWdx) for the registration.
+Registration is now closed. Check the [HPC training](training.md#job-arrays-and-advanced-submission-techniques-for-hpc) for the webinar recording and slides.
 

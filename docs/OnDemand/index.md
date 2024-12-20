@@ -34,9 +34,11 @@ Once you log in, you will see the OnDemand Dashboard. You will see the menu bar 
 
 ![files.png](../assets/ondemand/files.png){ width=60% height=60%}
 
-The File Manager tool is available under ‘Files’ from the Dashboard. Here you can view, edit, and transfer files between your local computer and the cluster. You can access any of the shared filesystems on Wulver including your `$HOME` directory as well as Project, Research, and Scratch. This graphical interface makes it easy to navigate your directories and transfer files to the cluster. (This transfer is only for small files such as job scripts or input scripts, please use command line tools, such as [rsync](https://linux.die.net/man/1/rsync) for larger datasets).
+The File Manager tool is available under <kbd>Files</kbd> from the Dashboard. Here you can view, edit, and transfer files between your local computer and the cluster. You can access any of the shared filesystems on Wulver including your `$HOME` directory as well as Project, Research, and Scratch. This graphical interface makes it easy to navigate your directories and transfer files to the cluster. (This transfer is only for small files such as job scripts or input scripts, please use command line tools, such as [rsync](https://linux.die.net/man/1/rsync) for larger datasets).
 
 Use the <kbd>Upload</kbd> and <kbd>Download</kbd> buttons to transfer files between your local computer and the cluster. You can navigate to any of your directories through the <kbd>Change Directory</kbd> button where you can enter the path for your desired location. You can also create new folders with the <kbd>New Directory</kbd> button.
+
+<iframe src="https://njit.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=0637a8c7-3500-47e0-91ea-b24b003bca51&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=true&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay" aria-label="Panopto Embedded Video Player" aria-description="On-demand Filetransfer Demo" ></iframe>
 
 ### Jobs
 
@@ -51,6 +53,6 @@ The Jobs menu on the menu bar includes both the Job Composer and the Active Jobs
 The Active Jobs tool will allow you to view all the jobs you’ve submitted that are currently in the queue, via OnDemand or not, so you can check on their status.   
 ![job_submit1.png](../assets/ondemand/job_submit1.png){ width=60% height=60%}
 
-![job_submit2.png](../assets/ondemand/job_submit2.png){ width=60% height=60%}
+![job_submit2.png](../assets/ondemand/job_submit2.png){ width=50% height=50%}
 
-![job_submit3.png](../assets/ondemand/job_submit3.png){ width=60% height=60%}
+![job_submit3.png](../assets/ondemand/job_submit3.png){ width=50% height=50%}

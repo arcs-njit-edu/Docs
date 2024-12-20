@@ -49,8 +49,11 @@ If you are running transient problem and want to save the data at particular tim
        (print-case-timer)
        parallel/timer/usage
     ```
-In the above `Journal` script, the full name of case file (`tube_vof.cas.h5`) is mentioned. You need to modify based on the case file based on the problem.  The `solve/dual-time-iterate` specifies the end flow time and number of iterations. In the above example, `20` is the end flow time while the maximum number of iterations are `50`. The "dual-time" approach allows for a larger time step size by introducing an additional iteration loop within each time step. Users can select different approach based on their problems and need to modify it accordingly. 
+In the above `Journal` script, the full name of case file (`tube_vof.cas.h5`) is mentioned. You need to modify based on the case file based on the problem.  
+The `solve/dual-time-iterate` specifies the end flow time and number of iterations. In the above example, `20` is the end flow time while the maximum number of iterations are `50`. The "dual-time" approach allows for a larger time step size by introducing an additional iteration loop within each time step. Users can select different approach based on their problems and need to modify it accordingly. 
+<!-- 
 For more details on journal commands, see the Fluent text user interface (TUI) commands from [Fluent documentation](../../assets/Ansys_Fluent_Text_Command_List.pdf).
+-->
 
 ??? example "Sample Batch Script to Run FLUENT : fluent.submit.sh"
     
