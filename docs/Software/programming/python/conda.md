@@ -29,8 +29,8 @@ module load Miniforge3
 ```
 
 ### Create Environment with `conda`
-To create an environment use the `conda create` command. Once the environment is created, you need to use `source conda.sh` to activate the path.
-To create an environment use `conda create --name ENV python=3.9` where `ENV` is the name of the environment. You can choose any environment name of your choice.
+To create an environment use the `conda create` command. Once the environment is created, you need to use `conda activate` to activate the environment.
+To create an environment with a specific python version, use `conda create --name ENV python=3.9` where `ENV` is the name of the environment. You can choose any environment name of your choice.
 
 ### Activate and Deactivate Conda Environment
 Once you create an environment, you need to activate the environment to install python packages
@@ -38,7 +38,6 @@ Use `conda activate ENV` to activate the Conda environment (`ENV` is the name of
 
 ```bash
 login1-41 ~ >: module load Miniforge3
-login1-41 ~ >: source conda.sh
 login1-41 ~ >: conda create --name ENV python=3.9
 login1-41 ~ >: conda activate ENV
 (ENV) login-41 ~ >:
@@ -119,7 +118,6 @@ Proceed ([y]/n)?y
 
 Activate the new 'tf' environment
 ```bash
-login1-41 ~ >: source conda.sh
 login1-41 ~ >: conda activate tf
 (tf) login-41 ~ >:
 ```
@@ -204,7 +202,6 @@ Simple TensorFlow test program to make sure the virtual env can access a GPU. Pr
         module purge > /dev/null 2>&1
         module load wulver # Load slurm, easybuild
         module load Miniforge3
-        source conda.sh
         conda activate tf
         srun python tf.gpu.test.py
         ```
@@ -247,7 +244,6 @@ Next, deactivate the environment using `conda deactivate tf` command.
 
 ```
 conda create --name torch-cuda
-source conda.sh
 conda activate torch-cuda
 conda install -c "nvidia/label/cuda-12.2.0" cuda-toolkit
 conda install -c pytorch -c nvidia pytorch torchvision torchaudio pytorch-cuda -y
@@ -350,7 +346,6 @@ User can use the following job script to run the script.
         module purge > /dev/null 2>&1
         module load wulver # Load slurm, easybuild
         module load Miniforge3
-        source conda.sh
         conda activate torch-cuda
         srun python touch_tensor.py
         ```
@@ -367,7 +362,6 @@ module load Miniforge3
 
 # create new environment
 mamba create --name env_name python numpy pandas 
-source conda.sh
 # install a new package into an existing environment
 conda activate env_name
 mamba install scipy
@@ -377,7 +371,6 @@ mamba install scipy
 ```bash
 module load Miniforge3
 conda create --name torch-cuda
-source conda.sh
 conda activate torch-cuda
 mamba install pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia
 ```

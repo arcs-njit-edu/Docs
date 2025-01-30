@@ -9,6 +9,9 @@ To request HPC resources for course, you need to provide the following informati
 ### Name of Course:
 [Please provide the name of the course and a short description]
 
+### Is this one section of a larger course?
+[Yes or No]
+
 ### Estimated Number of Students:
 [Enter the estimated number of students for the course]
 

@@ -167,6 +167,7 @@ The following applications are installed on Wulver and Lochness.
     ```python exec="on"
     import pandas as pd
     df = pd.read_csv('docs/assets/tables/module_wulver.csv')
+    df = df.sort_values(by=df.columns[0])  # Sorts by the first column alphabetically
     print(df.to_markdown(index=False))
     ```
 

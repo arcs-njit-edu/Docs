@@ -4,6 +4,49 @@ NJIT HPC provides practical training in high performance computing for students 
 
 ## Training Programs
 
+### 2025 Spring
+<div class="grid cards" markdown>
+
+-   ### [Introduction to Wulver: Accessing System & Running Jobs](2_intro_to_Wulver_II.md)
+
+    ---
+
+    This is the second webinar of the 2025 Spring semester, focusing on job submission, monitoring, and management on Wulver. This webinar also provides common tips for troubleshooting issues that users may encounter during job submission.
+    
+    #### Key Highlights:
+    * How to Access HPC Software
+    * Introduction to SLURM and Its Role in HPC Environments 
+    * Manage Slurm Jobs 
+    * Troubleshooting Common Issues 
+    * Slurm Interactive Jobs and Use GUI Apps
+
+    <iframe src="https://njit.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=e40340e9-9189-4418-a046-b274015e7ef4&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=true&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay" aria-label="Panopto Embedded Video Player" aria-description="Introduction to Wulver: Accessing System &amp; Running Jobs" ></iframe>
+
+    [<span class="octicon--arrow-right-24"></span> Download Slides](../../assets/slides/Intro_to_Wulver_II_01_29_2025.pdf)
+
+</div>
+
+<div class="grid cards" markdown>
+
+-   ### [Introduction to Wulver: Getting Started](1_intro_to_Wulver_I.md)
+
+    ---
+
+    This is the first webinar of the 2025 Spring semester introducing the NJIT HPC environment. This webinar provides basic information about our new High-Performance Computing (HPC) research cluster, [Wulver](wulver.md).
+    
+    #### Key Highlights:
+    * Introduction to HPC (High Performance Computing)
+    * Hardware and architecture of Wulver
+    * Guidance on how to obtain an account and login to the cluster 
+    * Data Storage systems
+    * Understanding allocations to utilize the shared resources
+
+    <iframe src="https://njit.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=8c40523b-24d6-48de-90ef-b26d0156af08&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=true&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay" aria-label="Panopto Embedded Video Player" aria-description="Introduction to Wulver: Getting Started" ></iframe>
+
+    [<span class="octicon--arrow-right-24"></span> Download Slides](../../assets/slides/Intro_to_Wulver_I_01_22_2025.pdf)
+
+</div>
+
 ### 2024 Fall
 <div class="grid cards" markdown>
 
@@ -24,7 +67,7 @@ NJIT HPC provides practical training in high performance computing for students 
 
     <iframe src="https://njit.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=dc23dd0c-61c4-4428-ae97-b24a01205af7&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=true&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay" aria-label="Panopto Embedded Video Player" aria-description="Advanced Slurm 1" ></iframe>
 
-    [<span class="octicon--arrow-right-24"></span> Download Slides](../assets/slides/HPC_Advanced_SLURM_11-20-2024.pdf)
+    [<span class="octicon--arrow-right-24"></span> Download Slides](../../assets/slides/HPC_Advanced_SLURM_11-20-2024.pdf)
 
 </div>
 
@@ -47,7 +90,7 @@ NJIT HPC provides practical training in high performance computing for students 
 
     <iframe src="https://njit.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=62fbaaca-e0ce-43e7-b25f-b20b01526a00&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=true&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay" aria-label="Panopto Embedded Video Player" aria-description="HPC Monthly Webinar Fall 2024" ></iframe>
 
-    [<span class="octicon--arrow-right-24"></span> Download Slides](../assets/slides/container_HPC_10-16-2024.pdf)
+    [<span class="octicon--arrow-right-24"></span> Download Slides](../../assets/slides/container_HPC_10-16-2024.pdf)
 
 </div>
 
@@ -70,7 +113,7 @@ NJIT HPC provides practical training in high performance computing for students 
 
     <iframe src="https://njit.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=581f2cd1-047c-4517-a50c-b1ef015376f5&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=true&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay" aria-label="Panopto Embedded Video Player" aria-description="HPC Monthly Webinar Fall 2024" ></iframe>
 
-    [<span class="octicon--arrow-right-24"></span> Download Slides](../assets/slides/NJIT_HPC_Seminar-SLURM.pdf)
+    [<span class="octicon--arrow-right-24"></span> Download Slides](../../assets/slides/NJIT_HPC_Seminar-SLURM.pdf)
 
 </div>
 
@@ -100,7 +143,7 @@ If you still have any questions on HPC usage, please contact the [HPC Facilitato
 
     <iframe src=https://njit.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=6e8f6829-b93f-4834-9224-b14e015fa18f&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=true&interactivity=all height="420" width="896" style="border: 1px solid #464646;" allowfullscreen allow="autoplay" aria-label="Panopto Embedded Video Player" aria-description="NJIT HPC Training Webinar" ></iframe>
 
-    [<span class="octicon--arrow-right-24"></span> Download Slides](../assets/slides/NJIT_HPC_Seminar-Part-I.pdf)
+    [<span class="octicon--arrow-right-24"></span> Download Slides](../../assets/slides/NJIT_HPC_Seminar-Part-I.pdf)
 
 </div>
 
@@ -117,7 +160,7 @@ If you still have any questions on HPC usage, please contact the [HPC Facilitato
     
     <iframe src=https://njit.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=da615cd0-2071-4f99-bc63-b155015e0544&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=true&interactivity=all height="420" width="896" style="border: 1px solid #464646;" allowfullscreen allow="autoplay" aria-label="Panopto Embedded Video Player" aria-description="NJIT HPC Training Webinar" ></iframe>
 
-    [<span class="octicon--arrow-right-24"></span> Download Slides](../assets/slides/NJIT_HPC_Seminar-Part-II.pdf)
+    [<span class="octicon--arrow-right-24"></span> Download Slides](../../assets/slides/NJIT_HPC_Seminar-Part-II.pdf)
 </div>
 <div class="grid cards" markdown>
 -   ### Introduction to Python and Conda
@@ -131,7 +174,7 @@ If you still have any questions on HPC usage, please contact the [HPC Facilitato
     
     <iframe src="https://njit.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=952312e4-d685-46c1-bbc2-b15c0150df0e&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=true&interactivity=all" height=420" width="896" style="border: 1px solid #464646;" allowfullscreen allow="autoplay" aria-label="Panopto Embedded Video Player" aria-description="NJIT HPC Training Webinar" ></iframe>
 
-    [<span class="octicon--arrow-right-24"></span> Download Slides](../assets/slides/intro-to-Python-and-Conda.pdf)
+    [<span class="octicon--arrow-right-24"></span> Download Slides](../../assets/slides/intro-to-Python-and-Conda.pdf)
 
 </div>
 

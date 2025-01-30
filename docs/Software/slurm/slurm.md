@@ -77,7 +77,8 @@ df = pd.read_csv('docs/assets/tables/slurm_qos.csv')
 df.replace(np.nan, 'NA', inplace=True)
 print(df.to_markdown(index=False))
 ```
-4. Check Quota
+4. **Check Quota**:
+
 Faculty PIs are allocated 300,000 Service Units (SU) per year upon request at no cost, which can be utilized via `--qos=standard` on the SLURM job. It's important to regularly check the usage of SUs so that users can be aware of their consumption and switch to `--qos=low` to prevent exhausting all allocated SUs. Users can check their quota using the `quota_info UCID` command. 
 ```bash linenums="1"
 [ab1234@login01 ~]$ module load wulver

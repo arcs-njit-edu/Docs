@@ -19,4 +19,6 @@ This is the second webinar of the 2025 Spring semester introducing the NJIT HPC 
 * Basic SLURM commands for job submission, monitoring, and management
 * Troubleshooting common issues in job submission and execution
 
-## [Registration](https://njit-edu.zoom.us/webinar/register/WN_5Yvy0TrUSHalzYOx9TqBhA)
+## Registration
+
+Registration is now closed. Check the [HPC training](../../Workshop and Training Videos/index.md#introduction-to-wulver-accessing-system-running-jobs) for the webinar recording and slides.

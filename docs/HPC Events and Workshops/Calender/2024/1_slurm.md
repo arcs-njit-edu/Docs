@@ -26,4 +26,4 @@ Our experienced HPC specialists will guide you through practical examples and pr
 
 ## Registration
 
-Registration is now closed. Check the [HPC training](training.md#slurm-batch-system-basics) for the webinar recording and slides.
+Registration is now closed. Check the [HPC training](../../Workshop and Training Videos/index.md#slurm-batch-system-basics) for the webinar recording and slides.

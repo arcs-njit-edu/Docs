@@ -1,11 +1,5 @@
 # MATLAB
 
-!!! warning
-
-    MATLAB on [OnDemand](https://ondemand.njit.edu) is currently deprecated due to an issue with its functionality in the OnDemand environment. We are actively working to resolve this issue and will restore MATLAB on OnDemand once it is fixed. In the meantime, if you wish to use MATLAB on Wulver, please check [MATLAB on NJIT HPC](matlab_local.md).
-
-    
-
 ## Launching MATLAB
 
 * Navigate to the Interactive Apps section.

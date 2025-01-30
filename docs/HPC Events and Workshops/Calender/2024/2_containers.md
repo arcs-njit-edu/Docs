@@ -25,5 +25,5 @@ The HPC training event on using Singularity containers provides participants wit
 
 ## Registration
 
-Registration is now closed. Check the [HPC training](training.md#introduction-to-containers-on-wulver) for the webinar recording and slides.
+Registration is now closed. Check the [HPC training](../../Workshop and Training Videos/index.md#introduction-to-containers-on-wulver) for the webinar recording and slides.
 

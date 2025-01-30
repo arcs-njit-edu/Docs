@@ -50,6 +50,20 @@ md-typeset .admonition.njit,
   -webkit-mask-image: var(--md-admonition-icon--njit);
           mask-image: var(--md-admonition-icon--njit);
 }
+md-typeset .admonition.question,
+.md-typeset details.question {
+  border-color: rgb(84, 15, 17);
+}
+.md-typeset .question > .admonition-title,
+.md-typeset .question > summary {
+  background-color: rgba(84, 15, 17, 0.1);
+}
+
+.md-typeset .question > .admonition-title::before,
+.md-typeset .question > summary::before {
+  background-color: #d8272d;
+}
+
 .octicon--arrow-right-24 {
   display: inline-block;
   width: 1.2rem;

@@ -26,7 +26,7 @@ nav:
         - 'Usage Summary': 'https://hpc.njit.edu/Monitor/summary.html'
         - 'Usage (this year so far)': 'https://hpc.njit.edu/Monitor/cy2025.html'
     - ...
-    - 'FAQs' : 'faq/FAQs.md'
+    - 'FAQs' : 'faq/faq.md'
     - '' : 'website_version.txt'
     - '' : 'migration/index.md'
     - '' : 'migration/faqs.md'

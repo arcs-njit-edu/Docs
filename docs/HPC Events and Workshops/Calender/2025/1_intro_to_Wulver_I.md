@@ -20,4 +20,6 @@ This is the first webinar of the 2025 Spring semester introducing the NJIT HPC e
 
 Our experienced HPC specialists will guide you through practical examples and provide tips for proper use of cluster in your research workflows.
 
-## [Registration](https://njit-edu.zoom.us/webinar/register/WN_3ZmhTiG0Sw-F3WtRg20t9Q#/registration)
+## Registration
+
+Registration is now closed. Check the [HPC training](../../Workshop and Training Videos/index.md#introduction-to-wulver-getting-started) for the webinar recording and slides.
