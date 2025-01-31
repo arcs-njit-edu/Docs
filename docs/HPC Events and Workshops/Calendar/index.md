@@ -10,7 +10,16 @@ hide:
 
 <div class="grid cards" markdown>
 
+-    ### Monthly HPC User Meeting
+     ---
+     We are currently offering a new monthly event for HPC researchers at NJIT: **The HPC Monthly User Meeting**. This event is open to all NJIT students, faculty, and staff who use or are interested in NJIT's HPC resources and services. This monthly meeting will be an opportunity for discussion, sharing ideas, talking with HPC facilitators, and learning about new resources and future plans for HPC research services. No prior registration is required.
+        
+     - Date: Wednesday, February 19
+     - Location: Campus Center, Room 235
+     - Time: 2:00 PM - 3:00 PM
+</div>
 
+<div class="grid cards" markdown>
 -   ### [Introduction to Wulver: Getting Started](1_intro_to_Wulver_I.md)
     ---
 
