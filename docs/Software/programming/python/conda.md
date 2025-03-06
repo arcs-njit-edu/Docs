@@ -377,10 +377,6 @@ mamba install pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvi
 
 This will install pytorch in the `torch-cuda` environment.
 
-!!! warning
-
-    Ensure to unload the Mamba module, as when you use `Anaconda3` and `Mamba` together, Mamba installs the PyTorch packages within the Conda environment. Consequently, the next time you activate this environment, there's no need to load the 'Mamba' module. Only employ 'Mamba' when installing the packages.
-
 ## Export and Import Conda Environment
 Exporting and importing Conda environments allows users to capture and reproduce the exact set of dependencies for a project. With Conda, a popular package and environment management system, users can export an environment, including all installed packages, into a YAML file. This file can then be shared or version-controlled. Importing the environment from the YAML file on another system ensures consistent dependencies, making it easier to recreate the development or execution environment. 
 

@@ -18,4 +18,5 @@ This is the third webinar of the 2025 Spring semester introducing the NJIT HPC e
 * Become familiar with common tools and libraries for scientific computing in Python.
 
 
-## [Registration](https://njit-edu.zoom.us/webinar/register/WN_qb6MuHStRBuFfzX6KcfXGA#/registration)
+## Registration
+Registration is now closed. Check the [HPC training](../../Workshop_and_Training_Videos/index.md#python-and-conda-environments-in-hpc-from-basics-to-best-practices) for the webinar recording and slides.

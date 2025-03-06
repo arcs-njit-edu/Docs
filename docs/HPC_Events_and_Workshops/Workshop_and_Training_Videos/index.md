@@ -7,6 +7,26 @@ NJIT HPC provides practical training in high performance computing for students 
 ### 2025 Spring
 <div class="grid cards" markdown>
 
+-   ### [Python and Conda Environments in HPC: From Basics to Best Practices](3_conda_training.md)
+
+    ---
+
+    This is the third webinar of the 2025 Spring semester, focusing on an introductory understanding of using Python for HPC and effectively managing their Python environments using [Conda](conda.md)
+    
+    #### Key Highlights:
+    * Learn how to manage Python environments using Conda.
+    * How to create Conda environments in different locations and install Python packages.
+    * Become familiar with common tools and libraries for scientific computing in Python.
+    * Import Conda environment to a different location.
+
+    <iframe src="https://njit.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=9367c294-e9b7-44ec-b2f8-b290015d1383&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=true&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay" aria-label="Panopto Embedded Video Player" aria-description="Python and Conda Environments in HPC: From Basics to Best Practices" ></iframe>
+
+    [<span class="octicon--arrow-right-24"></span> Download Slides](../../assets/slides/Conda_training_Feb26.pdf)
+
+</div>
+
+<div class="grid cards" markdown>
+
 -   ### [Introduction to Wulver: Accessing System & Running Jobs](2_intro_to_Wulver_II.md)
 
     ---
