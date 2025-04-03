@@ -7,6 +7,27 @@ NJIT HPC provides practical training in high performance computing for students 
 ### 2025 Spring
 <div class="grid cards" markdown>
 
+-   ### [Introduction to Linux](4_intro_to_linux.md)
+
+    ---
+
+    This is the fourth webinar of the 2025 Spring semester, introducing the basics of the Linux operating system. This session is designed to help new users become familiar with Linux, an essential skill for working in High-Performance Computing (HPC) environments.
+    
+    #### Key Highlights:
+    * Basics of the Linux operating system 
+    * Common commands and file system navigation 
+    * Managing files, directories, and permissions 
+    * Introduction to shell scripting for automation 
+    * Connecting to remote systems and working with HPC cluster
+
+    <iframe src="https://njit.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=7faa1aeb-8a9d-4404-a8ab-b2ac014d4d15&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=true&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay" aria-label="Panopto Embedded Video Player" aria-description="Introduction to Linux" ></iframe>
+
+    [<span class="octicon--arrow-right-24"></span> Download Slides](../../assets/slides/Intro_to_Linix.pdf)
+
+</div>
+
+<div class="grid cards" markdown>
+
 -   ### [Python and Conda Environments in HPC: From Basics to Best Practices](3_conda_training.md)
 
     ---
