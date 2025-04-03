@@ -20,4 +20,5 @@ This is the fourth webinar of the 2025 Spring semester, introducing the basics o
 * Connecting to remote systems and working with HPC cluster
 
 
-## [Registration](https://njit-edu.zoom.us/webinar/register/WN_v0uwpBFmTiabDfNVBnCRGQ?amp_device_id=d1c3d517-0e3b-4691-8050-df060b95ce76)
+## Registration
+Registration is now closed. Check the [HPC training](../../Workshop_and_Training_Videos/index.md#introduction-to-linux) for the webinar recording and slides.

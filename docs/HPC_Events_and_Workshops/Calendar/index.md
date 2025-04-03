@@ -8,6 +8,16 @@ hide:
 
 ## 2025 Spring
 <div class="grid cards" markdown>
+-   ### [Parallel Computing with MATLAB: Hands on workshop](5_parallel_computing_with_matlab.md)
+    ---
+
+    This hands-on workshop will introduce parallel and distributed computing in MATLAB with a focus on speeding up application codes and offloading computers. By working through common scenarios and workflows using hands-on demos, you will gain a detailed understanding of the parallel constructs in MATLAB, their capabilities, and some of the common hurdles that you'll encounter when using them.
+
+    [<span class="octicon--arrow-right-24"></span> Registration and Event Details](5_parallel_computing_with_matlab.md)
+
+</div>
+
+<div class="grid cards" markdown>
 -   ### [Introduction to Linux](4_intro_to_linux.md)
     ---
 
