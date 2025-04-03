@@ -22,7 +22,7 @@ NJIT HPC provides practical training in high performance computing for students 
 
     <iframe src="https://njit.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=7faa1aeb-8a9d-4404-a8ab-b2ac014d4d15&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=true&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay" aria-label="Panopto Embedded Video Player" aria-description="Introduction to Linux" ></iframe>
 
-    [<span class="octicon--arrow-right-24"></span> Download Slides](../../assets/slides/Intro_to_Linix.pdf)
+    [<span class="octicon--arrow-right-24"></span> Download Slides](../../assets/slides/Intro_to_Linux.pdf)
 
 </div>
 
