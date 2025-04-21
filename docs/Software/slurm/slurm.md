@@ -96,22 +96,41 @@ Here, `xy1234` represents the UCID of the PI, and "SLURM Service Units (CPU Hour
 #### Submitting Jobs on CPU Nodes
 ??? example "Sample Job Script to use: submit.sh"
 
-    ```slurm
-    #!/bin/bash -l
-    #SBATCH --job-name=job_nme
-    #SBATCH --output=%x.%j.out # %x.%j expands to slurm JobName.JobID
-    #SBATCH --error=%x.%j.err
-    #SBATCH --partition=general
-    #SBATCH --qos=standard
-    #SBATCH --account=PI_ucid # Replace PI_ucid which the NJIT UCID of PI
-    #SBATCH --nodes=1
-    #SBATCH --ntasks-per-node=8
-    #SBATCH --time=59:00  # D-HH:MM:SS
-    #SBATCH --mem-per-cpu=4000M
-    ```
+    === "Using 1 core"
+        ```slurm
+        #!/bin/bash -l
+        #SBATCH --job-name=job_nme
+        #SBATCH --output=%x.%j.out # %x.%j expands to slurm JobName.JobID
+        #SBATCH --error=%x.%j.err
+        #SBATCH --partition=general
+        #SBATCH --qos=standard
+        #SBATCH --account=PI_ucid # Replace PI_ucid which the NJIT UCID of PI
+        #SBATCH --nodes=1
+        #SBATCH --ntasks=1
+        #SBATCH --time=59:00  # D-HH:MM:SS
+        #SBATCH --mem-per-cpu=4000M
+        ```
+    
+    === "Using multiple cores"
+        ```slurm
+        #!/bin/bash -l
+        #SBATCH --job-name=job_nme
+        #SBATCH --output=%x.%j.out # %x.%j expands to slurm JobName.JobID
+        #SBATCH --error=%x.%j.err
+        #SBATCH --partition=general
+        #SBATCH --qos=standard
+        #SBATCH --account=PI_ucid # Replace PI_ucid which the NJIT UCID of PI
+        #SBATCH --nodes=1
+        #SBATCH --ntasks-per-node=8
+        #SBATCH --time=59:00  # D-HH:MM:SS
+        #SBATCH --mem-per-cpu=4000M
+        ```
+!!! warning
+    
+    Do not request multiple cores unless your code is parallelized. Before using multiple cores, ensure that your code is capable of parallelizing tasks; otherwise, it will unnecessarily consume service units (SUs) and may negatively impact performance. Please review the code's documentation thoroughly and use a single core if it does not support parallel execution.  
 
-* Here, the job requests 1 node with 8 cores, on the `general` partition with `qos=standard`. Please note that the memory relies on the number of cores you are requesting. 
-* As per the policy, users can request up to 4GB memory per core, therefore the flag  `--mem-per-cpu` is used for memory requirement. 
+* Here, the job requests 1 node on the `general` partition with `qos=standard`. Please note that the memory relies on the number of cores you are requesting. 
+* As per the policy, users can request up to 4GB memory per core, therefore the flag  `--mem-per-cpu` is used for memory requirement. If you are using 1 core and need more memory, use `--mem` instead. 
 * In this above script `--time` indicates the wall time which is used to specify the maximum amount of time that a job is allowed to run. The maximum allowable wall time depends on SLURM QoS, which you can find in [QoS](slurm.md#using-slurm-on-cluster). 
 * To submit the job, use `sbatch submit.sh` where the `submit.sh` is the job script. Once the job has been submitted, the jobs will be in the queue, which will be executed based on priority-based scheduling. 
 * To check the status of the job use `squeue -u $LOGNAME` and you should see the following 
@@ -125,22 +144,56 @@ Here, the `ST` stands for the status of the job. You may see the status of the j
 In case of submitting the jobs on GPU, you can use the following SLURM script 
 
 ??? example "Sample Job Script to use: gpu_submit.sh"
+    
+    === "Using 1 core, 1 GPU"
+        ```slurm
+        #!/bin/bash -l
+        #SBATCH --job-name=gpu_job
+        #SBATCH --output=%x.%j.out # %x.%j expands to slurm JobName.JobID
+        #SBATCH --error=%x.%j.err
+        #SBATCH --partition=gpu
+        #SBATCH --qos=standard
+        #SBATCH --account=PI_ucid # Replace PI_ucid which the NJIT UCID of PI
+        #SBATCH --nodes=1
+        #SBATCH --ntasks-per-node=1
+        #SBATCH --gres=gpu:1
+        #SBATCH --time=59:00  # D-HH:MM:SS
+        #SBATCH --mem-per-cpu=4000M
+        ```
+    === "Using multiple cores, 1 GPU"
+        ```slurm
+        #!/bin/bash -l
+        #SBATCH --job-name=gpu_job
+        #SBATCH --output=%x.%j.out # %x.%j expands to slurm JobName.JobID
+        #SBATCH --error=%x.%j.err
+        #SBATCH --partition=gpu
+        #SBATCH --qos=standard
+        #SBATCH --account=PI_ucid # Replace PI_ucid which the NJIT UCID of PI
+        #SBATCH --nodes=1
+        #SBATCH --ntasks-per-node=8
+        #SBATCH --gres=gpu:1
+        #SBATCH --time=59:00  # D-HH:MM:SS
+        #SBATCH --mem-per-cpu=4000M
+        ```
+    === "Using multiple cores, GPUs"
+        ```slurm
+        #!/bin/bash -l
+        #SBATCH --job-name=gpu_job
+        #SBATCH --output=%x.%j.out # %x.%j expands to slurm JobName.JobID
+        #SBATCH --error=%x.%j.err
+        #SBATCH --partition=gpu
+        #SBATCH --qos=standard
+        #SBATCH --account=PI_ucid # Replace PI_ucid which the NJIT UCID of PI
+        #SBATCH --nodes=1
+        #SBATCH --ntasks-per-node=8
+        #SBATCH --gres=gpu:2
+        #SBATCH --time=59:00  # D-HH:MM:SS
+        #SBATCH --mem-per-cpu=4000M
+        ```
 
-    ```slurm
-    #!/bin/bash -l
-    #SBATCH --job-name=gpu_job
-    #SBATCH --output=%x.%j.out # %x.%j expands to slurm JobName.JobID
-    #SBATCH --error=%x.%j.err
-    #SBATCH --partition=gpu
-    #SBATCH --qos=standard
-    #SBATCH --account=PI_ucid # Replace PI_ucid which the NJIT UCID of PI
-    #SBATCH --nodes=1
-    #SBATCH --ntasks-per-node=8
-    #SBATCH --gres=gpu:2
-    #SBATCH --time=59:00  # D-HH:MM:SS
-    #SBATCH --mem-per-cpu=4000M
-    ```
-This will request 2 GPUS per node on the `GPU` partition.
+!!! warning
+
+    Do not use multiple GPUs unless you are certain that your job's performance will benefit from them. Most GPU jobs do not require multiple CPUs either. Please remember that unnecessarily requesting additional resources can negatively impact job performance and will also consume more service units (SUs).  
 
 #### Submitting Jobs on `debug`
 The `debug` QoS in Slurm is intended for debugging and testing jobs. It usually provides a shorter queue wait time and quicker job turnaround. Jobs submitted with the `debug` QoS have access to a limited set of resources (Only 4 CPUS on Wulver), making it suitable for rapid testing and debugging of applications without tying up cluster resources for extended periods. 
@@ -156,7 +209,7 @@ The `debug` QoS in Slurm is intended for debugging and testing jobs. It usually 
     #SBATCH --qos=debug
     #SBATCH --account=PI_ucid # Replace PI_ucid which the NJIT UCID of PI
     #SBATCH --nodes=1
-    #SBATCH --ntasks-per-node=4
+    #SBATCH --ntasks-per-node=1
     #SBATCH --time=7:59:00  # D-HH:MM:SS, Maximum allowable Wall Time 8 hours
     #SBATCH --mem-per-cpu=4000M
     ```
@@ -204,7 +257,8 @@ Use '-h' to display this help message.
      salloc: job 466577 queued and waiting for resources
      salloc: job 466577 has been allocated resources
      salloc: Granted job allocation 466577
-     salloc: Nodes n0103 are ready for job   
+     salloc: Nodes n0103 are ready for job
+     $ ssh n0103
      ```
 === "GPU Nodes"
 
@@ -216,6 +270,7 @@ Use '-h' to display this help message.
      salloc: job 466579 has been allocated resources
      salloc: Granted job allocation 466579
      salloc: Nodes n0048 are ready for job
+     $ ssh n0048
      ```
 === "Debug Nodes"
 
@@ -228,6 +283,7 @@ Use '-h' to display this help message.
      salloc: Granted job allocation 466581
      salloc: Waiting for resource configuration
      salloc: Nodes n0127 are ready for job
+     $ ssh n0127
      ```
 
 Replace `$PI_UCID` with PI's NJIT UCID. 
