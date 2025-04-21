@@ -51,7 +51,7 @@ The most common commands are:
 In Wulver, SLURM submission will have new requirements, intended for a more fair sharing of resources without impinging on investor/owner rights to computational resources.  All jobs must now be charged to a PI-group (Principal Investigator) account.
 
 ### Account (Use `--account`)
-To specify the job, use `--account=PI_ucid`.  You can specify `--account` as either an `sbatch` or `#SBATCH` parameter. If you don't know the UCID of PI, use`quota_info`, and you will see SLURM account you sre associated with. Check [`quota_info`](#check-quota) for details.
+To specify the job, use `--account=$PI_ucid`.  You can specify `--account` as either an `sbatch` or `#SBATCH` parameter. If you don't know the UCID of PI, use`quota_info`, and you will see SLURM account you sre associated with. Check [`quota_info`](#check-quota) for details.
 
 ### Partition (Use `--partition`)
 Wulver has three partitions, differing in GPUs or RAM available:
@@ -104,7 +104,7 @@ Here, `xy1234` represents the UCID of the PI, and "SLURM Service Units (CPU Hour
         #SBATCH --error=%x.%j.err
         #SBATCH --partition=general
         #SBATCH --qos=standard
-        #SBATCH --account=PI_ucid # Replace PI_ucid which the NJIT UCID of PI
+        #SBATCH --account=$PI_ucid # Replace $PI_ucid which the NJIT UCID of PI
         #SBATCH --nodes=1
         #SBATCH --ntasks=1
         #SBATCH --time=59:00  # D-HH:MM:SS
@@ -119,7 +119,7 @@ Here, `xy1234` represents the UCID of the PI, and "SLURM Service Units (CPU Hour
         #SBATCH --error=%x.%j.err
         #SBATCH --partition=general
         #SBATCH --qos=standard
-        #SBATCH --account=PI_ucid # Replace PI_ucid which the NJIT UCID of PI
+        #SBATCH --account=$PI_ucid # Replace $PI_ucid which the NJIT UCID of PI
         #SBATCH --nodes=1
         #SBATCH --ntasks-per-node=8
         #SBATCH --time=59:00  # D-HH:MM:SS
@@ -153,7 +153,7 @@ In case of submitting the jobs on GPU, you can use the following SLURM script
         #SBATCH --error=%x.%j.err
         #SBATCH --partition=gpu
         #SBATCH --qos=standard
-        #SBATCH --account=PI_ucid # Replace PI_ucid which the NJIT UCID of PI
+        #SBATCH --account=$PI_ucid # Replace $PI_ucid which the NJIT UCID of PI
         #SBATCH --nodes=1
         #SBATCH --ntasks-per-node=1
         #SBATCH --gres=gpu:1
@@ -168,7 +168,7 @@ In case of submitting the jobs on GPU, you can use the following SLURM script
         #SBATCH --error=%x.%j.err
         #SBATCH --partition=gpu
         #SBATCH --qos=standard
-        #SBATCH --account=PI_ucid # Replace PI_ucid which the NJIT UCID of PI
+        #SBATCH --account=$PI_ucid # Replace $PI_ucid which the NJIT UCID of PI
         #SBATCH --nodes=1
         #SBATCH --ntasks-per-node=8
         #SBATCH --gres=gpu:1
@@ -183,7 +183,7 @@ In case of submitting the jobs on GPU, you can use the following SLURM script
         #SBATCH --error=%x.%j.err
         #SBATCH --partition=gpu
         #SBATCH --qos=standard
-        #SBATCH --account=PI_ucid # Replace PI_ucid which the NJIT UCID of PI
+        #SBATCH --account=$PI_ucid # Replace $PI_ucid which the NJIT UCID of PI
         #SBATCH --nodes=1
         #SBATCH --ntasks-per-node=8
         #SBATCH --gres=gpu:2
@@ -207,7 +207,7 @@ The `debug` QoS in Slurm is intended for debugging and testing jobs. It usually 
     #SBATCH --error=%x.%j.err
     #SBATCH --partition=debug
     #SBATCH --qos=debug
-    #SBATCH --account=PI_ucid # Replace PI_ucid which the NJIT UCID of PI
+    #SBATCH --account=$PI_ucid # Replace $PI_ucid which the NJIT UCID of PI
     #SBATCH --nodes=1
     #SBATCH --ntasks-per-node=1
     #SBATCH --time=7:59:00  # D-HH:MM:SS, Maximum allowable Wall Time 8 hours
