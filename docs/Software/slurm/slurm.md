@@ -109,6 +109,8 @@ Here, `xy1234` represents the UCID of the PI, and "SLURM Service Units (CPU Hour
         #SBATCH --ntasks=1
         #SBATCH --time=59:00  # D-HH:MM:SS
         #SBATCH --mem-per-cpu=4000M
+
+        ./myexe <input/output options> # myexe is the executable in this example.
         ```
     
     === "Using multiple cores"
@@ -124,7 +126,46 @@ Here, `xy1234` represents the UCID of the PI, and "SLURM Service Units (CPU Hour
         #SBATCH --ntasks-per-node=8
         #SBATCH --time=59:00  # D-HH:MM:SS
         #SBATCH --mem-per-cpu=4000M
+
+        srun ./myexe <input/output options> # myexe is the executable in this example.
         ```
+
+    === "Using multiple threads"
+        ```slurm
+        #!/bin/bash -l
+        #SBATCH --job-name=job_nme
+        #SBATCH --output=%x.%j.out # %x.%j expands to slurm JobName.JobID
+        #SBATCH --error=%x.%j.err
+        #SBATCH --partition=general
+        #SBATCH --qos=standard
+        #SBATCH --account=$PI_ucid # Replace $PI_ucid which the NJIT UCID of PI
+        #SBATCH --nodes=1
+        #SBATCH --ntasks-per-node=8
+        #SBATCH --time=59:00  # D-HH:MM:SS
+        #SBATCH --mem-per-cpu=4000M
+
+        OMP_NUM_THREADS=$SLURM_NTASKS ./myexe <input/output options>
+        ```
+        Use this script, if your code relies on threads instead of cores. 
+
+    === "Using multiple cores and threads"
+        ```slurm
+        #!/bin/bash -l
+        #SBATCH --job-name=job_nme
+        #SBATCH --output=%x.%j.out # %x.%j expands to slurm JobName.JobID
+        #SBATCH --error=%x.%j.err
+        #SBATCH --partition=general
+        #SBATCH --qos=standard
+        #SBATCH --account=$PI_ucid # Replace $PI_ucid which the NJIT UCID of PI
+        #SBATCH --nodes=1
+        #SBATCH --ntasks=64
+        #SBATCH --cpus-per-task=2
+        #SBATCH --time=59:00  # D-HH:MM:SS
+        #SBATCH --mem-per-cpu=4000M
+
+        srun gmx_mpi mdrun ... -ntomp $SLURM_CPUS_PER_TASK ...
+        ```
+        This is the example script of [GROAMCS](gromacs.md) which uses both CPUs and threads.      
 !!! warning
     
     Do not request multiple cores unless your code is parallelized. Before using multiple cores, ensure that your code is capable of parallelizing tasks; otherwise, it will unnecessarily consume service units (SUs) and may negatively impact performance. Please review the code's documentation thoroughly and use a single core if it does not support parallel execution.  
@@ -159,7 +200,10 @@ In case of submitting the jobs on GPU, you can use the following SLURM script
         #SBATCH --gres=gpu:1
         #SBATCH --time=59:00  # D-HH:MM:SS
         #SBATCH --mem-per-cpu=4000M
+
+        ./myexe <input/output options> # myexe is the executable in this example.
         ```
+
     === "Using multiple cores, 1 GPU"
         ```slurm
         #!/bin/bash -l
@@ -174,7 +218,10 @@ In case of submitting the jobs on GPU, you can use the following SLURM script
         #SBATCH --gres=gpu:1
         #SBATCH --time=59:00  # D-HH:MM:SS
         #SBATCH --mem-per-cpu=4000M
+
+        srun ./myexe <input/output options> # myexe is the executable in this example.
         ```
+
     === "Using multiple cores, GPUs"
         ```slurm
         #!/bin/bash -l
@@ -189,6 +236,8 @@ In case of submitting the jobs on GPU, you can use the following SLURM script
         #SBATCH --gres=gpu:2
         #SBATCH --time=59:00  # D-HH:MM:SS
         #SBATCH --mem-per-cpu=4000M
+
+        srun ./myexe <input/output options> # myexe is the executable in this example.
         ```
 
 !!! warning
@@ -212,6 +261,8 @@ The `debug` QoS in Slurm is intended for debugging and testing jobs. It usually 
     #SBATCH --ntasks-per-node=1
     #SBATCH --time=7:59:00  # D-HH:MM:SS, Maximum allowable Wall Time 8 hours
     #SBATCH --mem-per-cpu=4000M
+
+    ./myexe <input/output options>
     ```
 To submit the jobs, `sbatch` command.
 ### Interactive session on a compute node
@@ -258,8 +309,12 @@ Use '-h' to display this help message.
      salloc: job 466577 has been allocated resources
      salloc: Granted job allocation 466577
      salloc: Nodes n0103 are ready for job
-     $ ssh n0103
      ```
+     Use `ssh` or `srun` 
+
+     `srun ./myexe <input/output options>` 
+     or
+     `ssh n0103`
 === "GPU Nodes"
 
      ```bash
@@ -270,8 +325,13 @@ Use '-h' to display this help message.
      salloc: job 466579 has been allocated resources
      salloc: Granted job allocation 466579
      salloc: Nodes n0048 are ready for job
-     $ ssh n0048
      ```
+     Use `ssh` or `srun` 
+
+     `srun ./myexe <input/output options>` 
+     or
+     `ssh n0048`
+     
 === "Debug Nodes"
 
      ```bash
@@ -283,8 +343,12 @@ Use '-h' to display this help message.
      salloc: Granted job allocation 466581
      salloc: Waiting for resource configuration
      salloc: Nodes n0127 are ready for job
-     $ ssh n0127
      ```
+     Use `ssh` or `srun`.
+
+     `srun ./myexe <input/output options>` 
+     or
+     `ssh n0127`
 
 Replace `$PI_UCID` with PI's NJIT UCID. 
 Now, once you get the confirmation of job allocation, you can either use `srun` or `ssh` to access the particular node allocated to the job. 

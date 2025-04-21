@@ -24,9 +24,9 @@ The documentation of GROMACS is available at [GROMACS Manual](https://manual.gro
 ## Using GROMACS
 GROMACS can be used on CPU or GPU. When using GROMACS with GPUs (Graphics Processing Units), the calculations can be significantly accelerated, allowing for faster simulations. You can use GROMACS with GPU acceleration, but you need to use GPU nodes on our cluster. 
 
-??? example "Sample Batch Script to Run GROMACS on GPU gmx_gpu.submit.sh"
+??? example "Sample Batch Script to Run GROMACS"
 
-    === "Wulver"
+    === "GPU"
         
         ```slurm
         #!/bin/bash -l
@@ -40,9 +40,8 @@ GROMACS can be used on CPU or GPU. When using GROMACS with GPUs (Graphics Proces
         #SBATCH --time 72:00:00   # Max 3 days
         #SBATCH --nodes=2
         #SBATCH --ntasks-per-node=2
-        #SBATCH --cpus-per-task=2
-        #SBATCH --gpus-per-node=4  
-        #SBATCH --account=PI_ucid  # Replace PI_ucid with the UCID of PI, if you don't know PI's UCID use "sacctmgr show user username" on the login screen, replace "username" with your UCID
+        #SBATCH --gpus-per-node=2  
+        #SBATCH --account=$PI_ucid  # Replace PI_ucid with the UCID of PI
 
         module purge
         module load wulver
@@ -54,12 +53,10 @@ GROMACS can be used on CPU or GPU. When using GROMACS with GPUs (Graphics Proces
         cp -r $INPUT_DIR/* $OUTPUT_DIR/
         cd $OUTPUT_DIR
 
-        srun gmx_mpi mdrun -deffnm run -cpi -v -ntomp 2 -pin on -tunepme -dlb yes -nb gpu -noappend
+        srun gmx_mpi mdrun -deffnm run -cpi -v -ntomp 1 -pin on -tunepme -dlb yes -nb gpu -noappend
         ```
-    
-??? example "Sample Batch Script to Run GROMACS on CPU gmx_cpu.submit.sh"
 
-    === "Wulver"
+    === "CPU"
         
         ```slurm
         #!/bin/bash -l
@@ -73,11 +70,11 @@ GROMACS can be used on CPU or GPU. When using GROMACS with GPUs (Graphics Proces
         #SBATCH --time 72:00:00   # Max 3 days
         #SBATCH --nodes=1
         #SBATCH --ntasks-per-node=8
-        #SBATCH --account=PI_ucid  # Replace PI_ucid with the UCID of PI, if you don't know PI's UCID use "sacctmgr show user username" on the login screen, replace "username" with your UCID
+        #SBATCH --account=$PI_ucid  # Replace PI_ucid with the UCID of PI
 
         module purge
         module load wulver
-        module load foss/2021b GROMACS/2021.5
+        module load foss/2023b GROMACS/2024.1
 
         INPUT_DIR=${PWD}/INPUT
         OUTPUT_DIR=${PWD}/OUTPUT
@@ -87,12 +84,38 @@ GROMACS can be used on CPU or GPU. When using GROMACS with GPUs (Graphics Proces
 
         srun gmx_mpi mdrun -v -deffnm em -cpi -v -ntomp 1 -pin on -tunepme -dlb yes -noappend
         ```
+
+    === "CPU with threads"
+        
+        ```slurm
+        #!/bin/bash -l
+        # NOTE the -l (login) flag!
+        #SBATCH -J gmx2021
+        #SBATCH -o test.%x.%j.out
+        #SBATCH -e test.%x.%j.err
+        #SBATCH --mail-type=ALL
+        #SBATCH --partition=general
+        #SBATCH --qos=standard
+        #SBATCH --time 72:00:00   # Max 3 days
+        #SBATCH --nodes=1
+        #SBATCH --ntasks-per-node=8
+        #SBATCH --account=$PI_ucid  # Replace PI_ucid with the UCID of PI
+
+        module purge
+        module load wulver
+        module load foss/2023b GROMACS/2024.1
+
+        INPUT_DIR=${PWD}/INPUT
+        OUTPUT_DIR=${PWD}/OUTPUT
+
+        cp -r $INPUT_DIR/* $OUTPUT_DIR/
+        cd $OUTPUT_DIR
+
+        srun gmx_mpi mdrun -v -deffnm em -cpi -v -ntomp $SLURM_CPUS_PER_TASK -pin on -tunepme -dlb yes -noappend
+        ```
+        
     
-The tutorial in the above-mentioned job script can be found in 
-
-=== "Wulver" 
-
-    `/apps/testjobs/gromacs`
+The tutorial in the above-mentioned job script can be found in `/apps/testjobs/gromacs`
 
 
 ## Related Applications
