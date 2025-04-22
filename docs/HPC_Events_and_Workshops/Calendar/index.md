@@ -7,6 +7,17 @@ hide:
 # HPC Events
 
 ## 2025 Spring
+
+<div class="grid cards" markdown>
+-   ### [Open OnDemand on Wulver](6_intro_to_OnDemand.md)
+    ---
+
+    This webinar will introduce NJIT’s Open OnDemand portal, a browser-based gateway to the Wulver cluster and shared storage. With a focus on streamlining your HPC workflows, you will explore common scenarios and tasks through interactive demos. You will gain a detailed understanding of how to manage your files on the cluster, run interactive applications like Jupyter Notebook and RStudio, launch a full Linux desktop environment in your browser, and submit and monitor SLURM jobs. Additionally, you'll learn how to track resource usage and optimize your job performance for efficient computing on the Wulver cluster.
+
+    [<span class="octicon--arrow-right-24"></span> Registration and Event Details](6_intro_to_OnDemand.md)
+
+</div>
+
 <div class="grid cards" markdown>
 -   ### [Parallel Computing with MATLAB: Hands on workshop](5_parallel_computing_with_matlab.md)
     ---
