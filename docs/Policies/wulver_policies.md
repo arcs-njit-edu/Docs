@@ -1,7 +1,5 @@
 # Wulver Usage and Condo Policies
 
-Proposed Wulver Usage and Condo Policies
-
 ## Faculty Computing Allowance
 
 Faculty PIs are allocated 300,000 Service Units (SU) per year on request at no cost. An SU is equal to 1 core hour on a standard node. For more details on calculating SUs for GPUs, see [Wulver SLURM](slurm.md). All users working as part of the PIs project will use this allocation. Multiple PIs working on the same project may pool SUs. The SUs can be renewed annually by providing a brief report describing how the SUs were used and a list of publications, presentations, and awards generated from research conducted. Additional SUs may be purchased at a cost of $0.005/SU. The minimum purchase is 50,000 SU (250 USD). 
