@@ -61,6 +61,7 @@ theme:
     #    name: Switch to light mode
   features:
     - navigation.instant
+    - navigation.instant.prefetch
     - navigation.tracking
     - navigation.tabs.sticky
     - navigation.path
