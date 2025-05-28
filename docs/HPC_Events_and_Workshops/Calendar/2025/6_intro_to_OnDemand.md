@@ -20,5 +20,6 @@ hide:
 * Track resource usage and optimize job performance
 
 
-## [Registration](https://njit-edu.zoom.us/webinar/register/WN_Zqpb1T-PS4KzRDBhEIabbA)
+## Registration
+Registration is now closed. Check the [HPC training](../../Workshop_and_Training_Videos/index.md#open-ondemand-on-wulver) for the webinar recording and slides.
 

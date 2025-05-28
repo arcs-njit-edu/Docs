@@ -37,7 +37,7 @@ The official LAMMPS is available at [LAMMPS Online Manual](https://lammps.sandia
 
 ??? example "Sample Batch Script to Run LAMMPS"
     
-    === "Wulver"
+    === "CPU"
     
         ```slurm
         #!/bin/bash
@@ -63,6 +63,38 @@ The official LAMMPS is available at [LAMMPS Online Manual](https://lammps.sandia
     
         srun lmp -in test.in
         ```
+    === "GPU"
+    
+        ```slurm
+        #!/bin/bash
+        #SBATCH -J gpu_lammps
+        #SBATCH --output=%x.%j.out # %x.%j expands to slurm JobName.JobID
+        #SBATCH --error=%x.%j.err # prints the error message
+        #SBATCH --partition=gpu 
+		#SBATCH --nodes=1
+        #SBATCH --ntasks-per-node=128
+		#SBATCH --mem-per-cpu=4000M # Maximum allowable memory per CPU 4G
+		#SBATCH --qos=standard
+        #SBATCH --gres=gpu:2
+        #SBATCH --account=PI_ucid # Replace PI_ucid which the NJIT UCID of PI
+		#SBATCH --time=71:59:59  # D-HH:MM:SS
+    
+        ###############################################
+        #
+        # Purge and load modules needed for run
+        #
+        ################################################
+        module purge
+        module load wulver # Load slurm, easybuild
+        module load foss/2021b LAMMPS/23Jun2022-kokkos-CUDA-11.4.1
+
+        export OMP_NUM_THREADS=$SLURM_CPUS_PER_TASK
+        export OMP_PROC_BIND=spread
+        export OMP_PLACES=threads
+
+    
+        srun lmp -in in.lj -k on g 2 -sf kk -pk kokkos newton off neigh full comm device
+        ```
 
 Then submit the job script using the sbatch command, e.g., assuming the job script name is `test_lammps.slurm`:
 
@@ -85,28 +117,6 @@ or from the [LAMMPS Github repository](https://github.com/lammps/lammps).
         ```bash
         module purge
         module load wulver
-        module load foss
-        module load CMake
-    
-        git clone https://github.com/lammps/lammps.git
-        cd lammps
-        mkdir build
-        cd build
-    
-        cmake -DCMAKE_INSTALL_PREFIX=$PWD/../install_hsw -DCMAKE_CXX_COMPILER=mpicxx \
-                    -DCMAKE_BUILD_TYPE=Release -D BUILD_MPI=yes -DKokkos_ENABLE_OPENMP=ON \
-                    -DKokkos_ARCH_HSW=ON -DCMAKE_CXX_STANDARD=17 -D PKG_MANYBODY=ON \
-                    -D PKG_MOLECULE=ON -D PKG_KSPACE=ON -D PKG_REPLICA=ON -D PKG_ASPHERE=ON \
-                    -D PKG_RIGID=ON -D PKG_KOKKOS=ON -D DOWNLOAD_KOKKOS=ON \
-                    -D CMAKE_POSITION_INDEPENDENT_CODE=ON -D CMAKE_EXE_FLAGS="-dynamic" ../cmake
-        make -j16
-        make install
-        ```
-
-    === "Lochness"
-
-        ```bash
-        module purge
         module load foss
         module load CMake
     

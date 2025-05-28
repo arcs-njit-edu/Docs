@@ -7,6 +7,27 @@ NJIT HPC provides practical training in high performance computing for students 
 ### 2025 Spring
 <div class="grid cards" markdown>
 
+-   ### [Open OnDemand on Wulver](6_intro_to_OnDemand.md)
+
+    ---
+
+    This webinar will introduce NJIT’s Open OnDemand portal, a browser-based gateway to the Wulver cluster and shared storage. With a focus on streamlining your HPC workflows, you will explore common scenarios and tasks through interactive demos. You will gain a detailed understanding of how to manage your files on the cluster, run interactive applications like Jupyter Notebook and RStudio, launch a full Linux desktop environment in your browser, and submit and monitor SLURM jobs. Additionally, you'll learn how to track resource usage and optimize your job performance for efficient computing on the Wulver cluster.
+    
+    #### Key Highlights:
+    * Explore and manage your files on the cluster
+    * Run interactive tools like Jupyter Notebook and RStudio
+    * Launch a full Linux desktop environment in your browser
+    * Submit and monitor SLURM jobs
+    * Track resource usage and optimize job performance
+
+    <iframe src="https://njit.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=7f17cc4f-0a96-4e50-a80d-b2cf014b3905&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=true&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay" aria-label="Panopto Embedded Video Player" aria-description="Open OnDemand on Wulver" ></iframe>
+
+    [<span class="octicon--arrow-right-24"></span> Download Slides](../../assets/slides/Open_OnDemand_on_Wulver.pdf)
+
+</div>
+
+<div class="grid cards" markdown>
+
 -   ### [Introduction to Linux](4_intro_to_linux.md)
 
     ---
