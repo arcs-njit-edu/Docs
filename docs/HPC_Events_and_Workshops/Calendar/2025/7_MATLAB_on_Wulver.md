@@ -17,8 +17,8 @@ Users need use `Jupyter Matlab Proxy` to use MATLAB on OnDemand. Check the tutor
 
 ## Date and Location:
 - Date: June 12th 2025
-- Location: GITC (To be finalized)
-- Time: 1:00 PM - 3:30 PM
+- Location: Campus Center 235
+- Time: 1:00 PM - 4.00 PM
 
 ## Topics Covered
 
