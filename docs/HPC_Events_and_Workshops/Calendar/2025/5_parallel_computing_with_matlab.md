@@ -22,4 +22,5 @@ During this hands-on workshop, we will introduce parallel and distributed comput
 * Working with large data
 
 
-## [Registration](https://www.mathworks.com/company/events/webinars/upcoming/parallel-computing-with-matlab-hands-on-workshop-4777000.html)
+## Registration
+Registration is now closed.
