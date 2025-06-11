@@ -11,15 +11,13 @@ CP2K is widely used in the fields of materials science, chemistry, and physics f
 
 ## Availability
 
-=== "Wulver"
+```python exec="on"
+import pandas as pd
 
-    ```python exec="on"
-    import pandas as pd
-    
-    df = pd.read_csv('docs/assets/tables/module_wulver.csv')
-    soft = df.query('Software == "CP2K"')
-    print(soft.to_markdown(index=False))
-    ```
+df = pd.read_csv('docs/assets/tables/module_wulver.csv')
+soft = df.query('Software == "CP2K"')
+print(soft.to_markdown(index=False))
+```
 
 
 ## Application Information, Documentation
@@ -29,34 +27,32 @@ The documentation of CP2K is available at [CP2K Documentation](https://www.cp2k.
 CP2K MPI/OpenMP-hybrid Execution (PSMP), CP2K with Population Analysis capabilities- CP2K-popt
 
 ??? example "Sample Batch Script to Run CP2K : cp2k.submit.sh"
+
+    ```slurm
+    #!/bin/bash -l
+    #SBATCH -J CP2K
+    #SBATCH -o sn1-xtb_input.out
+    #SBATCH -e sn1-xtb_input.err
+    #SBATCH --nodes=1
+    #SBATCH --ntasks-per-node=16
+    #SBATCH --mem-per-cpu=4G
+    #SBATCH --qos=standard
+    #SBATCH --partition=general
+    #SBATCH --account=PI_ucid # Replace PI_ucid which the NJIT UCID of PI
+    #SBATCH -t 72:00:00
     
-    === "Wulver"
+    #module load command
 
-        ```slurm
-        #!/bin/bash -l
-        #SBATCH -J CP2K
-        #SBATCH -o sn1-xtb_input.out
-        #SBATCH -e sn1-xtb_input.err
-        #SBATCH --nodes=1
-        #SBATCH --ntasks-per-node=16
-        #SBATCH --mem-per-cpu=4G
-        #SBATCH --qos=standard
-        #SBATCH --partition=general
-        #SBATCH --account=PI_ucid # Replace PI_ucid which the NJIT UCID of PI
-        #SBATCH -t 72:00:00
-        
-        #module load command
+    module purge > /dev/null 2>&1
+    module load wulver
+    module load foss/2022b CP2K
+    
+    #Run the program
 
-        module purge > /dev/null 2>&1
-        module load wulver
-        module load foss/2022b CP2K
-        
-        #Run the program
-
-        inputFile=sn1-xtb_input.inp
-        outputFile=sn1-xtb_input.out
-        mpirun -np $SLURM_NTASKS cp2k.popt -i $inputFile -o $outputFile
-        ```
+    inputFile=sn1-xtb_input.inp
+    outputFile=sn1-xtb_input.out
+    mpirun -np $SLURM_NTASKS cp2k.popt -i $inputFile -o $outputFile
+    ```
 
 The sample input file `sn1-xtb_input.inp` can be found in `/apps/testjobs/CP2K`
 

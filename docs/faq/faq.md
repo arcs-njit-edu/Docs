@@ -142,7 +142,7 @@ Welcome to our most frequently asked questions. If you cannot find an entry rela
 ## Miscellaneous
 
 ??? question "What documentation and support resources are available for Wulver users?"
-    - Please visit the [Education and Training tab](../HPC Events and Workshops/Calendar/index.md) on our website.
+    - Please visit the [Education and Training tab](../HPC_Events_and_Workshops/Calendar/index.md) on our website.
     - If you have any specific questions which are not covered, please contact us at [hpc@njit.edu](mailto:hpc@njit.edu)
 
 

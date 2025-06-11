@@ -28,142 +28,137 @@ You can use ParaView with GPU acceleration, but you need to use GPU nodes on our
 
 ??? example "Sample Batch Script to Run ParaView with MPI support: pvserver_cpu.submit.sh"
 
-    === "Wulver"
-       
-        ```slurm
-        #!/bin/bash -l
-        #SBATCH --job-name=pvserver_cpu
-        #SBATCH --output=%x.%j.out # %x.%j expands to slurm JobName.JobID
-        #SBATCH --error=%x.%j.err # prints the error message
-        #SBATCH --partition=general
-        #SBATCH --nodes=1
-        #SBATCH --ntasks-per-node=32
-        #SBATCH --mem-per-cpu=4000M # Maximum allowable mempry per CPU 4G
-        #SBATCH --qos=standard
-        #SBATCH --account=PI_ucid # Replace PI_ucid which the NJIT UCID of PI
-        #SBATCH --time=71:59:59  # D-HH:MM:SS
-        ################################################
-        #
-        # Purge and load modules needed for run
-        #
-        ################################################
-        module purge
-        module load wulver # Load the slurm, easybuild 
-        module load ParaView/5.11.0-osmesa 
-        ################################################
-        #
-        # Open an ssh tunnel to the login node
-        #
-        ################################################
-        # Run on random port
-        port=$(shuf -i 6000-9999 -n 1)
-        HOST=$(hostname)
-        if [ $(hostname) == $HOST ]; then
-          /usr/bin/ssh -N -f -R $port:localhost:$port login01.tartan.njit.edu
-        fi
-        ################################################
-        cat<<EOF
-        
-        pvserver is running on: $(hostname)
-        Job starts at: $(date)
-        
-        Step 1: Create SSH tunnel
-        
-        Open new terminal window, and run:
-        (If you are off campus you will need VPN running)
-        
-        ssh -L $port:localhost:$port $USER@login01.tartan.njit.edu
-        EOF
-        ################################################
-        # Run MPI pvserver
-        #
-        ################################################
-        host_list=$(srun hostname -s | sort | uniq | paste -s -d, -)
-        mpiexec -np $SLURM_NTASKS -rmk slurm -hosts $host_list pvserver --server-port=$port --force-offscreen-rendering
-        ```
-To use ParaView with GPU, you need to use the following job script
-
-??? example "Sample Batch Script to Run ParaView with GPU support: pvserver_gpu.submit.sh"
-
-    === "Wulver"
-
-        ```slurm
-        #!/bin/bash -l
-        #SBATCH --job-name=pvserver_gpu
-        #SBATCH --output=%x.%j.out # %x.%j expands to slurm JobName.JobID
-        #SBATCH --error=%x.%j.err # prints the error message
-        #SBATCH --partition=gpu
-        #SBATCH --nodes=1
-        #SBATCH --ntasks-per-node=16
-        #SBATCH --gres=gpu:1
-        #SBATCH --mem-per-cpu=4000M # Maximum allowable mempry per CPU 4G
-        #SBATCH --qos=standard
-        #SBATCH --account=PI_ucid # Replace PI_ucid which the NJIT UCID of PI
-        #SBATCH --time=71:59:59  # D-HH:MM:SS
-        ################################################
-        #
-        # Purge and load modules needed for run
-        #
-        ################################################
-        module purge
-        module load wulver # Load slurm, easybuild
-        module load ParaView/5.11.0-egl
-        ################################################
-        #
-        # Open an ssh tunnel to the login node
-        #
-        ################################################
-        port=$(shuf -i 6000-9999 -n 1)
-        HOST=$(hostname)
-        if [ $(hostname) == $HOST ]; then
-             /usr/bin/ssh -N -f -R $port:localhost:$port login01.tartan.njit.edu
-        fi
-        ################################################
-        cat<<EOF
-        
-        pvserver is running on: $(hostname)
-        Job starts at: $(date)
-        
-        Step 1: Create SSH tunnel
-        
-        Open a new terminal window, and run:
-        (If you are off campus you will need a VPN running)
-        
-        ssh -L $port:localhost:$port $USER@login01.tartan.njit.edu
-        EOF
-        ################################################
-        #
-        # Run MPI pvserver
-        #
-        ################################################
-        
-        host_list=$(srun hostname -s | sort | uniq | paste -s -d, -)
-        
-        mpiexec -np $SLURM_NTASKS -rmk slurm -hosts $host_list pvserver --server-port=$port --force-offscreen-rendering
-        ```
-
-Submit the job script using the sbatch command: `sbatch pvserver_gpu.submit.sh` or `sbatch pvserver_cpu.submit.sh`.
-Once you submit the job, please open the output file with `.out` extension, and get the port number from the output file. Once you open the output file (with `.out` extension) and go to the end of the file, you should see the following 
-
-=== "Wulver" 
     
-    ```bash
+       
+    ```slurm
+    #!/bin/bash -l
+    #SBATCH --job-name=pvserver_cpu
+    #SBATCH --output=%x.%j.out # %x.%j expands to slurm JobName.JobID
+    #SBATCH --error=%x.%j.err # prints the error message
+    #SBATCH --partition=general
+    #SBATCH --nodes=1
+    #SBATCH --ntasks-per-node=32
+    #SBATCH --mem-per-cpu=4000M # Maximum allowable mempry per CPU 4G
+    #SBATCH --qos=standard
+    #SBATCH --account=PI_ucid # Replace PI_ucid which the NJIT UCID of PI
+    #SBATCH --time=71:59:59  # D-HH:MM:SS
+    ################################################
+    #
+    # Purge and load modules needed for run
+    #
+    ################################################
+    module purge
+    module load wulver # Load the slurm, easybuild 
+    module load ParaView/5.11.0-osmesa 
+    ################################################
+    #
+    # Open an ssh tunnel to the login node
+    #
+    ################################################
+    # Run on random port
+    port=$(shuf -i 6000-9999 -n 1)
+    HOST=$(hostname)
+    if [ $(hostname) == $HOST ]; then
+      /usr/bin/ssh -N -f -R $port:localhost:$port login01.tartan.njit.edu
+    fi
+    ################################################
+    cat<<EOF
+    
+    pvserver is running on: $(hostname)
+    Job starts at: $(date)
+    
     Step 1: Create SSH tunnel
     
     Open new terminal window, and run:
     (If you are off campus you will need VPN running)
     
-    ssh -L 1234:localhost:1234 user@login01.tartan.njit.edu
-    Waiting for client...
-    Connection URL: cs://n0003:1234
-    Accepting connection(s): n0003:1234
+    ssh -L $port:localhost:$port $USER@login01.tartan.njit.edu
+    EOF
+    ################################################
+    # Run MPI pvserver
+    #
+    ################################################
+    host_list=$(srun hostname -s | sort | uniq | paste -s -d, -)
+    mpiexec -np $SLURM_NTASKS -rmk slurm -hosts $host_list pvserver --server-port=$port --force-offscreen-rendering
+    ```
+To use ParaView with GPU, you need to use the following job script
+
+??? example "Sample Batch Script to Run ParaView with GPU support: pvserver_gpu.submit.sh"
+
+    ```slurm
+    #!/bin/bash -l
+    #SBATCH --job-name=pvserver_gpu
+    #SBATCH --output=%x.%j.out # %x.%j expands to slurm JobName.JobID
+    #SBATCH --error=%x.%j.err # prints the error message
+    #SBATCH --partition=gpu
+    #SBATCH --nodes=1
+    #SBATCH --ntasks-per-node=16
+    #SBATCH --gres=gpu:1
+    #SBATCH --mem-per-cpu=4000M # Maximum allowable mempry per CPU 4G
+    #SBATCH --qos=standard
+    #SBATCH --account=PI_ucid # Replace PI_ucid which the NJIT UCID of PI
+    #SBATCH --time=71:59:59  # D-HH:MM:SS
+    ################################################
+    #
+    # Purge and load modules needed for run
+    #
+    ################################################
+    module purge
+    module load wulver # Load slurm, easybuild
+    module load ParaView/5.11.0-egl
+    ################################################
+    #
+    # Open an ssh tunnel to the login node
+    #
+    ################################################
+    port=$(shuf -i 6000-9999 -n 1)
+    HOST=$(hostname)
+    if [ $(hostname) == $HOST ]; then
+         /usr/bin/ssh -N -f -R $port:localhost:$port login02
+    fi
+    ################################################
+    cat<<EOF
+    
+    pvserver is running on: $(hostname)
+    Job starts at: $(date)
+    
+    Step 1: Create SSH tunnel
+    
+    Open a new terminal window on your local machine, and run:
+    (If you are off campus you will need a VPN running)
+    
+    ssh -L $port:localhost:$port $USER@login02.tartan.njit.edu
+    EOF
+    ################################################
+    #
+    # Run MPI pvserver
+    #
+    ################################################
+    
+    host_list=$(srun hostname -s | sort | uniq | paste -s -d, -)
+    
+    mpiexec -np $SLURM_NTASKS -rmk slurm -hosts $host_list pvserver --server-port=$port --force-offscreen-rendering
     ```
 
-Next, open a new terminal and type
+Submit the job script using the sbatch command: `sbatch pvserver_gpu.submit.sh` or `sbatch pvserver_cpu.submit.sh`.
+Once you submit the job, please open the output file with `.out` extension, and get the port number from the output file. Once you open the output file (with `.out` extension) and go to the end of the file, you should see the following 
 
-=== "Wulver"
     
-    `ssh -L $port:localhost:$port $USER@login01.tartan.njit.edu`
+```bash
+Step 1: Create SSH tunnel
+
+Open new terminal window, and run:
+(If you are off campus you will need VPN running)
+
+ssh -L 1234:localhost:1234 user@login01.tartan.njit.edu
+Waiting for client...
+Connection URL: cs://n0003:1234
+Accepting connection(s): n0003:1234
+```
+
+Next, open a new terminal and type
+    
+`ssh -L $port:localhost:$port $USER@login01.tartan.njit.edu`
 
 where `$port` corresponds to the port number.
 Once you open ParaView from your local machine go to `File --> Connnect`, and you will see a dialogue box with the name `Choose Server Configuration`. You need to select <kbd>Add Server</kbd> option and there you need to use the following as shown below.

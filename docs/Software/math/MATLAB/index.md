@@ -50,7 +50,7 @@ The documentation of MATLAB is available at [MATLAB Tutorial](https://www.mathwo
 
     ```matlab
     A = [ 1 2; 3 4]
-    A.**2
+    A.^2
     ```
 
 ### Parallel Job

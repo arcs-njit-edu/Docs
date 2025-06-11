@@ -47,11 +47,11 @@ NJIT provides High Performance Computing resources to support scientific computi
 
     !!! njit inline "HPC Events"
         
-        Check the upcoming events hosted by HPC team and register from [HPC Events](HPC Events and Workshops/Calendar/index.md).
+        Check the upcoming events hosted by HPC team and register from [HPC Events](HPC_Events_and_Workshops/Calendar/index.md).
 
     !!! njit inline "HPC Trainings and Webinars"
         
-        Make sure to stay up-to-date with the latest webinar sessions on HPC by visiting the [HPC Training](HPC Events and Workshops/Workshop and Training Videos/index.md).
+        Make sure to stay up-to-date with the latest webinar sessions on HPC by visiting the [HPC Training](HPC_Events_and_Workshops/Workshop_and_Training_Videos/index.md).
 
     !!! njit inline "FAQs"
         
@@ -70,10 +70,10 @@ NJIT provides High Performance Computing resources to support scientific computi
     
             ARCS HPC has hosted the following events this Spring. Please access the HPC training videos to view the webinar recordings and slides.
         
-            * [Introduction to Wulver: Getting Started](HPC Events and Workshops/Workshop and Training Videos/index.md#introduction-to-wulver-getting-started)
-            * [Introduction to Wulver: Accessing System & Running Jobs](HPC Events and Workshops/Workshop and Training Videos/index.md#introduction-to-wulver-accessing-system-running-jobs)
+            * [Introduction to Wulver: Getting Started](HPC_Events_and_Workshops/Workshop_and_Training_Videos/index.md#introduction-to-wulver-getting-started)
+            * [Introduction to Wulver: Accessing System & Running Jobs](HPC_Events_and_Workshops/Workshop_and_Training_Videos/index.md#introduction-to-wulver-accessing-system-running-jobs)
     
-            We will soon update [HPC Events](HPC Events and Workshops/Calendar/index.md) with the upcoming events.
+            We will soon update [HPC Events](HPC_Events_and_Workshops/Calendar/index.md) with the upcoming events.
     
         !!! abstract "Wulver Scheduled Maintenance"
             
