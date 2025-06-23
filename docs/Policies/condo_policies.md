@@ -6,9 +6,24 @@ Faculty members who regularly require more resources than the standard allocatio
 
 Contributors can also submit jobs using standard SUs and at lower priority beyond their reserved allocation. The university will cover all infrastructure-related costs for these contributed nodes. This floating reservation will remain in effect for **five years**. If the hardware is upgraded or replaced before the end of this period, the job priority will transfer to the closest equivalent resources on the new hardware.
 
-## User Storage Allowance
+## Full node investment
+Please contact [hpc@njit.edu](mailto:hpc@njit.edu) to discuss your specific computational needs.
 
-Users will be provided with 50GB of `$HOME` directories. Home directories are backed up. PIs are additionally provided 2TB project directories. These project directories are backed up. Very fast NVME scratch is available to users. This scratch space is for temporary files generated during a run and will be deleted after 30 days. Additional project storage can be purchased if needed. This additional project space will also be backed up. Users need to manage data so that backed-up data fits in the project directory space. Transient, or rapidly changing data should be stored in the scratch directory. Long-term storage with backups or archival storage for research data will be stored in a yet to be determined campus wide storage resource.
+## Partial Node Investment
+You can invest in partial nodes, either on a per-CPU or per-MIG GPU basis. This flexible model allows you to customize and build resources tailored to your research requirements. A sample configuration table can be provided to help you plan your investment.
+
+```python exec="on"
+import pandas as pd
+df = pd.read_csv('docs/assets/tables/condo.csv')
+print(df.to_markdown(index=False))
+```
+
+!!! info
+    
+    MIG (Multi-Instance GPU) allows a single NVIDIA GPU (like the A100) to be split into multiple independent instances, each with dedicated compute and memory resources. This enables multiple users to share a GPU efficiently. It’s ideal for running smaller workloads without needing a full GPU.
+
+**Example:** If your research workflow requires 128 CPU cores with 4 GB RAM per core, one 40 GB MIG, and one 20 GB MIG, you can invest in 128 CPUs at $150 per core ($19,200), plus the MIGs ($5,000 for 40 GB and $2,500 for 20 GB), for a total cost of $26,700.
+
 
 ## Shared Condo Partnership
 
@@ -17,22 +32,3 @@ Faculty who routinely need more resources than the initial allocation may buy no
 ## Private Pool
 
 If the shared condo module does not satisfy the needs of the PI, a private pool may be set up. In addition to the nodes, the PI will be charged for all infrastructure costs, including but not limited to electricity, HVAC, system administration, etc. It is strongly recommended to first try the shared condo model. If the shared condo model does not work, the nodes can be converted to a private pool.
-
-## Job Priorities
-
-* Standard Priority
-    * Faculty PIs are allocated 300,000 Service Units (SU) per year on request at no cost
-    * Wall time maximum - 72 hours
-    * Additional SUs may be purchased at a cost of $0.005/SU
-    * The minimum purchase is 50,000 SU ($250)
-    * Jobs can be superseded by those with higher priority jobs
-
-* Low Priority
-    * Not charged against SU allocation
-    * Wall time maximum - 72 hours
-    * Jobs can be preempted by those with higher and standard priority jobs when they are in the queue
-
-* High Priority
-    * Not charged against SU allocation
-    * Wall time: 72 hours (default), PI can request longer walltimes up to 30 days. ARCS HPC reserves the right to reboot nodes once a month for maintenance — the second Tuesday of each month. See [Cluster Maintenance Updates and News](../news/index.md) for details
-    * Only available to contributors
