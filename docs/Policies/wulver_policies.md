@@ -1,4 +1,4 @@
-# Wulver Usage and Condo Policies
+# Wulver Usage
 
 ## Faculty Computing Allowance
 
