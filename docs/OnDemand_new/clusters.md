@@ -1,7 +1,14 @@
 ## Overview
 
-![wulver-shell-access.png](../assets/ondemand_new/wulver-shell-access.png){ width=80% height=80%}
-
-It will give you shell access to Wulver. You can use it in the same way as any shell terminal. 
+Cluster shell provides you CLI access to Wulver through browser based terminal. 
 
 
+![wulver-shell-access-1.png](../assets/ondemand_new/cluster_shell/wulver-shell-access-1.png){ width=80% height=80%}
+
+
+![wulver-shell-access-2.png](../assets/ondemand_new/cluster_shell/wulver-shell-access-2.png){ width=80% height=80%}
+
+
+
+!!! Tip
+    If you are on windows and don't have shell access, then this feature is very helpful.

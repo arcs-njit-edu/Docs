@@ -15,7 +15,7 @@ For example, to use a Conda environment, enter:
 `module load Anaconda3/2023.09-0; source conda.sh; conda activate my_conda_r_env`
 * To use a different R environment, enter the following commands: `module load GCC/11.2.0 OpenMPI/4.1.1 R/4.2.0`
 
-![Rstudio1](../../assets/ondemand/Rstudio1.png){ width=50% height=50%}
+![Rstudio1](../../assets/ondemand_new/rstudio/Rstudio1.png){ width=50% height=50%}
 
 ## Configuring Resources
 
@@ -26,14 +26,14 @@ For example, to use a Conda environment, enter:
 
 ## Launching the Session
 
-![Rstudio2](../../assets/ondemand/Rstudio2.png){ width=40% height=20%}
+![Rstudio2](../../assets/ondemand_new/rstudio/Rstudio2.png){ width=40% height=20%}
 
 Once clicking **Launch**, the request will be queued, and when resources have been allocated, you will be presented with the option to connect to the session by clicking on the blue Connect to R Studio Server button.
-![Rstudio3](../../assets/ondemand/Rstudio3.png){ width=50% height=50%}
+![Rstudio3](../../assets/ondemand_new/rstudio/Rstudio3.png){ width=50% height=50%}
 
-![Rstudio4](../../assets/ondemand/Rstudio4.png){ width=50% height=50%}
+![Rstudio4](../../assets/ondemand_new/rstudio/Rstudio4.png){ width=50% height=50%}
 
-![Rstudio5](../../assets/ondemand/Rstudio5.png){ width=50% height=50%}
+![Rstudio5](../../assets/ondemand_new/rstudio/Rstudio5.png){ width=50% height=50%}
 
 Once connected, the familiar R Studio interface is presented, and you will be able to use the allocated resources, and access your research data located on Wulver.
 Installing packages

@@ -2,6 +2,12 @@
 
 ## Overview
 
-![interactive-app.png](../../assets/ondemand_new/interactive-app.png){ width=80% height=80%}
+We have a lot of interactive apps which you can use for UI interface. They run as jobs in similar way as you would do using shell, except these are interactive. For example, you can start Jupyter Notebook app and work on it. Your files will be saved in directory created by the ondemand unless you specify a different directory during the configurations. 
 
-We have a lot of interactive apps which you can use for UI interface of softwares. They all are powered by Wulver.
+
+![interactive-app-dropdown.png](../../assets/ondemand_new/interactive/interactive-app-dropdown.png){ width=80% height=80%}
+
+
+!!! Warning
+    Please make sure to close your app session once you have completed your work otherwise it will keep consuming SUs.
+

@@ -8,7 +8,7 @@ We have three different ways to connect Matlab:
 * Matlab Server
 * Jupyter Matlab Proxy
 
-![matlab.png](../../assets/ondemand_new/matlab.png){ width=40% height=40%}
+![matlab.png](../../assets/ondemand_new/matlab/matlab-dropdown.png){ width=30% height=30%}
 
 ## Guide
 
@@ -23,7 +23,7 @@ We have three different ways to connect Matlab:
 
     * Select the dropdown option in `MATLAB Version`. The current versions installed on Wulver are `2023a` and `2024a`
 
-    ![matlab1](../../assets/ondemand/matlab1.png){ width=60% height=60%}
+    ![matlab-vnc-1](../../assets/ondemand_new/matlab/matlab-vnc-1.png){ width=60% height=60%}
 
     ## Configuring Resources
 
@@ -32,61 +32,88 @@ We have three different ways to connect Matlab:
     * Choose the number of cores you need.
     * If required, specify the number of GPUs.
 
-    ![matlab2](../../assets/ondemand/matlab2.png){ width=60% height=60%}
+    ![matlab-vnc-1](../../assets/ondemand_new/matlab/matlab-vnc-2.png){ width=60% height=60%}
 
-    ![matlab3](../../assets/ondemand/matlab3.png){ width=60% height=60%}
+    ![matlab-vnc-3](../../assets/ondemand_new/matlab/matlab-vnc-3.png){ width=60% height=60%}
 
-    ![matlab4](../../assets/ondemand/matlab4.png){ width=60% height=60%}
+    ![matlab-vnc-4](../../assets/ondemand_new/matlab/matlab-vnc-4.png){ width=60% height=60%}
 
     ## Launching the Session
 
     * Select the `Launch` option after finalizing the resources. Once clicking **Launch**, the request will be queued, and when resources have been allocated, you will be presented with the option to connect to the session by clicking on the blue `Launch MATLAB` option.
 
-    ![matlab5](../../assets/ondemand/matlab5.png){ width=60% height=60%}
+    ![matlab-vnc-5](../../assets/ondemand_new/matlab/matlab-vnc-5.png){ width=60% height=60%}
 
-    ![matlab6](../../assets/ondemand/matlab6.png){ width=60% height=60%}
+    ![matlab-vnc-6](../../assets/ondemand_new/matlab/matlab-vnc-6.png){ width=60% height=60%}
 
     * You might see `Unable to contact settings server` message. It does not mean the Matlab session is terminated. You need to wait a few minutes to see the Matlab popup window.
 
 
-    ![matlab7](../../assets/ondemand/matlab7.png){ width=60% height=60%}
+    ![matlab-vnc-7](../../assets/ondemand_new/matlab/matlab-vnc-7.png){ width=60% height=60%}
 
-    ![matlab8](../../assets/ondemand/matlab8.png){ width=60% height=60%}
+    ![matlab-vnc-8](../../assets/ondemand_new/matlab/matlab-vnc-8.png){ width=60% height=60%}
 
-    ![matlab9](../../assets/ondemand/matlab9.png){ width=60% height=60%}
+    ![matlab-vnc-9](../../assets/ondemand_new/matlab/matlab-vnc-9.png){ width=60% height=60%}
 
 === "Matlab Server"
 
-    *Same steps as matlab vnc upto launching the session*
+    * Select Matlab Server from the interactive apps dropdown menu. 
+    
+    * Fill in your configurations based on your job requirements
+
+    ![matlab-server-1.png](../../assets/ondemand_new/matlab/matlab-server-1.png){ width=60% height=60%}
+
+    * Wait for the job to start and then click on **Connect to Matlab**
+
+    ![matlab-server-2.png](../../assets/ondemand_new/matlab/matlab-server-2.png){ width=60% height=60%}
 
     * Select existing License
 
-    ![existing-license-button.png](../../assets/ondemand_new/existing-license-button.png){ width=60% height=60%}
+    ![matlab-license-1.png](../../assets/ondemand_new/matlab/matlab-license-1.png){ width=40% height=40%}
 
-    * Click start Matlab
+    * Click **Start Matlab** 
 
-    ![start-matlab-button.png](../../assets/ondemand_new/start-matlab-button.png){ width=60% height=60%}
+    ![matlab-license-2.png](../../assets/ondemand_new/matlab/matlab-license-2.png){ width=40% height=40%}
 
     * Wait for couple minutes
 
-    ![matlab-loading.png](../../assets/ondemand_new/matlab-loading.png){ width=60% height=60%}
+    ![matlab-license-3.png](../../assets/ondemand_new/matlab/matlab-license-3.png){ width=40% height=40%}
 
     * Start working!!
+
+    ![matlab-start-working.png](../../assets/ondemand_new/matlab/matlab-start-working.png){ width=60% height=60%}
 
 === "Jupyter Matlab Proxy"
 
-    * Select matlab-proxy as conda env
+    Check our video tutorial [here](../../assets/ondemand_new/matlab/Matlab_OnDemand_Tutorial_Server.mp4)
 
-    ![conda-env-matlab-proxy.png](../../assets/ondemand_new/conda-env-matlab-proxy.png){ width=80% height=80%}
+    * Select **Jupyter-matlab-proxy** from the dropdown menu.
+    
+    * Choose matlab-proxy as conda env
+
+    ![conda-env-matlab-proxy.png](../../assets/ondemand_new/matlab/jupyter-matlab-proxy-1.png){ width=60% height=60%}
 
     * Fill the rest of the form based on your desired configurations and click Launch. Wait for couple of seconds (same way as other matlab servers)
+
     * Once the Jupyter opens, click on Open Matlab
 
-    ![jupyter-matlab-button.png](../../assets/ondemand_new/jupyter-matlab-button.png){ width=80% height=80%}
+    ![conda-env-matlab-proxy.png](../../assets/ondemand_new/matlab/jupyter-matlab-proxy-2.png){ width=60% height=60%}
 
-    * Then select existing license, wait for couple of minutes and matlab will start. *Same license steps as matlab server*
+    * Select existing License
+
+    ![matlab-license-1.png](../../assets/ondemand_new/matlab/matlab-license-1.png){ width=40% height=40%}
+
+    * Click start Matlab
+
+    ![matlab-license-2.png](../../assets/ondemand_new/matlab/matlab-license-2.png){ width=40% height=40%}
+
+    * Wait for couple minutes
+
+    ![matlab-license-3.png](../../assets/ondemand_new/matlab/matlab-license-3.png){ width=40% height=40%}
 
     * Start working!!
+
+    ![matlab-start-working.png](../../assets/ondemand_new/matlab/matlab-start-working.png){ width=60% height=60%}
 
 
 
