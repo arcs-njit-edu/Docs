@@ -31,5 +31,6 @@ Users need use `Jupyter Matlab Proxy` to use MATLAB on OnDemand. Check the tutor
 * Best practices for launching and managing MATLAB parallel pools.
 
 
-## [Registration](https://forms.gle/smEjkyzrEn3EyFmPA)
+## Registration
+Registration is now closed.
 
