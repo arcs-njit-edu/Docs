@@ -19,7 +19,7 @@ nav:
       - 'Wulver Filesystems': 'clusters/Wulver_filesystems.md'
     - 'Policies':
       - 'Policies/index.md'
-      - 'Wulver usage': 'Policies/wulver_policies.md'
+      - 'Wulver policies': 'Policies/wulver_policies.md'
       - 'Condo policies': 'Policies/condo_policies.md'
     - 'Facilities': 'facilities/facilities.md'
     - Status (on-campus or VPN):

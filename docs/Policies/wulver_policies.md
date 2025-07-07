@@ -1,4 +1,4 @@
-# Wulver Usage
+# Wulver Policies
 
 ## Faculty Computing Allowance
 
