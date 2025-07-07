@@ -65,7 +65,7 @@ hide:
 # HPC consultation
 <div class="grid cards" markdown>
 
--   ## Senior Research Computing Facilitator
+-   ## Research Computing Facilitator
 
     <div style="text-align: center;">
     ![Hui(Julia) Zhao](../assets/images/julia.jpg){ style="width:280px; height:200px;" }
