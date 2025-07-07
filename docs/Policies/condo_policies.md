@@ -24,6 +24,10 @@ print(df.to_markdown(index=False))
 
 **Example:** If your research workflow requires 128 CPU cores with 4 GB RAM per core, one 40 GB MIG, and one 20 GB MIG, you can invest in 128 CPUs at $150 per core ($19,200), plus the MIGs ($5,000 for 40 GB and $2,500 for 20 GB), for a total cost of $26,700.
 
+!!! tips
+    
+    Please contact [hpc@njit.edu](mailto:hpc@njit.edu) with an index to invest in partial nodes. Note that all invoices get billed to HPC Services account and not the Equipment account.
+
 ## Dedicated Pool
 
 If the shared condo module does not satisfy the needs of the PI, a dedicated pool may be set up. In addition to the nodes, the PI will be charged for all infrastructure costs, including but not limited to electricity, HVAC, system administration, etc. It is strongly recommended to first try the shared condo model. If the shared condo model does not work, the nodes can be converted to a dedicated pool.
