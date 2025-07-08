@@ -85,7 +85,8 @@ We have three different ways to connect Matlab:
 
 === "Jupyter Matlab Proxy"
 
-    Check our video tutorial [here](../../assets/ondemand/matlab/Matlab_OnDemand_Tutorial_Server.mp4)
+    <iframe src="https://njit.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=3e226845-4a26-4be3-803f-b314014f71ce&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&captions=true&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay" aria-label="Panopto Embedded Video Player" aria-description="OOD_RStudio_Lateset" ></iframe>
+
 
     * Select **Jupyter-matlab-proxy** from the dropdown menu.
     

@@ -1,7 +1,6 @@
 # RStudio
 
-Video:
-https://drive.google.com/file/d/1Up4JeHT20ZRhLW1z3An12bVFyAym0xQu/view?usp=sharing
+<iframe src="https://njit.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=895c85f8-7eed-49f4-9e0b-b3140122c680&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&captions=true&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay" aria-label="Panopto Embedded Video Player" aria-description="OOD_RStudio_Lateset" ></iframe>
 
 ## Launching RStudio
 
