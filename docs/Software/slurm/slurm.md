@@ -87,10 +87,6 @@ Available MIG instance sizes include 10GB, 20GB, 40GB, 80GB, or one full GPU.
 
     Using a smaller MIG instance (e.g., 10GB or 20GB) consumes fewer Service Units (SUs) compared to a full GPU. This helps you conserve your group’s annual SU allocation and run more jobs.
 
-* **Better Resource Availability**
-
-    Smaller MIG instances are more readily available than full GPUs, reducing wait times in the job queue and allowing you to run your tasks sooner.
-
 * **No Need to Reserve a Full GPU**
 
     If your job doesn’t need an entire GPU, you can request a MIG instance that matches your actual requirements—saving both resources and SUs.
