@@ -64,6 +64,7 @@ df = pd.read_csv('docs/assets/tables/partitions.csv')
 df.replace(np.nan, 'NA', inplace=True)
 print(df.to_markdown(index=False))
 ```
+
 ### Priority (Use `--qos`)
 Wulver has three levels of “priority”, utilized under SLURM as Quality of Service (QoS):
 ```python exec="on"
@@ -75,9 +76,108 @@ df = pd.read_csv('docs/assets/tables/slurm_qos.csv')
 df.replace(np.nan, 'NA', inplace=True)
 print(df.to_markdown(index=False))
 ```
+
+### Multi-Instance GPU (MIG)
+MIG allows a single NVIDIA GPU (such as the A100) to be divided into multiple independent instances, each with dedicated compute and memory resources. This enables multiple users to share a GPU efficiently, making it ideal for smaller workloads that don’t require a full GPU.
+Available MIG instance sizes include 10GB, 20GB, 40GB, 80GB, or one full GPU. 
+
+#### Why You Should Use MIG Instances
+
+* **Lower SU Cost for Smaller Workloads** 
+
+    Using a smaller MIG instance (e.g., 10GB or 20GB) consumes fewer Service Units (SUs) compared to a full GPU. This helps you conserve your group’s annual SU allocation and run more jobs.
+
+* **Better Resource Availability**
+
+    Smaller MIG instances are more readily available than full GPUs, reducing wait times in the job queue and allowing you to run your tasks sooner.
+
+* **No Need to Reserve a Full GPU**
+
+    If your job doesn’t need an entire GPU, you can request a MIG instance that matches your actual requirements—saving both resources and SUs.
+
+* **Isolated Performance**
+
+    Each MIG instance is fully isolated in terms of compute, memory, and cache. Your job won’t be impacted by other users running on the same GPU.
+
+Please check the table below on how to request MIG in the slurm script.
+
+
+| GPU MIG |          Slurm Directive           | 
+|---------|:----------------------------------:|
+| 10G MIG |      `--gres=gpu:a100_10g:1 `      |
+| 20G MIG |      `--gres=gpu:a100_20g:1 `      |
+| 40G MIG |      `--gres=gpu:a100_40g:1 `      |
+| 80G MIG |        `--gres=gpu:a100:1`         |
+
+
+
+!!! info
+    
+    For an 80G MIG, it is considered a full GPU. In that case, you should specify `--gres=gpu:1` in your job script. If you want to use a partial GPU, please refer to the sample [GPU job scripts](#submitting-jobs-on-gpu-nodes).
+
+### SU charges
+Since resources are limited, each faculty PI is allocated 300,000 Service Units (SUs) per year upon request at no cost. These SUs can be used via the standard [priority](#priority-use-qos) on the SLURM job scheduler. 
+One SU is defined as 1 CPU hour or 4 GB of RAM per hour. 
+
+!!! tip "Important information on SU"
+    
+    * The SU allocation is per PI group, not per individual student.
+    * The allocation resets each fiscal year.
+    * Students are expected to use SUs efficiently, as excessive usage may deplete their group's SU balance quickly.
+
+If a group exhausts its SU allocation early, the PI has the option to purchase additional SUs or leverage higher [priority](#priority-use-qos) queues through investment. For more details, refer to the  [Wulver Policies](wulver_policies.md) and [Condo Policies](condo_policies.md).
+See the table below to see SU will be charged for different partitions. 
+
+```python exec="on"
+import pandas as pd 
+import numpy as np
+df = pd.read_csv('docs/assets/tables/SU.csv')
+# Replace NaN with 'NA'
+df.replace(np.nan, 'NA', inplace=True)
+print(df.to_markdown(index=False))
+```
+
+!!! warning "Memory request via job scheduler"
+    
+    Please note that in the above SU calculation, MAX(CPUs, RAM/4GB) — this represents the maximum of the number of CPUs requested and the memory requested divided by 4GB.
+
+    * If you do not specify `--mem` in your SLURM job script, the job will be allocated the default 4GB of memory per core, and you will be charged based on the number of CPUs requested.
+    * If you do specify `--mem` to request more memory, the SU charge will be based on the maximum of CPU count and memory/4GB.
+    Requesting more memory than the default will result in higher SU charges than if you had only specified CPUs.
+    
+    Therefore, please be mindful of the `--mem` setting. Requesting more memory than necessary can significantly increase your SU usage.
+
+???+ example "Example of SU Charges"
+
+    === "`general` Partition"
+        | SLURM Directive            |    SU     |      Explaination |
+        |---------------------|:---------:|:---------:|
+        | 4 CPUs      |  MAX(4, 4*4G/4G) = 4  |     Since no memory requireemnt is specified, SU is charged based on the same number of CPUs       |
+        | 4 CPUs + `--mem=64G`      |  MAX(4, 64G/4G) = 16 |    Since 64G memory is specified, the MAX function the evaluates the maximum of 4 CPUS, and 64G/4G= 16, resulting in a charge of 16 SUs         |
+        | 4 CPUs + `--mem=4G`     |  MAX(4, 4G/4G) = 4 |   MAX function the evaluates the maximum of 4 CPUS, and 4G/4G= 1, resulting in a charge of 4 SUs          |
+        | 4 CPUs + `--mem-per-cpu=8G`      |  MAX(4, 8G*4/4G) = 8 |  MAX function the evaluates the maximum of 4 CPUS, and 8G*4CPUs/4G = 8 , resulting in a charge of 8 SUs           |
+    
+    === "`bigmem` Partition"
+        | SLURM Directive             |           SU                |                                                             Explaination                             |
+        |-----------------------------|:---------------------------:|:----------------------------------------------------------------------------------------------------:|
+        | 4 CPUs                      | MAX(4*1.5, 4*4G/4G) = 6     |                       On `bigmem` partion the usage factor is 1.5                     |
+        | 4 CPUs + `--mem=64G`        | MAX(4*1.5, 64G/4G) = 16     | Since 64G memory is specified, the MAX function the evaluates the maximum of 4*1.5= 6 SUs, and 64G/4G= 16 SUs, resulting in a charge of 16 SUs |
+        | 4 CPUs + `--mem=4G`         |  MAX(4*1.5, 4G/4G) = 6      |                    MAX function the evaluates the maximum of 4*1.5= 6 SUs, and 4G/4G= 1 SU, resulting in a charge of 4 SUs                    |
+        | 4 CPUs + `--mem-per-cpu=8G` |  MAX(4*1.5, 8G*4/4G) = 8    |                MAX function the evaluates the maximum of *1.5= 6 SUs, and 8G*4CPUs/4G = 8 SUs , resulting in a charge of 8 SUs                |
+
+    === "`gpu` Partition"
+        | SLURM Directive            |    SU     |      Explaination |
+        |---------------------|:---------:|:---------:|
+        | 4 CPUs + 10MIG     |  MAX(4, 4*4G/4G) + 16 * (10G/80G) = 6  |     Since no memory requireemnt is specified, SU is charged based on the same number of CPUs and 10G of GPU memory      |
+        | 4 CPUs + 20MIG      |  MAX(4, 4G/4G) + 16 * (20G/80G) = 8 |    SU is charged based on the same number of CPUs and 20G of GPU memory         |
+        | 4 CPUs + 40MIG     |  MAX(4, 4G/4G) + 16 * (40G/80G) = 12 |   SU is charged based on the same number of CPUs and 40G of GPU memory          |
+        | 4 CPUs + Full GPU      |  MAX(4, 4G/4G) + 16 * (80G/80G) = 20 |  SU is charged based on the same number of CPUs and 80G of GPU (A full GPU) memory            |
+        | 4 CPUs + `--mem=64G` + Full GPU      |  MAX(4, 64G/4G) + 16 * (80G/80G) = 32 |  The MAX function the evaluates the maximum of 4 SUs (from CPUs), and 64G/4G= 16 SUs (from memory). In addition, 16 SUs are charged from 80G of GPU (A full GPU) memory, bringing the total SU charge to 32 SUs  |
+
+
 ### Check Quota
 
-Faculty PIs are allocated 300,000 Service Units (SU) per year upon request at no cost, which can be utilized via `--qos=standard` on the SLURM job. It's important to regularly check the usage of SUs so that users can be aware of their consumption and switch to `--qos=low` to prevent exhausting all allocated SUs. Users can check their quota using the `quota_info UCID` command. 
+Users can check the SUs utilization in `--qos=standard`, and space usage via `quota_info UCID` command. 
 ```bash linenums="1"
 [ab1234@login01 ~]$ module load wulver
 [ab1234@login01 ~]$ quota_info $LOGNAME
@@ -234,6 +334,24 @@ In case of submitting the jobs on GPU, you can use the following SLURM script
         #SBATCH --nodes=1
         #SBATCH --ntasks-per-node=8
         #SBATCH --gres=gpu:2
+        #SBATCH --time=59:00  # D-HH:MM:SS
+        #SBATCH --mem-per-cpu=4000M
+
+        srun ./myexe <input/output options> # myexe is the executable in this example.
+        ```
+    
+    === "Using MIGs"
+        ```slurm
+        #!/bin/bash -l
+        #SBATCH --job-name=gpu_job
+        #SBATCH --output=%x.%j.out # %x.%j expands to slurm JobName.JobID
+        #SBATCH --error=%x.%j.err
+        #SBATCH --partition=gpu
+        #SBATCH --qos=standard
+        #SBATCH --account=$PI_ucid # Replace $PI_ucid which the NJIT UCID of PI
+        #SBATCH --nodes=1
+        #SBATCH --ntasks-per-node=8
+        #SBATCH --gres=gpu:a100_10g:1  # This uses 10G MIG, to use 20G or 40G MIG, modify 10g to 20g or 40g 
         #SBATCH --time=59:00  # D-HH:MM:SS
         #SBATCH --mem-per-cpu=4000M
 
