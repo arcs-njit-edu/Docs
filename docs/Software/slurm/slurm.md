@@ -135,10 +135,10 @@ print(df.to_markdown(index=False))
 
 !!! warning "Memory request via job scheduler"
     
-    Please note that in the above SU calculation, MAX(CPUs, RAM/4GB) — this represents the maximum of the number of CPUs requested and the memory requested divided by 4GB.
+    Please note that in the above SU calculation, MAX(CPUs, RAM/4GB) in the `general` and `gpu` partition — this represents the maximum of the number of CPUs requested and the memory requested divided by 4GB. in `bigmem` it's 16 GB.
 
-    * If you do not specify `--mem` in your SLURM job script, the job will be allocated the default 4GB of memory per core, and you will be charged based on the number of CPUs requested.
-    * If you do specify `--mem` to request more memory, the SU charge will be based on the maximum of CPU count and memory/4GB.
+    * If you do not specify `--mem` in your SLURM job script, the job will be allocated the default 4GB of memory per core (16GB/core in `bigmem`), and you will be charged based on the number of CPUs requested.
+    * If you do specify `--mem` to request more memory, the SU charge will be based on the maximum of CPU count and memory/4GB (memory/16GB in `bigmem`).
     Requesting more memory than the default will result in higher SU charges than if you had only specified CPUs.
     
     Therefore, please be mindful of the `--mem` setting. Requesting more memory than necessary can significantly increase your SU usage.
@@ -156,10 +156,10 @@ print(df.to_markdown(index=False))
     === "`bigmem` Partition"
         | SLURM Directive             |           SU                |                                                             Explaination                             |
         |-----------------------------|:---------------------------:|:----------------------------------------------------------------------------------------------------:|
-        | 4 CPUs                      | MAX(4*1.5, 4*4G/4G) = 6     |                       On `bigmem` partion the usage factor is 1.5                     |
-        | 4 CPUs + `--mem=64G`        | MAX(4*1.5, 64G/4G) = 16     | Since 64G memory is specified, the MAX function the evaluates the maximum of 4*1.5= 6 SUs, and 64G/4G= 16 SUs, resulting in a charge of 16 SUs |
-        | 4 CPUs + `--mem=4G`         |  MAX(4*1.5, 4G/4G) = 6      |                    MAX function the evaluates the maximum of 4*1.5= 6 SUs, and 4G/4G= 1 SU, resulting in a charge of 4 SUs                    |
-        | 4 CPUs + `--mem-per-cpu=8G` |  MAX(4*1.5, 8G*4/4G) = 8    |                MAX function the evaluates the maximum of *1.5= 6 SUs, and 8G*4CPUs/4G = 8 SUs , resulting in a charge of 8 SUs                |
+        | 4 CPUs                      | MAX(4*1.5, 4*16G/16G) = 6     |                       On `bigmem` partion the usage factor is 1.5                     |
+        | 4 CPUs + `--mem=64G`        | MAX(4*1.5, 64G/16G) = 6     | Since 64G memory is specified, the MAX function the evaluates the maximum of 4*1.5= 6 SUs, and 64G/16G= 4 SUs, resulting in a charge of 4 SUs |
+        | 4 CPUs + `--mem=128G`         |  MAX(4*1.5, 128G/16G) = 8      |                    MAX function the evaluates the maximum of 4*1.5= 6 SUs, and 128G/16G= 8 SU, resulting in a charge of 8 SUs                    |
+        | 4 CPUs + `--mem-per-cpu=8G` |  MAX(4*1.5, 8G*4/16G) = 6    |                MAX function the evaluates the maximum of 4*1.5= 6 SUs, and 8G*4CPUs/16G = 2 SUs , resulting in a charge of 6 SUs                |
 
     === "`gpu` Partition"
         | SLURM Directive            |    SU     |      Explaination |
