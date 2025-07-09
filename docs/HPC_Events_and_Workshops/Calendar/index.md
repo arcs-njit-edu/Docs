@@ -7,6 +7,17 @@ hide:
 # HPC Events
 
 ## 2025 Summer
+
+<div class="grid cards" markdown>
+-   ### [Machine Learning and Big Data Workshop](8_PSC_Machine_Learning_workshop.md)
+    ---
+
+    The Pittsburgh Supercomputing Center is pleased to present a Machine Learning and Big Data workshop. This workshop will focus on topics including big data analytics and machine learning with Spark, and deep  learning using Tensorflow. This will be an IN PERSON event hosted by various satellite sites, there WILL NOT be a direct to desktop option for this event.
+
+    [<span class="octicon--arrow-right-24"></span> Registration and Event Details](8_PSC_Machine_Learning_workshop.md)
+
+</div>
+
 <div class="grid cards" markdown>
 -   ### [HPC Summer Workshop: MATLAB Parallel Computing Hands-On Using Wulver](7_MATLAB_on_Wulver.md)
     ---

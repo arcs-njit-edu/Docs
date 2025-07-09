@@ -18,8 +18,9 @@ nav:
       - 'Getting started on Wulver': 'clusters/get_started_on_Wulver.md'
       - 'Wulver Filesystems': 'clusters/Wulver_filesystems.md'
     - 'Policies':
-      - '': 'Policies/lochness_policies.md'
-      - 'Wulver usage and Condo policies': 'Policies/wulver_policies.md'
+      - 'Policies/index.md'
+      - 'Wulver policies': 'Policies/wulver_policies.md'
+      - 'Condo policies': 'Policies/condo_policies.md'
     - 'Facilities': 'facilities/facilities.md'
     - Status (on-campus or VPN):
         - 'Current Load': 'https://hpc.njit.edu/Monitor/load.html'
@@ -32,6 +33,7 @@ nav:
     - '' : 'migration/faqs.md'
     - '' : 'migration/lochness_filesystem.md'
     - '' : 'migration/Lochness_node_owners.md'
+    - '' : 'archived/lochness_policies.md'
 
 theme: 
   name: material
