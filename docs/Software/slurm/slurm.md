@@ -109,7 +109,7 @@ Please check the table below on how to request MIG in the slurm script.
 
 !!! info
     
-    For an 80G MIG, it is considered a full GPU. In that case, you can alternatively specify --gres=gpu:1 in your job script. If you want to see a job script example of requesting a partial GPU, please refer to the sample [GPU job scripts](#submitting-jobs-on-gpu-nodes).
+    For an 80G MIG, it is considered a full GPU. In that case, you can alternatively specify `--gres=gpu:1` in your job script. If you want to see a job script example of requesting a partial GPU, please refer to the sample [GPU job scripts](#submitting-jobs-on-gpu-nodes).
 
 ### SU charges
 Since resources are limited, each faculty PI is allocated 300,000 Service Units (SUs) per year upon request at no cost. These SUs can be used via the standard [priority](#priority-use-qos) on the SLURM job scheduler. 
