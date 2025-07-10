@@ -27,6 +27,18 @@ nav:
         - 'Usage Summary': 'https://hpc.njit.edu/Monitor/summary.html'
         - 'Usage (this year so far)': 'https://hpc.njit.edu/Monitor/cy2025.html'
     - ...
+    - 'OnDemand':
+      - 'OnDemand Overview': 'OnDemand/index.md'
+      - 'Interactive Apps':
+        - 'Interactive Apps Overview': 'OnDemand/Interactive Apps/index.md'
+        - 'Jupyter Notebook': 'OnDemand/Interactive Apps/Notebook.md'
+        - 'MATLAB': 'OnDemand/Interactive Apps/Matlab.md'
+        - 'RStudio': 'OnDemand/Interactive Apps/Rstudio.md'
+      - 'Files': 'OnDemand/files.md'
+      - 'Clusters': 'OnDemand/clusters.md'
+      - 'Tools': 'OnDemand/tools.md'
+      - 'My Interactive Sessions': 'OnDemand/My_Interactive_Sessions.md'
+      - 'Jobs': 'OnDemand/jobs.md'
     - 'FAQs' : 'faq/faq.md'
     - '' : 'website_version.txt'
     - '' : 'migration/index.md'
