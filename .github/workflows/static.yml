@@ -28,5 +28,5 @@ jobs:
           path: .cache
           restore-keys: |
             mkdocs-material-
-      - run: pip install mkdocs-material pandas tabulate markdown-exec mkdocstrings mkdocs-table-reader-plugin mkdocs-awesome-pages-plugin mkdocs-autolinks-plugin
+      - run: pip install mkdocs-material pandas tabulate markdown-exec mkdocstrings mkdocs-table-reader-plugin mkdocs-awesome-pages-plugin mkdocs-autolinks-plugin mkdocs-literate-nav
       - run: mkdocs gh-deploy --force

@@ -5,7 +5,7 @@ hide:
 
 # Open OnDemand on Wulver
 
-[Open OnDemand](ondemand.njit.edu) is a browser-based gateway to NJIT's Wulver cluster and shared storage.
+[Open OnDemand](https://ondemand.njit.edu) is a browser-based gateway to NJIT's Wulver cluster and shared storage.
 
 - Date: April 30th 2025
 - Location: Virtual

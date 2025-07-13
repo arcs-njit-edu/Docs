@@ -27,14 +27,25 @@ nav:
         - 'Current Load': 'https://hpc.njit.edu/Monitor/load.html'
         - 'Usage Summary': 'https://hpc.njit.edu/Monitor/summary.html'
         - 'Usage (this year so far)': 'https://hpc.njit.edu/Monitor/cy2025.html'
-    - ...
+    - HPC Events and Workshops : HPC_Events_and_Workshops/
+    - Software : Software/
+    - OnDemand :
+        - OnDemand Overview: OnDemand/index.md
+        - Interactive Apps: OnDemand/Interactive_Apps/
+        - 'Files': 'OnDemand/2_files.md'
+        - 'Clusters': 'OnDemand/3_clusters.md'
+        - 'Tools': 'OnDemand/4_tools.md'
+        - 'My Interactive Sessions': 'OnDemand/5_My_Interactive_Sessions.md'
+        - 'Jobs': 'OnDemand/6_jobs.md'
     - 'FAQs' : 'faq/faq.md'
+    - News : news/index.md
     - '' : 'website_version.txt'
     - '' : 'migration/index.md'
     - '' : 'migration/faqs.md'
     - '' : 'migration/lochness_filesystem.md'
     - '' : 'migration/Lochness_node_owners.md'
     - '' : 'archived/lochness_policies.md'
+
 
 theme: 
   name: material
@@ -140,10 +151,12 @@ plugins:
   - table-reader
   - mkdocstrings
   - awesome-pages
+  - literate-nav
   - autolinks
   - blog:
       blog_dir: news
-      authors: false
-      archive: false
+      #authors: false
+      #archive: false
+  - tags
 
 copyright: New Jersey Institute of Technology High Performance Computing
