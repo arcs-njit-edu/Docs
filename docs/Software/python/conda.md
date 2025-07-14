@@ -1,6 +1,7 @@
+# Conda Environments
 Since Python supports a wide range of additional libraries in machine learning or data science research, it is not always possible to install every package on HPC. Also, users sometimes need to use a specific version of Python or its libraries to conduct their research. Therefore, in that case, users can build their own Python version along with a specific library. One of the ways to accomplish this is to use Conda.
 
-# Conda
+## What is Conda
 Conda as a package manager helps you find and install packages. If you need a package that requires a different version of Python, you do not need to switch to a different environment manager, because conda is also an environment manager. 
 
 ## Availability
@@ -15,6 +16,18 @@ Conda as a package manager helps you find and install packages. If you need a pa
     soft = df.query('Software == "Anaconda3" | Software == "Miniconda3" | Software == "Miniforge3" ')
     print(soft.to_markdown(index=False))
     ```
+
+## Conda User Commands 
+
+| Task                                      |                        Command                         | 
+|-------------------------------------------|:------------------------------------------------------:|
+| Activate environment:                     |          `conda activate [environment_name]`           |
+| Deactivate environment:                   |         `conda deactivate [environment_name]`          |
+| Show the list of environments:            |                    `conda env list`                    |
+| Delete environment:                       |     `conda remove --name [environment_name] --all`     |
+| Export environment:                       |      `conda env export > [environment_name].yml`       |
+| Import environment from YAML:             |      `conda env create -f [environment_name].yml`      |
+| Import environment to different location: | `conda env create -f [environment_name].yml -p [PATH]` | 
 
 !!! warning
 
@@ -31,6 +44,11 @@ module load Miniforge3
 ### Create Environment with `conda`
 To create an environment use the `conda create` command. Once the environment is created, you need to use `conda activate` to activate the environment.
 To create an environment with a specific python version, use `conda create --name ENV python=3.9` where `ENV` is the name of the environment. You can choose any environment name of your choice.
+
+!!! info
+
+    You don't need to specify the Python version when creating a Conda environment. If you don't specify it, Conda will use the latest available version by default. In that case, simply use `conda create --name ENV`.
+
 
 ### Activate and Deactivate Conda Environment
 Once you create an environment, you need to activate the environment to install python packages
@@ -53,22 +71,23 @@ Once you finish the installation of Python packages, deactivate the conda enviro
 Once Conda environment is activated, you can install packages via `conda install package_name` command. For example, if you want to install `matplotlib`, you need to use
 
 ```bash
-(ENV) login-41 ~ >: conda install matplotlib
+(ENV) login-41 ~ >: conda install -c conda-forge matplotlib
 ```
-Make sure to activate the conda environment prior to installing Python packages. 
+where `conda-forge` is the name of the conda channel. 
+
+!!! warning
+
+    Make sure to activate the conda environment prior to installing Python packages. 
 
 ### Conda Channel
 Conda Channel refers to a repository or collection of software packages that are available for installation using Conda. Conda Channels are used to organize and distribute packages, and they play a crucial role in the Conda ecosystem. Channels can be specified using the `--channel` or `-c` option with the conda install command i.e. 
-`conda install -c channel_name package_name`. In the above example, if you want to specify the channel name to install `matplotlib`, you need to use
+`conda install -c channel_name package_name`. 
 
-!!! note
+!!! tip
 
     Since memory and CPU usage are limited, it's better to start an [interactive session with the compute node](slurm.md#interactive-session-on-a-compute-node) whenever you are installing Python packages via Conda.
 
-```bash
-(ENV) login-41 ~ >: conda install -c conda-forge matplotlib
-```
-This will install `matplotlib` from `conda-forge` channel which is a community-maintained collection of Conda packages where a wide range of packages contributed by the community are available. 
+In the above example, the command `conda install -c conda-forge matplotlib` will install `matplotlib` from `conda-forge` channel which is a community-maintained collection of Conda packages where a wide range of packages contributed by the community are available. 
 Users can prioritize channels by listing them in a specific order, so that Conda searches channels in the order they are listed, installing the first version of a package that it finds. To list the channels, create a file `.condarc` in the `$HOME` directory and add the following
 
 ```conda
@@ -78,10 +97,10 @@ channels:
 ```
 The advantage of using `.condarc` is that you don't have to mention the channel name every time you install a package. However, please note that you still need to use the channel name if you want to install Python packages that require a specific channel other than the `conda-forge` channel.
 
-### Examples
-Here, we provide some examples of how to use `conda` to install application 
+## Examples of Conda Environemnt 
+Here, we provide some examples of how to use `conda` to install application. 
 
-#### Install TensorFlow with GPU 
+### Install TensorFlow with GPU 
 The following example will create a new conda environment based on Python 3.9 and install TensorFlow in the environment.
 
 ```bash
@@ -239,7 +258,7 @@ Default GPU Device: /device:GPU:0
 ```
 Next, deactivate the environment using `conda deactivate tf` command.
 
-#### Install PyTorch with GPU
+### Install PyTorch with GPU
 * To install PyTorch with GPU, load the `Miniforge3` module as described above and then use the following
 
 ```
@@ -249,7 +268,7 @@ conda install -c "nvidia/label/cuda-12.2.0" cuda-toolkit
 conda install -c pytorch -c nvidia pytorch torchvision torchaudio pytorch-cuda -y
 ```
 
-!!! note
+!!! info
     
     In the example above, we mentioned the channel name as we intend to install PyTorch and PyTorch-CUDA from a specific channel. For the default channel please see [Channels](conda.md#conda-channel).
 
@@ -266,7 +285,7 @@ python -c "import torch; print(torch. version .cuda)"
 python -c "import torch; print(torch.cuda. is_available())"
 ```
 
-!!! important
+!!! warning
     
     While checking the CUDA version or PyTorch compilation using the commands mentioned above, make sure to start an [interactive session on a GPU node](slurm.md#interactive-session-on-a-compute-node-gpu-nodes); otherwise, the command will not recognize CUDA or the GPU.
 
@@ -361,7 +380,7 @@ Users can install packages with `mamba` in the same way as with `conda`.
 module load Miniforge3
 
 # create new environment
-mamba create --name env_name python numpy pandas 
+conda create --name env_name python numpy pandas 
 # install a new package into an existing environment
 conda activate env_name
 mamba install scipy
@@ -469,14 +488,3 @@ By following these steps, you can successfully export a conda environment from o
     
     It is advisable to use the `/project` directory to store the Conda environment rather than using the `$HOME` directory. On Wulver, the storage space on `$HOME` is limited (50G) and cannot be increased. See [Wulver Filesystems](get_started_on_Wulver.md#wulver-filesystems) for details. 
 
-## Conda User Commands 
-
-| Task                                      |                        Command                         | 
-|-------------------------------------------|:------------------------------------------------------:|
-| Activate environment:                     |          `conda activate [environment_name]`           |
-| Deactivate environment:                   |         `conda deactivate [environment_name]`          |
-| Show the list of environments:            |                    `conda env list`                    |
-| Delete environment:                       |     `conda remove --name [environment_name] --all`     |
-| Export environment:                       |      `conda env export > [environment_name].yml`       |
-| Import environment from YAML:             |      `conda env create -f [environment_name].yml`      |
-| Import environment to different location: | `conda env create -f [environment_name].yml -p [PATH]` | 
