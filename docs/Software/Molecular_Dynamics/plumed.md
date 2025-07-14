@@ -16,7 +16,7 @@ title: PLUMED
 
 ## Related Applications
 
-* 
+* [GROMACS](gromacs.md), [LAMMPS](lammps.md)
 
 ## User Contributed Information
 
