@@ -1,4 +1,4 @@
-# Jupyter Notebooks
+# Jupyter Notebook
 The Jupyter Notebook is a web-based interactive computing platform. The notebook combines live code, equations, narrative text, and visualizations. In our cluster, we have JupyterLab which is the next-generation user interface for Project Jupyter offering all the familiar building blocks of the classic Jupyter Notebook (notebook, terminal, text editor, file browser, rich outputs, etc.) in a flexible and powerful user interface. 
 
 ## Using Jupyter Notebook on Wulver
@@ -71,4 +71,4 @@ Once you submit this job script, you will see an output file indicating the port
 
 !!! info "Please help us improve this page"
 
-    Users are invited to contribute helpful information and corrections through our [Github repository](https://github.com/arcs-njit-edu/Docs/blob/main/CONTRIBUTING.md).
+    Users are invited to contribute helpful information and corrections through our [Github repository](https://github.com/arcs-njit-edu/Docs/issues).

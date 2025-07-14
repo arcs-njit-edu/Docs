@@ -216,7 +216,7 @@ Sometimes, users need to create a new solver or modify the existing solver by ad
 
 !!! info "Please help us improve this page"
     
-    Users are invited to contribute helpful information and corrections through our [Github repository](https://github.com/arcs-njit-edu/Docs/blob/main/CONTRIBUTING.md).
+    Users are invited to contribute helpful information and corrections through our [Github repository](https://github.com/arcs-njit-edu/Docs/issues).
 
 
 
