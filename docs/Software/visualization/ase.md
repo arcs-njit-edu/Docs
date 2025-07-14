@@ -3,7 +3,7 @@ title: ASE
 ---
 ASE (Atomic Simulation Environment) is an open-source Python library for performing atomic-scale simulations of materials. It provides a collection of tools and interfaces for setting up, running, and analyzing simulations of atoms, molecules, and solids using a variety of simulation packages.
 
-ASE is designed to be flexible and modular, allowing users to easily switch between different simulation packages and methods without having to modify their code. It currently supports a number of popular simulation packages, including [Quantum ESPRESSO](../chemistry/qe.md), [LAMMPS](../md/lammps.md), and [GROMACS](../md/gromacs.md) etc.
+ASE is designed to be flexible and modular, allowing users to easily switch between different simulation packages and methods without having to modify their code. It currently supports a number of popular simulation packages, including [Quantum ESPRESSO](../chemistry/qe.md), [LAMMPS](../Molecular_Dynamics/lammps.md), and [GROMACS](../Molecular_Dynamics/gromacs.md) etc.
 
 ASE provides a wide range of functionality for working with atomic-scale simulations, including geometry optimization, molecular dynamics simulations, electronic structure calculations, and vibrational analysis. It also includes a number of built-in tools for analyzing simulation output, such as calculating radial distribution functions, computing surface area and volume, and visualizing simulation trajectories.
 
