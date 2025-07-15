@@ -3,7 +3,7 @@ hide:
   - toc
 ---
 
-# Old HPC Workshops
+# Archived HPC Workshops
 
 ## 2025 Spring
 
