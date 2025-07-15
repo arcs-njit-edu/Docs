@@ -30,78 +30,9 @@ hide:
 
 </div>
 
-## 2025 Spring
+!!! info "Archived Workshops"
 
-<div class="grid cards" markdown>
--   ### [Open OnDemand on Wulver](6_intro_to_OnDemand.md)
-    ---
-
-    This webinar will introduce NJIT’s Open OnDemand portal, a browser-based gateway to the Wulver cluster and shared storage. With a focus on streamlining your HPC workflows, you will explore common scenarios and tasks through interactive demos. You will gain a detailed understanding of how to manage your files on the cluster, run interactive applications like Jupyter Notebook and RStudio, launch a full Linux desktop environment in your browser, and submit and monitor SLURM jobs. Additionally, you'll learn how to track resource usage and optimize your job performance for efficient computing on the Wulver cluster.
-
-    [<span class="octicon--arrow-right-24"></span> Registration and Event Details](6_intro_to_OnDemand.md)
-
-</div>
-
-<div class="grid cards" markdown>
--   ### [Parallel Computing with MATLAB: Hands on workshop](5_parallel_computing_with_matlab.md)
-    ---
-
-    This hands-on workshop will introduce parallel and distributed computing in MATLAB with a focus on speeding up application codes and offloading computers. By working through common scenarios and workflows using hands-on demos, you will gain a detailed understanding of the parallel constructs in MATLAB, their capabilities, and some of the common hurdles that you'll encounter when using them.
-
-    [<span class="octicon--arrow-right-24"></span> Registration and Event Details](5_parallel_computing_with_matlab.md)
-
-</div>
-
-<div class="grid cards" markdown>
--   ### [Introduction to Linux](4_intro_to_linux.md)
-    ---
-
-    Join us for an informative webinar introducing the basics of Linux, essential for working in High-Performance Computing (HPC) environments. This session will help participants navigate the Linux operating system, manage files, use common commands, and connect to remote systems efficiently.
-
-    [<span class="octicon--arrow-right-24"></span> Registration and Event Details](4_intro_to_linux.md)
-
-</div>
-
-<div class="grid cards" markdown>
--   ### [Python and Conda Environments in HPC: From Basics to Best Practices](3_conda_training.md)
-    ---
-
-    Join us for an informative webinar designed to offer a basic concept of using Python for High-Performance Computing (HPC) and effectively managing Python environments with Conda. This webinar will empower participants to leverage the power of Python for their scientific computing needs on HPC systems.
-
-    [<span class="octicon--arrow-right-24"></span> Registration and Event Details](3_conda_training.md)
-
-</div>
-<div class="grid cards" markdown>
-
--    ### Monthly HPC User Meeting
-     ---
-     We are currently offering a new monthly event for HPC researchers at NJIT: **The HPC Monthly User Meeting**. This event is open to all NJIT students, faculty, and staff who use or are interested in NJIT's HPC resources and services. This monthly meeting will be an opportunity for discussion, sharing ideas, talking with HPC facilitators, and learning about new resources and future plans for HPC research services. No prior registration is required.
-        
-     - Date: Wednesday, February 19
-     - Location: Campus Center, Room 235
-     - Time: 2:00 PM - 3:00 PM
-</div>
-
-<div class="grid cards" markdown>
--   ### [Introduction to Wulver: Getting Started](1_intro_to_Wulver_I.md)
-    ---
-
-    Join us for an informative webinar designed to introduce NJIT's HPC environment, Wulver. This virtual session will provide essential information about the Wulver cluster, how to get an account, and allocation details.
-
-    [<span class="octicon--arrow-right-24"></span> Registration and Event Details](1_intro_to_Wulver_I.md)
-
-</div>
-<div class="grid cards" markdown>
-
--   ### [Introduction to Wulver: Accessing System & Running Jobs](2_intro_to_Wulver_II.md)
-
-    ---
-
-    The HPC training event focuses on providing the fundamentals of SLURM (Simple Linux Utility for Resource Management), a workload manager. This virtual session will equip you with the essential skills needed to effectively utilize HPC resources using SLURM.
-
-    [<span class="octicon--arrow-right-24"></span> Registration and Event Details](2_intro_to_Wulver_II.md)
-
-</div>
+    Looking for our previous workshops? Check out our [Past Workshops](past_workshops.md)!
 
 ## 2024 Fall
 

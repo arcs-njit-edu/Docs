@@ -29,7 +29,6 @@ The Symposium will feature a keynote from Anthony Dina, Global Field CTO for Uns
 
 Please join us to learn how our researchers use HPC resources and connect with the NJIT HPC community.
 
-Please register for the symposium [here](https://forms.gle/NhtvEUiY2st3eQoT6).
 
 - Date: July 16th, 2024
 - Location: Campus Center Atrium
