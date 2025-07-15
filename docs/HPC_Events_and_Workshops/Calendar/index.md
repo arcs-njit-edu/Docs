@@ -34,50 +34,6 @@ hide:
 
     Looking for our previous workshops? Check out our [Past Workshops](past_workshops.md)!
 
-## 2024 Fall
-
-<div class="grid cards" markdown>
-
-
--   ### [SLURM Batch System Basics](1_slurm.md)
-    ---
-
-    Join us for an informative webinar designed to introduce researchers, scientists, and HPC users to the fundamentals of the SLURM (Simple Linux Utility for Resource Management) workload manager. This virtual  session will equip you with essential skills to effectively utilize HPC resources through SLURM.
-
-    [<span class="octicon--arrow-right-24"></span> Registration and Event Details](1_slurm.md)
-
-</div>
-<div class="grid cards" markdown>
-
--   ### [Introduction to Containers on Wulver](2_containers.md)
-
-    ---
-
-    The HPC training event on using Singularity containers provides participants with a comprehensive introduction to container technology and its advantages in high-performance computing environments. Attendees will learn the fundamentals of Singularity, including installation, basic commands, and workflow, as well as how to create and build containers using definition files and existing Docker images.
-
-    [<span class="octicon--arrow-right-24"></span> Registration and Event Details](2_containers.md)
-
-</div>
-<div class="grid cards" markdown>
-
--   ### [Job Arrays and Advanced Submission Techniques for HPC](3_slurm_advanced.md)
-
-    ---
-
-    Elevate your High-Performance Computing skills with our advanced SLURM webinar! This session is designed for HPC users who are familiar with basic SLURM commands and are ready to dive into more sophisticated job management techniques.
-
-    [<span class="octicon--arrow-right-24"></span> Registration and Event Details](3_slurm_advanced.md)
-</div>
-<div class="grid cards" markdown>
-
--   ### [Intro to MPI Workshop](7_Intro to MPI Workshop.md)
-
-    ---
-    This workshop is designed to provide C and Fortran programmers with a hands-on introduction to MPI programming. Participants will learn to write scalable code using MPI, the standard programming tool for scalable parallel computing
-
-    [<span class="octicon--arrow-right-24"></span> Registration and Event Details](7_Intro to MPI Workshop.md)
-</div>
-
 
 ## 2024 Summer
 
