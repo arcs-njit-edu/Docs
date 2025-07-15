@@ -81,7 +81,7 @@ The documentation of MATLAB is available at [MATLAB Tutorial](https://www.mathwo
         # Run matlab
         matlab -nodisplay -nosplash -r 'cd('/path/to/for_loop.m');for_loop; quit'
         ```
-        Replace `cd('/path/to/for_loop.m')` with the actual path of the matlab script. You don't need to use `cd('/path/to/for_loop.m')` if the Matlab script and job script are in the same direoctry. In that case, use `matlab -nodisplay -nosplash -r 'for_loop; quit' `
+        Replace `cd('/path/to/for_loop.m')` with the actual path of the matlab script. You don't need to use `cd('/path/to/for_loop.m')` if the Matlab script and job script are in the same directory. In that case, use `matlab -nodisplay -nosplash -r 'for_loop; quit' `
 
 ??? example "Sample Parallel MATLAB script: for_loop.m"
 
