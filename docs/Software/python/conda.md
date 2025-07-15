@@ -98,7 +98,7 @@ channels:
 The advantage of using `.condarc` is that you don't have to mention the channel name every time you install a package. However, please note that you still need to use the channel name if you want to install Python packages that require a specific channel other than the `conda-forge` channel.
 
 ## Examples of Conda Environemnt 
-Here, we provide some examples of how to use `conda` to install application. 
+Here, we provide some examples of how to use `conda` to install applications. 
 
 ### Install TensorFlow with GPU 
 The following example will create a new conda environment based on Python 3.9 and install TensorFlow in the environment.
