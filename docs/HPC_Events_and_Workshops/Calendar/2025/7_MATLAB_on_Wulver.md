@@ -13,7 +13,7 @@ Through live demonstrations and guided examples, you’ll gain a solid understan
 Each participant will have access to the [OnDemand Matlab server](https://ondemand.njit.edu/pun/sys/dashboard/batch_connect/sys/jupyter-matlab/session_contexts/new) running on [Wulver](https://hpc.njit.edu/).
 
 ## Guide to access Matlab via OnDemand:
-Users need use `Jupyter Matlab Proxy` to use MATLAB on OnDemand. Check the tutorial [here](../../../assets/ondemand/Matlab_OnDemand_Tutorial_Server.mp4).
+Users need use `Jupyter Matlab Proxy` to use MATLAB on OnDemand. 
 
 ## Date and Location:
 - Date: June 12th 2025

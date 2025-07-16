@@ -29,5 +29,5 @@ Coffee and Lunch will be provided. See more detail about the workshop [here](htt
 
 
 
-Click [here](https://forms.gle/NhtvEUiY2st3eQoT6) for the registration.
+Registration is now closed.
 

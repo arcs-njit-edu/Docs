@@ -104,6 +104,6 @@ Submit the job using `sbatch fluent.submit.sh` command.
 
 !!! info "Please help us improve this page"
 
-    Users are invited to contribute helpful information and corrections through our [Github repository](https://github.com/arcs-njit-edu/Docs/blob/main/CONTRIBUTING.md).
+    Users are invited to contribute helpful information and corrections through our [Github repository](https://github.com/arcs-njit-edu/Docs/issues).
 
 

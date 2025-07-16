@@ -9,18 +9,6 @@ Welcome to HPC at [New Jersey Institute of Technology (NJIT)](https://www.njit.e
 
 NJIT provides High Performance Computing resources to support scientific computing for faculty and students. These resources include CPU nodes, GPU nodes, parallel storage, high speed, low latency Infiniband networking and a fully optimized scientific software stack.
 
-<div class="grid cards" markdown>
-
-
--   ## Virtual Tour of NJIT Data Center
-
-    ---
-
-    Wulver is built through a partnership with [DataBank](https://www.databank.com/), which is live in DataBank’s Piscataway, N.J. data center (EWR2) and will support NJIT’s research efforts. This infrastructure will bolster NJIT’s research initiatives. You can access the 3D virtual tour of HPC data center below:
-
-    <iframe width='600' height='400' src='https://my.matterport.com/show/?m=KgYz67s8YoM' frameborder='0' allowfullscreen allow='xr-spatial-tracking'></iframe>
-</div>
-
 ---
 
 <div class="grid cards" markdown>
@@ -29,21 +17,13 @@ NJIT provides High Performance Computing resources to support scientific computi
 
     ---
 
-    !!! njit inline "Contact Us"
+    !!! njit inline "Getting started with Wulver"
 
-        To create a ticket or request for software installation, visit [Contact Us](contact.md).
-
-    !!! njit inline "Clusters"
-
-        See the list of availble clusters, their specifications, and how to access them in [Clusters](clusters/index.md).
+        If you are new to Wulver, and want to know how to get started, visit [Wulver Quickstart](get_started_on_Wulver.md).
 
     !!! njit inline "Software Modules"
 
         See [Software Modules](Software/index.md) for list of software packages installed on our cluster.
-
-    !!! njit inline "Cluster Maintenance Updates"
-        
-        To see the latest maintenance updates on NJIT cluster, please visit [Cluster Maintenance](news/index.md).
 
     !!! njit inline "HPC Events"
         
@@ -56,7 +36,28 @@ NJIT provides High Performance Computing resources to support scientific computi
     !!! njit inline "FAQs"
         
         For any queries regarding the usage of our cluster, please visit the [FAQs](faq.md) which are organized by topic.
+
+    !!! njit inline "Contact Us"
+
+        To create a ticket or request for software installation, visit [Contact Us](contact.md).
+    
+    !!! njit inline "Cluster Updates"
+        
+        To see the latest updates on NJIT cluster, please visit [Cluster Maintenance](news/index.md).
 </div>
+
+<div class="grid cards" markdown>
+
+
+-   ## Virtual Tour of NJIT Data Center
+
+    ---
+
+    Wulver is built through a partnership with [DataBank](https://www.databank.com/), which is live in DataBank’s Piscataway, N.J. data center (EWR2) and will support NJIT’s research efforts. This infrastructure will bolster NJIT’s research initiatives. You can access the 3D virtual tour of HPC data center below:
+
+    <iframe width='600' height='400' src='https://my.matterport.com/show/?m=KgYz67s8YoM' frameborder='0' allowfullscreen allow='xr-spatial-tracking'></iframe>
+</div>
+
 
 <div class="grid cards" markdown>
 
@@ -72,15 +73,14 @@ NJIT provides High Performance Computing resources to support scientific computi
         
             * [Introduction to Wulver: Getting Started](HPC_Events_and_Workshops/Workshop_and_Training_Videos/index.md#introduction-to-wulver-getting-started)
             * [Introduction to Wulver: Accessing System & Running Jobs](HPC_Events_and_Workshops/Workshop_and_Training_Videos/index.md#introduction-to-wulver-accessing-system-running-jobs)
-    
-            We will soon update [HPC Events](HPC_Events_and_Workshops/Calendar/index.md) with the upcoming events.
+            * [Python and Conda Environments in HPC: From Basics to Best Practices](HPC_Events_and_Workshops/Workshop_and_Training_Videos/index.md#python-and-conda-environments-in-hpc-from-basics-to-best-practices)
+            * [Introduction to Linux](HPC_Events_and_Workshops/Workshop_and_Training_Videos/index.md#introduction-to-linux)
+            * [Open OnDemand on Wulver](HPC_Events_and_Workshops/Workshop_and_Training_Videos/index.md#open-ondemand-on-wulver)
     
         !!! abstract "Wulver Scheduled Maintenance"
             
             Wulver will be out of service for maintenance once a month for updates, repairs, and upgrades.  The schedule is 9 a.m. to 9 p.m. the second Tuesday of every month.  During the maintenance period, the logins will be disabled and the jobs that do not end before the maintenance window begins will be held until the maintenance is complete and the cluster is returned to production. For example, if you submit a job the day before maintenance, your job will enter a pending state (you will see job status `PD` when using `squeue -u $LOGNAME`). You can either adjust the walltime or wait until maintenance ends. Please stay informed about maintenance updates at [Cluster Maintenance Updates and News](news/index.md).
 
-    
-    
 
     -    !!! abstract "Monthly HPC User Meeting"
      
