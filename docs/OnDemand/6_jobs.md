@@ -94,9 +94,12 @@ The Jobs menu on the menu bar includes both the Job Composer and the Active Jobs
 
 ## Active Jobs
 
-The Active Jobs tool will allow you to view all the jobs you’ve submitted that are currently in the queue, via OnDemand or not, so you can check on their status.   
-![job_submit1.png](../assets/ondemand/jobs/job_submit1.png){ width=60% height=60%}
+The Active Jobs tool will allow you to view all the jobs you’ve submitted that are currently in the queue, via OnDemand or not, so you can check on their status.  
 
-![job_submit2.png](../assets/ondemand/jobs/job_submit2.png){ width=50% height=50%}
+![active_jobs1.png](../assets/ondemand/jobs/active_jobs1.png){ width=60% height=60%}
 
-![job_submit3.png](../assets/ondemand/jobs/job_submit3.png){ width=50% height=50%}
+You can expand each job to check more details. You can also open the current working directory of job in file manager or terminal by clicking `Open in File Manger` or `Open in Terminal` respectively.
+
+![active_jobs2.png](../assets/ondemand/jobs/active_jobs2.png){ width=60% height=60%}
+
+
