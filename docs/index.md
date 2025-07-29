@@ -61,11 +61,11 @@ NJIT provides High Performance Computing resources to support scientific computi
     ---
     
     <div class="grid cards" markdown>
-
-    -    !!! abstract "Wulver Scheduled Maintenance"
+ 
+    -   !!! abstract "Wulver Scheduled Maintenance"
             
             Wulver will be out of service for maintenance once a month for updates, repairs, and upgrades.  The schedule is 9 a.m. to 9 p.m. the second Tuesday of every month.  During the maintenance period, the logins will be disabled and the jobs that do not end before the maintenance window begins will be held until the maintenance is complete and the cluster is returned to production. For example, if you submit a job the day before maintenance, your job will enter a pending state (you will see job status `PD` when using `squeue -u $LOGNAME`). You can either adjust the walltime or wait until maintenance ends. Please stay informed about maintenance updates at [Cluster Maintenance Updates and News](news/index.md).
-            
+
         !!! abstract "HPC Spring Events, 2025"
 
             ARCS HPC has hosted the following events this Spring. Please access the HPC training videos to view the webinar recordings and slides.
@@ -77,13 +77,13 @@ NJIT provides High Performance Computing resources to support scientific computi
             * [Open OnDemand on Wulver](HPC_Events_and_Workshops/Workshop_and_Training_Videos/index.md#open-ondemand-on-wulver)
 
     
-    -     !!! abstract "Open Office Hours"
+    -   !!! abstract "Open Office Hours"
             
             This spring semester, we are offering drop-in office hours every Monday and Wednesday from 2:00 to 4:00 p.m. Stop by to meet with our student consultants and ask any questions you have about using HPC resources. There's no need to create a ticket in advance; if follow-up is needed, the student consultants will open a ticket on your behalf, and you'll receive further instructions. 
 
-             - Date: **Every Monday and Wednesday**
-             - Location: **GITC 2404**
-             - Time: **2:00 PM - 4:00 PM**
+            - Date: **Every Monday and Wednesday**
+            - Location: **GITC 2404**
+            - Time: **2:00 PM - 4:00 PM**
 
         
 
@@ -91,24 +91,9 @@ NJIT provides High Performance Computing resources to support scientific computi
 
             We are currently offering a new monthly event for HPC researchers at NJIT: **The HPC Monthly User Meeting**. This event is open to all NJIT students, faculty, and staff who use or are interested in NJIT's HPC resources and services. No prior registration is required.
         
-             * Date: Will be announced soon
-
-         
-        
-
+            * Date: Will be announced soon
+    
     </div>
+
 </div>
-
-<div class="grid cards" markdown>
-
-
--   ## Virtual Tour of NJIT Data Center
-
-    ---
-
-    Wulver is built through a partnership with [DataBank](https://www.databank.com/), which is live in DataBank’s Piscataway, N.J. data center (EWR2) and will support NJIT’s research efforts. This infrastructure will bolster NJIT’s research initiatives. You can access the 3D virtual tour of HPC data center below:
-
-    <iframe width='600' height='400' src='https://my.matterport.com/show/?m=KgYz67s8YoM' frameborder='0' allowfullscreen allow='xr-spatial-tracking'></iframe>
-</div>
-
 
