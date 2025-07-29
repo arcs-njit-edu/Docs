@@ -27,7 +27,7 @@ NJIT provides High Performance Computing resources to support scientific computi
 
     !!! njit inline "Running jobs on Wulver"
 
-        See [Running jobs](Software/slurm.md) for differenet partitions, QoS and sample jobs scripts.
+        See [Running jobs](Software/slurm/slurm.md) for differenet partitions, QoS and sample jobs scripts.
 
     !!! njit inline "HPC Events"
         
