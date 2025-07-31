@@ -35,6 +35,18 @@ nav:
             - Archived : HPC_Events_and_Workshops/Calendar/past_workshops.md
         - Workshop and Training Videos : HPC_Events_and_Workshops/Workshop_and_Training_Videos/
     - Software : Software/
+    - Running Jobs: 
+        - Overview : Running_jobs/overview.md
+        - Job Limitations: Running_jobs/job_limitation.md
+        - Nodes and Memory: Running_jobs/node-memory-config.md
+        - Service Units (SU): Running_jobs/service-units.md
+        - Batch Jobs: Running_jobs/batch-jobs.md
+        - Interactive Jobs: Running_jobs/interactive-jobs.md
+        - Array Jobs: Running_jobs/array-jobs.md
+        - Dependency Jobs: Running_jobs/dependency-jobs.md
+        - Checkpointing: Running_jobs/checkpointing.md
+        - Managing and Monitoring Jobs: Running_jobs/managing-jobs.md
+        - Jobs on Ondemand: Running_jobs/ondemand-jobs.md
     - OnDemand :
         - OnDemand Overview: OnDemand/index.md
         - Interactive Apps: OnDemand/Interactive_Apps/
