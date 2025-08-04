@@ -116,7 +116,8 @@ hide:
 
 ![Gedaliah Wolosh](../assets/images/wolosh.jpg){ align=left, width="300" }
 
-Dr. Wolosh had been at NJIT for over twenty years working in research computing. He was the lead architect for all the HPC resources at NJIT. He specialized in building scientific software stacks.
+Dr. Wolosh recently retired after  25 years at NJIT  working in research computing. He was the lead architect for all the HPC resources at NJIT. He specialized in building scientific software stacks.
 <a href="https://github.com/gwolosh">![https://github.com/gwolosh](../assets/images/github-color.svg){ width="15" }</a>
-<a href="https://www.linkedin.com/in/gwolosh">![https://www.linkedin.com/in/gwolosh](../assets/images/linkedin-color.svg){ width="15" }</a>
+<a href="https://www.linkedin.com/in/gwolosh">![https://www.linkedin.com/in/gwolosh](../assets/images/linkedin-color.svg){ width="15"
+}</a>
 
