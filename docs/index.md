@@ -9,6 +9,7 @@ Welcome to HPC at [New Jersey Institute of Technology (NJIT)](https://www.njit.e
 
 NJIT provides High Performance Computing resources to support scientific computing for faculty and students. These resources include CPU nodes, GPU nodes, parallel storage, high speed, low latency Infiniband networking and a fully optimized scientific software stack.
 
+# Would you like to see a virtual tour of the data center? Find it [here](clusters/index.md#virtual-tour-of-njit-data-center)!
 ---
 
 <div class="grid cards" markdown>
