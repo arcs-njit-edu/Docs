@@ -1,4 +1,4 @@
-# Overview
+# MIG Profile Comparison
 
 MIG profiles represent different partitions of a physical NVIDIA A100 80GB GPU. Each profile gives users a slice of compute and memory resources while maintaining full isolation from other workloads running on the same GPU.
 
@@ -8,8 +8,6 @@ On Wulver, the following MIG profiles are supported:
 - `2g.20gb` – 20 GB memory ; 28 compute units
 - `3g.40gb` – 40 GB memory ; 42 compute units
 - `Full 80GB GPU` – No MIG (for jobs that require complete GPU access)
-
-## MIG Profile Comparison Table
 
 ```python exec="on"
 import pandas as pd 

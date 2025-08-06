@@ -6,7 +6,18 @@ This allows multiple users or processes to simultaneously run GPU workloads with
 
 ## Implementation in Wulver
 
-Wulver supports MIG on select NVIDIA A100 80GB GPUs. It address key challenges in shared environments:
+MIG is implemented on selected NVIDIA A100 80GB GPUs. Wulver currently supports the following MIG configurations:
+
+- 1g.10gb
+- 2g.20gb
+- 3g.40gb
+- Full 80GB (non-MIG)
+
+These profiles correspond to different partitions of compute and memory resources from the A100 80GB GPU. You can view a full comparison in the [Profile Comparison section](../MIG/profile-comparison.md).
+
+Each profile maps to a Service Unit (SU) usage factor that reflects its computational weight — ranging from 2 SU/hour for a 1g.10gb instance up to 16 SU/hour for a full GPU. You can check full SU overview of MIG [here](../MIG/job-submission-and-su-charges.md#understanding-su-charges)
+
+MIGs address key challenges in shared environments:
 
 **Fair resource sharing**:<br> 
 MIG enables multiple users to share a single GPU without stepping on each other’s performance.
@@ -27,28 +38,14 @@ Users can request GPU capacity that matches their actual workload requirements.
 MIG reduces GPU underutilization by splitting large resources into usable chunks.
 
 
-## Profiles Supported on Wulver
-
-Wulver currently supports the following MIG configurations:
-
-- 1g.10gb
-- 2g.20gb
-- 3g.40gb
-- Full 80GB (non-MIG)
-
-These profiles correspond to different partitions of compute and memory resources from the A100 80GB GPU. You can view a full comparison in the [Profile Comparison section](./profile-comparison.md).
-
-Each profile also maps to a Service Unit (SU) usage factor that reflects its computational weight — ranging from 2 SU/hour for a 1g.10gb instance up to 16 SU/hour for a full GPU. You can check full SU overview of MIG [here](./job-submission-and-su.md)
-
-
 ## Why You Should Use MIG Instances
 
 **Lower SU Cost for Smaller Workloads**:<br> 
 MIG lets you select a GPU slice that meets your job’s needs without paying for more power than you use.
 For example:
 
-- A small training job or inference script may only require 10–20 GB of GPU memory.
-- Running such a job on a 1g.10gb or 2g.20gb MIG instance will consume only a fraction of the SUs compared to using a full GPU.
+- A small training job or inference script may only require `10–20` GB of GPU memory.
+- Running such a job on a `1g.10gb` or `2g.20gb` MIG instance will consume only a fraction of the SUs compared to using a full GPU.
 
 This is especially important if you’re working within a research group’s annual SU allocation on Wulver.
 

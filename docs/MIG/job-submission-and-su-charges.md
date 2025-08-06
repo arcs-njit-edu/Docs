@@ -1,4 +1,4 @@
-# Overview
+# MIG Job Submission and SU Charges
 
 When submitting jobs on Wulver's MIG-enabled A100 GPUs, you must explicitly request the desired MIG profile using the --gres directive in your SLURM script.
 
@@ -42,6 +42,9 @@ $srun --partition=gpu \
 --time=00:59:00 \
 --pty bash
 ```
+
+!!!tip
+    You can submit your job to multiple MIG instances. For example: `--gres=gpu:a100_10g:2` will allocate 2 instances of `10G` MIG.
 
 ## Understanding SU Charges
 
