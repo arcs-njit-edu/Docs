@@ -3,9 +3,9 @@ Batch jobs are like pre-written instructions handed over to the cluster to be ex
 
 Unlike your personal laptop where you run commands interactively, HPC jobs are queued and run asynchronously using a job script — a text file that tells Slurm:
 
-- What resources you need?
+- What resources do you need?
 - What is your PI account?
-- What program or command to run?
+- What programs or commands are needed to run job?
 - How long your job may take?
 
 ### Example of batch job slurm script
@@ -15,7 +15,7 @@ Unlike your personal laptop where you run commands interactively, HPC jobs are q
     === "Using 1 core"
         ```slurm
         #!/bin/bash -l
-        #SBATCH --job-name=job_nme
+        #SBATCH --job-name=job_name
         #SBATCH --output=%x.%j.out # %x.%j expands to slurm JobName.JobID
         #SBATCH --error=%x.%j.err
         #SBATCH --partition=general
@@ -32,7 +32,7 @@ Unlike your personal laptop where you run commands interactively, HPC jobs are q
     === "Using multiple cores"
         ```slurm
         #!/bin/bash -l
-        #SBATCH --job-name=job_nme
+        #SBATCH --job-name=job_name
         #SBATCH --output=%x.%j.out # %x.%j expands to slurm JobName.JobID
         #SBATCH --error=%x.%j.err
         #SBATCH --partition=general
@@ -49,7 +49,7 @@ Unlike your personal laptop where you run commands interactively, HPC jobs are q
     === "Using multiple threads"
         ```slurm
         #!/bin/bash -l
-        #SBATCH --job-name=job_nme
+        #SBATCH --job-name=job_name
         #SBATCH --output=%x.%j.out # %x.%j expands to slurm JobName.JobID
         #SBATCH --error=%x.%j.err
         #SBATCH --partition=general
@@ -67,7 +67,7 @@ Unlike your personal laptop where you run commands interactively, HPC jobs are q
     === "Using multiple cores and threads"
         ```slurm
         #!/bin/bash -l
-        #SBATCH --job-name=job_nme
+        #SBATCH --job-name=job_name
         #SBATCH --output=%x.%j.out # %x.%j expands to slurm JobName.JobID
         #SBATCH --error=%x.%j.err
         #SBATCH --partition=general

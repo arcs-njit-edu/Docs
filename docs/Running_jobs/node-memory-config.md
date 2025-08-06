@@ -27,9 +27,9 @@ print(html_output)
 ```
 
 ## How many cores and memory do I need?
-There is no deterministic method of finding the exact amount of memory needed by a job in advance. A general rule of thumb is to overestimate it slightly and then scale down based on previous runs. Significant overestimation, however, can lead to inefficiency of system resources and unnecessary expenditure of CPU time allocations.
+There is no deterministic method of finding the exact amount of memory needed by a job in advance. A good practice is to overestimate it slightly and then scale down based on previous runs. Significant overestimation, however, can lead to inefficiency of system resources and unnecessary expenditure of CPU time allocations.
 
-We have tool `seff` in Slurm which you can use to check how much resources your job consumed and based on that re-adjust the configurations.
+We have tool [`seff`](../Running_jobs/managing-jobs.md/#seff-command) in Slurm which you can use to check how much resources your job consumes and based on that re-adjust the configurations.
 
 Understanding where your code is spending time or memory is key to efficient resource usage. Profiling helps you answer questions like:
 
