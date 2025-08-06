@@ -16,13 +16,14 @@ print(df.to_markdown(index=False))
 ### Priority (Use `--qos`)
 Wulver has three levels of “priority”, utilized under SLURM as Quality of Service (QoS):
 ```python exec="on"
-import pandas as pd 
+import pandas as pd
 import numpy as np
-from tabulate import tabulate
 df = pd.read_csv('docs/assets/tables/slurm_qos.csv')
-# Replace NaN with 'NA'
 df.replace(np.nan, 'NA', inplace=True)
-print(df.to_markdown(index=False))
+df.iloc[:, 0] = df.iloc[:, 0].apply(lambda x: f"<code>{str(x).strip()}</code>")
+# Apply style to prevent wrapping, hide the index, and convert to HTML
+html_output = df.style.set_properties(**{'white-space': 'nowrap', 'text-align': 'left'}, subset=df.columns[0]).hide(axis='index').to_html()
+print(html_output)
 ```
 
 ## How many cores and memory do I need?
