@@ -28,12 +28,6 @@ Users can request GPU capacity that matches their actual workload requirements.
 **Improved scheduling efficiency**:<br> 
 MIG instances are smaller and easier to schedule than full GPUs.
 
-**Fair resource sharing**:<br> 
-MIG enables multiple users to share a single GPU without stepping on each other’s performance.
-
-**Right-sizing workloads**:<br> 
-Users can request GPU capacity that matches their actual workload requirements.
-
 **Reduced idle time**:<br> 
 MIG reduces GPU underutilization by splitting large resources into usable chunks.
 

@@ -36,7 +36,7 @@ nav:
         - Workshop and Training Videos : HPC_Events_and_Workshops/Workshop_and_Training_Videos/
     - Software : Software/
     - MIG :
-        - Overview: MIG/overview.md
+        - MIG Overview: MIG/index.md
         - Profile Comparison: MIG/profile-comparison.md
         - Job Submission and SU Charges: MIG/job-submission-and-su-charges.md
     - OnDemand :
