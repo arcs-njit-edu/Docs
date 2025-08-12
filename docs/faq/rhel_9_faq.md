@@ -1,6 +1,7 @@
 # FAQ: RHEL8 to RHEL9 OS Upgrade
 
-We are upgrading Wulver's operating system from RHEL8 to RHEL9 during the September maintenance cycle. Please review these frequently asked questions. Please contact us if you have further questions. 
+We are upgrading Wulver's operating system from RHEL8 to RHEL9 during the [September maintenance cycle](../news/posts/2025-07-29.md/#wulver-maintenance).<br>
+Please review these frequently asked questions. Please contact us if you have further questions. 
 
 
 ??? question "What is changing on Wulver with the OS upgrade from RHEL8 to RHEL9?"
