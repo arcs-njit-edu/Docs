@@ -1,6 +1,6 @@
 # FAQ: RHEL8 to RHEL9 OS Upgrade
 
-We are upgrading Wulver's OS from RHEL8 to RHEL9 during September maintenance cycle. Please review our frequently asked questions. You can email us if you want additional information. 
+We are upgrading Wulver's operating system from RHEL8 to RHEL9 during the September maintenance cycle. Please review these frequently asked questions. Please contact us if you have further questions. 
 
 
 ??? question "What is changing on Wulver with the OS upgrade from RHEL8 to RHEL9?"
@@ -14,6 +14,11 @@ We are upgrading Wulver's OS from RHEL8 to RHEL9 during September maintenance cy
     * Software compiled under RHEL8 will still be available to use at your own risk by loading the older version of foss or Intel modules However, the default path will point to the software compiled under RHEL 9. If users intend to use the older version of the software, the path will be shared upon request.
     * Up-to-date documentation and module lists will be provided—check the cluster’s software page or module system for specifics.
     * The default toolchain for newer RHEL 9 applications is `foss/2025a` and `foss/2024a` 
+
+
+??? question "How do I access the new modules or software?"
+    * Use the `module avail` and `module load` commands to explore new and updated software on RHEL9.
+    * Some modules or software stacks may have different names, versions, or paths—review documentation.
 
 
 ??? question "How will the upgrade affect my jobs, software, and workflows?"
@@ -38,11 +43,6 @@ We are upgrading Wulver's OS from RHEL8 to RHEL9 during September maintenance cy
     * Checkpoint/Restart: If using application-level checkpointing, confirm that your checkpoint files are forward-compatible with the new software/libraries.
     * Software upgrades may invalidate previous job states or results. Test recovery procedures in a development environment before production.
     * For critical, long-running simulations or legacy applications dependent on the RHEL8 stack, consult with the cluster support team about feasible solutions like containers or legacy compatibility modules.
-
-
-??? question "How do I access the new modules or software?"
-    * Use the `module avail` and `module load` commands to explore new and updated software on RHEL9.
-    * Some modules or software stacks may have different names, versions, or paths—review documentation.
 
 
 ### Quick tips for a smooth transition
