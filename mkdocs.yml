@@ -36,7 +36,7 @@ nav:
         - Workshop and Training Videos : HPC_Events_and_Workshops/Workshop_and_Training_Videos/
     - Software : Software/
     - Running Jobs: 
-        - Overview : Running_jobs/overview.md
+        - Overview : Running_jobs/index.md
         - Job Limitations: Running_jobs/job_limitation.md
         - Nodes and Memory: Running_jobs/node-memory-config.md
         - Service Units (SU): Running_jobs/service-units.md
