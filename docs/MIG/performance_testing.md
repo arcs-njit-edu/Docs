@@ -4,7 +4,7 @@ To help users select the appropriate MIG profile for their workloads, we conduct
 
 The results below show differences in runtime, accuracy, memory usage, and service unit (SU) cost across profiles. Observations and notes are included to explain unexpected results.
 
-### GROWMACS
+### GROMACS
 
 ```python exec="on"
 import pandas as pd 
