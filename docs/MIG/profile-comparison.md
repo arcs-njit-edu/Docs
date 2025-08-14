@@ -4,10 +4,18 @@ MIG profiles represent different partitions of a physical NVIDIA A100 80GB GPU. 
 
 On Wulver, the following MIG profiles are supported:
 
+- `10gb` – 10 GB memory
+- `20gb` – 20 GB memory
+- `40gb` – 40 GB memory
+
+<!--
 - `1g.10gb` – 10 GB memory ; 14 compute units
 - `2g.20gb` – 20 GB memory ; 28 compute units
 - `3g.40gb` – 40 GB memory ; 42 compute units
 - `Full 80GB GPU` – No MIG (for jobs that require complete GPU access)
+-->
+
+The table below summarizes the hardware characteristics of each MIG profile available on Wulver, alongside the full NVIDIA A100 80 GB GPU. It lists memory capacity, compute resources, and other architectural limits so users can quickly compare performance and capability across profiles.
 
 ```python exec="on"
 import pandas as pd 
@@ -17,6 +25,7 @@ df.replace(np.nan, 'NA', inplace=True)
 print(df.to_markdown(index=False))
 ```
 
+<!--
 ## What does `Xg.Ygb` mean?
 
 - `Xg` = X GPU slice (partition of compute cores)
@@ -57,3 +66,4 @@ With `1g.10gb:3`, you are likely running 3 independent processes (or jobs). You 
 - You're training or fine-tuning a model that benefits from larger memory/cache
 - You're running a single larger model or data batch
 - You want simpler code and fewer moving parts
+-->

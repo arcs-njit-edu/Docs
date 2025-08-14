@@ -1,0 +1,4 @@
+MIG Profile,Training Time (s),Test Accuracy (%),Memory Used (GB),SU Rate (/hr),SU,Cost/Performance
+A100_40GB,158.72,81.62,0.511,9,0.397,0.00486
+A100_20GB,195.11,79.48,0.511,5,0.271,0.00341
+A100_10GB,295.44,77.22,0.511,3,0.246,0.00319
