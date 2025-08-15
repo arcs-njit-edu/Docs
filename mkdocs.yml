@@ -43,6 +43,7 @@ nav:
         - 'Tools': 'OnDemand/4_tools.md'
         - 'My Interactive Sessions': 'OnDemand/5_My_Interactive_Sessions.md'
         - 'Jobs': 'OnDemand/6_jobs.md'
+    - 'RHEL 9 Upgrade FAQs' : 'faq/rhel_9_faq.md'
     - 'FAQs' : 'faq/faq.md'
     - News : news/index.md
     - '' : 'website_version.txt'
