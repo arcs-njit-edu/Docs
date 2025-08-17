@@ -29,10 +29,10 @@ print(df.to_markdown(index=False))
 - **Peak Allocated ≈ 5.7 GB across all runs**: The model + LoRA fine-tune has a fixed memory demand, regardless of MIG size.
     
 - **Peak Reserved varies** (8.9 → 23.5 GB): PyTorch’s caching allocator grabs bigger chunks when more GPU memory is available, but this doesn’t change training feasibility.
-    
-- **SU efficiency (SUs / 1M tokens)** is best on **20 GB MIG (16.39)**: Lowest cost per unit of work.
 
-- **Full 80 GB GPU** is fastest but least efficient (27 SU / 1M tokens).
+- **Efficiency vs. Speed**: Smaller MIGs (e.g., 10 GB, 20 GB) can be more cost-efficient per token, while larger MIGs or the full 80 GB GPU finish training faster.
+
+- **Choosing a profile**: The right option depends on priorities — use smaller MIGs to save SUs on long jobs, or larger MIGs when wall-time (speed) is more important.
 
 !!! note
     SU values are calculated as:  
