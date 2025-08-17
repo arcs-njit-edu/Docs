@@ -1,6 +1,8 @@
-GPU Profile,Walltime (s),Memory Used (GB),SU,SU Formula,Notes
-3g.40gb:1,100.58,33.08,0.251,"(Max(1, 4/4) + 16 × (40/80)) × hours","Larger MIGs reserve more CUDA allocator buffers; higher memory usage is normal."
-2g.20gb:1,151.99,18.21,0.211,"(Max(1, 4/4) + 16 × (20/80)) × hours","Lower memory usage due to smaller MIG size."
-1g.10gb:1,OOM,OOM,OOM,"—","Model too large for this profile."
-80gb (full),180.81,33.35,0.383,"(Max(1, 4/4) + 16 × (80/80)) × hours","Run dominated by fixed overhead; GPU capacity not fully utilized."
+MIG Profile,Walltime (h),SU Total,Tokens Processed,Tokens/s,Peak Allocated (GB),Peak Reserved (GB),SU per 1M Tokens
+A100_10gb,1.092,3.28,166327,42.3,5.68,8.97,19.05
+A100_20gb,0.556,2.78,166327,83.0,5.68,18.30,16.39
+A100_40gb,0.353,3.18,166327,130.9,5.68,23.55,18.88
+A100_80gb full GPU,0.267,4.53,166327,173.2,5.68,23.55,27.04
+
+
 

@@ -2,7 +2,7 @@
 
 To help users select the appropriate MIG profile for their workloads, we conducted benchmark tests using LLM fine-tuning, PyTorch training, and GROMACS molecular dynamics simulations. Tests were run on the NVIDIA A100 GPUs (full 80 GB and MIG profiles) available on Wulver.
 
-The results below show differences in runtime, accuracy, memory usage, and service unit (SU) cost across profiles. Observations and notes are included to explain unexpected results.
+The results below show differences in runtime, accuracy, memory usage, and service unit (SU) cost across profiles. Observations and notes are included to explain results.
 
 ### GROMACS
 
@@ -16,7 +16,7 @@ print(df.to_markdown(index=False))
 
 ### LLM Fine-Tuning
 
-A minimal QLoRA fine-tuning run was performed on the Qwen/Qwen2.5-1.5B-Instruct model using the public yahma/alpaca-cleaned dataset (1,000 samples, 1 epoch) across different MIG profiles and a full A100 80 GB GPU. Runtime, GPU/CPU memory usage, and service unit (SU) cost were recorded to compare resource efficiency and performance.
+The benchmark script fine-tunes the Qwen 1.5B Instruct model on the Alpaca-cleaned dataset using QLoRA. Training is done with 4-bit quantization to save memory and LoRA adapters so that only a small set of parameters are updated. The Hugging Face TRL `SFTTrainer` handles training, while the script also logs runtime, GPU/CPU memory, and tokens processed per second. The setup runs consistently on both full NVIDIA's A100 80GB GPU and different MIG slices (10 GB, 20 GB, 40 GB), making it useful for comparing speed and cost across profiles.
 
 ```python exec="on"
 import pandas as pd 
@@ -26,68 +26,43 @@ df.replace(np.nan, 'NA', inplace=True)
 print(df.to_markdown(index=False))
 ```
 
-### MNIST Simple CNN
+- **Peak Allocated ≈ 5.7 GB across all runs**: The model + LoRA fine-tune has a fixed memory demand, regardless of MIG size.
+    
+- **Peak Reserved varies** (8.9 → 23.5 GB): PyTorch’s caching allocator grabs bigger chunks when more GPU memory is available, but this doesn’t change training feasibility.
+    
+- **SU efficiency (SUs / 1M tokens)** is best on **20 GB MIG (16.39)**: Lowest cost per unit of work.
 
-Trains a lightweight convolutional network on the MNIST handwritten digit dataset (grayscale, 28×28) for a small number of epochs. This benchmark measures training time, accuracy, and GPU memory usage to show how smaller MIG profiles handle low-compute, low-memory workloads
+- **Full 80 GB GPU** is fastest but least efficient (27 SU / 1M tokens).
 
-```python exec="on"
-import pandas as pd 
-import numpy as np
-df = pd.read_csv('docs/assets/tables/MIG/pytorch_mnist_simplecnn.csv')
-df.replace(np.nan, 'NA', inplace=True)
-print(df.to_markdown(index=False))
-```
-
-### CIFAR10 DeepCNN
-
-A custom deep convolutional network with multiple convolution–batch normalization–ReLU blocks was trained on CIFAR-10 (RGB, 32×32). This architecture has a higher parameter count and more convolutional layers than the MNIST test, making it more GPU-compute intensive. It is designed to test how MIG profiles handle deeper feature extraction workloads, where convolutional throughput and memory bandwidth significantly affect performance.
-
-```python exec="on"
-import pandas as pd 
-import numpy as np
-df = pd.read_csv('docs/assets/tables/MIG/pytorch_cifar10_deepcnn.csv')
-df.replace(np.nan, 'NA', inplace=True)
-print(df.to_markdown(index=False))
-```
-
-### CIFAR10 ResNet
-
-A custom ResNet-style architecture with residual connections was trained on CIFAR-10 (RGB, 32×32). Skip connections help preserve gradient flow in deep networks, enabling effective training with more layers. This test emphasizes how MIG partitions perform on workloads with irregular memory access patterns and additional elementwise operations, compared to the sequential convolution-heavy DeepCNN.
-
-```python exec="on"
-import pandas as pd 
-import numpy as np
-df = pd.read_csv('docs/assets/tables/MIG/pytorch_cifar10_resnet.csv')
-df.replace(np.nan, 'NA', inplace=True)
-print(df.to_markdown(index=False))
-```
 !!! note
     SU values are calculated as:  
-    `SU = (max(CPUs, RAM/4GB) + 16 × (GPU_mem/80)) × hours`  
+    `SU = (max(#CPUs, #RAM/4GB) + 16 × (GPU_mem/80)) × hours`  
     
-    **Example** (A100_20GB, 70.70 s runtime, 1 CPU, 4 GB RAM, 20 GB GPU):  
+    **Example** (A100_20GB, 0.556 hr walltime, 1 CPU, 4 GB RAM, 20 GB GPU):  
     ```
-    SU = (max(1, 4/4) + 16 × (20/80)) × (70.70 / 3600)
-       = (1 + 4) × 0.01964 ≈ 0.098
-    Cost/Performance = SU / Accuracy = 0.098 / 99.20 ≈ 0.00099
+    SU = (max(1, 4/4) + 16 × (20/80)) × 0.556
+       = (1 + 4) * 0.556 = 2.78
     ```
+    
+### Matrix Multiplication Benchmarks
 
-## Key Takeaways
+We ran a **matrix multiplication benchmark** on different NVIDIA A100 MIG profiles and the full GPU. The test multiplies large square matrices (sizes like 4096×4096 up to 49k×49k) using PyTorch and CUDA.
 
-- **Performance scales with MIG size—but not always linearly**: Larger MIG profiles generally train faster and simulate more nanoseconds/day in GROMACS, but the speedup is often less than proportional to the increase in allocated GPU memory or compute units.
+Matrix multiplication is the **core operation in deep learning** — it’s what neural networks spend most of their time doing. Measuring how many **TFLOPs (trillion floating point operations per second)** each MIG slice achieves gives a good picture of its raw compute power.
 
-- **Memory footprint depends on model size and MIG profile**: CUDA allocators and kernel workspaces scale with available GPU resources, so bigger MIGs may report higher memory usage even when running the same workload. This is expected and not necessarily wasteful.
+```python exec="on"
+import pandas as pd 
+import numpy as np
+df = pd.read_csv('docs/assets/tables/MIG/matrix_multiplication.csv')
+df.replace(np.nan, 'NA', inplace=True)
+print(df.to_markdown(index=False))
+```
 
-- **Workload type matters**:
+- **Peak FP16 performance** (fast half-precision mode used in AI training).
+- **Peak FP32 performance** (single precision with TF32 tensor cores, higher accuracy but slower).
+- **Largest tested matrix size (n)** where peak performance was observed.
+- **Peak GPU memory usage**, to see whether memory or compute was the bottleneck.
+- **SU usage factor**, to tie performance back to billing.
 
-    - Compute-heavy, parallelizable workloads (e.g., deep CNNs, GROMACS) benefit more from larger MIG profiles.
+The results show that **performance scales almost linearly with MIG size (number of SMs)**, while memory never became the limiting factor. This means compute capacity is the main driver of speed, and users can choose between smaller slices (cheaper, slower) or larger slices (faster, higher SU rate) depending on their workload needs.
 
-    - Smaller models or short jobs (e.g., MNIST, small LLMs) may see little to no gain in runtime from a full GPU compared to a well-sized MIG.
-
-- **Service Unit (SU) efficiency varies**: In some cases, smaller MIG profiles deliver better SU cost per unit of work (e.g., SU/ns in GROMACS) because they avoid underutilizing unused GPU capacity.
-
-- **Avoid over-provisioning**: Select the smallest MIG profile that meets your workload’s memory and performance requirements—this improves overall cluster utilization and reduces queue wait times.
-
-- **OOM is a real constraint**: Some workloads (e.g., LLM fine-tuning) may simply not fit on smaller MIG profiles, making larger profiles a requirement, not a preference.
-
-- **Parallel isolation benefits**: MIG partitions prevent interference between concurrent users, making performance more predictable in shared environments compared to time-sliced GPUs.
