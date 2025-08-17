@@ -20,7 +20,7 @@ The table below summarizes the hardware characteristics of each MIG profile avai
 ```python exec="on"
 import pandas as pd 
 import numpy as np
-df = pd.read_csv('docs/assets/tables/mig-profile-comparison.csv')
+df = pd.read_csv('docs/assets/tables/MIG/mig-profile-comparison.csv')
 df.replace(np.nan, 'NA', inplace=True)
 print(df.to_markdown(index=False))
 ```
