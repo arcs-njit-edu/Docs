@@ -42,57 +42,36 @@ Use '-h' to display this help message.
 
 === "CPU Nodes"
 
-     ```bash
-     $ interactive -a $PI_UCID -q standard -j cpu
-     Starting an interactive session with the general partition and 1 core for 01:00:00 of walltime in standard priority
-     salloc: Pending job allocation 466577
-     salloc: job 466577 queued and waiting for resources
-     salloc: job 466577 has been allocated resources
-     salloc: Granted job allocation 466577
-     salloc: Nodes n0103 are ready for job
-     ```
-     Use `ssh` or `srun` 
-
-     `srun ./myexe <input/output options>` 
-     or
-     `ssh n0103`
+    ```bash
+    $ interactive -a $PI_UCID -q standard -j cpu
+    Job Type: cpu
+    Starting an interactive session with the general partition and 1 core for 01:00:00 of walltime in standard priority
+    srun: job 584280 queued and waiting for resources
+    srun: job 584280 has been allocated resources
+    ```
+    
 === "GPU Nodes"
 
-     ```bash
-     $ interactive -a $PI_UCID -q standard -j gpu
-     Starting an interactive session with the GPU partition, 1 core and 1 GPU for 01:00:00 of walltime in standard priority
-     salloc: Pending job allocation 466579
-     salloc: job 466579 queued and waiting for resources
-     salloc: job 466579 has been allocated resources
-     salloc: Granted job allocation 466579
-     salloc: Nodes n0048 are ready for job
-     ```
-     Use `ssh` or `srun` 
-
-     `srun ./myexe <input/output options>` 
-     or
-     `ssh n0048`
+    ```bash
+    $ interactive -a $PI_UCID -q standard -j gpu
+    Job Type: gpu
+    Starting an interactive session with the GPU partition, 1 core and 1 GPU for 01:00:00 of walltime in standard priority
+    srun: job 584279 queued and waiting for resources
+    srun: job 584279 has been allocated resources
+    ```  
      
 === "Debug Nodes"
 
-     ```bash
-     $ interactive -a $PI_UCID -q debug -j cpu -p debug
-     Starting an interactive session with the debug partition and 1 core for 01:00:00 of walltime in debug priority
-     salloc: Pending job allocation 466581
-     salloc: job 466581 queued and waiting for resources
-     salloc: job 466581 has been allocated resources
-     salloc: Granted job allocation 466581
-     salloc: Waiting for resource configuration
-     salloc: Nodes n0127 are ready for job
-     ```
-     Use `ssh` or `srun`.
-
-     `srun ./myexe <input/output options>` 
-     or
-     `ssh n0127`
+    ```bash
+    $ interactive -a $PI_UCID -q debug -j cpu -p debug
+    Job Type: cpu
+    Starting an interactive session with the debug partition and 1 core for 01:00:00 of walltime in debug priority
+    srun: job 584281 queued and waiting for resources
+    srun: job 584281 has been allocated resources
+    ```
 
 Replace `$PI_UCID` with PI's NJIT UCID. 
-Now, once you get the confirmation of job allocation, you can either use `srun` or `ssh` to access the particular node allocated to the job. 
+Now, once you get the confirmation of job allocation, you will be assigned to a compute node.
 
 #### Customizing Your Resources
 Please note that, by default, this interactive session will request 1 core (for CPU jobs), 1 GPU (for GPU jobs), with a 1-hour walltime. To customize the resources, use the `-h` option for help. Run `interactive -h` for more details. Here is an explanation of each flag given below.
