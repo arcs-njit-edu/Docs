@@ -11,7 +11,10 @@ When submitting jobs on Wulver's MIG-enabled A100 GPUs, you must explicitly requ
 
 
 !!! info
-    For an 80G MIG, it is considered a full GPU. In that case, you can alternatively specify `--gres=gpu:1` in your job script. If you want to see a job script example of requesting a full GPU, please refer to the sample [GPU job scripts](../Running_jobs/batch-jobs.md/#submitting-jobs-on-gpu-nodes).
+    For an 80G MIG, it is considered a full GPU. In that case, you can alternatively specify `--gres=gpu:1` in your job script. If you want to see a job script example of requesting a full GPU, please refer to the sample [GPU job scripts](../Software/slurm/slurm.md/#submitting-jobs-on-gpu-nodes).
+
+!!! note
+    Please note that MIGs are available in partition=`debug_gpu` and qos=`debug`
 
 ### Sample SLURM Script for a MIG Job
 
@@ -20,8 +23,8 @@ When submitting jobs on Wulver's MIG-enabled A100 GPUs, you must explicitly requ
 #SBATCH --job-name=gpu_job
 #SBATCH --output=%x.%j.out
 #SBATCH --error=%x.%j.err
-#SBATCH --partition=gpu
-#SBATCH --qos=standard
+#SBATCH --partition=debug_gpu
+#SBATCH --qos=debug
 #SBATCH --account=$PI_ucid         # Replace with PI's UCID
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=8
@@ -35,9 +38,9 @@ srun ./myexe <input/output options>
 ### Interactive session with MIG
 
 ```shell
-$srun --partition=gpu \
+$srun --partition=debug_gpu \
 --account=$PI_ucid \
---qos=standard \
+--qos=debug \
 --gres=gpu:a100_10g:1 \
 --time=00:59:00 \
 --pty bash
