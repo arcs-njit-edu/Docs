@@ -32,7 +32,7 @@ MIG is implemented on selected NVIDIA A100 80GB GPUs. Wulver currently supports 
 
 These profiles correspond to different partitions of compute and memory resources from the A100 80GB GPU. You can view a full comparison in the [Profile Comparison section](../MIG/profile-comparison.md).
 
-Each profile maps to a Service Unit (SU) usage factor that reflects its computational weight — ranging from 2 SU/hour for a 10gb instance up to 16 SU/hour for a full GPU. You can check full SU overview of MIG [here](../MIG/job-submission-and-su-charges.md#understanding-su-charges)
+Each profile maps to a Service Unit (SU) usage factor that reflects its computational weight — ranging from 2 SU/hour for a 10gb instance up to 16 SU/hour for a full GPU. You can check full SU overview of MIG [here](../MIG/job-submission-and-su-charges.md#understanding-su-charges).
 
 MIGs address key challenges in shared environments:
 
@@ -52,7 +52,7 @@ MIG lets you select a GPU slice that meets your job’s needs without paying for
 For example:
 
 - A small training job or inference script may only require `10–20` GB of GPU memory.
-- Running such a job on a `1g.10gb` or `2g.20gb` MIG instance will consume only a fraction of the SUs compared to using a full GPU.
+- Running such a job on a `10gb` or `20gb` MIG instance will consume only a fraction of the SUs compared to using a full GPU.
 
 This is especially important if you’re working within a research group’s annual SU allocation on Wulver.
 
@@ -74,5 +74,6 @@ Each MIG instance has dedicated resources — memory, L2 cache, compute cores �
 
 MIG is compatible with CUDA, cuDNN, PyTorch, TensorFlow, and most GPU-accelerated libraries — no code changes are typically required.
 
-!!! Note
+!!! info
+
     MIG is not implemented on all GPUs in Wulver. 

@@ -13,38 +13,40 @@ When submitting jobs on Wulver's MIG-enabled A100 GPUs, you must explicitly requ
 !!! info
     For an 80G MIG, it is considered a full GPU. In that case, you can alternatively specify `--gres=gpu:1` in your job script. If you want to see a job script example of requesting a full GPU, please refer to the sample [GPU job scripts](../Software/slurm/slurm.md/#submitting-jobs-on-gpu-nodes).
 
-!!! note
+!!! warning
     Please note that MIGs are available in partition=`debug_gpu` and qos=`debug`
 
-### Sample SLURM Script for a MIG Job
+## Running Jobs with MIG
 
-```shell
-#!/bin/bash -l
-#SBATCH --job-name=gpu_job
-#SBATCH --output=%x.%j.out
-#SBATCH --error=%x.%j.err
-#SBATCH --partition=debug_gpu
-#SBATCH --qos=debug
-#SBATCH --account=$PI_ucid         # Replace with PI's UCID
-#SBATCH --nodes=1
-#SBATCH --ntasks-per-node=8
-#SBATCH --gres=gpu:a100_10g:1      # Change to 20g or 40g as needed
-#SBATCH --time=59:00
-#SBATCH --mem-per-cpu=4000M
+=== "Sample SLURM Script for a MIG Job"
 
-srun ./myexe <input/output options>
-```
+    ```shell
+    #!/bin/bash -l
+    #SBATCH --job-name=gpu_job
+    #SBATCH --output=%x.%j.out
+    #SBATCH --error=%x.%j.err
+    #SBATCH --partition=debug_gpu
+    #SBATCH --qos=debug
+    #SBATCH --account=$PI_ucid         # Replace with PI's UCID
+    #SBATCH --nodes=1
+    #SBATCH --ntasks-per-node=8
+    #SBATCH --gres=gpu:a100_10g:1      # Change to 20g or 40g as needed
+    #SBATCH --time=59:00
+    #SBATCH --mem-per-cpu=4000M
+    
+    srun ./myexe <input/output options>
+    ```
 
-### Interactive session with MIG
+=== "Interactive session with MIG"
 
-```shell
-$srun --partition=debug_gpu \
---account=$PI_ucid \
---qos=debug \
---gres=gpu:a100_10g:1 \
---time=00:59:00 \
---pty bash
-```
+    ```shell
+    $srun --partition=debug_gpu \
+    --account=$PI_ucid \
+    --qos=debug \
+    --gres=gpu:a100_10g:1 \
+    --time=00:59:00 \
+    --pty bash
+    ```
 
 !!!tip
     You can submit your job to multiple MIG instances. For example: `--gres=gpu:a100_10g:2` will allocate 2 instances of `10G` MIG.
@@ -63,7 +65,7 @@ Each component contributes to the SU calculation. The SU cost is charged per nod
 SU = MAX(#CPUs, Memory (in GB) / 4) + 16 × (GPU memory requested / 80GB)
 ```
 
-!!! note
+!!! info
     GPU memory requested is based on the MIG profile, not your actual memory usage during the job.
 
 
