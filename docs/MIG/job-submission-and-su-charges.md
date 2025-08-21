@@ -11,7 +11,7 @@ When submitting jobs on Wulver's MIG-enabled A100 GPUs, you must explicitly requ
 
 
 !!! info
-    For an 80G MIG, it is considered a full GPU. In that case, you can alternatively specify `--gres=gpu:1` in your job script. If you want to see a job script example of requesting a full GPU, please refer to the sample [GPU job scripts](../Software/slurm/slurm.md/#submitting-jobs-on-gpu-nodes).
+    For an 80G MIG, it is considered a full GPU. In that case, you can alternatively specify `--gres=gpu:a100:1` in your job script. If you want to see a job script example of requesting a full GPU, please refer to the sample [GPU job scripts](../Software/slurm/slurm.md/#submitting-jobs-on-gpu-nodes).
 
 !!! warning
     Please note that MIGs are available in partition=`debug_gpu` and qos=`debug`
