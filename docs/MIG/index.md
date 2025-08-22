@@ -23,12 +23,11 @@ The plots below show cluster-wide usage of the A100 GPUs over the last 3 months.
 
 ## MIG Implementation in Wulver
 
-MIG is implemented on selected NVIDIA A100 80GB GPUs. Wulver currently supports the following MIG configurations:
+MIG is implemented on selected **NVIDIA A100 80GB** GPUs. Wulver currently supports the following MIG configurations:
 
 - 10gb
 - 20gb
 - 40gb
-- Full 80GB (non-MIG)
 
 These profiles correspond to different partitions of compute and memory resources from the A100 80GB GPU. You can view a full comparison in the [Profile Comparison section](../MIG/profile-comparison.md).
 
