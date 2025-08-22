@@ -53,8 +53,6 @@ For example:
 - A small training job or inference script may only require `10–20` GB of GPU memory.
 - Running such a job on a `10gb` or `20gb` MIG instance will consume only a fraction of the SUs compared to using a full GPU.
 
-This is especially important if you’re working within a research group’s annual SU allocation on Wulver.
-
 **No Need to Reserve a Full GPU**:<br> 
 Some jobs — like unit testing, data preprocessing with GPU acceleration, or light model inference — simply don’t need the full resources of an 80GB A100. MIG allows users to avoid bottlenecks and free up resources by choosing an appropriately sized instance.This is especially valuable when:
 
