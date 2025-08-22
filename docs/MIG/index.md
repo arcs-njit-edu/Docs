@@ -8,12 +8,11 @@ This allows multiple users or processes to simultaneously run GPU workloads with
 
 <!-- Using HTML to display images side by side -->
 <div style="display: flex; justify-content: center; gap: 10px;">
-    <img src="../assets/images/MIG/gpu-mem-util-3mo.png" alt="GPU memory utilization (3 months)" width="48%">
     <img src="../assets/images/MIG/gpu-alloc-vs-util-3mo.png" alt="GPUs allocated vs. utilized (3 months)" width="48%">
+    <img src="../assets/images/MIG/gpu-mem-util-3mo.png" alt="GPU memory utilization (3 months)" width="48%">
 </div>
 
-
-The plots below show cluster-wide usage of the A100 GPUs over the last 3 months. In short: GPUs were **heavily allocated** but **lightly utilized**, which means lots of capacity sat idle behind single jobs.
+The plots above show cluster-wide usage of the A100 GPUs over the last 3 months. In short: GPUs were **heavily allocated** but **lightly utilized**, which means lots of capacity sat idle behind single jobs.
 
 - **Allocated vs. used**: GPUs were reserved ~85–95% of the time, while average compute utilization was ~25–50% and memory utilization stayed mostly under 20%.
 
