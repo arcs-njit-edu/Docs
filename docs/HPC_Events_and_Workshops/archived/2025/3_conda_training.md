@@ -19,4 +19,4 @@ This is the third webinar of the 2025 Spring semester introducing the NJIT HPC e
 
 
 ## Registration
-Registration is now closed. Check the [HPC training](../../../Workshop_and_Training_Videos/index.md#python-and-conda-environments-in-hpc-from-basics-to-best-practices) for the webinar recording and slides.
+Registration is now closed. Check the [HPC training](../../Workshop_and_Training_Videos/index.md#python-and-conda-environments-in-hpc-from-basics-to-best-practices) for the webinar recording and slides.

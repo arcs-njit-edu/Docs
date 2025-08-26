@@ -21,4 +21,4 @@ This is the fourth webinar of the 2025 Spring semester, introducing the basics o
 
 
 ## Registration
-Registration is now closed. Check the [HPC training](../../../Workshop_and_Training_Videos/index.md#introduction-to-linux) for the webinar recording and slides.
+Registration is now closed. Check the [HPC training](../../Workshop_and_Training_Videos/index.md#introduction-to-linux) for the webinar recording and slides.
