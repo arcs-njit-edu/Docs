@@ -3,33 +3,29 @@ hide:
   - toc
 ---
 
-
 # HPC Events
 
-## 2025 Summer
+## 2025 Fall
+Please check our workshop schedule for this fall season. Expand each section to view more details about the event. For webinars, the links will be sent to your email once you register. The links to slides and recordings will be updated after each webinar.
 
-<div class="grid cards" markdown>
--   ### [Machine Learning and Big Data Workshop](8_PSC_Machine_Learning_workshop.md)
-    ---
+```python exec="on"
+import re
+import pandas as pd
 
-    The Pittsburgh Supercomputing Center is pleased to present a Machine Learning and Big Data workshop. This workshop will focus on topics including big data analytics and machine learning with Spark, and deep  learning using Tensorflow. This will be an IN PERSON event hosted by various satellite sites, there WILL NOT be a direct to desktop option for this event.
+df = pd.read_csv('docs/assets/tables/trainings/2025_fall.csv', keep_default_na=False)
 
-    [<span class="octicon--arrow-right-24"></span> Registration and Event Details](8_PSC_Machine_Learning_workshop.md)
+def fix_cell(s):
+    if not isinstance(s, str):
+        return s
+    s = re.sub(r'(\()([^)]*?)index\.md', r'\1\2', s)
+    s = re.sub(r'(\b6_[\w\-.]+)\.md\b', r'\1', s)
+    s = s.replace('(//', '(/')
 
-</div>
+    return s
 
-<div class="grid cards" markdown>
--   ### [HPC Summer Workshop: MATLAB Parallel Computing Hands-On Using Wulver](7_MATLAB_on_Wulver.md)
-    ---
-
-    Join us for an interactive webinar hosted at NJIT's HPC facility, where MATLAB expert (Evan Cosgrov)
-    will guide participants through practical techniques for accelerating code and workflows using MATLAB’s parallel computing tools.
-    Through live demonstrations and guided examples, you’ll gain a solid understanding of how to parallelize MATLAB code, overcome common challenges, and optimize performance across distributed computing environments. 
-
-    [<span class="octicon--arrow-right-24"></span> Registration and Event Details](7_MATLAB_on_Wulver.md)
-
-</div>
-
+df = df.applymap(fix_cell)
+print(df.to_markdown(index=False))
+```
 !!! info "Archived Workshops"
 
     Looking for our previous workshops? Check out our [Past Workshops](past_workshops.md)!

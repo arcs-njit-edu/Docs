@@ -63,7 +63,7 @@ With `1g.10gb:3`, you are likely running 3 independent processes (or jobs). You 
 
 **When 3g.40gb is better**:<br>
 
-- You're training or fine-tuning a model that benefits from larger memory/cache
+- You're trainings or fine-tuning a model that benefits from larger memory/cache
 - You're running a single larger model or data batch
 - You want simpler code and fewer moving parts
 -->
