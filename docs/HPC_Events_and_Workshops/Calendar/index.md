@@ -31,4 +31,3 @@ print(df.to_markdown(index=False))
     Looking for our previous workshops? Check out our [Past Workshops](past_workshops.md)!
 
 
-
