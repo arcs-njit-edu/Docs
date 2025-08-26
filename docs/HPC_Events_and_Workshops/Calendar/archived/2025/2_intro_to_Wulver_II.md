@@ -21,4 +21,4 @@ This is the second webinar of the 2025 Spring semester introducing the NJIT HPC 
 
 ## Registration
 
-Registration is now closed. Check the [HPC training](../../Workshop_and_Training_Videos/index.md#introduction-to-wulver-accessing-system-running-jobs) for the webinar recording and slides.
+Registration is now closed. Check the [HPC training](../../../Workshop_and_Training_Videos/index.md#introduction-to-wulver-accessing-system-running-jobs) for the webinar recording and slides.

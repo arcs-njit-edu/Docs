@@ -21,5 +21,5 @@ hide:
 
 
 ## Registration
-Registration is now closed. Check the [HPC training](../../Workshop_and_Training_Videos/index.md#open-ondemand-on-wulver) for the webinar recording and slides.
+Registration is now closed. Check the [HPC training](../../../Workshop_and_Training_Videos/index.md#open-ondemand-on-wulver) for the webinar recording and slides.
 

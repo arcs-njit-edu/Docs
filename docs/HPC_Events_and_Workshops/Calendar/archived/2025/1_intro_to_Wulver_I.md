@@ -22,4 +22,4 @@ Our experienced HPC specialists will guide you through practical examples and pr
 
 ## Registration
 
-Registration is now closed. Check the [HPC training](../../Workshop_and_Training_Videos/index.md#introduction-to-wulver-getting-started) for the webinar recording and slides.
+Registration is now closed. Check the [HPC training](../../../Workshop_and_Training_Videos/index.md#introduction-to-wulver-getting-started) for the webinar recording and slides.

@@ -30,9 +30,7 @@ nav:
     - HPC Events and Workshops :
         - Calendar:
             - HPC_Events_and_Workshops/Calendar/index.md
-            - 2025 : HPC_Events_and_Workshops/Calendar/2025/
-            - 2024 : HPC_Events_and_Workshops/Calendar/2024/
-            - Archived : HPC_Events_and_Workshops/Calendar/past_workshops.md
+            - Archived : HPC_Events_and_Workshops/Calendar/archived/
         - Workshop and Training Videos : HPC_Events_and_Workshops/Workshop_and_Training_Videos/
     - Software : Software/
     - MIG :
