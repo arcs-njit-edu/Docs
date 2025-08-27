@@ -5,11 +5,11 @@ Wulver, like most shared HPC clusters, enforces certain job limitations to ensur
 
 ## General limitations of job scheduling
 
-// wulver job limitations
+- **Walltime Limits**: `standard`, `low`, and `high` QoS: maximum 72 hours (3 days); `debug` partition: maximum 8 hours. [More info](../Running_jobs/node-memory-config.md/#priority-use-qos)
 
-// ondemand job limitations
+- **SUs exhausted**: Once your Service Units are exhausted, you can no longer run your jobs on `standard` or `high` priority but you can still use `low`.
 
+- **Job preamption**: Jobs running on `low` priority can be preampted by `standard` or `high` priority jobs.
 
-## Slurm commands related to it
+- **Maintenance**: During the maintenance downtime, logins will be disabled and all the jobs will be held in scheduler. If you submit your job before maintenance with a walltime overlapping the maintenance period then also your job will be held by scheduler. [More info](../faq/faq.md/#maintenance)
 
-`quota_info` to check pending SUs and storage.
