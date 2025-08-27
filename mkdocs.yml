@@ -47,6 +47,11 @@ nav:
         - Checkpointing: Running_jobs/checkpointing.md
         - Managing and Monitoring Jobs: Running_jobs/managing-jobs.md
         - Jobs on Ondemand: Running_jobs/ondemand-jobs.md
+    - MIG :
+        - MIG Overview: MIG/index.md
+        - Profile Comparison: MIG/profile-comparison.md
+        - Job Submission and SU Charges: MIG/job-submission-and-su-charges.md
+        - Performance Testing: MIG/performance_testing.md
     - OnDemand :
         - OnDemand Overview: OnDemand/index.md
         - Interactive Apps: OnDemand/Interactive_Apps/
@@ -55,8 +60,9 @@ nav:
         - 'Tools': 'OnDemand/4_tools.md'
         - 'My Interactive Sessions': 'OnDemand/5_My_Interactive_Sessions.md'
         - 'Jobs': 'OnDemand/6_jobs.md'
+    - 'RHEL 9 Upgrade FAQs' : 'faq/rhel_9_faq.md'
     - 'FAQs' : 'faq/faq.md'
-    - News : news/index.md
+    - 'News and Announcements' : news/index.md
     - '' : 'website_version.txt'
     - '' : 'migration/index.md'
     - '' : 'migration/faqs.md'
