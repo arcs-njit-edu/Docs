@@ -4,7 +4,7 @@
 Instructors can utilize High-Performance Computing (HPC) resources for academic courses. Whether faculty are planning a course that involves computationally intensive tasks or introducing students to parallel computing concepts, the HPC environment can offer valuable resources.
 
 ## Course Details
-To request HPC resources for course, you need to provide the following information to [hpc@njit.edu](mailto:hpc@njit.edu). 
+To request HPC resources for course, you need to provide the following information at [HPC Course Request Form](https://nexus.njit.edu/highlander_nexus?id=sc_cat_item&sys_id=cd6eaea13b97e210e914eb0864e45a7f). 
 
 ### Name of Course:
 [Please provide the name of the course and a short description]
