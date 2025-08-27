@@ -199,4 +199,25 @@ Unlike your personal laptop where you run commands interactively, HPC jobs are q
 
         ./myexe <input/output options>
         ```
+=== "Bigmem Node"
+    The bigmem nodes provide 2 TB of RAM in total. By default, each CPU core is allocated 16 GB of memory, but you can request additional memory if your job requires it.
+
+    ??? example "Sample Job Script to use: bigmem_submit.sh"
+
+        ```slurm
+        #!/bin/bash -l
+        #SBATCH --job-name=bigmem_job
+        #SBATCH --output=%x.%j.out # %x.%j expands to slurm JobName.JobID
+        #SBATCH --error=%x.%j.err
+        #SBATCH --partition=bigmem
+        #SBATCH --qos=bigmem
+        #SBATCH --account=$PI_ucid # Replace $PI_ucid which the NJIT UCID of PI
+        #SBATCH --nodes=1
+        #SBATCH --ntasks-per-node=1
+        #SBATCH --time=59:00  # D-HH:MM:SS, Maximum allowable Wall Time 8 hours
+        #SBATCH --mem-per-cpu=16000M
+
+        ./myexe <input/output options>
+        ```
+
 To submit the jobs, `sbatch` command.
