@@ -69,7 +69,7 @@ NJIT provides High Performance Computing resources to support scientific computi
 
         !!! abstract "HPC Fall Events, 2025"
 
-            Check out our event schedule for the Fall season [here](/Docs/HPC_Events_and_Workshops)! If you have suggestions for webinar topics, please feel free to contact us at [hpc@njit.edu](mailto:hpc@njit.edu)
+            Check out our event schedule for the fall season [here](/Docs/HPC_Events_and_Workshops)! If you have suggestions for webinar topics, please feel free to contact us at [hpc@njit.edu](mailto:hpc@njit.edu)
 
     
     -   !!! abstract "Open Office Hours"
