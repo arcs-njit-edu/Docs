@@ -86,7 +86,7 @@ NJIT provides High Performance Computing resources to support scientific computi
 
             We are currently offering a new monthly event for HPC researchers at NJIT: **The HPC Monthly User Meeting**. This event is open to all NJIT students, faculty, and staff who use or are interested in NJIT's HPC resources and services. No prior registration is required.
         
-            * Date: Will be announced soon
+            * Date: Check the [fall schudule](/Docs/HPC_Events_and_Workshops).
     
     </div>
 
