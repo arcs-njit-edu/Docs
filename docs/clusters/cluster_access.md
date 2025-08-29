@@ -38,7 +38,7 @@ Here we will provide instructions for connecting to NJIT HPC on Mac/Linux and Wi
 
 === "Windows"
 
-    Download the MobaXterm from this [link](https://ist.njit.edu/software-available-download/). 
+    Download the MobaXterm from this [link](https://mobaxterm.mobatek.net/download-home-edition.html). 
     Open MobaXterm after installation is completed. 
     Select <kbd>Start local terminal</kbd> to open the terminal.
     
