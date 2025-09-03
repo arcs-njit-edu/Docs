@@ -1,8 +1,7 @@
 # FAQ: RHEL8 to RHEL9 OS Upgrade
 
-We are upgrading Wulver's operating system from RHEL8 to RHEL9 during the [September maintenance cycle](../news/posts/2025-07-29.md/#wulver-maintenance).<br>
-Please review these frequently asked questions. Please contact us if you have further questions. 
-
+We are upgrading Wulver's operating system from RHEL8 to RHEL9 during the [September maintenance cycle](../news/posts/2025-07-29.md/#wulver-maintenance).<br> If you have software installed for your group, complete this [form](https://forms.gle/6RzQE3hB93hMiong7) to request access to the test cluster. 
+Please review these frequently asked questions. Please contact us if you have further questions.
 
 ??? question "What is changing on Wulver with the OS upgrade from RHEL8 to RHEL9?"
     * The cluster’s operating system is being upgraded from Red Hat Enterprise Linux 8 (RHEL8) to Red Hat Enterprise Linux 9 (RHEL9).
@@ -34,6 +33,7 @@ Please review these frequently asked questions. Please contact us if you have fu
 ??? question "How can I use software that I built or compiled on RHEL8?"
     * Direct execution is not recommended: Binaries or environments built for RHEL8 may run into compatibility issues on RHEL9 (missing libraries, ABI mismatches).
     * Best Practice: Rebuild or reinstall your software on RHEL9 when possible.
+    * If you have software installed for your group, complete this [form](https://forms.gle/6RzQE3hB93hMiong7) to request access to the test cluster.
     * For critical cases:
         - **Containers**: Use Singularity/Apptainer to encapsulate your RHEL8 application and its dependencies.
         - **Compatibility Libraries**: If available, modules with compatibility libraries for RHEL8 runtime can be loaded (contact support for availability).

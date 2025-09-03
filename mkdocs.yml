@@ -27,13 +27,7 @@ nav:
         - 'Current Load': 'https://hpc.njit.edu/Monitor/load.html'
         - 'Usage Summary': 'https://hpc.njit.edu/Monitor/summary.html'
         - 'Usage (this year so far)': 'https://hpc.njit.edu/Monitor/cy2025.html'
-    - HPC Events and Workshops :
-        - Calendar:
-            - HPC_Events_and_Workshops/Calendar/index.md
-            - 2025 : HPC_Events_and_Workshops/Calendar/2025/
-            - 2024 : HPC_Events_and_Workshops/Calendar/2024/
-            - Archived : HPC_Events_and_Workshops/Calendar/past_workshops.md
-        - Workshop and Training Videos : HPC_Events_and_Workshops/Workshop_and_Training_Videos/
+    - HPC Events and Workshops : HPC_Events_and_Workshops/
     - Software : Software/
     - MIG :
         - MIG Overview: MIG/index.md

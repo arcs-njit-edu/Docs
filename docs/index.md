@@ -67,15 +67,9 @@ NJIT provides High Performance Computing resources to support scientific computi
             
             Wulver will be out of service for maintenance once a month for updates, repairs, and upgrades.  The schedule is 9 a.m. to 9 p.m. the second Tuesday of every month.  During the maintenance period, the logins will be disabled and the jobs that do not end before the maintenance window begins will be held until the maintenance is complete and the cluster is returned to production. For example, if you submit a job the day before maintenance, your job will enter a pending state (you will see job status `PD` when using `squeue -u $LOGNAME`). You can either adjust the walltime or wait until maintenance ends. Please stay informed about maintenance updates at [Cluster Maintenance Updates and News](news/index.md).
 
-        !!! abstract "HPC Spring Events, 2025"
+        !!! abstract "HPC Fall Events, 2025"
 
-            ARCS HPC has hosted the following events this Spring. Please access the HPC training videos to view the webinar recordings and slides.
-        
-            * [Introduction to Wulver: Getting Started](HPC_Events_and_Workshops/Workshop_and_Training_Videos/index.md#introduction-to-wulver-getting-started)
-            * [Introduction to Wulver: Accessing System & Running Jobs](HPC_Events_and_Workshops/Workshop_and_Training_Videos/index.md#introduction-to-wulver-accessing-system-running-jobs)
-            * [Python and Conda Environments in HPC: From Basics to Best Practices](HPC_Events_and_Workshops/Workshop_and_Training_Videos/index.md#python-and-conda-environments-in-hpc-from-basics-to-best-practices)
-            * [Introduction to Linux](HPC_Events_and_Workshops/Workshop_and_Training_Videos/index.md#introduction-to-linux)
-            * [Open OnDemand on Wulver](HPC_Events_and_Workshops/Workshop_and_Training_Videos/index.md#open-ondemand-on-wulver)
+            Check out our event schedule for the fall season [here](/Docs/HPC_Events_and_Workshops)! If you have suggestions for webinar topics, please feel free to contact us at [hpc@njit.edu](mailto:hpc@njit.edu)
 
     
     -   !!! abstract "Open Office Hours"
@@ -92,7 +86,7 @@ NJIT provides High Performance Computing resources to support scientific computi
 
             We are currently offering a new monthly event for HPC researchers at NJIT: **The HPC Monthly User Meeting**. This event is open to all NJIT students, faculty, and staff who use or are interested in NJIT's HPC resources and services. No prior registration is required.
         
-            * Date: Will be announced soon
+            * Date: Check the [fall schudule](/Docs/HPC_Events_and_Workshops).
     
     </div>
 
