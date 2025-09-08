@@ -17,5 +17,6 @@ The Pittsburgh Supercomputing Center is pleased to present a Machine Learning an
 ## Topics Covered
 Check details at [PSC Machine Learning and BIG DATA Workshop](https://support.access-ci.org/events/8089)
 
-## [Registration](https://support.access-ci.org/events/8089)
+## Registration
+Registration is now closed.
 
