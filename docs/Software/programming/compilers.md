@@ -10,7 +10,7 @@ We offer both GNU and Intel compilers. Here is the list of compilers you can fin
     ```python exec="on"
     import pandas as pd
     
-    df = pd.read_csv('docs/assets/tables/module_wulver.csv')
+    df = pd.read_csv('docs/assets/tables/module_wulver_rhel9.csv')
     # Header values to be added
     #column_names=["Compilers","modules"]
     soft = df.query('Software == "GCC" | Software == "intel-compilers"')
@@ -26,7 +26,7 @@ MPI (Message Passing Interface) libraries are a set of software tools that allow
 
     ```python exec="on"
     import pandas as pd
-    df = pd.read_csv('docs/assets/tables/module_wulver.csv')
+    df = pd.read_csv('docs/assets/tables/module_wulver_rhel9.csv')
     
     soft = df.query('Software == "OpenMPI" | Software == "impi"')
     #soft.columns = column_names
@@ -68,7 +68,7 @@ foss
     ```python exec="on"
     import pandas as pd
     
-    df = pd.read_csv('docs/assets/tables/module_wulver.csv')
+    df = pd.read_csv('docs/assets/tables/module_wulver_rhel9.csv')
     # Header values to be added
     #column_names=["Toolchains","modules"]
     soft = df.query('Software == "foss"')
@@ -99,7 +99,7 @@ intel
     ```python exec="on"
     import pandas as pd
     
-    df = pd.read_csv('docs/assets/tables/module_wulver.csv')
+    df = pd.read_csv('docs/assets/tables/module_wulver_rhel9.csv')
     # Header values to be added
     #column_names=["Toolchains","modules"]
     soft = df.query('Software == "intel"')

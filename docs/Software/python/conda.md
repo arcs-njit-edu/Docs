@@ -11,7 +11,7 @@ Conda as a package manager helps you find and install packages. If you need a pa
     ```python exec="on"
     import pandas as pd
     
-    df = pd.read_csv('docs/assets/tables/module_wulver.csv')
+    df = pd.read_csv('docs/assets/tables/module_wulver_rhel9.csv')
     # Header values to be added
     soft = df.query('Software == "Anaconda3" | Software == "Miniconda3" | Software == "Miniforge3" ')
     print(soft.to_markdown(index=False))
