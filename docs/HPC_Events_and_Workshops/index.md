@@ -28,6 +28,6 @@ print(df.to_markdown(index=False))
 ```
 !!! info "Archived Workshops"
 
-    Looking for our previous workshops? Check out our [Past Workshops](/Docs/HPC_Events_and_Workshops/archived/)!
+    Click here to review our [past workshops](archived/)!
 
 

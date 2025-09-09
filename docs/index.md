@@ -32,7 +32,7 @@ NJIT provides High Performance Computing resources to support scientific computi
 
     !!! njit inline "HPC Events"
         
-        Check the upcoming events hosted by HPC team and register from [HPC Events](HPC_Events_and_Workshops/Calendar/index.md).
+        Check the upcoming events hosted by HPC team and register from [HPC Events](HPC_Events_and_Workshops/index.md).
 
     !!! njit inline "HPC Trainings and Webinars"
         
@@ -69,7 +69,7 @@ NJIT provides High Performance Computing resources to support scientific computi
 
         !!! abstract "HPC Fall Events, 2025"
 
-            Check out our event schedule for the fall season [here](/Docs/HPC_Events_and_Workshops)! If you have suggestions for webinar topics, please feel free to contact us at [hpc@njit.edu](mailto:hpc@njit.edu)
+            Check out our event schedule for the fall season [here](HPC_Events_and_Workshops/index.md)! If you have suggestions for webinar topics, please feel free to contact us at [hpc@njit.edu](mailto:hpc@njit.edu)
 
     
     -   !!! abstract "Open Office Hours"
@@ -86,7 +86,7 @@ NJIT provides High Performance Computing resources to support scientific computi
 
             We are currently offering a new monthly event for HPC researchers at NJIT: **The HPC Monthly User Meeting**. This event is open to all NJIT students, faculty, and staff who use or are interested in NJIT's HPC resources and services. No prior registration is required.
         
-            * Date: Check the [fall schudule](/Docs/HPC_Events_and_Workshops).
+            * Date: Check the [fall schudule](HPC_Events_and_Workshops/index.md).
     
     </div>
 
