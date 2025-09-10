@@ -38,5 +38,5 @@ Slurm (Simple Linux Utility for Resource Management) is an open-source workload 
 - **Leverage MIGs for Efficient GPU Utilization :**  
     Our Nvidia A100 GPUs have MIG implementation which allows a single GPU to be split into multiple isolated instances.<br>
     Use MIG-compatible partitions when your task doesn’t require the full GPU power<br>
-    More info about [MIG](../Software/slurm/slurm.md/#multi-instance-gpu-mig).<br>
+    More info about [MIG](../MIG/index.md).<br>
   

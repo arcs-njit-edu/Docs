@@ -10,7 +10,7 @@ When submitting jobs on Wulver's MIG-enabled A100 GPUs, you must explicitly requ
 
 
 !!! warning
-    Please note that MIGs are available in partition=`debug_gpu` and qos=`debug`. However, when you use a full GPU using `--gres=gpu:a100:1` use the partition `gpu` and qos `standard` or `low`. If you want to see a job script example of requesting a full GPU, please refer to the sample [GPU job scripts](../Software/slurm/slurm.md/#submitting-jobs-on-gpu-nodes).
+    Please note that MIGs are available in partition=`debug_gpu` and qos=`debug`. However, when you use a full GPU using `--gres=gpu:a100:1` use the partition `gpu` and qos `standard` or `low`. If you want to see a job script example of requesting a full GPU, please refer to the sample [GPU job scripts](../Software/slurm/index.md/#submitting-jobs-on-gpu-nodes).
 
 ## Running Jobs with MIG
 
