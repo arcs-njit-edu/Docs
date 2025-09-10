@@ -44,8 +44,8 @@ When submitting jobs on Wulver's MIG-enabled A100 GPUs, you must explicitly requ
     --pty bash
     ```
 
-!!!tip
-    You can submit your job to multiple MIG instances. For example: `--gres=gpu:a100_10g:2` will allocate 2 instances of `10G` MIG.
+!!!warning
+    You cannot run your job using multiple MIG instances. For example, `--gres=gpu:a100_10g:2` will allocate two instances of the 10G MIG, but it will either raise an error or some jobs may assume it as a single MIG, even if multiple instances are requested.
 
 ## Understanding SU Charges
 

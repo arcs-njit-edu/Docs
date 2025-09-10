@@ -45,7 +45,7 @@ GROMACS can be used on CPU or GPU. When using GROMACS with GPUs (Graphics Proces
 
         module purge
         module load wulver
-        module load foss/2022b GROMACS/2023.1-CUDA-12.0.0
+        module load foss/2025a GROMACS/2023.1-CUDA-12.0.0
 
         INPUT_DIR=${PWD}/INPUT
         OUTPUT_DIR=${PWD}/OUTPUT
@@ -74,7 +74,7 @@ GROMACS can be used on CPU or GPU. When using GROMACS with GPUs (Graphics Proces
 
         module purge
         module load wulver
-        module load foss/2023b GROMACS/2024.1
+        module load foss/2025a GROMACS/2024.1
 
         INPUT_DIR=${PWD}/INPUT
         OUTPUT_DIR=${PWD}/OUTPUT
@@ -103,7 +103,7 @@ GROMACS can be used on CPU or GPU. When using GROMACS with GPUs (Graphics Proces
 
         module purge
         module load wulver
-        module load foss/2023b GROMACS/2024.1
+        module load foss/2025a GROMACS/2024.1
 
         INPUT_DIR=${PWD}/INPUT
         OUTPUT_DIR=${PWD}/OUTPUT

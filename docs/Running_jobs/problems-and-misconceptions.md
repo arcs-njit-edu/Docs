@@ -18,7 +18,7 @@ Many applications are not parallelized by default. Requesting multiple CPUs (--n
 #SBATCH --qos=standard
 #SBATCH --time=30:00
 #################################################################################
-module load foss/2023b Python
+module load foss/2024a Python
 srun python test.py
 ```
 
@@ -49,7 +49,7 @@ Requesting excessive resources can actually degrade performance. For example, ov
 #################################################################################
 module purge
 module load wulver
-module load foss/2021b GROMACS/2021.5-CUDA-11.4.1
+module load foss/2025a GROMACS
 gmx grompp -f run.mdp -c npt2.gro -r npt2.gro -p topol.top -o run.tpr
 srun gmx_mpi mdrun -deffnm run -cpi run.cpt -v -ntomp 2 -pin on -tunepme -dlb yes -noappend
 ```
@@ -75,7 +75,7 @@ This job will launch using 64 cores with 2 threads per core.
 #################################################################################
 module purge
 module load wulver
-module load foss/2021b GROMACS/2021.5-CUDA-11.4.1
+module load foss/2025a GROMACS
 gmx grompp -f run.mdp -c npt2.gro -r npt2.gro -p topol.top -o run.tpr
 srun gmx_mpi mdrun -deffnm run -cpi run.cpt -v -ntomp 2 -pin on -tunepme -dlb yes -noappend
 ```

@@ -28,7 +28,6 @@ nav:
         - 'Usage Summary': 'https://hpc.njit.edu/Monitor/summary.html'
         - 'Usage (this year so far)': 'https://hpc.njit.edu/Monitor/cy2025.html'
     - HPC Events and Workshops : HPC_Events_and_Workshops/
-    - Software : Software/
     - Running Jobs: 
         - Overview : Running_jobs/index.md        
         - Nodes and Memory: Running_jobs/node-memory-config.md
@@ -42,6 +41,7 @@ nav:
         - Job Limitations: Running_jobs/job_limitation.md
         - Common Problems and Misconceptions: Running_jobs/problems-and-misconceptions.md
         - Jobs on OnDemand: Running_jobs/ondemand-jobs.md
+    - Software : Software/
     - MIG :
         - MIG Overview: MIG/index.md
         - Profile Comparison: MIG/profile-comparison.md
