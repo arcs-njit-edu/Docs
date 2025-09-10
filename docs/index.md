@@ -76,7 +76,7 @@ NJIT provides High Performance Computing resources to support scientific computi
             
             This spring semester, we are offering drop-in office hours every Monday and Wednesday from 2:00 to 4:00 p.m. Stop by to meet with our student consultants and ask any questions you have about using HPC resources. There's no need to create a ticket in advance; if follow-up is needed, the student consultants will open a ticket on your behalf, and you'll receive further instructions. 
 
-            - Date: **Every Monday and Wednesday**
+            - Date: **Every Tuesday and Friday**
             - Location: **GITC 2404**
             - Time: **2:00 PM - 4:00 PM**
 

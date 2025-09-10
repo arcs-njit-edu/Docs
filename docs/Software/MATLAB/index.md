@@ -9,7 +9,7 @@ MATLAB (matrix laboratory) is a multi-paradigm numerical computing environment a
     ```python exec="on"
     import pandas as pd
     
-    df = pd.read_csv('docs/assets/tables/module_wulver.csv')
+    df = pd.read_csv('docs/assets/tables/module_wulver_rhel9.csv')
     soft = df.query('Software == "MATLAB" | Software == "matlab"')
     print(soft.to_markdown(index=False))
     ```
