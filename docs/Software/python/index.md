@@ -8,7 +8,7 @@
     ```python exec="on"
     import pandas as pd
     
-    df = pd.read_csv('docs/assets/tables/module_wulver.csv')
+    df = pd.read_csv('docs/assets/tables/module_wulver_rhel9.csv')
     soft = df.query('Software == "Python"')
     soft = soft[~soft.apply(lambda row: row.astype(str).str.contains('bare').any(), axis=1)]
     print(soft.to_markdown(index=False))
@@ -17,16 +17,19 @@
 ## Python libraries
 Apart from Python’s standard library, Python offers a wide range of additional libraries that need to be loaded as modules before users can use these. Here, we list these additional libraries. Please contact us to file a ticket with [Service Now](mailto:hpc@njit.edu) in case you do not find the libraries you want to use.
 
-| Libraries  | Version | Python Version | Module load command                   |
-|------------|---------|----------------|---------------------------------------|
-| NumPy      | 1.21.3  | 3.9.6          | `module load foss/2021b SciPy-bundle` |
-| Matplotlib | 3.4.3   | 3.9.6          | `module load foss/2021b matplotlib`   |
-| SciPy      | 2021.10 | 3.9.6          | `module load foss/2021b SciPy-bundle` |
+```python exec="on"
+import pandas as pd
+
+df = pd.read_csv('docs/assets/tables/module_wulver_rhel9.csv')
+soft = df.query('Software == "matplotlib" | Software == "SciPy-bundle"')
+soft = soft[~soft.apply(lambda row: row.astype(str).str.contains('bare').any(), axis=1)]
+print(soft.to_markdown(index=False))
+```
 
 For using multiple libraries, you simply need to add the library name in `module load` command. For example, to load NumPy, Matplotlib, and SciPy together, you need to use the following command. 
 
 ```
-module load foss/2021b SciPy-bundle matplotlib
+module load foss/2025a SciPy-bundle matplotlib
 ```
 
 ## Using Conda or `pip` to Install Python Libraries

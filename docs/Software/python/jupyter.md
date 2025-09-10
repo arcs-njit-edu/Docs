@@ -28,8 +28,8 @@ Users can install Jupyter Notebook on the Conda Environment. Once the [Conda Env
                                                                                                                                                                                                                                           
         ######################################                                                                                                                                                                                               
         module purge > /dev/null 2>&1
-        module load wulver
-        module load Anaconda3
+        module restore
+        module load Miniforge3
         source conda.sh 
         conda activate ENV # Replace the name of the environment with the environment you are using. For example, if your environment is torch-cuda then use cond to activate torch-cuda
         

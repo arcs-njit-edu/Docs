@@ -13,7 +13,7 @@ parallel particle simulator at the atomic, meso, or continuum scale.
     ```python exec="on"
     import pandas as pd
     
-    df = pd.read_csv('docs/assets/tables/module_wulver.csv')
+    df = pd.read_csv('docs/assets/tables/module_wulver_rhel9.csv')
     soft = df.query('Software == "LAMMPS"')
     print(soft.to_markdown(index=False))
     ```
