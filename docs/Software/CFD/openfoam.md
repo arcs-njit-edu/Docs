@@ -14,7 +14,7 @@ The software is widely used in academia, research, and industry, and is known fo
     ```python exec="on"
     import pandas as pd
     
-    df = pd.read_csv('docs/assets/tables/module_wulver.csv')
+    df = pd.read_csv('docs/assets/tables/module_wulver_rhel9.csv')
     soft = df.query('Software == "OpenFOAM"')
     print(soft.to_markdown(index=False))
     ```

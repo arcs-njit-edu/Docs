@@ -12,7 +12,7 @@ The software suite is known for its high level of accuracy and versatility, and 
     ```python exec="on"
     import pandas as pd
     
-    df = pd.read_csv('docs/assets/tables/module_wulver.csv')
+    df = pd.read_csv('docs/assets/tables/module_wulver_rhel9.csv')
     soft = df.query('Software == "ANSYS"')
     print(soft.to_markdown(index=False))
     ```

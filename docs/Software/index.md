@@ -164,14 +164,23 @@ man module
 
 ## Software List
 
-The following applications are installed on Wulver and Lochness.
+The following applications are installed on Wulver.
 
-=== "Wulver"
+=== "Wulver RHEL9"
 
     ```python exec="on"
     import pandas as pd
-    df = pd.read_csv('docs/assets/tables/module_wulver.csv')
+    df = pd.read_csv('docs/assets/tables/module_wulver_rhel9.csv')
     df = df.sort_values(by=df.columns[0])  # Sorts by the first column alphabetically
     print(df.to_markdown(index=False))
     ```
+=== "Wulver RHEL8"
+
+    ```python exec="on"
+    import pandas as pd
+    df = pd.read_csv('docs/assets/tables/module_wulver_rhel8.csv')
+    df = df.sort_values(by=df.columns[0])  # Sorts by the first column alphabetically
+    print(df.to_markdown(index=False))
+    ```
+
 
