@@ -73,7 +73,7 @@ Welcome to our most frequently asked questions. If you cannot find an entry rela
     ```
 
 ??? question "How can I monitor the status of my jobs?"
-    - For checking and monitoring the status of your job please use [this](managing-jobs.md) guide for detailed information.
+    - For checking and monitoring the status of your job please use [this guide](managing-jobs.md) for detailed information.
 
 ??? question "Where will my output appear after I submit a job?"
     - Your output will appear in the file which you initialized in your job script which look like below:
