@@ -9,7 +9,7 @@ The code is optimized for massively parallel supercomputers and includes advance
 
 ## Availability
 
-Since VASP is **licensed software**, access is restricted to the cluster. If your research group has a valid VASP license and wants to use it, please ask your advisor/PI to email [mailto:hpc@njit.edu](hpc@njit.edu) with the following details
+Since VASP is **licensed software**, access is restricted to the cluster. If your research group has a valid VASP license and wants to use it, please ask your advisor/PI to email [hpc@njit.edu](mailto:hpc@njit.edu) with the following details
 
 1. UCIDs of the students who need access to VASP 
 2. Licensed VASP version (e.g., 6.x or 5.x)
