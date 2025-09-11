@@ -16,6 +16,7 @@ Welcome to our most frequently asked questions. If you cannot find an entry rela
 
 ??? question "Why can’t I log in to the HPC?"
     - It’s possible that your account is not activated on Wulver. Make sure to follow the instructions in [How do I get access to the Wulver HPC cluster?](). Once your account is created, you will receive a confirmation in your NJIT email.
+    - It’s possible that your account is not activated on Wulver. Make sure to follow the instructions in [How do I get access to the Wulver HPC cluster?](). Once your account is created, you will receive a confirmation in your NJIT email.
     - Ensure that your UCID and password are correct.
     - If you are working off-campus, make sure to connect to NJIT VPN before logging into Wulver. Visit https://ist.njit.edu/vpn for more information on VPN installation.
 
@@ -33,9 +34,9 @@ Welcome to our most frequently asked questions. If you cannot find an entry rela
 ??? question "What security measures should I be aware of when using the HPC cluster?"
     - Do not share your login information with anyone else or allow anyone to login with your account.
 
-??? question "Which directory will I land on when I login?"
+??? question "Which directory will I land on when I log in?"
     - You will enter into your home directory named under your UCID.
-    - Please note that you are on the login node of Wulver. Do not run any computations on the login nodes, as CPU and memory usage are limited per user on these nodes. To perform computations, you need to request resources from the compute nodes via [SLURM](slurm.md).
+    - Please note that you are on the login node of Wulver. Do not run any computations on the login nodes, as CPU and memory usage are limited per user on these nodes. To perform computations, you need to request resources from the compute nodes via [SLURM](../Running_jobs/index.md).
 
 ## File Systems / Storage
 
@@ -62,7 +63,7 @@ Welcome to our most frequently asked questions. If you cannot find an entry rela
 
 ??? question "How do I submit and manage jobs on the Wulver HPC cluster?"
     - We use the SLURM resource manager and scheduler on Wulver for submitting and managing jobs on the compute nodes. 
-    - Check our [SLURM page](slurm.md) on the website for more detailed guidance.
+    - Check our [Running Jobs page](../Running_jobs/index.md) on the website for more detailed guidance.
 
 ??? question "What is Walltime?"
     - Walltime refers to the maximum amount of real-world time a job is allowed to run on the cluster. The actual job may finish earlier. 
@@ -72,9 +73,9 @@ Welcome to our most frequently asked questions. If you cannot find an entry rela
     ```
 
 ??? question "How can I monitor the status of my jobs?"
-    - For checking and monitoring the status of your job please use [this](slurm.md#managing-and-monitoring-jobs) guide for detailed information.
+    - For checking and monitoring the status of your job please use [this guide](managing-jobs.md) for detailed information.
 
-??? question "Where does my output will appear after I submit a job?"
+??? question "Where will my output appear after I submit a job?"
     - Your output will appear in the file which you initialized in your job script which look like below:
     ```bash
     #SBATCH --output=file_name.%j.out # %j expands to slurm JobID

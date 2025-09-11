@@ -48,7 +48,7 @@ OpenFOAM can be used for both serial and parallel jobs. To run OpenFOAM in paral
         ################################################
         module purge
         module load wulver # Load slurm, easybuild
-        module load foss/2021b OpenFOAM
+        module load foss/2024a OpenFOAM
         ################################################
         #
         # Source OpenFOAM bashrc

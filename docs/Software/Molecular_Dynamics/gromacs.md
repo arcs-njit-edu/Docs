@@ -45,7 +45,7 @@ GROMACS can be used on CPU or GPU. When using GROMACS with GPUs (Graphics Proces
 
         module purge
         module load wulver
-        module load foss/2022b GROMACS/2023.1-CUDA-12.0.0
+        module load foss/2025a GROMACS/2025.2-CUDA-12.8.0
 
         INPUT_DIR=${PWD}/INPUT
         OUTPUT_DIR=${PWD}/OUTPUT
@@ -74,7 +74,7 @@ GROMACS can be used on CPU or GPU. When using GROMACS with GPUs (Graphics Proces
 
         module purge
         module load wulver
-        module load foss/2023b GROMACS/2024.1
+        module load foss/2025a GROMACS/2025.2
 
         INPUT_DIR=${PWD}/INPUT
         OUTPUT_DIR=${PWD}/OUTPUT
@@ -99,14 +99,16 @@ GROMACS can be used on CPU or GPU. When using GROMACS with GPUs (Graphics Proces
         #SBATCH --time 72:00:00   # Max 3 days
         #SBATCH --nodes=1
         #SBATCH --ntasks-per-node=8
+        #SBATCH --cpus-per-task=2
         #SBATCH --account=$PI_ucid  # Replace PI_ucid with the UCID of PI
 
         module purge
         module load wulver
-        module load foss/2023b GROMACS/2024.1
+        module load foss/2025a GROMACS/2025.2
 
         INPUT_DIR=${PWD}/INPUT
         OUTPUT_DIR=${PWD}/OUTPUT
+        OMP_NUM_THREADS=$SLURM_CPUS_PER_TASK
 
         cp -r $INPUT_DIR/* $OUTPUT_DIR/
         cd $OUTPUT_DIR

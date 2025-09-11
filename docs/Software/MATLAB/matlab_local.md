@@ -124,7 +124,7 @@ Certain arguments need to be passed to SLURM in order for the job to run properl
 ```
  >> c.AdditionalProperties.AdditionalSubmitArgs=['--partition=general --qos=standard --account=$PI_UCID --time=2-00:00:00'] 
 ```
-Replace `$PI_UCID` with the UCID of PI. Check the [SLURM Documentation](slurm.md) for other SLURM parameters.
+Replace `$PI_UCID` with the UCID of PI. Check the [Batch Jobs](batch-jobs.md) for other SLURM parameters.
 To make this persistent between Matlab sessions these arguments need to be saved to the profile. In the Matlab window enter:
 ```
  >> c.saveProfile 

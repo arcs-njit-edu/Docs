@@ -171,7 +171,7 @@ The following applications are installed on Wulver.
     ```python exec="on"
     import pandas as pd
     df = pd.read_csv('docs/assets/tables/module_wulver_rhel9.csv')
-    df = df.sort_values(by=df.columns[0])  # Sorts by the first column alphabetically
+    df = df.sort_values(by=df.columns[0], key=lambda col: col.str.lower())  # Sorts by the first column alphabetically
     print(df.to_markdown(index=False))
     ```
 === "Wulver RHEL8"
@@ -179,7 +179,7 @@ The following applications are installed on Wulver.
     ```python exec="on"
     import pandas as pd
     df = pd.read_csv('docs/assets/tables/module_wulver_rhel8.csv')
-    df = df.sort_values(by=df.columns[0])  # Sorts by the first column alphabetically
+    df = df.sort_values(by=df.columns[0], key=lambda col: col.str.lower())  # Sorts by the first column alphabetically
     print(df.to_markdown(index=False))
     ```
 

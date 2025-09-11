@@ -10,7 +10,7 @@ When submitting jobs on Wulver's MIG-enabled A100 GPUs, you must explicitly requ
 
 
 !!! warning
-    Please note that MIGs are available in partition=`debug_gpu` and qos=`debug`. However, when you use a full GPU using `--gres=gpu:a100:1` use the partition `gpu` and qos `standard` or `low`. If you want to see a job script example of requesting a full GPU, please refer to the sample [GPU job scripts](../Software/slurm/slurm.md/#submitting-jobs-on-gpu-nodes).
+    Please note that MIGs are available in partition=`debug_gpu` and qos=`debug`. However, when you use a full GPU using `--gres=gpu:a100:1` use the partition `gpu` and qos `standard` or `low`. If you want to see a job script example of requesting a full GPU, please refer to the sample [GPU job scripts](../Software/slurm/index.md/#submitting-jobs-on-gpu-nodes).
 
 ## Running Jobs with MIG
 
@@ -44,8 +44,8 @@ When submitting jobs on Wulver's MIG-enabled A100 GPUs, you must explicitly requ
     --pty bash
     ```
 
-!!!tip
-    You can submit your job to multiple MIG instances. For example: `--gres=gpu:a100_10g:2` will allocate 2 instances of `10G` MIG.
+!!!warning
+    You cannot run your job using multiple MIG instances. For example, `--gres=gpu:a100_10g:2` will allocate two instances of the 10G MIG, but it will either raise an error or some jobs may assume it as a single MIG, even if multiple instances are requested.
 
 ## Understanding SU Charges
 

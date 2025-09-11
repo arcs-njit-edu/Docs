@@ -38,7 +38,7 @@ The documentation of Gaussian is available at [ORCA Documentation](https://www.o
 
         module purge > /dev/null 2>&1
         module load wulver
-        module load foss/2022b ORCA
+        module load foss/2024a ORCA
         
         #Run the program
 

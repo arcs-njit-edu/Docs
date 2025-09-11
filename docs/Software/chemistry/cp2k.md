@@ -45,7 +45,7 @@ CP2K MPI/OpenMP-hybrid Execution (PSMP), CP2K with Population Analysis capabilit
 
     module purge > /dev/null 2>&1
     module load wulver
-    module load foss/2022b CP2K
+    module load foss/2025a CP2K
     
     #Run the program
 
