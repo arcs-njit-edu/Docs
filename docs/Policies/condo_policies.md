@@ -10,7 +10,7 @@ Contributors can also submit jobs using standard SUs and at lower priority (See 
 Please contact [hpc@njit.edu](mailto:hpc@njit.edu) to discuss your specific computational needs.
 
 ## Partial Node Investment
-You can invest in partial nodes, either on a per-CPU or per-MIG GPU basis. This flexible model allows you to customize and build resources tailored to your research requirements. A sample configuration table can be provided to help you plan your investment.
+You can invest in partial nodes, either on a per-CPU or per-MIG GPU basis. This flexible model allows you to customize and build resources tailored to your research requirements. Rates for HPC resources are provided below to help you plan your investment.
 
 ```python exec="on"
 import pandas as pd
