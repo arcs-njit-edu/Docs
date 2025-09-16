@@ -59,11 +59,7 @@ nav:
     - 'FAQs' : 'faq/faq.md'
     - 'News and Announcements' : news/index.md
     - '' : 'website_version.txt'
-    - '' : 'migration/index.md'
-    - '' : 'migration/faqs.md'
-    - '' : 'migration/lochness_filesystem.md'
-    - '' : 'migration/Lochness_node_owners.md'
-    - '' : 'archived/lochness_policies.md'
+    - '' : 'archived/'
 
 
 theme: 
