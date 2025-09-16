@@ -4,13 +4,13 @@
 
 Faculty members who regularly require more resources than the standard allocation may choose to invest in additional resources—either partial or full nodes—thereby contributing to the growth of the cluster. A catalog of available partial node and GPU investment options is provided below. Principal Investigators (PIs) and their associated users will receive higher job priority, up to the amount of resources they have contributed. Please note that jobs may not necessarily run on the specific nodes purchased; instead, the contributed resources will be made available through a floating reservation equivalent to the purchased capacity.
 
-Contributors can also submit jobs using standard SUs and at lower priority (See [Job QoS](slurm.md#priority-use-qos)) beyond their reserved allocation. The university will cover all infrastructure-related costs for these contributed nodes. This floating reservation will remain in effect for **five years**. If the hardware is upgraded or replaced before the end of this period, the job priority will transfer to the closest equivalent resources on the new hardware.
+Contributors can also submit jobs using standard SUs and at lower priority (See [Job QoS](node-memory-config.md)) beyond their reserved allocation. The university will cover all infrastructure-related costs for these contributed nodes. This floating reservation will remain in effect for **five years**. If the hardware is upgraded or replaced before the end of this period, the job priority will transfer to the closest equivalent resources on the new hardware.
 
 ## Full node investment
 Please contact [hpc@njit.edu](mailto:hpc@njit.edu) to discuss your specific computational needs.
 
 ## Partial Node Investment
-You can invest in partial nodes, either on a per-CPU or per-MIG GPU basis. This flexible model allows you to customize and build resources tailored to your research requirements. A sample configuration table can be provided to help you plan your investment.
+You can invest in partial nodes, either on a per-CPU or per-MIG GPU basis. This flexible model allows you to customize and build resources tailored to your research requirements. Rates for HPC resources are provided below to help you plan your investment.
 
 ```python exec="on"
 import pandas as pd

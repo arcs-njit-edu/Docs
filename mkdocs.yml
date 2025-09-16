@@ -28,6 +28,19 @@ nav:
         - 'Usage Summary': 'https://hpc.njit.edu/Monitor/summary.html'
         - 'Usage (this year so far)': 'https://hpc.njit.edu/Monitor/cy2025.html'
     - HPC Events and Workshops : HPC_Events_and_Workshops/
+    - Running Jobs: 
+        - Overview : Running_jobs/index.md        
+        - Nodes and Memory: Running_jobs/node-memory-config.md
+        - Service Units (SU): Running_jobs/service-units.md
+        - Batch Jobs: Running_jobs/batch-jobs.md
+        - Interactive Jobs: Running_jobs/interactive-jobs.md
+        - Managing and Monitoring Jobs: Running_jobs/managing-jobs.md
+        - Job Limitations: Running_jobs/job_limitation.md
+        - Array Jobs: Running_jobs/array-jobs.md
+        - Dependency Jobs: Running_jobs/dependency-jobs.md
+        - Checkpointing: Running_jobs/checkpointing.md
+        - Common Problems and Misconceptions: Running_jobs/problems-and-misconceptions.md
+        - Jobs on OnDemand: Running_jobs/ondemand-jobs.md
     - Software : Software/
     - MIG :
         - MIG Overview: MIG/index.md
@@ -46,11 +59,7 @@ nav:
     - 'FAQs' : 'faq/faq.md'
     - 'News and Announcements' : news/index.md
     - '' : 'website_version.txt'
-    - '' : 'migration/index.md'
-    - '' : 'migration/faqs.md'
-    - '' : 'migration/lochness_filesystem.md'
-    - '' : 'migration/Lochness_node_owners.md'
-    - '' : 'archived/lochness_policies.md'
+    - '' : 'archived/'
 
 
 theme: 
