@@ -34,11 +34,11 @@ nav:
         - Service Units (SU): Running_jobs/service-units.md
         - Batch Jobs: Running_jobs/batch-jobs.md
         - Interactive Jobs: Running_jobs/interactive-jobs.md
+        - Managing and Monitoring Jobs: Running_jobs/managing-jobs.md
+        - Job Limitations: Running_jobs/job_limitation.md
         - Array Jobs: Running_jobs/array-jobs.md
         - Dependency Jobs: Running_jobs/dependency-jobs.md
         - Checkpointing: Running_jobs/checkpointing.md
-        - Managing and Monitoring Jobs: Running_jobs/managing-jobs.md
-        - Job Limitations: Running_jobs/job_limitation.md
         - Common Problems and Misconceptions: Running_jobs/problems-and-misconceptions.md
         - Jobs on OnDemand: Running_jobs/ondemand-jobs.md
     - Software : Software/
