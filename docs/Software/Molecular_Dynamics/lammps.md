@@ -59,7 +59,7 @@ The official LAMMPS is available at [LAMMPS Online Manual](https://lammps.sandia
         ################################################
         module purge
         module load wulver # Load slurm, easybuild
-        module load foss/2021b LAMMPS
+        module load foss/2024a LAMMPS
     
         srun lmp -in test.in
         ```
@@ -86,7 +86,7 @@ The official LAMMPS is available at [LAMMPS Online Manual](https://lammps.sandia
         ################################################
         module purge
         module load wulver # Load slurm, easybuild
-        module load foss/2021b LAMMPS/23Jun2022-kokkos-CUDA-11.4.1
+        module load foss/2024a LAMMPS/29Aug2024_update2-kokkos-CUDA-12.6.0
 
         export OMP_NUM_THREADS=$SLURM_CPUS_PER_TASK
         export OMP_PROC_BIND=spread

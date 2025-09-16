@@ -28,6 +28,6 @@ print(df.to_markdown(index=False))
 ```
 !!! info "Archived Workshops"
 
-    Click here to review our [past workshops](archived/)!
+    Click here to review our [past workshops](archived/index.md)!
 
 

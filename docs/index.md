@@ -28,7 +28,7 @@ NJIT provides High Performance Computing resources to support scientific computi
 
     !!! njit inline "Running jobs on Wulver"
 
-        See [Running jobs](Software/slurm/slurm.md) for differenet partitions, QoS and sample jobs scripts.
+        See [Running jobs](Running_jobs/index.md) for differenet partitions, QoS and sample jobs scripts.
 
     !!! njit inline "HPC Events"
         
@@ -40,7 +40,11 @@ NJIT provides High Performance Computing resources to support scientific computi
     
     !!! njit inline "Policies"
         
-        See our updated [Policies](Policies/index.md) for cluster resource allocation and investment.
+        See our updated [Policies](Policies/index.md) for cluster resource allocation and investment.                                       
+        <br>  
+        
+
+
 
     !!! njit inline "FAQs"
         
@@ -65,11 +69,18 @@ NJIT provides High Performance Computing resources to support scientific computi
  
     -   !!! abstract "Wulver Scheduled Maintenance"
             
-            Wulver will be out of service for maintenance once a month for updates, repairs, and upgrades.  The schedule is 9 a.m. to 9 p.m. the second Tuesday of every month.  During the maintenance period, the logins will be disabled and the jobs that do not end before the maintenance window begins will be held until the maintenance is complete and the cluster is returned to production. For example, if you submit a job the day before maintenance, your job will enter a pending state (you will see job status `PD` when using `squeue -u $LOGNAME`). You can either adjust the walltime or wait until maintenance ends. Please stay informed about maintenance updates at [Cluster Maintenance Updates and News](news/index.md).
+            Wulver will be out of service for maintenance once a month for updates, repairs, and upgrades.  The schedule is 9 a.m. to 9 p.m. the second Tuesday of every month.  During the maintenance period, the logins will be disabled and the jobs that do not end before the maintenance window begins will be held until the maintenance is complete and the cluster is returned to production. 
+             <br>For example, if you submit a job the day before maintenance, your job will enter a pending state (you will see job status `PD` when using `squeue -u $LOGNAME`). You can either adjust the walltime or wait until maintenance ends. Please stay informed about maintenance updates at [Cluster Maintenance Updates and News](news/index.md).
+
+             
 
         !!! abstract "HPC Fall Events, 2025"
 
-            Check out our event schedule for the fall season [here](HPC_Events_and_Workshops/index.md)! If you have suggestions for webinar topics, please feel free to contact us at [hpc@njit.edu](mailto:hpc@njit.edu)
+            Check out our event schedule for the fall season [here](HPC_Events_and_Workshops/index.md)! If you have suggestions for webinar topics, please feel free to contact us at [hpc@njit.edu](mailto:hpc@njit.edu).
+
+            <br>
+            <br>
+
 
     
     -   !!! abstract "Open Office Hours"
