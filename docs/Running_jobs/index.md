@@ -1,6 +1,6 @@
 # Overview
 
-Wulver is a shared resource among researchers, faculties and students. It is important to use it efficiently so that everyone can complete their tasks without delay. Therefore, running jobs on Wulver, you should follow certain norms which ensures that your work is done on time and also lets others run their task without any conflict. We use Slurm on Wulver to schedule and manage jobs.
+Wulver is a shared resource among researchers, faculty and students. It is important to use it efficiently so that everyone can complete their tasks without delay. Therefore, running jobs on Wulver, you should follow certain norms which ensures that your work is done on time and also lets others run their task without any conflict. We use Slurm on Wulver to schedule and manage jobs.
 
 
 ## What is SLURM?

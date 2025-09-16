@@ -9,7 +9,7 @@ Wulver, like most shared HPC clusters, enforces certain job limitations to ensur
 
 - **SUs exhausted**: Once your Service Units are exhausted, you can no longer run your jobs on `standard` or `high` priority but you can still use `low`.
 
-- **Job preamption**: Jobs running on `low` priority can be preampted by `standard` or `high` priority jobs.
+- **Job preemption**: Jobs running on `low` priority can be preempted by `standard` or `high` priority jobs.
 
-- **Maintenance**: During the maintenance downtime, logins will be disabled and all the jobs will be held in scheduler. If you submit your job before maintenance with a walltime overlapping the maintenance period then also your job will be held by scheduler. [More info](../faq/faq.md/#maintenance)
+- **Maintenance**: During the maintenance downtime, logins will be disabled and all the jobs will be held in scheduler. If you submit your job before maintenance with a walltime overlapping the maintenance period then your job will also be held by scheduler. [More info](../faq/faq.md/#maintenance)
 
