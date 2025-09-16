@@ -89,7 +89,7 @@ Unlike your personal laptop where you run commands interactively, HPC jobs are q
 
     * Here, the job requests 1 node on the `general` partition with `qos=standard`. Please note that the memory relies on the number of cores you are requesting. 
     * As per the policy, users can request up to 4GB memory per core, therefore the flag  `--mem-per-cpu` is used for memory requirement. If you are using 1 core and need more memory, use `--mem` instead. 
-    * In this above script `--time` indicates the wall time which is used to specify the maximum amount of time that a job is allowed to run. The maximum allowable wall time depends on SLURM QoS, which you can find in [QoS](slurm.md#using-slurm-on-cluster). 
+    * In this above script `--time` indicates the wall time which is used to specify the maximum amount of time that a job is allowed to run. The maximum allowable wall time depends on SLURM QoS, which you can find in [QoS](node-memory-config.md)). 
     * To submit the job, use `sbatch submit.sh` where the `submit.sh` is the job script. Once the job has been submitted, the jobs will be in the queue, which will be executed based on priority-based scheduling. 
     * To check the status of the job use `squeue -u $LOGNAME` and you should see the following 
     ```bash

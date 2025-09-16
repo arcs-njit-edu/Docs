@@ -217,7 +217,7 @@ If you still have any questions on HPC usage, please contact the [HPC Facilitato
     This session offered an overview of the environment on the Wulver cluster, including file management, working with the batch system (SLURM), and accessing software. 
     #### Key Highlights:
     * HPC allocations
-    * Using [SLURM](slurm.md)
+    * Using [SLURM](../../Running_jobs/index.md)
     * Job submissions
     
     <iframe src=https://njit.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=da615cd0-2071-4f99-bc63-b155015e0544&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=true&interactivity=all height="420" width="896" style="border: 1px solid #464646;" allowfullscreen allow="autoplay" aria-label="Panopto Embedded Video Player" aria-description="NJIT HPC Training Webinar" ></iframe>
