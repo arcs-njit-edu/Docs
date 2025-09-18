@@ -9,7 +9,7 @@ title: ORCA
     ```python exec="on"
     import pandas as pd
     
-    df = pd.read_csv('docs/assets/tables/module_wulver.csv')
+    df = pd.read_csv('docs/assets/tables/module_wulver_rhel9.csv')
     soft = df.query('Software == "ORCA"')
     print(soft.to_markdown(index=False))
     ```
@@ -38,7 +38,7 @@ The documentation of Gaussian is available at [ORCA Documentation](https://www.o
 
         module purge > /dev/null 2>&1
         module load wulver
-        module load foss/2022b ORCA
+        module load foss/2024a ORCA
         
         #Run the program
 

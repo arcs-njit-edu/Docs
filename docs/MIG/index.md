@@ -8,12 +8,11 @@ This allows multiple users or processes to simultaneously run GPU workloads with
 
 <!-- Using HTML to display images side by side -->
 <div style="display: flex; justify-content: center; gap: 10px;">
-    <img src="../assets/images/MIG/gpu-mem-util-3mo.png" alt="GPU memory utilization (3 months)" width="48%">
     <img src="../assets/images/MIG/gpu-alloc-vs-util-3mo.png" alt="GPUs allocated vs. utilized (3 months)" width="48%">
+    <img src="../assets/images/MIG/gpu-mem-util-3mo.png" alt="GPU memory utilization (3 months)" width="48%">
 </div>
 
-
-The plots below show cluster-wide usage of the A100 GPUs over the last 3 months. In short: GPUs were **heavily allocated** but **lightly utilized**, which means lots of capacity sat idle behind single jobs.
+The plots above show cluster-wide usage of the A100 GPUs over the last 3 months. In short: GPUs were **heavily allocated** but **lightly utilized**, which means lots of capacity sat idle behind single jobs.
 
 - **Allocated vs. used**: GPUs were reserved ~85–95% of the time, while average compute utilization was ~25–50% and memory utilization stayed mostly under 20%.
 
@@ -23,16 +22,15 @@ The plots below show cluster-wide usage of the A100 GPUs over the last 3 months.
 
 ## MIG Implementation in Wulver
 
-MIG is implemented on selected NVIDIA A100 80GB GPUs. Wulver currently supports the following MIG configurations:
+MIG is implemented on selected **NVIDIA A100 80GB** GPUs. Wulver currently supports the following MIG configurations:
 
 - 10gb
 - 20gb
 - 40gb
-- Full 80GB (non-MIG)
 
 These profiles correspond to different partitions of compute and memory resources from the A100 80GB GPU. You can view a full comparison in the [Profile Comparison section](../MIG/profile-comparison.md).
 
-Each profile maps to a Service Unit (SU) usage factor that reflects its computational weight — ranging from 2 SU/hour for a 10gb instance up to 16 SU/hour for a full GPU. You can check full SU overview of MIG [here](../MIG/job-submission-and-su-charges.md#understanding-su-charges)
+Each profile maps to a Service Unit (SU) usage factor that reflects its computational weight — ranging from 2 SU/hour for a 10gb instance up to 16 SU/hour for a full GPU. You can check full SU overview of MIG [here](../MIG/job-submission-and-su-charges.md#understanding-su-charges).
 
 MIGs address key challenges in shared environments:
 
@@ -52,9 +50,7 @@ MIG lets you select a GPU slice that meets your job’s needs without paying for
 For example:
 
 - A small training job or inference script may only require `10–20` GB of GPU memory.
-- Running such a job on a `1g.10gb` or `2g.20gb` MIG instance will consume only a fraction of the SUs compared to using a full GPU.
-
-This is especially important if you’re working within a research group’s annual SU allocation on Wulver.
+- Running such a job on a `10gb` or `20gb` MIG instance will consume only a fraction of the SUs compared to using a full GPU.
 
 **No Need to Reserve a Full GPU**:<br> 
 Some jobs — like unit testing, data preprocessing with GPU acceleration, or light model inference — simply don’t need the full resources of an 80GB A100. MIG allows users to avoid bottlenecks and free up resources by choosing an appropriately sized instance.This is especially valuable when:
@@ -74,5 +70,6 @@ Each MIG instance has dedicated resources — memory, L2 cache, compute cores �
 
 MIG is compatible with CUDA, cuDNN, PyTorch, TensorFlow, and most GPU-accelerated libraries — no code changes are typically required.
 
-!!! Note
+!!! info
+
     MIG is not implemented on all GPUs in Wulver. 

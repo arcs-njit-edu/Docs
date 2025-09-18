@@ -72,6 +72,6 @@ This is also a very important tool to monitor processes running on your login no
 
 ## Qoslist
 
-QOS is an important flag for any type of job submission. You can check all the available QOS for each of your accounts using this tool. Click [here](../Software/slurm/slurm.md#partition-use-partition) for details about QOS.
+QOS is an important flag for any type of job submission. You can check all the available QOS for each of your accounts using this tool. Click [here](../Software/slurm/index.md#partition-use-partition) for details about QOS.
 
 ![qoslist-output.png](../assets/ondemand/tools/qoslist-output.png){ width=80% height=80%}

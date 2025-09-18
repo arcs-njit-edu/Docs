@@ -1,5 +1,5 @@
-Specification,1g.10gb,2g.20gb,3g.40gb,Full 80GB,Notes
-Device Name,A100 MIG 1g.10gb,A100 MIG 2g.20gb,A100 MIG 3g.40gb,A100-SXM4-80GB,MIG slice size
+Specification,10gb,20gb,40gb,Full 80GB,Notes
+Device Name,A100 MIG 10gb,A100 MIG 20gb,A100 MIG 40gb,A100-SXM4-80GB,GPU Profile
 SU Usage factor,2,4,8,16,Service units
 Global Memory,10.2 GB,20.9 GB,42.4 GB,85.2 GB,Raw hardware memory
 Usable Memory,~9.5 GB,~20 GB,~40 GB,~80 GB,Available for applications

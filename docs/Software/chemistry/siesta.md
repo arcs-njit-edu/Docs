@@ -14,7 +14,7 @@ SIESTA is actively developed and maintained by a team of researchers at the Univ
     ```python exec="on"
     import pandas as pd
     
-    df = pd.read_csv('docs/assets/tables/module_wulver.csv')
+    df = pd.read_csv('docs/assets/tables/module_wulver_rhel9.csv')
     soft = df.query('Software == "Siesta"')
     print(soft.to_markdown(index=False))
     ```

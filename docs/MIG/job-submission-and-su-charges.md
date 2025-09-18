@@ -7,47 +7,45 @@ When submitting jobs on Wulver's MIG-enabled A100 GPUs, you must explicitly requ
 | 10G MIG |      `--gres=gpu:a100_10g:1 `      |
 | 20G MIG |      `--gres=gpu:a100_20g:1 `      |
 | 40G MIG |      `--gres=gpu:a100_40g:1 `      |
-| 80G MIG |        `--gres=gpu:a100:1`         |
 
 
-!!! info
-    For an 80G MIG, it is considered a full GPU. In that case, you can alternatively specify `--gres=gpu:1` in your job script. If you want to see a job script example of requesting a full GPU, please refer to the sample [GPU job scripts](../Software/slurm/slurm.md/#submitting-jobs-on-gpu-nodes).
+!!! warning
+    Please note that MIGs are available in partition=`debug_gpu` and qos=`debug`. However, when you use a full GPU using `--gres=gpu:a100:1` use the partition `gpu` and qos `standard` or `low`. If you want to see a job script example of requesting a full GPU, please refer to the sample [GPU job scripts](../Software/slurm/index.md/#submitting-jobs-on-gpu-nodes).
 
-!!! note
-    Please note that MIGs are available in partition=`debug_gpu` and qos=`debug`
+## Running Jobs with MIG
 
-### Sample SLURM Script for a MIG Job
+=== "Sample SLURM Script for a MIG Job"
 
-```shell
-#!/bin/bash -l
-#SBATCH --job-name=gpu_job
-#SBATCH --output=%x.%j.out
-#SBATCH --error=%x.%j.err
-#SBATCH --partition=debug_gpu
-#SBATCH --qos=debug
-#SBATCH --account=$PI_ucid         # Replace with PI's UCID
-#SBATCH --nodes=1
-#SBATCH --ntasks-per-node=8
-#SBATCH --gres=gpu:a100_10g:1      # Change to 20g or 40g as needed
-#SBATCH --time=59:00
-#SBATCH --mem-per-cpu=4000M
+    ```shell
+    #!/bin/bash -l
+    #SBATCH --job-name=gpu_job
+    #SBATCH --output=%x.%j.out
+    #SBATCH --error=%x.%j.err
+    #SBATCH --partition=debug_gpu
+    #SBATCH --qos=debug
+    #SBATCH --account=$PI_ucid         # Replace with PI's UCID
+    #SBATCH --nodes=1
+    #SBATCH --ntasks-per-node=8
+    #SBATCH --gres=gpu:a100_10g:1      # Change to 20g or 40g as needed
+    #SBATCH --time=59:00
+    #SBATCH --mem-per-cpu=4000M
+    
+    srun ./myexe <input/output options>
+    ```
 
-srun ./myexe <input/output options>
-```
+=== "Interactive session with MIG"
 
-### Interactive session with MIG
+    ```shell
+    $srun --partition=debug_gpu \
+    --account=$PI_ucid \
+    --qos=debug \
+    --gres=gpu:a100_10g:1 \
+    --time=00:59:00 \
+    --pty bash
+    ```
 
-```shell
-$srun --partition=debug_gpu \
---account=$PI_ucid \
---qos=debug \
---gres=gpu:a100_10g:1 \
---time=00:59:00 \
---pty bash
-```
-
-!!!tip
-    You can submit your job to multiple MIG instances. For example: `--gres=gpu:a100_10g:2` will allocate 2 instances of `10G` MIG.
+!!!warning
+    You cannot run your job using multiple MIG instances. For example, `--gres=gpu:a100_10g:2` will allocate two instances of the 10G MIG, but it will either raise an error or some jobs may assume it as a single MIG, even if multiple instances are requested.
 
 ## Understanding SU Charges
 
@@ -63,7 +61,7 @@ Each component contributes to the SU calculation. The SU cost is charged per nod
 SU = MAX(#CPUs, Memory (in GB) / 4) + 16 × (GPU memory requested / 80GB)
 ```
 
-!!! note
+!!! info
     GPU memory requested is based on the MIG profile, not your actual memory usage during the job.
 
 

@@ -14,7 +14,7 @@ CP2K is widely used in the fields of materials science, chemistry, and physics f
 ```python exec="on"
 import pandas as pd
 
-df = pd.read_csv('docs/assets/tables/module_wulver.csv')
+df = pd.read_csv('docs/assets/tables/module_wulver_rhel9.csv')
 soft = df.query('Software == "CP2K"')
 print(soft.to_markdown(index=False))
 ```
@@ -45,7 +45,7 @@ CP2K MPI/OpenMP-hybrid Execution (PSMP), CP2K with Population Analysis capabilit
 
     module purge > /dev/null 2>&1
     module load wulver
-    module load foss/2022b CP2K
+    module load foss/2025a CP2K
     
     #Run the program
 

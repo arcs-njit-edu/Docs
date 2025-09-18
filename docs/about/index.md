@@ -17,7 +17,7 @@ hide:
 
 |                                 Name                                 |                         Title                         |     Phone      |            Email            |   Office   |
 |:--------------------------------------------------------------------:|:-----------------------------------------------------:|:--------------:|:---------------------------:|:----------:|
-|     [Kate Cahill](#director-high-performance-research-computing)     |     Director, High Performance Research Computing     | (973) 596-2721 |      gwolosh@njit.edu       | GITC 2203  |
+|     [Kate Cahill](#director-high-performance-research-computing)     |     Director, High Performance Research Computing     | (973) 596-2721 |      katharine.cahill@njit.edu       | GITC 2203  |
 | [Kevin Walsh](#assistant-director-advanced-computing-infrastructure) | Assistant Director, Advanced Computing Infrastructure | (973) 596-5747 |       walsh@njit.edu        | GITC 2202  |
 |          [Hui(Julia) Zhao](#research-computing-facilitator)          |            Research Computing Facilitator             | (973) 596-2727 |      hui.zhao@njit.edu      | GITC 2316B |
 |       [Abhishek Mukherjee](#research-computing-facilitator_1)        |            Research Computing Facilitator             | (973) 642-4132 | abhishek.mukherjee@njit.edu | GITC 2316B |
@@ -118,6 +118,5 @@ hide:
 
 Dr. Wolosh recently retired after  25 years at NJIT  working in research computing. He was the lead architect for all the HPC resources at NJIT. He specialized in building scientific software stacks.
 <a href="https://github.com/gwolosh">![https://github.com/gwolosh](../assets/images/github-color.svg){ width="15" }</a>
-<a href="https://www.linkedin.com/in/gwolosh">![https://www.linkedin.com/in/gwolosh](../assets/images/linkedin-color.svg){ width="15"
-}</a>
+<a href="https://www.linkedin.com/in/gwolosh">![https://www.linkedin.com/in/gwolosh](../assets/images/linkedin-color.svg){ width="15"}</a>
 

@@ -11,7 +11,7 @@ Conda as a package manager helps you find and install packages. If you need a pa
     ```python exec="on"
     import pandas as pd
     
-    df = pd.read_csv('docs/assets/tables/module_wulver.csv')
+    df = pd.read_csv('docs/assets/tables/module_wulver_rhel9.csv')
     # Header values to be added
     soft = df.query('Software == "Anaconda3" | Software == "Miniconda3" | Software == "Miniforge3" ')
     print(soft.to_markdown(index=False))
@@ -85,7 +85,7 @@ Conda Channel refers to a repository or collection of software packages that are
 
 !!! tip
 
-    Since memory and CPU usage are limited, it's better to start an [interactive session with the compute node](slurm.md#interactive-session-on-a-compute-node) whenever you are installing Python packages via Conda.
+    Since memory and CPU usage are limited, it's better to start an [interactive session with the compute node](interactive-jobs.md) whenever you are installing Python packages via Conda.
 
 In the above example, the command `conda install -c conda-forge matplotlib` will install `matplotlib` from `conda-forge` channel which is a community-maintained collection of Conda packages where a wide range of packages contributed by the community are available. 
 Users can prioritize channels by listing them in a specific order, so that Conda searches channels in the order they are listed, installing the first version of a package that it finds. To list the channels, create a file `.condarc` in the `$HOME` directory and add the following
@@ -287,7 +287,7 @@ python -c "import torch; print(torch.cuda. is_available())"
 
 !!! warning
     
-    While checking the CUDA version or PyTorch compilation using the commands mentioned above, make sure to start an [interactive session on a GPU node](slurm.md#interactive-session-on-a-compute-node-gpu-nodes); otherwise, the command will not recognize CUDA or the GPU.
+    While checking the CUDA version or PyTorch compilation using the commands mentioned above, make sure to start an [interactive session on a GPU node](interactive-jobs.md); otherwise, the command will not recognize CUDA or the GPU.
 
 * A simple PyTorch test program is given below to check whether PyTorch has been installed properly. Program is called
 
@@ -401,7 +401,7 @@ Exporting and importing Conda environments allows users to capture and reproduce
 
 !!! tips
 
-    When installing Python packages via Conda, ensure that you perform the installation on the compute node rather than the login node. The CPU and memory resources on login nodes are limited, and installing Python packages on the login node can be time-consuming. To avoid this, initiate an [tnteractive session with compute node](slurm.md#interactive-session-on-a-compute-node).
+    When installing Python packages via Conda, ensure that you perform the installation on the compute node rather than the login node. The CPU and memory resources on login nodes are limited, and installing Python packages on the login node can be time-consuming. To avoid this, initiate an [tnteractive session with compute node](interactive-jobs.md).
 
 ### Export Conda Environment 
 To export a conda environment to a new directory or a different machine, you need to activate the environment first that you intend to export. Please see [Conda environment](#activate-and-deactivate-conda-environment) on how to activate the environment. Once your environment is activated, you can export it to a YAML file:
