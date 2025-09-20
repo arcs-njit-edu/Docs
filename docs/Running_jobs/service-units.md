@@ -57,10 +57,11 @@ print(df.to_markdown(index=False))
         | SLURM Directive            |    SU     |      Explanation |
         |---------------------|:---------:|:---------:|
         | 4 CPUs + 10MIG     |  MAX(4, 4*4G/4G) + 16 * (10G/80G) = 6  |     Since no memory requiremnt is specified, SU is charged based on the same number of CPUs and 10G of GPU memory      |
-        | 4 CPUs + 20MIG      |  MAX(4, 4G/4G) + 16 * (20G/80G) = 8 |    SU is charged based on the same number of CPUs and 20G of GPU memory         |
-        | 4 CPUs + 40MIG     |  MAX(4, 4G/4G) + 16 * (40G/80G) = 12 |   SU is charged based on the same number of CPUs and 40G of GPU memory          |
-        | 4 CPUs + Full GPU      |  MAX(4, 4G/4G) + 16 * (80G/80G) = 20 |  SU is charged based on the same number of CPUs and 80G of GPU (A full GPU) memory            |
+        | 4 CPUs + 20MIG      |  MAX(4, 4*4G/4G) + 16 * (20G/80G) = 8 |    SU is charged based on the same number of CPUs and 20G of GPU memory         |
+        | 4 CPUs + 40MIG     |  MAX(4, 4*4G/4G) + 16 * (40G/80G) = 12 |   SU is charged based on the same number of CPUs and 40G of GPU memory          |
+        | 4 CPUs + Full GPU      |  MAX(4, 4*4G/4G) + 16 * (80G/80G) = 20 |  SU is charged based on the same number of CPUs and 80G of GPU (A full GPU) memory            |
         | 4 CPUs + `--mem=64G` + Full GPU      |  MAX(4, 64G/4G) + 16 * (80G/80G) = 32 |  The MAX function evaluates the maximum of 4 SUs (from CPUs), and 64G/4G= 16 SUs (from memory). In addition, 16 SUs are charged from 80G of GPU (A full GPU) memory, bringing the total SU charge to 32 SUs  |
+        | 4 CPUs + `--mem-per-cpu=8G` + Full GPU      |  MAX(4, 4*8G/4G) + 16 * (80G/80G) = 24 |  The MAX function the evaluates the maximum of 4 SUs (from CPUs), and 4*8G/4G= 8 SUs (from memory). In addition, 16 SUs are charged from 80G of GPU (A full GPU) memory, bringing the total SU charge to 24 SUs  |
 
 
 ### Check Quota
