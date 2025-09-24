@@ -1,8 +1,3 @@
----
-toc:
-  depth: 1
----
-
 # HPC Education and Training
 
 NJIT HPC provides practical training in high performance computing for students and researchers at various levels of expertise. HPC training for research professionals aims to enhance their capabilities in utilizing high-performance computing, data-intensive computing, and data analytics within their respective research fields. 
