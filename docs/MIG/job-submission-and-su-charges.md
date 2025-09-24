@@ -55,7 +55,7 @@ Wulver uses a Service Unit (SU) model to track computing usage. Your job's SU co
 - Memory request
 - GPU memory allocation (via MIG)
 
-Each component contributes to the SU calculation. The SU cost is charged per node per hour using the formula:
+Each component contributes to the SU calculation. The SU cost is charged per hour using the formula:
 
 ```
 SU = MAX(#CPUs, Memory (in GB) / 4) + 16 × (GPU memory requested / 80GB)
@@ -68,17 +68,18 @@ SU = MAX(#CPUs, Memory (in GB) / 4) + 16 × (GPU memory requested / 80GB)
 | SLURM Directive            |    SU     |      Explaination |
 |---------------------|:---------:|:---------:|
 | 4 CPUs + 10MIG     |  MAX(4, 4*4G/4G) + 16 * (10G/80G) = 6  |     Since no memory requireemnt is specified, SU is charged based on the same number of CPUs and 10G of GPU memory      |
-| 4 CPUs + 20MIG      |  MAX(4, 4G/4G) + 16 * (20G/80G) = 8 |    SU is charged based on the same number of CPUs and 20G of GPU memory         |
-| 4 CPUs + 40MIG     |  MAX(4, 4G/4G) + 16 * (40G/80G) = 12 |   SU is charged based on the same number of CPUs and 40G of GPU memory          |
-| 4 CPUs + Full GPU      |  MAX(4, 4G/4G) + 16 * (80G/80G) = 20 |  SU is charged based on the same number of CPUs and 80G of GPU (A full GPU) memory            |
+| 4 CPUs + 20MIG      |  MAX(4, 4*4G/4G) + 16 * (20G/80G) = 8 |    SU is charged based on the same number of CPUs and 20G of GPU memory         |
+| 4 CPUs + 40MIG     |  MAX(4, 4*4G/4G) + 16 * (40G/80G) = 12 |   SU is charged based on the same number of CPUs and 40G of GPU memory          |
+| 4 CPUs + Full GPU      |  MAX(4, 4*4G/4G) + 16 * (80G/80G) = 20 |  SU is charged based on the same number of CPUs and 80G of GPU (A full GPU) memory            |
 | 4 CPUs + `--mem=64G` + Full GPU      |  MAX(4, 64G/4G) + 16 * (80G/80G) = 32 |  The MAX function the evaluates the maximum of 4 SUs (from CPUs), and 64G/4G= 16 SUs (from memory). In addition, 16 SUs are charged from 80G of GPU (A full GPU) memory, bringing the total SU charge to 32 SUs  |
+| 4 CPUs + `--mem-per-cpu=8G` + Full GPU      |  MAX(4, 4*8G/4G) + 16 * (80G/80G) = 24 |  The MAX function the evaluates the maximum of 4 SUs (from CPUs), and 4*8G/4G= 8 SUs (from memory). In addition, 16 SUs are charged from 80G of GPU (A full GPU) memory, bringing the total SU charge to 24 SUs  |
 
 
 ## Tips for Efficient Job Submission ***(Think Fit, Not Power)***
 
 - Choose the profile that fits your workload, not the biggest one available. You’ll save SUs, get scheduled faster, and help the cluster stay responsive for everyone.
-- Use `--mem-per-cpu` instead of `--mem` to balance memory fairly.
 - Avoid requesting a full GPU unless your job cannot run on a MIG.
 - Combine small jobs using job arrays or batching when possible.
 - Need help estimating SUs? Try submitting test jobs with `--time=10:00` and reviewing the actual SU usage via the job summary.
+- By default, each CPU is allocated `4 GB` of memory. If your job requires more, you can request additional memory using `--mem`. Please ensure you request only as much as your job needs, as over-allocating memory will increase your SU usage. Refer to the formula above for details.
 - MIG is designed to make high-performance GPUs accessible and efficient — take advantage of it wisely.
