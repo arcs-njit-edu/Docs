@@ -49,7 +49,7 @@ You can use ParaView with GPU acceleration, but you need to use GPU nodes on our
     ################################################
     module purge
     module load wulver # Load the slurm, easybuild 
-    module load ParaView/5.11.0-osmesa 
+    module load ParaView/5.11.2-osmesa 
     ################################################
     #
     # Open an ssh tunnel to the login node
@@ -59,7 +59,7 @@ You can use ParaView with GPU acceleration, but you need to use GPU nodes on our
     port=$(shuf -i 6000-9999 -n 1)
     HOST=$(hostname)
     if [ $(hostname) == $HOST ]; then
-      /usr/bin/ssh -N -f -R $port:localhost:$port login01.tartan.njit.edu
+      /usr/bin/ssh -N -f -R $port:localhost:$port login02.tartan.njit.edu
     fi
     ################################################
     cat<<EOF
@@ -72,7 +72,7 @@ You can use ParaView with GPU acceleration, but you need to use GPU nodes on our
     Open new terminal window, and run:
     (If you are off campus you will need VPN running)
     
-    ssh -L $port:localhost:$port $USER@login01.tartan.njit.edu
+    ssh -L $port:localhost:$port $USER@login02.tartan.njit.edu
     EOF
     ################################################
     # Run MPI pvserver
@@ -105,7 +105,7 @@ To use ParaView with GPU, you need to use the following job script
     ################################################
     module purge
     module load wulver # Load slurm, easybuild
-    module load ParaView/5.11.0-egl
+    module load ParaView/5.11.2-egl
     ################################################
     #
     # Open an ssh tunnel to the login node
@@ -158,7 +158,7 @@ Accepting connection(s): n0003:1234
 
 Next, open a new terminal and type
     
-`ssh -L $port:localhost:$port $USER@login01.tartan.njit.edu`
+`ssh -L $port:localhost:$port $USER@login02.tartan.njit.edu`
 
 where `$port` corresponds to the port number.
 Once you open ParaView from your local machine go to `File --> Connnect`, and you will see a dialogue box with the name `Choose Server Configuration`. You need to select <kbd>Add Server</kbd> option and there you need to use the following as shown below.

@@ -29,9 +29,6 @@ Conda as a package manager helps you find and install packages. If you need a pa
 | Import environment from YAML:             |      `conda env create -f [environment_name].yml`      |
 | Import environment to different location: | `conda env create -f [environment_name].yml -p [PATH]` | 
 
-!!! warning
-
-    Users can use Conda after loading any of the modules mentioned above. However, please note that the Anaconda module may be removed in the future, as Anaconda is no longer free for non-profit academic research at institutions with more than 200 employees. While we have not received any official communication from Anaconda yet, please use the Miniforge3 module instead of Anaconda. You do not need to reinstall or recreate any environment if you have already created a Conda environment with Anaconda. Simply load Miniforge3, and the remaining steps are the same.
 
 ## Create and Activate a Conda Virtual Environment
 

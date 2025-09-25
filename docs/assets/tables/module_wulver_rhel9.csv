@@ -14,6 +14,8 @@ NVHPC,25.3-CUDA-12.8.0,-,`module load NVHPC/25.3-CUDA-12.8.0`
 Bison,3.8.2,-,`module load Bison/3.8.2`
 intel,2024a,-,`module load intel/2024a`
 intel,2025a,-,`module load intel/2025a`
+ParaView,5.11.2-egl,-,`module load ParaView/5.11.2-egl`
+ParaView,5.11.2-osmesa,-,`module load ParaView/5.11.2-osmesa`
 flex,2.6.4,-,`module load flex/2.6.4`
 Miniforge3,24.11.3-0,-,`module load Miniforge3/24.11.3-0`
 foss,2024a,-,`module load foss/2024a`
@@ -50,6 +52,7 @@ iimpi,2024a,-,`module load iimpi/2024a`
 iimpi,2025a,-,`module load iimpi/2025a`
 MATLAB,2024a,-,`module load MATLAB/2024a`
 MATLAB,2025a,-,`module load MATLAB/2025a`
+Julia,1.11.6-linux-x86_64,-,`module load Julia/1.11.6-linux-x86_64`
 Julia,1.9.3-linux-x86_64,-,`module load Julia/1.9.3-linux-x86_64`
 ANSYS,2025R1,-,`module load ANSYS/2025R1`
 ANSYS,2024R1,-,`module load ANSYS/2024R1`
@@ -81,6 +84,7 @@ Chapel,2.5.0,foss/2025a,`module load foss/2025a Chapel/2.5.0`
 SuperLU_DIST,9.1.0,foss/2025a,`module load foss/2025a SuperLU_DIST/9.1.0`
 SCOTCH,7.0.8,foss/2025a,`module load foss/2025a SCOTCH/7.0.8`
 HDF5,1.14.6,foss/2025a,`module load foss/2025a HDF5/1.14.6`
+perm-md-count,main,foss/2025a,`module load foss/2025a perm-md-count/main`
 ParMETIS,4.0.3,foss/2025a,`module load foss/2025a ParMETIS/4.0.3`
 PETSc,3.23.5,foss/2025a,`module load foss/2025a PETSc/3.23.5`
 SLEPc,3.23.2,foss/2025a,`module load foss/2025a SLEPc/3.23.2`
@@ -120,9 +124,11 @@ SLEPc,3.23.2,foss/2024a,`module load foss/2024a SLEPc/3.23.2`
 KaHIP,3.18,foss/2024a,`module load foss/2024a KaHIP/3.18`
 ORCA,6.0.1-avx2,foss/2024a,`module load foss/2024a ORCA/6.0.1-avx2`
 ELPA,2024.05.001,foss/2024a,`module load foss/2024a ELPA/2024.05.001`
+igraph,0.10.16,foss/2024a,`module load foss/2024a igraph/0.10.16`
 Siesta,5.4.0,foss/2024a,`module load foss/2024a Siesta/5.4.0`
 libGridXC,2.0.2,foss/2024a,`module load foss/2024a libGridXC/2.0.2`
 FFTW.MPI,3.3.10,foss/2024a,`module load foss/2024a FFTW.MPI/3.3.10`
+arpack-ng,3.9.1,foss/2024a,`module load foss/2024a arpack-ng/3.9.1`
 ScaFaCoS,1.0.4,foss/2024a,`module load foss/2024a ScaFaCoS/1.0.4`
 ScaLAPACK,2.2.0-fb,foss/2024a,`module load foss/2024a ScaLAPACK/2.2.0-fb`
 Hypre,2.32.0,foss/2024a,`module load foss/2024a Hypre/2.32.0`
@@ -196,6 +202,7 @@ libarchive,3.7.7,foss/2025a,`module load foss/2025a libarchive/3.7.7`
 virtualenv,20.29.2,foss/2025a,`module load foss/2025a virtualenv/20.29.2`
 libidn2,2.3.7,foss/2025a,`module load foss/2025a libidn2/2.3.7`
 Ninja,1.12.1,foss/2025a,`module load foss/2025a Ninja/1.12.1`
+jupyter-server,2.16.0,foss/2025a,`module load foss/2025a jupyter-server/2.16.0`
 Perl,5.40.0,foss/2025a,`module load foss/2025a Perl/5.40.0`
 M4,1.4.19,foss/2025a,`module load foss/2025a M4/1.4.19`
 GLib,2.85.1,foss/2025a,`module load foss/2025a GLib/2.85.1`
@@ -205,8 +212,10 @@ libsodium,1.0.20,foss/2025a,`module load foss/2025a libsodium/1.0.20`
 groff,1.23.0,foss/2025a,`module load foss/2025a groff/1.23.0`
 py-cpuinfo,9.0.0,foss/2025a,`module load foss/2025a py-cpuinfo/9.0.0`
 Meson,1.6.1,foss/2025a,`module load foss/2025a Meson/1.6.1`
+IPython,9.3.0,foss/2025a,`module load foss/2025a IPython/9.3.0`
 Z3,4.13.4,foss/2025a,`module load foss/2025a Z3/4.13.4`
 gettext,0.24,foss/2025a,`module load foss/2025a gettext/0.24`
+JupyterNotebook,7.4.4,foss/2025a,`module load foss/2025a JupyterNotebook/7.4.4`
 LittleCMS,2.17,foss/2025a,`module load foss/2025a LittleCMS/2.17`
 scikit-build,0.18.1,foss/2025a,`module load foss/2025a scikit-build/0.18.1`
 Szip,2.1.1,foss/2025a,`module load foss/2025a Szip/2.1.1`
@@ -220,6 +229,7 @@ snappy,1.2.2,foss/2025a,`module load foss/2025a snappy/1.2.2`
 NSS,3.113,foss/2025a,`module load foss/2025a NSS/3.113`
 expat,2.6.4,foss/2025a,`module load foss/2025a expat/2.6.4`
 Abseil,20250512.1,foss/2025a,`module load foss/2025a Abseil/20250512.1`
+jedi,0.19.1,foss/2025a,`module load foss/2025a jedi/0.19.1`
 Autoconf,2.72,foss/2025a,`module load foss/2025a Autoconf/2.72`
 hatchling,1.27.0,foss/2025a,`module load foss/2025a hatchling/1.27.0`
 Xvfb,21.1.18,foss/2025a,`module load foss/2025a Xvfb/21.1.18`
@@ -270,6 +280,7 @@ matlab-proxy,0.27.1,foss/2025a,`module load foss/2025a matlab-proxy/0.27.1`
 RapidJSON,1.1.0-20250205,foss/2025a,`module load foss/2025a RapidJSON/1.1.0-20250205`
 flex,2.6.4,foss/2025a,`module load foss/2025a flex/2.6.4`
 FriBidi,1.0.16,foss/2025a,`module load foss/2025a FriBidi/1.0.16`
+hatch-jupyter-builder,0.9.1,foss/2025a,`module load foss/2025a hatch-jupyter-builder/0.9.1`
 UCC,1.3.0,foss/2025a,`module load foss/2025a UCC/1.3.0`
 cURL,8.11.1,foss/2025a,`module load foss/2025a cURL/8.11.1`
 util-linux,2.41,foss/2025a,`module load foss/2025a util-linux/2.41`
@@ -286,6 +297,7 @@ Mako,1.3.10,foss/2025a,`module load foss/2025a Mako/1.3.10`
 libglvnd,1.7.0,foss/2025a,`module load foss/2025a libglvnd/1.7.0`
 SPIRV-tools,2025.2.rc2,foss/2025a,`module load foss/2025a SPIRV-tools/2025.2.rc2`
 freetype,2.13.3,foss/2025a,`module load foss/2025a freetype/2.13.3`
+lxml,5.3.0,foss/2025a,`module load foss/2025a lxml/5.3.0`
 bzip2,1.0.8,foss/2025a,`module load foss/2025a bzip2/1.0.8`
 fonttools,4.58.4,foss/2025a,`module load foss/2025a fonttools/4.58.4`
 zstd,1.5.6,foss/2025a,`module load foss/2025a zstd/1.5.6`
@@ -295,6 +307,7 @@ libGLU,9.0.3,foss/2025a,`module load foss/2025a libGLU/9.0.3`
 HarfBuzz,11.2.1,foss/2025a,`module load foss/2025a HarfBuzz/11.2.1`
 Blosc2,2.19.0,foss/2025a,`module load foss/2025a Blosc2/2.19.0`
 GMP,6.3.0,foss/2025a,`module load foss/2025a GMP/6.3.0`
+BeautifulSoup,4.13.4,foss/2025a,`module load foss/2025a BeautifulSoup/4.13.4`
 SDL2,2.32.8,foss/2025a,`module load foss/2025a SDL2/2.32.8`
 psutil,7.0.0,foss/2025a,`module load foss/2025a psutil/7.0.0`
 libtool,2.5.4,foss/2025a,`module load foss/2025a libtool/2.5.4`
@@ -340,13 +353,16 @@ git,2.49.0,foss/2025a,`module load foss/2025a git/2.49.0`
 PyZMQ,27.0.0,foss/2025a,`module load foss/2025a PyZMQ/27.0.0`
 UnZip,6.0,foss/2025a,`module load foss/2025a UnZip/6.0`
 libpsl,0.21.5,foss/2025a,`module load foss/2025a libpsl/0.21.5`
+tornado,6.5.1,foss/2025a,`module load foss/2025a tornado/6.5.1`
 graphite2,1.3.14,foss/2025a,`module load foss/2025a graphite2/1.3.14`
 poetry,2.1.2,foss/2025a,`module load foss/2025a poetry/2.1.2`
 hypothesis,6.133.2,foss/2025a,`module load foss/2025a hypothesis/6.133.2`
+NCCL,2.26.6-CUDA-12.8.0,foss/2025a,`module load foss/2025a NCCL/2.26.6-CUDA-12.8.0`
 OpenJPEG,2.5.3,foss/2025a,`module load foss/2025a OpenJPEG/2.5.3`
 Catch2,2.13.10,foss/2025a,`module load foss/2025a Catch2/2.13.10`
 Catch2,3.8.1,foss/2025a,`module load foss/2025a Catch2/3.8.1`
 RE2,2024-07-02,foss/2025a,`module load foss/2025a RE2/2024-07-02`
+JupyterLab,4.4.4,foss/2025a,`module load foss/2025a JupyterLab/4.4.4`
 maturin,1.8.3,foss/2025a,`module load foss/2025a maturin/1.8.3`
 meson-python,0.18.0,foss/2025a,`module load foss/2025a meson-python/0.18.0`
 UCX-CUDA,1.18.0-CUDA-12.8.0,foss/2025a,`module load foss/2025a UCX-CUDA/1.18.0-CUDA-12.8.0`
