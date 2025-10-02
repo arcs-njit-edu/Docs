@@ -48,10 +48,10 @@ print(df.to_markdown(index=False))
     === "`bigmem` Partition"
         | SLURM Directive             |           SU                |                                                             Explanation                             |
         |-----------------------------|:---------------------------:|:----------------------------------------------------------------------------------------------------:|
-        | 4 CPUs                      | MAX(4*1.5, 4*16G/16G) = 6     |                       On `bigmem` partition the usage factor is 1.5                     |
-        | 4 CPUs + `--mem=64G`        | MAX(4*1.5, 64G/16G) = 6     | Since 64G memory is specified, the MAX function the evaluates the maximum of 4*1.5= 6 SUs, and 64G/16G= 4 SUs, resulting in a charge of 4 SUs |
-        | 4 CPUs + `--mem=128G`         |  MAX(4*1.5, 128G/16G) = 8      |                    MAX function the evaluates the maximum of 4*1.5= 6 SUs, and 128G/16G= 8 SU, resulting in a charge of 8 SUs                    |
-        | 4 CPUs + `--mem-per-cpu=8G` |  MAX(4*1.5, 8G*4/16G) = 6    |                MAX function the evaluates the maximum of 4*1.5= 6 SUs, and 8G*4CPUs/16G = 2 SUs , resulting in a charge of 6 SUs                |
+        | 4 CPUs                      | MAX(4*1.5, 1.5*4*16G/16G) = 6     |                       On `bigmem` partition the usage factor is 1.5                     |
+        | 4 CPUs + `--mem=64G`        | MAX(4*1.5, 1.5*64G/16G) = 6     | Since 64G memory is specified, the MAX function the evaluates the maximum of 4*1.5= 6 SUs, and 1.5*64G/16G= 6 SUs, resulting in a charge of 6 SUs |
+        | 4 CPUs + `--mem=128G`         |  MAX(4*1.5, 1.5*128G/16G) = 12      |                    MAX function the evaluates the maximum of 4*1.5= 6 SUs, and 1.5*128G/16G= 12 SU, resulting in a charge of 12 SUs                    |
+        | 4 CPUs + `--mem-per-cpu=8G` |  MAX(4*1.5, 1.5*8G*4/16G) = 6    |                MAX function the evaluates the maximum of 4*1.5= 6 SUs, and 1.5*8G*4CPUs/16G = 3 SUs , resulting in a charge of 6 SUs                |
 
     === "`gpu` Partition"
         | SLURM Directive            |    SU     |      Explanation |
