@@ -23,30 +23,7 @@ The documentation of SLURM is available at [SLURM manual](https://slurm.schedmd.
 
 ### Managing and Monitoring Jobs
 
-SLURM has numerous tools for monitoring jobs. Below are a few to get started. More documentation is available on the [SLURM website](https://slurm.schedmd.com/man_index.html).
-
-The most common commands are: 
-
-- List all current jobs: `squeue`
-- Job deletion: `scancel [job_id]`
-- Run a job: `sbatch [submit script]`
-- Run a command: `srun <slurm options> <command name>`
-
-### SLURM User Commands 
-
-| Task                |              Command              | 
-|---------------------|:---------------------------------:|
-| Job submission:     |      `sbatch [script_file]`       |
-| Job deletion:       |        `scancel [job_id]`         |
-| Job status by job:  |         `squeue [job_id]`         |
-| Job status by user: |      `squeue -u [user_name]`      |
-| Job hold:           |     `scontrol hold [job_id]`      |
-| Job release:        |    `scontrol release [job_id]`    |
-| List enqueued jobs: |             `squeue`              |
-| List nodes:         | `sinfo -N OR scontrol show nodes` |
-| Cluster status:     |              `sinfo`              |
- 
-For more details, check [Running Jobs](../../Running_jobs/index.md). 
+Our website structure has changed. For more details on monitoring jobs, check [Running Jobs](../../Running_jobs/index.md). 
 <!--
 ## Using SLURM on Wulver
 In Wulver, SLURM submission will have new requirements, intended for a more fair sharing of resources without impinging on investor/owner rights to computational resources.  All jobs must now be charged to a PI-group (Principal Investigator) account.
