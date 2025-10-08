@@ -25,6 +25,27 @@ NJIT HPC provides practical training in high performance computing for students 
     </div>
 
 </div>
+<div class="grid cards" markdown>
+
+-   ### [Intro to Wulver: Job Scheduler & Submitting Jobs](../index.md)
+
+    ---
+
+    This webinar provides the basic information on running jobs , how to run batch processing, and submit and manage the Slurm jobs.
+    
+    **Key Highlights:**
+
+    * Access the software on Wulver
+    * Batch Processing
+    * Manage Slurm Jobs
+    * Troubleshooting Common Issues
+    * SlurmInteractive Jobs and Use GUI Apps
+
+	<div style="position: relative; width: 80%; height: 0; padding-bottom: 56.25%">
+	<iframe src="https://njit.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=70d72962-a684-4971-8192-b35b0147f5f5&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&captions=true&interactivity=all" style="border: 1px solid #464646; position: absolute; top: 0; left: 0; width: 100%; height: 100%; box-sizing: border-box;" allowfullscreen allow="autoplay" aria-label="Panopto Embedded Video Player" aria-description="Intro to Wulver: Resources &amp; HPC"></iframe>
+    </div>
+
+</div>
 
 
 
