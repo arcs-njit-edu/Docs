@@ -20,11 +20,54 @@ NJIT HPC provides practical training in high performance computing for students 
     * Data Storage systems 
     * Understanding allocations to utilize the shared resources
 
-	<div style="position: relative; width: 80%; height: 0; padding-bottom: 56.25%">
-	<iframe src="https://njit.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=70d72962-a684-4971-8192-b35b0147f5f5&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&captions=true&interactivity=all" style="border: 1px solid #464646; position: absolute; top: 0; left: 0; width: 100%; height: 100%; box-sizing: border-box;" allowfullscreen allow="autoplay" aria-label="Panopto Embedded Video Player" aria-description="Intro to Wulver: Resources &amp; HPC"></iframe>
-    </div>
+	<iframe src="https://njit.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=70d72962-a684-4971-8192-b35b0147f5f5&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&captions=true&interactivity=all" height="405" width="720" style="border: 1px solid #464646; box-sizing: border-box;" allowfullscreen allow="autoplay" aria-label="Panopto Embedded Video Player" aria-description="Intro to Wulver: Resources &amp; HPC"></iframe>
+    
+    [<span class="octicon--arrow-right-24"></span> Download Slides](../../assets/slides/Intro_to_Wulver_I_09_17_2025.pdf)
 
 </div>
 
+<div class="grid cards" markdown>
+
+-   ### [Intro to Wulver: Job Scheduler & Submitting Jobs](../index.md)
+
+    ---
+
+    This webinar provides the basic information on running jobs , how to run batch processing, and submit and manage the Slurm jobs.
+    
+    **Key Highlights:**
+
+    * Access the software on Wulver
+    * Batch Processing
+    * Manage Slurm Jobs
+    * Troubleshooting Common Issues
+    * SlurmInteractive Jobs and Use GUI Apps
+
+    <iframe src="https://njit.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=1372490d-8e83-458d-ae71-b369014baf14&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&captions=true&interactivity=all" height="405" width="720" style="border: 1px solid #464646; box-sizing: border-box;" allowfullscreen allow="autoplay" aria-label="Panopto Embedded Video Player" aria-description="Intro to Wulver: Job Scheduler &amp; Submitting Jobs"></iframe>
+
+    [<span class="octicon--arrow-right-24"></span> Download Slides](../../assets/slides/Intro_to_Wulver_II_10_01_2025.pdf)
+
+</div>
+
+<div class="grid cards" markdown>
+
+-   ### [Intro to Wulver: Focus on Job Efficiency](../index.md)
+
+    ---
+
+    This webinar provides more in-depth features of SLURM, how to run dependency, array jobs to run efficiently on the cluster.
+    
+    **Key Highlights:**
+
+    * Sbatch : Some Examples
+    * salloc command
+    * Job Dependencies
+    * Job Arrays
+    * Checkpointing
+
+    <iframe src="https://njit.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=f0742dfc-75c3-4e57-ae04-b370014709f4&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&captions=true&interactivity=all" height="405" width="720" style="border: 1px solid #464646; box-sizing: border-box;" allowfullscreen allow="autoplay" aria-label="Panopto Embedded Video Player" aria-description="Intro to Wulver: Focus on Job Efficiency"></iframe>
+
+    [<span class="octicon--arrow-right-24"></span> Download Slides](../../assets/slides/Intro_to_Wulver_III_10_08_2025.pdf)
+
+</div>
 
 
