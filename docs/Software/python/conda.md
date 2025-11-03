@@ -32,6 +32,9 @@ Conda as a package manager helps you find and install packages. If you need a pa
 
 ## Create and Activate a Conda Virtual Environment
 
+!!! tip
+    The login node has limited memory and processing resources, which can slow down conda environment creation and package installation. It is recommended to start an [interactive session](../../Running_jobs/interactive-jobs.md/) on a compute node before creating or modifying your conda environment.
+
 Load the Miniforge3 Module
 
 ```
@@ -52,10 +55,10 @@ Once you create an environment, you need to activate the environment to install 
 Use `conda activate ENV` to activate the Conda environment (`ENV` is the name of the environment). Following the activation of the conda environment, the name of the environment appears at the left of the hostname in the terminal. 
 
 ```bash
-login1-41 ~ >: module load Miniforge3
-login1-41 ~ >: conda create --name ENV python=3.9
-login1-41 ~ >: conda activate ENV
-(ENV) login-41 ~ >:
+[ls565@n0058 ~]$ module load Miniforge3
+[ls565@n0058 ~]$ conda create --name ENV python=3.9
+[ls565@n0058 ~]$ conda activate ENV
+(ENV) [ls565@n0058 ~]$
 ```
 
 Once you finish the installation of Python packages, deactivate the conda environment using `conda deactivate ENV`. 
@@ -68,7 +71,7 @@ Once you finish the installation of Python packages, deactivate the conda enviro
 Once Conda environment is activated, you can install packages via `conda install package_name` command. For example, if you want to install `matplotlib`, you need to use
 
 ```bash
-(ENV) login-41 ~ >: conda install -c conda-forge matplotlib
+(ENV) [ls565@n0058 ~]$ conda install -c conda-forge matplotlib
 ```
 where `conda-forge` is the name of the conda channel. 
 
@@ -101,26 +104,34 @@ Here, we provide some examples of how to use `conda` to install applications.
 The following example will create a new conda environment based on Python 3.9 and install TensorFlow in the environment.
 
 ```bash
-login1-41 ~ >: module load Miniforge3
-login1-41 ~ >: conda create --name tf python=3.9
-Collecting package metadata (current_repodata.json): done
+[ls565@n0058 ~]$ module load Miniforge3
+[ls565@n0058 ~]$ conda create --name tf 
+Channels:
+ - conda-forge
+Platform: linux-64
+Collecting package metadata (repodata.json): done
 Solving environment: done
+
+
+==> WARNING: A newer version of conda exists. <==
+    current version: 24.11.3
+    latest version: 25.9.1
+
+Please update conda by running
+
+    $ conda update -n base -c conda-forge conda
 
 ## Package Plan ##
 
-  environment location: /home/g/guest24/.conda/envs/tf
+  environment location: /home/ls565/.conda/envs/tf
 
-  added / updated specs:
-    - python=3.9
+Proceed ([y]/n)? y
 
+Downloading and Extracting Packages:
 
-The following packages will be downloaded:
-
- <output snipped>
-
-Proceed ([y]/n)?y
-
- <output snipped>
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
 #
 # To activate this environment, use
 #
@@ -134,49 +145,66 @@ Proceed ([y]/n)?y
 
 Activate the new 'tf' environment
 ```bash
-login1-41 ~ >: conda activate tf
-(tf) login-41 ~ >:
+[ls565@n0058 ~]$ conda activate tf
+(tf) [ls565@n0058 ~]$
 ```
 Install tensorflow-gpu
 ```bash
-(tf) node430-41 ~ >: conda install -c anaconda tensorflow-gpu
-Collecting package metadata (current_repodata.json): done
+(tf) [ls565@n0058 ~]$ conda install -c conda-forge tensorflow-gpu
+Channels:
+ - conda-forge
+Platform: linux-64
+Collecting package metadata (repodata.json): done
 Solving environment: done
+
+==> WARNING: A newer version of conda exists. <==
+    current version: 24.11.3
+    latest version: 25.9.1
+
+Please update conda by running
+
+    $ conda update -n base -c conda-forge conda
 
 ## Package Plan ##
 
-  environment location: /home/g/guest24/miniconda3/envs/tf
+  environment location: /home/ls565/.conda/envs/tf
 
   added / updated specs:
     - tensorflow-gpu
 
-<output snipped>
 
-The following packages will be SUPERSEDED by a higher-priority channel:
+The following packages will be downloaded:
 
-  ca-certificates                                 pkgs/main --> anaconda
-  certifi                                         pkgs/main --> anaconda
-  openssl                                         pkgs/main --> anaconda
+    package                    |            build
+    ---------------------------|-----------------
+    _x86_64-microarch-level-3  |           2_zen3           8 KB  conda-forge
+    ...
+    cuda-nvcc-tools-12.9.86    |       he02047a_2        26.1 MB  conda-forge
+    cuda-nvvm-tools-12.9.86    |       h4bc722e_2        23.1 MB  conda-forge
+    cuda-version-12.9          |       h4f385c5_3          21 KB  conda-forge
+    cudnn-9.13.1.26            |       hbcb9cd8_0          19 KB  conda-forge
+    ...
+    pip-25.2                   |     pyh8b19718_0         1.1 MB  conda-forge
+    protobuf-6.31.1            |  py312hb8af0ac_2         468 KB  conda-forge
+    pygments-2.19.2            |     pyhd8ed1ab_0         868 KB  conda-forge
+    python-3.12.12             |hd63d673_1_cpython        30.1 MB  conda-forge
+    ...    
+    tensorflow-2.19.1          |cuda128py312hae5ec6b_250     48 KB  conda-forge
+    tensorflow-gpu-2.19.1      |cuda128h6316801_250          48 KB  conda-forge
+    ...
+    ------------------------------------------------------------
+                                           Total:        2.30 GB
+Proceed ([y]/n)? y
 
-
-Proceed ([y]/n)?y
-
-<output snipped>
-
-mkl_fft-1.1.0        | 143 KB    | ####################################################################################### | 100%
-urllib3-1.25.9       | 98 KB     | ####################################################################################### | 100%
-cudatoolkit-10.1.243 | 513.2 MB  | ####################################################################################### | 100%
-protobuf-3.12.3      | 711 KB    | ####################################################################################### | 100%
-blinker-1.4          | 21 KB     | ####################################################################################### | 100%
-requests-2.24.0      | 54 KB     | ####################################################################################### | 100%
-werkzeug-1.0.1       | 243 KB    | ####################################################################################### | 100%
-Preparing transaction: done
-Verifying transaction: done
-Executing transaction: done
+Downloading and Extracting Packages:
+libcublas-12.9.1.4   | 446.1 MB  | ############################################ | 100% 
+libcudnn-9.13.1.26   | 426.3 MB  | ############################################ | 100% 
+libtensorflow_cc-2.1 | 362.3 MB  | ############################################ | 100% 
+...
 ```
 Check to see if TensorFlow can be loaded
 ```
-(tf) login1-41 ~ >: python
+(tf) [ls565@n0058 ~]$ python
 Python 3.9.13 (main, Oct 13 2022, 21:15:33)
 [GCC 11.2.0] :: Anaconda, Inc. on linux
 Type "help", "copyright", "credits" or "license" for more information.
