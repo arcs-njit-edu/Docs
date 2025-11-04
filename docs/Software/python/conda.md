@@ -100,117 +100,38 @@ The advantage of using `.condarc` is that you don't have to mention the channel 
 ## Examples of Conda Environemnt 
 Here, we provide some examples of how to use `conda` to install applications. 
 
-### Install TensorFlow with GPU 
-The following example will create a new conda environment based on Python 3.9 and install TensorFlow in the environment.
+!!! note
+    For the following examples please make sure to start an [interactive session](../../Running_jobs/interactive-jobs.md/#the-interactive-command-gpu-nodes) on GPU node.
 
+### Install TensorFlow with GPU 
+- The following example will create a new conda environment and install TensorFlow in the environment.
 ```bash
 [ls565@n0058 ~]$ module load Miniforge3
 [ls565@n0058 ~]$ conda create --name tf 
-Channels:
- - conda-forge
-Platform: linux-64
-Collecting package metadata (repodata.json): done
-Solving environment: done
-
-
-==> WARNING: A newer version of conda exists. <==
-    current version: 24.11.3
-    latest version: 25.9.1
-
-Please update conda by running
-
-    $ conda update -n base -c conda-forge conda
-
-## Package Plan ##
-
-  environment location: /home/ls565/.conda/envs/tf
-
-Proceed ([y]/n)? y
-
-Downloading and Extracting Packages:
-
-Preparing transaction: done
-Verifying transaction: done
-Executing transaction: done
-#
-# To activate this environment, use
-#
-#     $ conda activate tf
-#
-# To deactivate an active environment, use
-#
-#     $ conda deactivate
 ```
 
-
-Activate the new 'tf' environment
+- Activate the new 'tf' environment
 ```bash
 [ls565@n0058 ~]$ conda activate tf
 (tf) [ls565@n0058 ~]$
 ```
-Install tensorflow-gpu
+
+- Install tensorflow-gpu
 ```bash
 (tf) [ls565@n0058 ~]$ conda install -c conda-forge tensorflow-gpu
-Channels:
- - conda-forge
-Platform: linux-64
-Collecting package metadata (repodata.json): done
-Solving environment: done
-
-==> WARNING: A newer version of conda exists. <==
-    current version: 24.11.3
-    latest version: 25.9.1
-
-Please update conda by running
-
-    $ conda update -n base -c conda-forge conda
-
-## Package Plan ##
-
-  environment location: /home/ls565/.conda/envs/tf
-
-  added / updated specs:
-    - tensorflow-gpu
-
-
-The following packages will be downloaded:
-
-    package                    |            build
-    ---------------------------|-----------------
-    _x86_64-microarch-level-3  |           2_zen3           8 KB  conda-forge
-    ...
-    cuda-nvcc-tools-12.9.86    |       he02047a_2        26.1 MB  conda-forge
-    cuda-nvvm-tools-12.9.86    |       h4bc722e_2        23.1 MB  conda-forge
-    cuda-version-12.9          |       h4f385c5_3          21 KB  conda-forge
-    cudnn-9.13.1.26            |       hbcb9cd8_0          19 KB  conda-forge
-    ...
-    pip-25.2                   |     pyh8b19718_0         1.1 MB  conda-forge
-    protobuf-6.31.1            |  py312hb8af0ac_2         468 KB  conda-forge
-    pygments-2.19.2            |     pyhd8ed1ab_0         868 KB  conda-forge
-    python-3.12.12             |hd63d673_1_cpython        30.1 MB  conda-forge
-    ...    
-    tensorflow-2.19.1          |cuda128py312hae5ec6b_250     48 KB  conda-forge
-    tensorflow-gpu-2.19.1      |cuda128h6316801_250          48 KB  conda-forge
-    ...
-    ------------------------------------------------------------
-                                           Total:        2.30 GB
-Proceed ([y]/n)? y
-
-Downloading and Extracting Packages:
-libcublas-12.9.1.4   | 446.1 MB  | ############################################ | 100% 
-libcudnn-9.13.1.26   | 426.3 MB  | ############################################ | 100% 
-libtensorflow_cc-2.1 | 362.3 MB  | ############################################ | 100% 
-...
 ```
-Check to see if TensorFlow can be loaded
+
+- Check if TensorFlow can be loaded
 ```
-(tf) [ls565@n0058 ~]$ python
-Python 3.9.13 (main, Oct 13 2022, 21:15:33)
-[GCC 11.2.0] :: Anaconda, Inc. on linux
-Type "help", "copyright", "credits" or "license" for more information.
->>>
+(tf) [ls565@n0058 ~]$ python -c "import tensorflow as tf; print( tf.__version__)"
 ```
-Simple TensorFlow test program to make sure the virtual env can access a GPU. Program is called 
+
+- Check if TensorFlow is compiled with GPU
+```
+(tf) [ls565@n0058 ~]$ python -c "import tensorflow as tf; print(tf.test.is_built_with_gpu_support())"
+```
+
+You can also verify using this simple TensorFlow test program to make sure the virtual env can access a GPU. 
 ??? Example "tf.gpu.test.py"
 
     ```python
@@ -249,38 +170,7 @@ Simple TensorFlow test program to make sure the virtual env can access a GPU. Pr
         conda activate tf
         srun python tf.gpu.test.py
         ```
-Result:
-```bash
-Starting /home/g/guest24/.bash_profile ... standard AFS bash profile
 
-Home directory : /home/g/guest24 is not in AFS -- skipping quota check
-
-On host node430 :
-         17:14:13 up 1 day,  1:17,  0 users,  load average: 0.01, 0.07, 0.06
-
-      Your Kerberos ticket and AFS token status 
-klist: No credentials cache found (filename: /tmp/krb5cc_22967_HvCVvuvMMX)
-Kerberos :
-AFS      :
-
-Loading default modules ...
-Create file : "/home/g/guest24/.modules" to customize.
-
-No modules loaded
-2020-07-29 17:14:19.047276: I tensorflow/core/platform/cpu_feature_guard.cc:143] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
-2020-07-29 17:14:19.059941: I tensorflow/core/platform/profile_utils/cpu_utils.cc:102] CPU Frequency: 2200070000 Hz
-2020-07-29 17:14:19.060093: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55ea8ebfdb90 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
-2020-07-29 17:14:19.060136: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
-2020-07-29 17:14:19.061484: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
-
-<ouput snipped>
-
-2020-07-29 17:14:19.817386: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1102] Device interconnect StreamExecutor with strength 1 edge matrix:
-2020-07-29 17:14:19.817392: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1108]      0
-2020-07-29 17:14:19.817397: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1121] 0:   N
-2020-07-29 17:14:19.819082: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1247] Created TensorFlow device (/device:GPU:0 with 15064 MB memory) -> physical GPU (device: 0, name: Tesla P100-PCIE-16GB, pci bus id: 0000:02:00.0, compute capability: 6.0)
-Default GPU Device: /device:GPU:0
-```
 Next, deactivate the environment using `conda deactivate tf` command.
 
 ### Install PyTorch with GPU
