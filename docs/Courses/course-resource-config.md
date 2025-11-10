@@ -20,7 +20,7 @@ Courses that require GPU computing are assigned **NVIDIA A100 10G MIG** units fo
 
 ## Service Units
 
-Each user is allocated **2500 Service Units (SUs)** for the duration of their course.  
+Each user is allocated **2500 Service Units (SUs)** in their account for the duration of their course.  
 SUs are consumed based on how many cores, memory, and GPUs your job requests and how long it runs.
 
 #### SU Calculation Examples
@@ -42,20 +42,7 @@ SU = (2 + 32) × 8 = 34 × 8 = 272
 
 *To make the most of your SUs, avoid overestimating cores or memory. Over-allocation wastes SUs and delays scheduling.*
 
-
-## Priority (Use `--qos`)
-
-All course-related jobs must include the `--qos=course` flag.  
-This ensures fair scheduling and appropriate priority for classwork jobs.
-
-| Qos | Purpose | Rules | Wall time limit (hours) | Valid Users | 
-|------------|:------|:------------|:----|:---------|
-| <code>--&#8203;qos&#8203;=&#8203;course</code> | For all course-related jobs | 2500 SUs per user. Jobs can be preempted by higher QoS jobs. | 72 | Course users only |
-
-Example:
-```bash
-#SBATCH --qos=course
-```
+Please visit [here](../Running_jobs/service-units.md) for more info on Service Units
 
 ## Account
 
@@ -86,6 +73,20 @@ For example:
 - If you are enrolled in multiple courses or research projects, ensure that you submit jobs using the correct account to avoid suspension or access issues.
 - Use the `quota_info` command to view all accounts assigned to you.
 
+
+## Priority (Use `--qos`)
+
+All course-related jobs must include the `--qos=course` flag.  
+This ensures fair scheduling and appropriate priority for classwork jobs.
+
+| Qos | Purpose | Wall time limit (hours) | Valid Users | 
+|------------|:------|:----|:---------|
+| <code>--&#8203;qos&#8203;=&#8203;course</code> | For all course-related jobs | 72 | Course users only |
+
+Example:
+```bash
+#SBATCH --qos=course
+```
 
 ## Course Directory
 
