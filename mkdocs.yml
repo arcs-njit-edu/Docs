@@ -22,7 +22,7 @@ nav:
       - 'Wulver policies': 'Policies/wulver_policies.md'
       - 'Condo policies': 'Policies/condo_policies.md'
     - 'Facilities': 'facilities/facilities.md'
-    - 'Services': 'Services/hpc-course.md'
+    - 'Services': 'Services/hpc-services.md'
     - Status (on-campus or VPN):
         - 'Current Load': 'https://hpc.njit.edu/Monitor/load.html'
         - 'Usage Summary': 'https://hpc.njit.edu/Monitor/summary.html'
