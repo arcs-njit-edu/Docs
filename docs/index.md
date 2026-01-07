@@ -17,7 +17,7 @@ Welcome to HPC at [New Jersey Institute of Technology (NJIT)](https://www.njit.e
 ---
 <div class="grid cards" markdown>
 
--   :fontawesome-solid-server:{ .lg .middle } __Wulver Scheduled Maintenance__
+-   :material-folder-wrench:{ .lg .middle } __Wulver Scheduled Maintenance__
 
     ---         
     Wulver will be out of service for maintenance once a month for updates, repairs, and upgrades.  The schedule is 9 a.m. to 9 p.m. the second Tuesday of every month.  During the maintenance period, the logins will be disabled and the jobs that do not end before the maintenance window begins will be held until the maintenance is complete and the cluster is returned to production. 
