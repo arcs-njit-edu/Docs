@@ -76,9 +76,9 @@ NJIT provides High Performance Computing resources to support scientific computi
 
              
 
-        !!! abstract "HPC Fall Events, 2025"
+        !!! abstract "HPC Spring Events, 2026"
 
-            Check out our event schedule for the fall season [here](HPC_Events_and_Workshops/index.md)! If you have suggestions for webinar topics, please feel free to contact us at [hpc@njit.edu](mailto:hpc@njit.edu).
+            Check out our event schedule for the spring season [here](HPC_Events_and_Workshops/index.md)! If you have suggestions for webinar topics, please feel free to contact us at [hpc@njit.edu](mailto:hpc@njit.edu).
 
             <br>
             <br>
@@ -87,10 +87,10 @@ NJIT provides High Performance Computing resources to support scientific computi
     
     -   !!! abstract "Open Office Hours"
             
-            This spring semester, we are offering drop-in office hours every Monday and Wednesday from 2:00 to 4:00 p.m. Stop by to meet with our student consultants and ask any questions you have about using HPC resources. There's no need to create a ticket in advance; if follow-up is needed, the student consultants will open a ticket on your behalf, and you'll receive further instructions. 
+            This spring semester, we are offering drop-in office hours every Monday and Wednesday from 2:00 to 4:00 p.m starting January 21. Stop by to meet with our student consultants and ask any questions you have about using HPC resources. There's no need to create a ticket in advance; if follow-up is needed, the student consultants will open a ticket on your behalf, and you'll receive further instructions. 
 
-            - Date: **Every Tuesday and Friday**
-            - Location: **GITC 2404**
+            - Date: **Every Monday and Wednesday**
+            - Location: **GITC 5302N**
             - Time: **2:00 PM - 4:00 PM**
 
         
@@ -99,7 +99,7 @@ NJIT provides High Performance Computing resources to support scientific computi
 
             We are currently offering a new monthly event for HPC researchers at NJIT: **The HPC Monthly User Meeting**. This event is open to all NJIT students, faculty, and staff who use or are interested in NJIT's HPC resources and services. No prior registration is required.
         
-            * Date: Check the [fall schudule](HPC_Events_and_Workshops/index.md).
+            * Date: Check the [spring schudule](HPC_Events_and_Workshops/index.md).
     
     </div>
 
