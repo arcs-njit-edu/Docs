@@ -6,7 +6,7 @@ NJIT HPC provides practical training in high performance computing for students 
 ## 2025 Fall
 <div class="grid cards" markdown>
 
--   ### [Intro to Wulver: Resources & HPC](../index.md)
+-   ### [Intro to Wulver: Resources & HPC](../archived/index.md)
 
     ---
 
@@ -28,7 +28,7 @@ NJIT HPC provides practical training in high performance computing for students 
 
 <div class="grid cards" markdown>
 
--   ### [Intro to Wulver: Job Scheduler & Submitting Jobs](../index.md)
+-   ### [Intro to Wulver: Job Scheduler & Submitting Jobs](../archived/index.md)
 
     ---
 
@@ -50,7 +50,7 @@ NJIT HPC provides practical training in high performance computing for students 
 
 <div class="grid cards" markdown>
 
--   ### [Intro to Wulver: Focus on Job Efficiency](../index.md)
+-   ### [Intro to Wulver: Focus on Job Efficiency](../archived/index.md)
 
     ---
 
@@ -72,7 +72,7 @@ NJIT HPC provides practical training in high performance computing for students 
 
 <div class="grid cards" markdown>
 
--   ### [Conda for Shared Environments](../index.md)
+-   ### [Conda for Shared Environments](../archived/index.md)
 
     ---
 
@@ -95,7 +95,7 @@ NJIT HPC provides practical training in high performance computing for students 
 
 <div class="grid cards" markdown>
 
--   ### [HPC User Meeting - Introduction to MIG](../index.md)
+-   ### [HPC User Meeting - Introduction to MIG](../archived/index.md)
 
     ---
 
