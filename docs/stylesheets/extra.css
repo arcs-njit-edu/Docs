@@ -31,6 +31,8 @@
 
 .md-grid {
   max-width: initial;
+  width: 80%;
+  margin: 0 auto;
 }
 .grid.cards > ul > li, .md-typeset .grid > .card {
   background-color:  rgba(84, 15, 17, 0.05);
