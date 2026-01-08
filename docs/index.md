@@ -8,7 +8,7 @@ hide:
 Welcome to HPC at [New Jersey Institute of Technology (NJIT)](https://www.njit.edu).
 <div class="grid cards" markdown>
 
-- :octicons-info-24: __NJIT provides High Performance Computing resources to support scientific computing for faculty and students. These resources include CPU nodes, GPU nodes, parallel storage, high speed, low latency Infiniband networking and a fully optimized scientific software stack.__
+- :octicons-info-24: __NJIT__ provides High Performance Computing resources to support scientific computing for faculty and students. These resources include CPU nodes, GPU nodes, parallel storage, high speed, low latency Infiniband networking and a fully optimized scientific software stack.
 
 - :material-server: __Click [here](clusters/index.md#virtual-tour-of-njit-data-center) for a virtual tour of the Data Center!__
 </div>
@@ -31,7 +31,8 @@ Welcome to HPC at [New Jersey Institute of Technology (NJIT)](https://www.njit.e
      - Date: **Every Monday and Wednesday**
      - Location: **GITC 5302N**
      - Time: **2:00 PM - 4:00 PM**
-
+</div>
+<div class="grid cards" markdown>
 
 -    :fontawesome-solid-calendar:{ .lg .middle } __HPC Spring Events, 2026__
 
