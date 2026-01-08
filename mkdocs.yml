@@ -101,6 +101,7 @@ theme:
     - navigation.path
     - navigation.indexes
     - navigation.top
+    - navigation.footer
     - toc.follow
     - content.code.copy
     - content.code.select
