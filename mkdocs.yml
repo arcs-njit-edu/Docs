@@ -55,7 +55,7 @@ nav:
         - 'Tools': 'OnDemand/4_tools.md'
         - 'My Interactive Sessions': 'OnDemand/5_My_Interactive_Sessions.md'
         - 'Jobs': 'OnDemand/6_jobs.md'
-    - HPC for Course :
+    - HPC for Courses :
         - Overview: Courses/index.md
         - Course Configuration: Courses/course-resource-config.md
         - Submitting Jobs: Courses/course-job-submission.md
