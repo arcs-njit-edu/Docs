@@ -26,7 +26,7 @@ nav:
     - Status (on-campus or VPN):
         - 'Current Load': 'https://hpc.njit.edu/Monitor/load.html'
         - 'Usage Summary': 'https://hpc.njit.edu/Monitor/summary.html'
-        - 'Usage (this year so far)': 'https://hpc.njit.edu/Monitor/cy2025.html'
+        - 'Usage (this year so far)': 'https://hpc.njit.edu/Monitor/cy2026.html'
     - HPC Events and Workshops : HPC_Events_and_Workshops/
     - Running Jobs: 
         - Overview : Running_jobs/index.md        
@@ -55,7 +55,7 @@ nav:
         - 'Tools': 'OnDemand/4_tools.md'
         - 'My Interactive Sessions': 'OnDemand/5_My_Interactive_Sessions.md'
         - 'Jobs': 'OnDemand/6_jobs.md'
-    - HPC for Course :
+    - HPC for Courses :
         - Overview: Courses/index.md
         - Course Configuration: Courses/course-resource-config.md
         - Submitting Jobs: Courses/course-job-submission.md
@@ -101,6 +101,7 @@ theme:
     - navigation.path
     - navigation.indexes
     - navigation.top
+    - navigation.footer
     - toc.follow
     - content.code.copy
     - content.code.select
@@ -178,4 +179,4 @@ plugins:
       #archive: false
   - tags
 
-copyright: New Jersey Institute of Technology High Performance Computing
+copyright: New Jersey Institute of Technology High Performance Computing &copy; 2026
