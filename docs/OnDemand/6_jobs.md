@@ -3,12 +3,12 @@
 
 The Jobs menu on the menu bar includes both the Job Composer and the Active Jobs tools. The Job Composer assists you to set up and submit jobs to the cluster through a graphical interface using file management tools and access to job templates. 
 
-![jobs-dropdown.png](../assets/ondemand/jobs/jobs-dropdown.png){ width=80% height=80%}
+![jobs-dropdown.png](../assets/ondemand/jobs/jobs-dropdown.png){ width=100% height=100%}
 
 
 ## Job Composer
 
-![jobs-dashboard.png](../assets/ondemand/jobs/jobs-dashboard.png){ width=60% height=60%}
+![jobs-dashboard.png](../assets/ondemand/jobs/jobs-dashboard.png){ width=100% height=100%}
 
 ### Creating a New Job
 
@@ -16,24 +16,24 @@ The Jobs menu on the menu bar includes both the Job Composer and the Active Jobs
 
     - Click New Job > From Default Template
 
-    ![jobcomposer-1.png](../assets/ondemand/jobs/jobcomposer-1.png){ width=60% height=60%}
+    ![jobcomposer-1.png](../assets/ondemand/jobs/jobcomposer-1.png){ width=100% height=100%}
 
     - A new job (e.g., Simple Sequential Job) will appear in your job list.
 
     - Click Open Editor to open the directory in the File Editor.
 
-    ![jobcomposer-2.png](../assets/ondemand/jobs/jobcomposer-2.png){ width=60% height=60%}
+    ![jobcomposer-2.png](../assets/ondemand/jobs/jobcomposer-2.png){ width=100% height=100%}
 
     - Modify the main_job.sh script as needed.
 
-    ![jobcomposer-3.png](../assets/ondemand/jobs/jobcomposer-3.png){ width=60% height=60%}
+    ![jobcomposer-3.png](../assets/ondemand/jobs/jobcomposer-3.png){ width=100% height=100%}
 
     - Return to the Job Composer and click Job Options to adjust:
         - Job Name
         - Cluster (ensure it’s set to wulver)
         - Account (It will take the default account. If you have or ever had multiple accounts then you have to specify your account)
 
-    ![jobcomposer-4.png](../assets/ondemand/jobs/jobcomposer-4.png){ width=60% height=60%}
+    ![jobcomposer-4.png](../assets/ondemand/jobs/jobcomposer-4.png){ width=100% height=100%}
 
     - Click Save to apply changes.    
 
@@ -76,17 +76,17 @@ The Jobs menu on the menu bar includes both the Job Composer and the Active Jobs
 	- Running: Currently executing.
 	- Completed: Finished execution.
 
-![jobcomposer-5.png](../assets/ondemand/jobs/jobcomposer-5.png){ width=60% height=60%}
+![jobcomposer-5.png](../assets/ondemand/jobs/jobcomposer-5.png){ width=100% height=100%}
 
 ### Outputs
 
 - You can check the output/error in folder contents
 
-![jobcomposer-6.png](../assets/ondemand/jobs/jobcomposer-6.png){ width=60% height=60%}
+![jobcomposer-6.png](../assets/ondemand/jobs/jobcomposer-6.png){ width=100% height=100%}
 
 - Check both files to confirm your program ran successfully.
 
-![jobcomposer-7.png](../assets/ondemand/jobs/jobcomposer-7.png){ width=60% height=60%}
+![jobcomposer-7.png](../assets/ondemand/jobs/jobcomposer-7.png){ width=100% height=100%}
 
 !!! Note
     Even if an error might have occurred, your job status will still show complete.
@@ -96,10 +96,10 @@ The Jobs menu on the menu bar includes both the Job Composer and the Active Jobs
 
 The Active Jobs tool will allow you to view all the jobs you’ve submitted that are currently in the queue, via OnDemand or not, so you can check on their status.  
 
-![active_jobs1.png](../assets/ondemand/jobs/active_jobs1.png){ width=60% height=60%}
+![active_jobs1.png](../assets/ondemand/jobs/active_jobs1.png){ width=100% height=100%}
 
 You can expand each job to check more details. You can also open the current working directory of job in file manager or terminal by clicking `Open in File Manger` or `Open in Terminal` respectively.
 
-![active_jobs2.png](../assets/ondemand/jobs/active_jobs2.png){ width=60% height=60%}
+![active_jobs2.png](../assets/ondemand/jobs/active_jobs2.png){ width=100% height=100%}
 
 
