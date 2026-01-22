@@ -51,12 +51,15 @@ nav:
         - Performance Testing: MIG/performance_testing.md
     - OnDemand :
         - OnDemand Overview: OnDemand/index.md
+        - Dashboard: OnDemand/dashboard.md
+        - Apps: OnDemand/apps.md
+        - Files: OnDemand/files.md
+        - Jobs: OnDemand/jobs.md
+        - Clusters: OnDemand/clusters.md
         - Interactive Apps: OnDemand/Interactive_Apps/
-        - 'Files': 'OnDemand/2_files.md'
-        - 'Clusters': 'OnDemand/3_clusters.md'
-        - 'Tools': 'OnDemand/4_tools.md'
-        - 'My Interactive Sessions': 'OnDemand/5_My_Interactive_Sessions.md'
-        - 'Jobs': 'OnDemand/6_jobs.md'
+        - Tools: OnDemand/tools.md
+        - My Interactive Sessions: OnDemand/my_interactive_sessions.md
+        - Submit Support Ticket: OnDemand/submit_ticket.md
     - HPC for Courses :
         - Overview: Courses/index.md
         - Course Configuration: Courses/course-resource-config.md
