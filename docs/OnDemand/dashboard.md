@@ -12,6 +12,6 @@ All active interactive sessions are listed directly on the dashboard, making the
 
 We also provide a quick access to our most used features on the dashboard.
 
-![dashboard-most-used-features-1.png](../assets/ondemand/dashboard/dashboard-most-used-features-1.png){ width=70% height=70%}
+![dashboard-most-used-features-1.png](../assets/ondemand/dashboard/dashboard-most-used-features-1.png){ width=90% height=90%}
 
-![dashboard-most-used-features-2.png](../assets/ondemand/dashboard/dashboard-most-used-features-2.png){ width=70% height=70%}
+![dashboard-most-used-features-2.png](../assets/ondemand/dashboard/dashboard-most-used-features-2.png){ width=90% height=90%}
