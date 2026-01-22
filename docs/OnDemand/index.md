@@ -20,15 +20,15 @@ This is an [open source](https://openondemand.org/) project developed through NS
 
 ### Logging into OnDemand
 
-![login.png](../assets/ondemand/login.png){ width=60% height=60%}
+![login.png](../assets/ondemand/login.png){ width=100% height=100%}
 
 If you have access to the Wulver cluster, you can use OnDemand. Open any browser and go to ondemand.njit.edu. Use your UCID and password to log in. If you are off campus, you will need to set up VPN to access the platform.
 
 
 ### Dashboard
 
-![dashboard.png](../assets/ondemand/dashboard.png){ width=60% height=60%}
+![dashboard.png](../assets/ondemand/dashboard.png){ width=100% height=100%}
 
-Once you log in, you will see the OnDemand Dashboard. You will see the menu bar on the top where you can access all the tools available including Files Manager, Shell Access, Job Composer, and Interactive Apps. You will also see several pinned apps highlighted on the Dashboard.
+Once you log in, you will see the OnDemand Dashboard. You will see the menu bar on the top where you can access all the tools available including Files Manager, Shell Access, Job Composer, and Interactive Apps. You will also see several pinned apps highlighted on the Dashboard along with quota information. More [info](dashboard.md)
 
 
