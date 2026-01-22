@@ -4,7 +4,7 @@
 
 The passenger apps (Tools) on OnDemand are some of the easiest and user-friendly ways to monitor key stats related to your account and Wulver in general.
 
-![tools-dropdown.png](../assets/ondemand/tools/tools-dropdown.png){ width=60% height=60%}
+![tools-dropdown.png](../assets/ondemand/tools/tools-dropdown.png){ width=100% height=100%}
 
 
 ## Joblist
@@ -15,11 +15,11 @@ This is a simple tool to monitor your past jobs as well as the service units you
 
 - Enter the start date and end date between which you want to monitor your past jobs
 
-![joblist-date-input.png](../assets/ondemand/tools/joblist-date-input.png){ width=60% height=60%}
+![joblist-date-input.png](../assets/ondemand/tools/joblist-date-input.png){ width=100% height=100%}
 
 - You will be presented with a table of your jobs with a few job details atop which you find information like service units consumed, your specified date range and the qos.
 
-![joblist-output.png](../assets/ondemand/tools/joblist-output.png){ width=60% height=60%}
+![joblist-output.png](../assets/ondemand/tools/joblist-output.png){ width=100% height=100%}
 
 
 ## Quota Info
@@ -32,7 +32,7 @@ Quota Info is a tool similar to the command “quota_info” on wulver. This too
 - Your storage information for each account for each partition `/project`, `/scratch`
 - Your `/home` storage information
 
-![quota-info-output.png](../assets/ondemand/tools/quota-info-output.png){ width=80% height=80%}
+![quota-info-output.png](../assets/ondemand/tools/quota-info-output.png){ width=100% height=100%}
 
 This is a very good tool for a quick look at your basic account information and is recommended to be used at least once or twice a month to check your SUs as well as `/home` storage. If you find your `/home `is reaching its upper limit you can use another tool called [homespace](#homespace) described below, to have a detailed look at your `/home` usage.
 
@@ -45,7 +45,7 @@ This is a tool which can be used to monitor the CPU load, state, and other param
 - It can also be used to cross check your requested configuration.
 - It can also be crudely used to check the load on the cluster
 
-![checkload-output.png](../assets/ondemand/tools/checkload-output.png){ width=80% height=80%}
+![checkload-output.png](../assets/ondemand/tools/checkload-output.png){ width=100% height=100%}
 
 
 ## Homespace
@@ -58,13 +58,13 @@ Also an easy way to keep your `/home` below this limit is to move your conda env
 
     Since it calculates the storage used by each subdirectory and file in your `/home` directory, it may take some time to load the results.
 
-![homespace-ouput.png](../assets/ondemand/tools/homespace-ouput.png){ width=80% height=80%}
+![homespace-ouput.png](../assets/ondemand/tools/homespace-ouput.png){ width=100% height=100%}
 
 ## PS
 
 This is also a very important tool to monitor processes running on your login node usage. 
 
-![ps-output.png](../assets/ondemand/tools/ps-output.png){ width=80% height=80%}
+![ps-output.png](../assets/ondemand/tools/ps-output.png){ width=100% height=100%}
 
 !!! Warning
     It is strictly advised to not run any resource consuming process on the login node, instead use compute node. The login node is shared between all the wulver users. Using login node for any such process like creating conda env, installing conda packages, running your jobs/programs is strictly not advised. Repeatedly using the login node for such processes will result in strict action. If you find there is high activity by any process on your login node and you are unsure of the cause please email to [hpc@njit.edu](mailto:hpc@njit.edu) with the screenshot of the output of the PS tool.
@@ -74,4 +74,4 @@ This is also a very important tool to monitor processes running on your login no
 
 QOS is an important flag for any type of job submission. You can check all the available QOS for each of your accounts using this tool. Click [here](../Software/slurm/index.md#partition-use-partition) for details about QOS.
 
-![qoslist-output.png](../assets/ondemand/tools/qoslist-output.png){ width=80% height=80%}
+![qoslist-output.png](../assets/ondemand/tools/qoslist-output.png){ width=100% height=100%}
