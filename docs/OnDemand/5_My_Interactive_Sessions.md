@@ -5,10 +5,10 @@
 All of your active OnDemand sessions will be shown. 
 
 
-![interactive-sessions-1.png](../assets/ondemand/interactive/interactive-sessions-1.png){ width=80% height=80%}
+![interactive-sessions-1.png](../assets/ondemand/interactive/interactive-sessions-1.png){ width=100% height=100%}
 
 
-![interactive-sessions-2.png](../assets/ondemand/interactive/interactive-sessions-2.png){ width=80% height=80%}
+![interactive-sessions-2.png](../assets/ondemand/interactive/interactive-sessions-2.png){ width=100% height=100%}
 
 
 !!! Warning
