@@ -60,7 +60,7 @@ Welcome to our most frequently asked questions. If you cannot find an entry rela
     - **NB** : This space is not backed up; files will be deleted after 30 days.
 
 ??? question "How can I remove files from my project directory when a student leaves?"
-    - When a student leaves NJIT or a research group, their files and directories are the responsibility of the Principal Investigator (PI). PIs retain access to these directories and should review, retain, or delete the data as needed. HPC support does not automatically delete user data; PIs should manage directory cleanup unless assistance is required due to permission or exceptional issues.
+    - When a student leaves NJIT or a research group, their files and directories are the responsibility of the Principal Investigator (PI). PIs are the owners of these directories and should review, retain, or delete the data as needed. HPC support does not automatically delete user data; PIs should manage directory cleanup unless assistance is required due to permission or exceptional issues.
 
 ## Jobs and scheduling
 
