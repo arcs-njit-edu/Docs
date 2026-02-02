@@ -25,7 +25,7 @@ hide:
     
         return s
     
-    df = df.applymap(fix_cell)
+    df = df.map(fix_cell)
     print(df.to_markdown(index=False))
     ```
 
@@ -46,7 +46,7 @@ hide:
     
         return s
     
-    df = df.applymap(fix_cell)
+    df = df.map(fix_cell)
     print(df.to_markdown(index=False))
     ```
 === "Spring"
@@ -66,7 +66,7 @@ hide:
     
         return s
     
-    df = df.applymap(fix_cell)
+    df = df.map(fix_cell)
     print(df.to_markdown(index=False))
     ```
 
@@ -89,7 +89,7 @@ hide:
     
         return s
     
-    df = df.applymap(fix_cell)
+    df = df.map(fix_cell)
     print(df.to_markdown(index=False))
     ```
  
@@ -110,6 +110,6 @@ hide:
     
         return s
     
-    df = df.applymap(fix_cell)
+    df = df.map(fix_cell)
     print(df.to_markdown(index=False))
     ```
