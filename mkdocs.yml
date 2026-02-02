@@ -136,7 +136,6 @@ markdown_extensions:
   - md_in_html
   - footnotes
   - admonition
-  - def_list
   - codehilite:
       guess_lang: false
   - toc:
