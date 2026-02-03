@@ -23,7 +23,7 @@ def fix_cell(s):
 
     return s
 
-df = df.applymap(fix_cell)
+df = df.map(fix_cell)
 print(df.to_markdown(index=False))
 ```
 !!! info "Archived Workshops"
