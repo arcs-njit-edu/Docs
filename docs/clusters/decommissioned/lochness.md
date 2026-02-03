@@ -2,7 +2,7 @@
 
 This very heterogeneous cluster is a mix of manufacturers, components, and capacities as it was built up in incremental purchases spanning several years. 
 
-!!! warning "Lochness was decommissioned on March 2024. Much of lochness nodes will be incorporated into [Wulver cluster](wulver.md) 2Q 2024."
+!!! warning "Lochness was decommissioned on March 2024. Many lochness nodes was incorporated into [Wulver cluster](wulver.md) 2Q 2025 for HPC course purposes."
 
 ## Specifications:
 
@@ -10,9 +10,14 @@ This very heterogeneous cluster is a mix of manufacturers, components, and capac
 ```python exec="on"
 import pandas as pd
 df = pd.read_csv('docs/assets/tables/lochness.csv')
-df.loc['Total'] = df.iloc[:,[1,4,6] ].sum(numeric_only=True)
-df.fillna("", inplace=True)
-print(df.to_markdown(index=False))
+#df.loc['Total'] = df.iloc[:,[1,4,6] ].sum(numeric_only=True)
+#print(df.astype("string").fillna("").to_markdown(index=False))
+df.loc["Total", df.columns[[1, 4, 6]]] = df.iloc[:, [1, 4, 6]].sum(numeric_only=True)
+
+obj_cols = df.select_dtypes(include=["object", "string"]).columns
+df[obj_cols] = df[obj_cols].astype("string").fillna("")
+
+print(df.to_markdown(index=False, floatfmt="g"))
 ```
 
 <!--
