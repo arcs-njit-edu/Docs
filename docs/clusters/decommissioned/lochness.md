@@ -2,7 +2,7 @@
 
 This very heterogeneous cluster is a mix of manufacturers, components, and capacities as it was built up in incremental purchases spanning several years. 
 
-!!! warning "Lochness was decommissioned on March 2024. Many lochness nodes was incorporated into [Wulver cluster](wulver.md) 2Q 2025 for HPC course purposes."
+!!! warning "Lochness was decommissioned on March 2024. Many lochness nodes were incorporated into [Wulver cluster](wulver.md) 2Q 2025 for HPC course purposes."
 
 ## Specifications:
 
