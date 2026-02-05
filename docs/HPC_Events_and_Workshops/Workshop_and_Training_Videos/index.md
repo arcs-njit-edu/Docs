@@ -6,7 +6,7 @@ NJIT HPC provides practical training in high performance computing for students 
 ## 2025 Fall
 <div class="grid cards" markdown>
 
--   ### [Intro to Wulver: Resources & HPC](../index.md)
+-   ### [Intro to Wulver: Resources & HPC](../archived/index.md)
 
     ---
 
@@ -28,7 +28,7 @@ NJIT HPC provides practical training in high performance computing for students 
 
 <div class="grid cards" markdown>
 
--   ### [Intro to Wulver: Job Scheduler & Submitting Jobs](../index.md)
+-   ### [Intro to Wulver: Job Scheduler & Submitting Jobs](../archived/index.md)
 
     ---
 
@@ -50,7 +50,7 @@ NJIT HPC provides practical training in high performance computing for students 
 
 <div class="grid cards" markdown>
 
--   ### [Intro to Wulver: Focus on Job Efficiency](../index.md)
+-   ### [Intro to Wulver: Focus on Job Efficiency](../archived/index.md)
 
     ---
 
@@ -70,4 +70,47 @@ NJIT HPC provides practical training in high performance computing for students 
 
 </div>
 
+<div class="grid cards" markdown>
 
+-   ### [Conda for Shared Environments](../archived/index.md)
+
+    ---
+
+    This webinar provides an introductory understanding of using Python for HPC and effectively managing their Python environments.
+    
+    **Key Highlights:**
+
+    * Access Python on Wulver
+    * Introduction to Conda environments
+    * Install, uninstall and upgrade packages
+    * Best Practices for managing conda environments
+    * Common Python libraries for scientific computing
+
+    <iframe src="https://njit.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=55a5ea04-60a4-4408-ac25-b38c016346b3&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=true&interactivity=all" height="405" width="720" style="border: 1px solid #464646; box-sizing: border-box;" allowfullscreen allow="autoplay" aria-label="Panopto Embedded Video Player" aria-description="Conda for Shared Environments"></iframe>
+
+    [<span class="octicon--arrow-right-24"></span> Download Slides](../../assets/slides/conda_training_11-05-2025.pdf)
+
+</div>
+
+
+<div class="grid cards" markdown>
+
+-   ### [HPC User Meeting - Introduction to MIG](../archived/index.md)
+
+    ---
+
+    This in-person and virtual session provide an introductory understanding of using Multi-Instance GPUs (MIGs) on Wulver.
+    
+    **Key Highlights:**
+
+    * What is MIG?
+    * Why MIG on Wulver?
+    * MIG Configuration Example
+    * Submitting Jobs (`srun` & `sbatch`)
+    * New Billing Model
+
+    <iframe src="https://njit.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=ca3c058b-9549-4eba-bfe0-b3b601059930&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=true&interactivity=all" height="405" width="720" style="border: 1px solid #464646; box-sizing: border-box;" allowfullscreen allow="autoplay" aria-label="Panopto Embedded Video Player" aria-description="Wulver_MIG_Dec2025_recording"></iframe>
+
+    [<span class="octicon--arrow-right-24"></span> Download Slides](../../assets/slides/Wulver_MIG_Dec03_2025.pdf)
+
+</div>

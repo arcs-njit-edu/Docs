@@ -4,12 +4,12 @@ on:
     branches:
       - main
       - ARCS-Lakshya
-      - abhi_patch
+      - ARCS-Abhi
       - julia_patch      
     workflow_dispatch:
       - main
       - ARCS-Lakshya
-      - abhi_patch
+      - ARCS-Abhi
       - julia_patch
 permissions:
   contents: write
