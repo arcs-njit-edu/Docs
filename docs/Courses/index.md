@@ -7,6 +7,7 @@ Instructors can utilize High-Performance Computing (HPC) resources for academic 
 To request HPC resources for your course, submit the following information to this
 <a href="https://nexus.njit.edu/highlander_nexus?id=sc_cat_item&sys_id=cd6eaea13b97e210e914eb0864e45a7f"
    style="
+     display: inline-block; 
      padding: 0em 0.4em;
      background-color: #d8272d;
      color: white;
@@ -14,7 +15,7 @@ To request HPC resources for your course, submit the following information to th
      border-radius: 6px;
      font-weight: 600;
    ">
-  Form
+  HPC Course Request Form
 </a>
 
 
