@@ -8,6 +8,7 @@ nav:
     - 'About Us':
       - 'about/index.md'
       - 'Contact Us': 'about/contact.md'
+      - 'Research Computing Advisory Board': 'about/research_advisory/'
     - Clusters:
       - 'clusters/index.md'
       - 'Wulver': 'clusters/wulver.md'
