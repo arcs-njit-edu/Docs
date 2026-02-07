@@ -15,6 +15,13 @@ print(df.to_markdown(index=False))
 ```
 
 ## Advisory Board Charge
+
+### Advise on Resource Management
+
+Provide recommendations on the management and enhancement of Research IT resources to support current and future research needs. Resources will include both hardware and software, and physical facilities such as colocation data centers to support the needs of faculty.
+
+### Develop policies for fair distribution of HPC resources
+
 1.  **Advise on Resource Management:** Provide recommendations on the management and enhancement of Research IT resources to support current and future research needs. Resources will include both hardware and software, and physical facilities such as colocation data centers to support the needs of faculty.
  Develop policies for fair distribution of HPC resources
 
