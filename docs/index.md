@@ -27,11 +27,12 @@ Welcome to HPC at [New Jersey Institute of Technology (NJIT)](https://www.njit.e
 -   :fontawesome-solid-door-open:{ .lg .middle } __Open Office Hours__
      
     ---       
-    This spring semester, we are offering drop-in office hours every Monday and Wednesday from 2:00 to 4:00 p.m starting January 21 in a **New Location**. Stop by to meet with our student consultants and ask any questions you have about using HPC resources. There's no need to create a ticket in advance; if follow-up is needed, the student consultants will open a ticket on your behalf, and you'll receive further instructions. 
+    This spring semester, we are offering drop-in office hours every Monday and Wednesday from 2:00 to 4:00 p.m starting January 21 in a **New Location**. Stop by to meet with our student consultants and ask any questions you have about using HPC resources. We have also added a virtual option in case students are unable to come to the office in person (See the Zoom link below). There's no need to create a ticket in advance; if follow-up is needed, the student consultants will open a ticket on your behalf, and you'll receive further instructions. 
 
-     - Date: **Every Monday and Wednesday**
-     - Location: **GITC 5302N**
-     - Time: **2:00 PM - 4:00 PM**
+     - :material-calendar: **Every Monday and Wednesday**
+     - :material-office-building-marker: **GITC 5302N**
+     - :material-video: [Zoom](https://njit-edu.zoom.us/j/92024804621?pwd=1D7r69Dt02JZbLwE5sd4abbry3Mgay.1)
+     - :material-clock: **2:00 PM - 4:00 PM**
 </div>
 <div class="grid cards" markdown>
 
