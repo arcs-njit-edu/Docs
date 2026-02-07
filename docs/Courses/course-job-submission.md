@@ -12,55 +12,55 @@ Below is the minimal example for a 10-minute test job:
 #SBATCH --time=00:10:00
 ```
 
-### Sample Job scripts
+## Sample Job scripts
 
 Make sure to replace `--account` with your assigned course account.
 
-#### CPU Job Example
+=== "CPU Job"
 
-```bash
-#!/bin/bash
-#SBATCH --job-name=mpi_test_job
-#SBATCH --output=%x.%j.out
-#SBATCH --error=%x.%j.err
-#SBATCH --partition=course
-#SBATCH --account=2025-fall-ds-492-kjc59-ls565
-#SBATCH --qos=course
-#SBATCH --time=00:10:00
-#SBATCH --ntasks=64
+    ```bash
+    #!/bin/bash
+    #SBATCH --job-name=mpi_test_job
+    #SBATCH --output=%x.%j.out
+    #SBATCH --error=%x.%j.err
+    #SBATCH --partition=course
+    #SBATCH --account=2025-fall-ds-492-kjc59-ls565
+    #SBATCH --qos=course
+    #SBATCH --time=00:10:00
+    #SBATCH --ntasks=64
+    
+    # Run application commands
+    srun /apps/testjobs/bin/mpihello
+    ```
+    
+    - Runs an MPI job named mpi_test_job.
+      - Uses 64 processes across available nodes.
+      - Wall time: 10 minutes.
 
-# Run application commands
-srun /apps/testjobs/bin/mpihello
-```
+=== "GPU Job"
 
-- Runs an MPI job named mpi_test_job.
-- Uses 64 processes across available nodes.
-- Wall time: 10 minutes.
-
-#### GPU Job Example
-
-```bash
-#!/bin/bash
-#SBATCH --job-name=test_gpu_job
-#SBATCH --output=%x.%j.out
-#SBATCH --error=%x.%j.err
-#SBATCH --partition=course_gpu
-#SBATCH --account=2025-fall-ds-492-kjc59-ls565
-#SBATCH --qos=course
-#SBATCH --time=00:20:00
-#SBATCH --ntasks=2
-#SBATCH --gres=gpu:a100_10g:1
-
-# Load application environment
-module load CUDA
-
-# Run application commands
-nvidia-smi
-```
-
-- Runs a GPU job named test_gpu_job.
-- Allocates 2 CPUs and single A100 10G MIG GPU.
-- Wall time: 20 minutes.
+    ```bash
+    #!/bin/bash
+    #SBATCH --job-name=test_gpu_job
+    #SBATCH --output=%x.%j.out
+    #SBATCH --error=%x.%j.err
+    #SBATCH --partition=course_gpu
+    #SBATCH --account=2025-fall-ds-492-kjc59-ls565
+    #SBATCH --qos=course
+    #SBATCH --time=00:20:00
+    #SBATCH --ntasks=2
+    #SBATCH --gres=gpu:a100_10g:1
+    
+    # Load application environment
+    module load CUDA
+    
+    # Run application commands
+    nvidia-smi
+    ```
+    
+    - Runs a GPU job named test_gpu_job.
+      - Allocates 2 CPUs and single A100 10G MIG GPU.
+      - Wall time: 20 minutes.
 
 ### Limitation of GPU Jobs
 
@@ -72,7 +72,7 @@ This will either cause an error or misinterpretation as a single GPU.
 For multiple tasks, use job arrays instead of multiple MIGs.
 
 
-### Interactive jobs
+## Interactive jobs
 
 You can also start an interactive session instead of a batch job.
 
