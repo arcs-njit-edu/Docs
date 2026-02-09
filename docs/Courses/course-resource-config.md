@@ -11,10 +11,10 @@ Each job’s runtime and Service Unit (SU) charge depend on how many nodes and r
 
 Course-related jobs must be submitted to one of the **course partitions** listed below:
 
-| Partition | Nodes | Cores per Node | GPU | Memory per Node | SU Charge per Hour |
-|------------|:------:|:------------:|:----:|:---------:|:-----------|
-| <code>--&#8203;partition&#8203;=&#8203;course</code> | 64 | 32–48 | NA | 375 GB | `MAX(CPUs, Memory/4G) SU` |
-| <code>--&#8203;partition&#8203;=&#8203;course_gpu</code> | 4 | 32–48 | A100 10G MIG | 375 GB | `2 + MAX(CPUs, Memory/4G) SU` |
+| Partition                 |Nodes | Cores per Node |     GPU      | Memory per Node | SU Charge per Hour            |
+|---------------------------|:----:|:--------------:|:------------:|:---------------:|:------------------------------|
+| `--partition=course`      | 64   |     32–48      |      NA      |     375 GB      | `MAX(CPUs, Memory/4G) SU`     |
+| `--partition= course_gpu` |  4   |     32–48      | A100 10G MIG |     375 GB      | `2 + MAX(CPUs, Memory/4G) SU` |
 
 Courses that require GPU computing are assigned **NVIDIA A100 10G MIG** units for GPU-enabled coursework.
 
@@ -25,20 +25,22 @@ SUs are consumed based on how many cores, memory, and GPUs your job requests and
 
 #### SU Calculation Examples
 
-**Example 1 – CPU-only job** <br>
-20 cores for 8 hours (no `--mem` specified, so default 4G per core will be allocated) 
-```
-SU = MAX(CPUs, Memory/4G) x Hours 
-SU = (20, 4/4) × 8 = 160  
-```
+=== "CPU Job"
 
-**Example 2 – GPU job**  <br>
-20 cores + 1 GPU for 8 hours with `--mem=128G` <br>
-```
-SU = [2 + MAX(CPUs, Memory/4G)] x Hours 
-SU = [2 + MAX(20, 128/4)] × 8 
-SU = (2 + 32) × 8 = 34 × 8 = 272
-```
+    20 cores for 8 hours (no `--mem` specified, so default 4G per core will be allocated) 
+    ```
+    SU = MAX(CPUs, Memory/4G) x Hours 
+    SU = (20, 4/4) × 8 = 160  
+    ```
+
+=== "GPU Job"
+
+    20 cores + 1 GPU for 8 hours with `--mem=128G` <br>
+    ```
+    SU = [2 + MAX(CPUs, Memory/4G)] x Hours 
+    SU = [2 + MAX(20, 128/4)] × 8 
+    SU = (2 + 32) × 8 = 34 × 8 = 272
+    ```
 
 *To make the most of your SUs, avoid overestimating cores or memory. Over-allocation wastes SUs and delays scheduling.*
 

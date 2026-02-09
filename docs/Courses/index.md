@@ -4,36 +4,16 @@
 Instructors can utilize High-Performance Computing (HPC) resources for academic courses. Whether faculty are planning a course that involves computationally intensive tasks or introducing students to parallel computing concepts, the HPC environment can offer valuable resources.
 
 ## Course Request
-To request HPC resources for your course, submit the following information to this
-<a href="https://nexus.njit.edu/highlander_nexus?id=sc_cat_item&sys_id=cd6eaea13b97e210e914eb0864e45a7f"
-   style="
-     display: inline-block; 
-     padding: 0em 0.4em;
-     background-color: #d8272d;
-     color: white;
-     text-decoration: none;
-     border-radius: 6px;
-     font-weight: 600;
-   ">
-  HPC Course Request Form
-</a>
+To request HPC resources for your course, submit the following information to
 
-
-### Name of Course:
-[Please provide the name of the course and a short description]
-
-### Is this one section of a larger course?
-[Yes or No]
-
-### Estimated Number of Students:
-[Enter the estimated number of students for the course]
-
-### Activities on HPC:
-[Describe the specific activities that will involve the use of HPC resources. For example, simulations, data analysis, modeling, etc.]
-
-### Software Needed:
-[Specify the software required for the course. Check the list of software installed on Wulver in [Software](../Software/index.md#software-list). Include any specific versions or software not already available on the HPC cluster] 
-
+[HPC Course Request Form](https://nexus.njit.edu/highlander_nexus?id=sc_cat_item&sys_id=cd6eaea13b97e210e914eb0864e45a7f){ .md-button }
+<!--
+1. **Name of Course:** Please provide the name of the course and a short description
+2. **Is this one section of a larger course?**: Yes or No
+3. **Estimated Number of Students:** Enter the estimated number of students for the course
+4. **Activities on HPC:** Describe the specific activities that will involve the use of HPC resources. For example, simulations, data analysis, modeling, etc.
+5. **Software Needed:** Specify the software required for the course. Check the list of software installed on Wulver in [Software](../Software/index.md#software-list). Include any specific versions or software not already available on the HPC cluster 
+-->
 !!! warning "Notice Period"
 
     A minimum of 30 days' notice is required for requesting specific software installations or substantial resource allocations.
@@ -52,17 +32,34 @@ Solve optimization problems that benefit from parallel processing and distribute
 * **Scientific Research Projects**:
 Enable students to work on scientific research projects that demand high-performance computing resources.
 
+
 ## HPC Introduction for Courses
 
-The **HPC Facilitator** is available to provide an introduction to High-Performance Computing. This introduction can be conducted in person or online based on the preferences and requirements of the course. The session covers:
+This webinar provides an introduction to High-Performance Computing for coursework. The session covers:
 
 * Overview of HPC concepts
 * Accessing and navigating the HPC cluster
+* Explanation of available partitions
 * Basic job submission and monitoring
 * Filesystems on HPC cluster
-* Conclusion
+* How to contact us
+<div class="grid cards" markdown>
+-    <iframe src="https://njit.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=d7bca493-532e-40b9-a290-b3e50140d1a7&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=true&interactivity=all" height="405" width="720" style="border: 1px solid #464646; box-sizing: border-box;" allowfullscreen allow="autoplay" aria-label="Panopto Embedded Video Player" aria-description="HPC Introduction for Courses"></iframe>
 
-By incorporating HPC resources into your course, you provide students with the opportunity to engage in hands-on, real-world applications of computational concepts. The HPC environment enhances the learning experience and prepares students for challenges in data-driven and computationally intensive fields. For specific requests or to schedule an HPC introduction session, please contact the [HPC Facilitator](contact.md).
+    [<span class="octicon--arrow-right-24"></span> Download Slides](../assets/slides/NJIT_HPC_course_2026_Spring.pdf)
+
+</div>
+
+## HPC Open Office Hours
+
+If students have any issues or questions regarding HPC resources for their courses, they can stop by to meet with our student consultants and ask any questions you have about using HPC resources. We have also added a virtual option in case students are unable to come to the office in person (See the Zoom link below). There's no need to create a ticket or register in advance; if follow-up is needed, the student consultants will open a ticket on your behalf, and you'll receive further instructions. 
+
+- :material-calendar: **Every Monday and Wednesday**
+- :material-office-building-marker: **GITC 5302N**
+- :material-video: [Zoom](https://njit-edu.zoom.us/j/92024804621?pwd=1D7r69Dt02JZbLwE5sd4abbry3Mgay.1)
+- :material-clock: **2:00 PM - 4:00 PM**
+
+You can also email us at [hpc@njit.edu](mailto:hpc@njit.edu).
 
 
 
