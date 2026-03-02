@@ -54,7 +54,7 @@ nav:
         - Dashboard: OnDemand/dashboard.md
         - Apps: OnDemand/apps.md
         - Files: OnDemand/files.md
-        - Jobs: OnDemand/jobs.md
+        - Jobs: OnDemand/Jobs/
         - Clusters: OnDemand/clusters.md
         - Interactive Apps: OnDemand/Interactive_Apps/
         - Tools: OnDemand/tools.md
