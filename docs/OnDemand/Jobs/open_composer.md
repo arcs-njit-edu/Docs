@@ -24,4 +24,4 @@ The **History** page shows submitted jobs and their current status.
 
 - **Cancel** — terminates the running Slurm job
 
-- **Delete** — removes the entry from the History page only (does not affect the actual job)
+- **Delete** — removes the entry from the History page only (does not delete job files)
