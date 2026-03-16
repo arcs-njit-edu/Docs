@@ -2,13 +2,13 @@
 
 ## Overview
 
-We have three different ways to connect Matlab: 
+We have two ways to connect Matlab: 
 
 * Matlab VNC
 * Matlab Server
-* Jupyter Matlab Proxy
+<!-- * Jupyter Matlab Proxy -->
 
-![matlab.png](../../assets/ondemand/matlab/matlab-dropdown.png){ width=30% height=30%}
+![matlab.png](../../assets/ondemand/matlab/matlab-dropdown.png){ width=40% height=40%}
 
 ## Guide
 
@@ -83,7 +83,7 @@ We have three different ways to connect Matlab:
 
     ![matlab-start-working.png](../../assets/ondemand/matlab/matlab-start-working.png){ width=60% height=60%}
 
-=== "Jupyter Matlab Proxy"
+<!-- === "Jupyter Matlab Proxy"
 
     <iframe src="https://njit.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=3e226845-4a26-4be3-803f-b314014f71ce&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&captions=true&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay" aria-label="Panopto Embedded Video Player" aria-description="OOD_RStudio_Lateset" ></iframe>
 
@@ -115,6 +115,6 @@ We have three different ways to connect Matlab:
     * Start working!!
 
     ![matlab-start-working.png](../../assets/ondemand/matlab/matlab-start-working.png){ width=60% height=60%}
-
+ -->
 
 
