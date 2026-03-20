@@ -7,6 +7,10 @@ The Wulver environment is quite a bit like Lochness, but there are some key diff
 1. The `$HOME` directory is not intended for primary storage and has a 50GB quota. The main location for storing files is the group project directory which has 2TB of storage per PI group. To run the simulations, compilations, etc., users need to use a project directory which has 2TB of storage per PI group. Students can store their files under their corresponding PI’s UCID in the `/project` directory.  For example, if PI’s UCID is `doctorx`, then students need to use the `/project/doctorx/` directory. 
 2. Users can also store temporary files under the `/scratch` directory, likewise under a PI-group directory. For example, PI’s UCID is `doctorx`, so students need to use the `/scratch/doctorx/` directory.  Please note that the files under `/scratch` will be periodically deleted. To store files for longer than computations, please use the `/project` directory.  Files under `/scratch` are not backed up. For best performance simulations should be performed in the `/scratch` directory. Once the simulation is complete, the results should be copied into the `$HOME` or `/project` directory.  Files are deleted from `/scratch` after they are 30 days old. Users will get notified prior deletion so that they can review the files and move them to `/project` if required.
 
+!!! warning
+
+    Scratch space must not be used for long-term storage. Users should not use any commands to modify or manipulate files to alter timestamps, move files between directories within scratch, or take any similar actions to circumvent scratch purge policies. Users who violate this policy risk losing access to Wulver until the affected files have been cleaned up.
+
 ```python exec="on"
 import pandas as pd
 
