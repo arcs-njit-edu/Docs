@@ -7,7 +7,7 @@ Faculty PIs are allocated 300,000 Service Units (SU) per year on request at no c
 
     The 300,000 SUs are available on `--qos=standard` only. If PI does not want to buy more SUs, PI's group members can use `--qos=low` which does not have any SU charges. For more details, see [SLURM QOS](node-memory-config.md).
 
-Additionally, PI can request for more SUs by submitting the proposal. For more details, see [Allocation Policies](allocation_policies/index.md).
+Additionally, PIs can request more SUs by submitting a research proposal. For more details, see [Allocation Policies](allocation_policies/index.md).
 
 ## Storage Policy
 
@@ -19,7 +19,7 @@ Additional project storage can be purchased if needed. This additional project s
 
 !!! warning
 
-    Scratch space must not be used for long-term storage. Users should not use any commands to modify or manipulate files to alter timestamps, move files between directories within scratch, or take any similar actions to circumvent scratch purge policies. Users who violate this policy risk losing access to Wulver until the affected files have been cleaned up.
+    Scratch space must not be used for long-term storage. Users should not use any commands to modify or manipulate files to alter timestamps, move files between directories within scratch, or take any similar actions to circumvent scratch purge policies. Users who violate this policy risk losing access to Wulver.
 
 ## Job Priorities
 

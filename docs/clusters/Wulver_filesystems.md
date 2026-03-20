@@ -1,7 +1,5 @@
 # Wulver Filesystems
 
-The Wulver environment is quite a bit like Lochness, but there are some key differences, especially in filesystems and SLURM partitions and priorities.
-
  Wulver Filesystems are deployed with more attention to PI ownership / group efforts:
 
 1. The `$HOME` directory is not intended for primary storage and has a 50GB quota. The main location for storing files is the group project directory which has 2TB of storage per PI group. To run the simulations, compilations, etc., users need to use a project directory which has 2TB of storage per PI group. Students can store their files under their corresponding PI’s UCID in the `/project` directory.  For example, if PI’s UCID is `doctorx`, then students need to use the `/project/doctorx/` directory. 
@@ -9,7 +7,7 @@ The Wulver environment is quite a bit like Lochness, but there are some key diff
 
 !!! warning
 
-    Scratch space must not be used for long-term storage. Users should not use any commands to modify or manipulate files to alter timestamps, move files between directories within scratch, or take any similar actions to circumvent scratch purge policies. Users who violate this policy risk losing access to Wulver until the affected files have been cleaned up.
+    Scratch space must not be used for long-term storage. Users should not use any commands to modify or manipulate files to alter timestamps, move files between directories within scratch, or take any similar actions to circumvent scratch purge policies. Users who violate this policy risk losing access to Wulver.
 
 ```python exec="on"
 import pandas as pd
