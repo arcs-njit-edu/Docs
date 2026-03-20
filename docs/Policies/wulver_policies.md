@@ -3,7 +3,7 @@
 ## Computing Policy
 
 Faculty PIs are allocated 300,000 Service Units (SU) per year on request at no cost. For more details on calculating SUs, see [Service Units](service-units.md). All users working as part of the PIs project will use this allocation. The SUs are renewed at the beginning of fiscal year. Additional SUs may be purchased at a cost of $0.005/SU. The minimum purchase is 50,000 SU (250 USD). 
-!!! note
+!!! info
 
     The 300,000 SUs are available on `--qos=standard` only. If PI does not want to buy more SUs, PI's group members can use `--qos=low` which does not have any SU charges. For more details, see [SLURM QOS](node-memory-config.md).
 
