@@ -1,5 +1,6 @@
 ---
 title: HPC Education and Training
+icon: material/cast-education
 ---
 
 # HPC Education and Training
