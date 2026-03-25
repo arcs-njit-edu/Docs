@@ -114,7 +114,7 @@ theme:
     - content.tabs.link
     - announce.dismiss
     - content.tooltips
-    - header.autohide
+    #- header.autohide
 
 extra_css:
     - stylesheets/extra.css
