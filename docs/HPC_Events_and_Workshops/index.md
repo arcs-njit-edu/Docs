@@ -1,4 +1,6 @@
 ---
+title: HPC Events and Workshops
+icon: fontawesome/solid-calendar
 hide:
   - toc
 ---
