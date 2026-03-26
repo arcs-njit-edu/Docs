@@ -19,15 +19,15 @@ Slurm (Simple Linux Utility for Resource Management) is an open-source workload 
     - Avoid overestimating job time (`--time`) and memory (`--mem`) as it reduces scheduler efficiency.
     - Use monitoring tools to understand your typical usage patterns and adjust accordingly.
 
-???+ tip "Do not run jobs on Login Node :"
+???+ warning "Do not run jobs on Login Node :"
 
-    - Login node is the entry point for Wulver and has limited memory and resources.
+    - Login node is the entry point for Wulver and has limited memory and number of processes per user.
     - Please avoid directly running jobs on the login node as it can slow down the system for everyone.
-    - Always submit jobs to compute nodes via slurm script or start an interactive session.
+    - Always submit jobs to compute nodes via slurm script or start an [interactive session](interactive-jobs.md).
 
 ???+ tip "Use Appropriate Partitions :"
 
-    - Submit jobs to the correct partition based on resource needs (e.g., GPU, high-memory).
+    - Submit jobs to the correct partition based on resource needs (e.g., [GPU, high-memory](node-memory-config.md)).
   
 ???+ tip "Test and Debug with Small Jobs First :"
 
