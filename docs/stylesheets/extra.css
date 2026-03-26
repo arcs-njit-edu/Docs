@@ -73,6 +73,7 @@ md-typeset .admonition.question,
 .md-header__topic:nth-child(2) {
   position: initial;
   opacity: 1;
+  font-weight: 700;
 }
 
 .octicon--arrow-right-24 {

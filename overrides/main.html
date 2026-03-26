@@ -1,54 +1,10 @@
 <!-- Elements added to main will be displayed on all pages -->
 {% extends "base.html" %}
 
-{% block scripts %}
-  {{ super() }}
-  <script>
-    var siteName = "{{ config.site_name }}";
 
-    function setTitleFromH1() {
-      var h1 = document.querySelector(".md-content h1");
-      if (h1) {
-        var clone = h1.cloneNode(true);
-        var extra = clone.querySelector(".headerlink, a.md-content__button, .md-annotation");
-        if (extra) extra.remove();
-        var title = clone.textContent.trim();
-        if (title) {
-          document.title = title + " - " + siteName;
-          return true;
-        }
-      }
-      return false;
-    }
-
-    // Watch for content changes (catches instant navigation content swap)
-    var observer = new MutationObserver(function() {
-      setTitleFromH1();
-    });
-    var content = document.querySelector(".md-content");
-    if (content) {
-      observer.observe(content, { childList: true, subtree: true });
-    }
-
-    // Also run on initial load and instant nav via document$
-    if (typeof document$ !== "undefined") {
-      document$.subscribe(function() {
-        // Re-attach observer if content element changed
-        var newContent = document.querySelector(".md-content");
-        if (newContent && newContent !== content) {
-          observer.disconnect();
-          observer.observe(newContent, { childList: true, subtree: true });
-          content = newContent;
-        }
-        setTitleFromH1();
-      });
-    }
-
-    // Fallback: set on initial load
-    setTitleFromH1();
-  </script>
+{% block htmltitle %}
+  <title>NJIT HPC Documentation</title>
 {% endblock %}
-
 
 {#
 {% block announce %}
