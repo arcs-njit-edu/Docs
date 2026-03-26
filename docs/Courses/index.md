@@ -1,3 +1,7 @@
+---
+title: HPC Resources for Teaching and Coursework
+---
+
 # HPC Resources for Teaching & Coursework
 
 ## Introduction

@@ -66,6 +66,15 @@ md-typeset .admonition.question,
   background-color: #d8272d;
 }
 
+.md-header__topic:nth-child(1) {
+  display: none;
+}
+.md-header__topic:nth-child(2) {
+  position: initial;
+  opacity: 1;
+  font-weight: 700;
+}
+
 .octicon--arrow-right-24 {
   display: inline-block;
   width: 1.2rem;

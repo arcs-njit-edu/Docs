@@ -1,3 +1,9 @@
+---
+title: Wulver
+hide:
+  - toc
+---
+
 # Current cluster
 
 * [Wulver](wulver.md) is NJIT's newest High Performance Cluster made available to users in Jan 2024.
