@@ -1,16 +1,32 @@
 <!-- Elements added to main will be displayed on all pages -->
 {% extends "base.html" %}
 
+{% block scripts %}
+  {{ super() }}
+  <script>
+    // Immediately update browser tab title on page load and instant navigation
+    function updatePageTitle() {
+      var h1 = document.querySelector(".md-content h1");
+      if (h1) {
+        var text = h1.cloneNode(true);
+        var permalink = text.querySelector(".headerlink, a.md-content__button");
+        if (permalink) permalink.remove();
+        var title = text.textContent.trim();
+        if (title) {
+          document.title = title + " - " + "{{ config.site_name }}";
+          return;
+        }
+      }
+      document.title = "{{ config.site_name }}";
+    }
 
-{% block htmltitle %}
-  {% if page.meta and page.meta.title %}
-    <title>{{ page.meta.title }} - {{ config.site_name }}</title>
-  {% elif page.title and not page.is_homepage %}
-    <title>{{ page.title }} - {{ config.site_name }}</title>
-  {% else %}
-    <title>{{ config.site_name }}</title>
-  {% endif %}
+    // document$ is Material's observable that fires on every page load (including instant nav)
+    document$.subscribe(function() {
+      updatePageTitle();
+    });
+  </script>
 {% endblock %}
+
 
 {#
 {% block announce %}
