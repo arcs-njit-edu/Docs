@@ -1,3 +1,6 @@
+---
+title: MIG
+---
 # MIG Overview
 
 MIG (Multi-Instance GPU) is a technology introduced by NVIDIA starting with its Ampere architecture (e.g., A100). It enables a single physical GPU to be partitioned into multiple smaller, isolated GPU instances — each with dedicated compute cores, memory, cache, and bandwidth. These instances function independently and appear to software as discrete GPUs.

@@ -1,4 +1,5 @@
 ---
+title: NJIT HPC Documentation
 hide:
   - toc
 ---
