@@ -1,4 +1,5 @@
 ---
+title: HPC Events and Workshops
 hide:
   - toc
 ---
