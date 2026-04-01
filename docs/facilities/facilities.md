@@ -32,8 +32,6 @@ AFS was designed for highly-distributed wide area network (WAN) use. A cell can 
 
 The NJIT cell name is `cad.njit.edu`; all file and directory paths begin with `/afs/cad.njit.edu/`(abbreviated to `/afs/cad/`). This cell currently contains about 27TB of research data, 4TB of user data,and 1.4TB of applications data, in about 47,700 volumes.
 
-The current AFS implementation, OpenAFS, which is open source, will be replaced with a commercial implementation during the 2026 academic year, providing important enhancements in performance, security,capacities, authorization, permissions, and administration as well as bug fixes and technical support.
-
 All of `/afs/cad/` is backed up daily via IST enterprise backup.
 
 ## Data Center: Space, Power and Cooling
