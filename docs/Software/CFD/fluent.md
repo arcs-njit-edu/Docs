@@ -28,7 +28,7 @@ If you are running transient problem and want to save the data at particular tim
 
    This is required if your job is somehow cancelled, or you need to restart from specific flow time.
 
-* If you want  to ppstprocess the data using a different software , e.g. [Tecplot](tecplot.md) or [ParaView](paraview.md), you need to save the data in different file format at certain flow time or time step interval.  To set up the postprocessing configuration, select `File --> Export --> During Calculation --> Solution Data` option (see the figure below)
+* If you want  to ppstprocess the data using a different software , e.g. [ParaView](paraview.md), you need to save the data in different file format at certain flow time or time step interval.  To set up the postprocessing configuration, select `File --> Export --> During Calculation --> Solution Data` option (see the figure below)
    
    ![fluent_data2](../../assets/images/fluent_2.png){ width=80% height=80%}
 
