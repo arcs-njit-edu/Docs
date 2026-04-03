@@ -1,0 +1,31 @@
+name: Check for broken links
+
+on:
+  push:
+    branches:
+      - master
+      - main
+    paths:
+      - "docs/**"
+      - "**/*.md"
+      - "**.yml"
+  pull_request:
+    branches:
+      - master
+      - main
+    paths:
+      - "docs/**"
+      - "**/*.md"
+      - "**.yml"
+
+jobs:
+  link-checker:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Link Checker 🔗
+        uses: lycheeverse/lychee-action@v2.0.2
+        with:
+          fail: true
+          args: --user-agent 'curl/7.54' --verbose --no-progress './**/*.md'
