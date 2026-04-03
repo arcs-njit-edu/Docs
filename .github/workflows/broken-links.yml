@@ -1,0 +1,31 @@
+name: Check for broken links
+
+on:
+  workflow_dispatch:
+  workflow_run:
+    workflows: ["pages-build-deployment"]
+    types:
+      - completed
+
+jobs:
+  link-checker:
+    runs-on: ubuntu-latest
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: 3.x
+
+      - name: Install and Build
+        run: |
+          pip install mkdocs-material markdown-exec mkdocs-table-reader-plugin mkdocstrings mkdocs-awesome-pages-plugin mkdocs-literate-nav mkdocs-autolinks-plugin
+          mkdocs build
+
+      - name: Link Checker 🔗
+        uses: lycheeverse/lychee-action@v2.0.2
+        with:
+          fail: true
+          args: --offline --exclude-path 'site/archived' --verbose --no-progress 'site/**/*.html'
