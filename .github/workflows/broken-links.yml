@@ -14,8 +14,18 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.x
+
+      - name: Install and Build
+        run: |
+          pip install mkdocs-material
+          mkdocs build
+
       - name: Link Checker 🔗
         uses: lycheeverse/lychee-action@v2.0.2
         with:
           fail: true
-          args: --user-agent 'curl/7.54' --verbose --no-progress './**/*.md'
+          args: --offline --verbose --no-progress 'site/**/*.html'
