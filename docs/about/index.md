@@ -109,7 +109,7 @@ hide:
     <div style="text-align: left;">
     ---
     Aakash Singh is a CKA certified DevOps and SRE professional with extensive experience in cloud infrastructure optimization (AWS, Azure) and Kubernetes administration. He has a strong record of enhancing system reliability and achieving significant operational cost reductions.. Aakash excels in designing and managing high-availability, scalable systems, including GPU-accelerated infrastructure for AI/ML workloads and MLOps. His expertise encompasses CI/CD automation, platform engineering, and performance benchmarking of GPUs (e.g., A100s). With deep Linux knowledge, Aakash currently works as an HPC Support Specialist, focusing on AI/ML platforms and contributing to the efficiency of distributed systems. He is keen to leverage his skills in cutting-edge AI and HPC environments.<a href="https://github.com/Frex22">![https://github.com/Frex22](../assets/images/github-color.svg){ width="15" }</a>
-    <a href="www.linkedin.com/in/aakash-singh-b49684217">![www.linkedin.com/in/aakash-singh-b49684217](../assets/images/linkedin-color.svg){ width="15" }</a> 
+    <a href="https://www.linkedin.com/in/aakash-singh-b49684217">![www.linkedin.com/in/aakash-singh-b49684217](../assets/images/linkedin-color.svg){ width="15" }</a> 
 </div>
 # Former staff and students
 

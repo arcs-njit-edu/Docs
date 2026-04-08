@@ -39,7 +39,7 @@ Slurm (Simple Linux Utility for Resource Management) is an open-source workload 
 ???+ tip "Monitor Your Jobs :"
 
     - Please use commands like `squeue`, `slurm_jobid $jobid`, `seff $jobid` to check your job status.
-    - You can also use our [Ondemand Tools](../OnDemand/4_tools.md).
+    - You can also use our [Ondemand Tools](../OnDemand/tools.md).
 
 ???+ warning "Respect Fair Usage Policies :"
 
