@@ -49,7 +49,7 @@ Welcome to HPC at [New Jersey Institute of Technology (NJIT)](https://www.njit.e
     ---
     We are currently offering a new monthly event for HPC researchers at NJIT: **The HPC Monthly User Meeting**. This event is open to all NJIT students, faculty, and staff who use or are interested in NJIT's HPC resources and services. No prior registration is required.
 
-    * Date: Check the [spring schudule](HPC_Events_and_Workshops/index.md).
+    * Date: Check the [spring schedule](HPC_Events_and_Workshops/index.md).
     
     
 

@@ -8,7 +8,7 @@ Unlike batch jobs, which are queued and run in the background, interactive jobs 
 - Running Jupyter notebooks
 - Exploring the system environment or dependencies
 
-You still need to request resources via Slurm, but instead of submitting a script with sbatch, you request an interactive shell using our `interative` command.
+You still need to request resources via Slurm, but instead of submitting a script with sbatch, you request an interactive shell using our `interactive` command.
 
 #### The `interactive` Command
 We provide a built-in shortcut command, `interactive`, that allows you to quickly and easily request a session in compute node.
