@@ -9,8 +9,8 @@ hide:
 |                             Name                             |                         Title                         |     Phone      |           Email           |  Office   |
 |:------------------------------------------------------------:|:-----------------------------------------------------:|:--------------:|:-------------------------:|:---------:|
 |  [Alex Pacheco](#associate-cio-advanced-research-computing)  |      Associate CIO - Advanced Research Computing      | (973) 596-2672 |   alex.pacheco@njit.edu   | GITC 5401 |
-| [Kate Cahill](#director-high-performance-research-computing) |     Director, High Performance Research Computing     | (973) 596-2721 | katharine.cahill@njit.edu | GITC 2203 |
-|                 [Kevin Walsh](#assistant-director-advanced-computing-infrastructure)                  | Assistant Director, Advanced Computing Infrastructure | (973) 596-5747 |      walsh@njit.edu       | GITC 2202 | |
+| [Kate Cahill](#director-high-performance-research-computing) |     Director, High Performance Research Computing     | (973) 596-2721 | katharine.cahill@njit.edu | GITC 5402 |
+|                 [Kevin Walsh](#assistant-director-advanced-computing-infrastructure)                  | Assistant Director, Advanced Computing Infrastructure | (973) 596-5747 |      walsh@njit.edu       | GITC 5402 | |
 
 
 
@@ -18,18 +18,18 @@ hide:
 
 |                                 Name                                 |                         Title                         |     Phone      |            Email            |   Office   |
 |:--------------------------------------------------------------------:|:-----------------------------------------------------:|:--------------:|:---------------------------:|:----------:|
-|     [Kate Cahill](#director-high-performance-research-computing)     |     Director, High Performance Research Computing     | (973) 596-2721 |      katharine.cahill@njit.edu       | GITC 2203  |
-| [Kevin Walsh](#assistant-director-advanced-computing-infrastructure) | Assistant Director, Advanced Computing Infrastructure | (973) 596-5747 |       walsh@njit.edu        | GITC 2202  |
-|          [Hui(Julia) Zhao](#research-computing-facilitator)          |            Research Computing Facilitator             | (973) 596-2727 |      hui.zhao@njit.edu      | GITC 2316B |
-|       [Abhishek Mukherjee](#research-computing-facilitator_1)        |            Research Computing Facilitator             | (973) 642-4132 | abhishek.mukherjee@njit.edu | GITC 2316B |
+|     [Kate Cahill](#director-high-performance-research-computing)     |     Director, High Performance Research Computing     | (973) 596-2721 |      katharine.cahill@njit.edu       | GITC 5404  |
+| [Kevin Walsh](#assistant-director-advanced-computing-infrastructure) | Assistant Director, Advanced Computing Infrastructure | (973) 596-5747 |       walsh@njit.edu        | GITC 5402  |
+|          [Hui(Julia) Zhao](#research-computing-facilitator)          |            Research Computing Facilitator             | (973) 596-2727 |      hui.zhao@njit.edu      | GITC 5400 |
+|       [Abhishek Mukherjee](#research-computing-facilitator_1)        |            Research Computing Facilitator             | (973) 642-4132 | abhishek.mukherjee@njit.edu | GITC 5400 |
 
 
 # Research and Academic Technologies
 
 |    Name     |                  Title                   |     Phone      |      Email      |  Office   |
 |:-----------:|:----------------------------------------:|:--------------:|:---------------:|:---------:|
-| Rick Gaine  | Research Technology System Administrator | (973) 596-5441 | rgaine@njit.edu | GITC 2404 |
-| Charles Yan |  Research Technology Support Specialist  | (973) 596-2907 |  cyan@njit.edu  | GITC 2301 |
+| Rick Gaine  | Research Technology System Administrator | (973) 596-5441 | rgaine@njit.edu | - |
+| Charles Yan |  Research Technology Support Specialist  | (973) 596-2907 |  cyan@njit.edu  | GITC 5400 |
 
 
 <div class="grid cards" markdown>
