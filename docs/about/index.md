@@ -9,7 +9,7 @@ hide:
 |                             Name                             |                         Title                         |     Phone      |           Email           |  Office   |
 |:------------------------------------------------------------:|:-----------------------------------------------------:|:--------------:|:-------------------------:|:---------:|
 |  [Alex Pacheco](#associate-cio-advanced-research-computing)  |      Associate CIO - Advanced Research Computing      | (973) 596-2672 |   alex.pacheco@njit.edu   | GITC 5401 |
-| [Kate Cahill](#director-high-performance-research-computing) |     Director, High Performance Research Computing     | (973) 596-2721 | katharine.cahill@njit.edu | GITC 5402 |
+| [Kate Cahill](#director-high-performance-research-computing) |     Director, High Performance Research Computing     | (973) 596-2721 | katharine.cahill@njit.edu | GITC 5404 |
 |                 [Kevin Walsh](#assistant-director-advanced-computing-infrastructure)                  | Assistant Director, Advanced Computing Infrastructure | (973) 596-5747 |      walsh@njit.edu       | GITC 5402 | |
 
 
