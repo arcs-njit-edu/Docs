@@ -56,7 +56,7 @@ print(df.to_markdown(index=False))
     === "`gpu` Partition"
         | SLURM Directive            |    SU     |      Explanation |
         |---------------------|:---------:|:---------:|
-        | 4 CPUs + 10MIG     |  MAX(4, 4*4G/4G) + 16 * (10G/80G) = 6  |     Since no memory requiremnt is specified, SU is charged based on the same number of CPUs and 10G of GPU memory      |
+        | 4 CPUs + 10MIG     |  MAX(4, 4*4G/4G) + 16 * (10G/80G) = 6  |     Since no memory requirement is specified, SU is charged based on the same number of CPUs and 10G of GPU memory      |
         | 4 CPUs + 20MIG      |  MAX(4, 4*4G/4G) + 16 * (20G/80G) = 8 |    SU is charged based on the same number of CPUs and 20G of GPU memory         |
         | 4 CPUs + 40MIG     |  MAX(4, 4*4G/4G) + 16 * (40G/80G) = 12 |   SU is charged based on the same number of CPUs and 40G of GPU memory          |
         | 4 CPUs + Full GPU      |  MAX(4, 4*4G/4G) + 16 * (80G/80G) = 20 |  SU is charged based on the same number of CPUs and 80G of GPU (A full GPU) memory            |

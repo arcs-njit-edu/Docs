@@ -55,7 +55,7 @@ Use the following slurm script and submit the job script using `sbatch vs-code.s
         popd
     fi
 
-    # run the code tunnel command and accept the licence
+    # run the code tunnel command and accept the license
     ${CLI_PATH}/code tunnel --accept-server-license-terms
     ```
 
