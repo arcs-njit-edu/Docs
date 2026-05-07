@@ -49,7 +49,7 @@ NJIT HPC provides practical training in high performance computing for students 
     * Interactive jobs
     * OnDemand portal usage
 
-    <iframe src="https://njit.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=81d97911-33c8-41ff-af7d-b3e90030122e&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=true&interactivity=all" height="405" width="720" style="border: 1px solid #464646; box-sizing: border-box;" allowfullscreen allow="autoplay" aria-label="Panopto Embedded Video Player" aria-description="Intro to Wulver: Job Scheduler &amp; Running Jobs"></iframe>
+    <iframe src="https://njit.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=81d97911-33c8-41ff-af7d-b3e90030122e&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=true&interactivity=all" height="405" width="720" style="border: 1px solid #464646; box-sizing: border-box;" allowfullscreen allow="autoplay" aria-label="Job Scheduler &amp; Running Jobs" aria-description="Intro to Wulver: Job Scheduler &amp; Running Jobs"></iframe>
 
     [<span class="octicon--arrow-right-24"></span> Download Slides](../../assets/slides/Intro_to_Wulver_II_02_04_2026.pdf)
 
