@@ -24,7 +24,7 @@ NJIT HPC provides practical training in high performance computing for students 
     * Guidance on requesting logins and managing compute allocations
     * Introduction to storage systems
 
-    <iframe src="https://njit.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=234e5295-7202-401c-b0b8-b3e9016e77cf&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=true&interactivity=all" height="405" width="720" style="border: 1px solid #464646; box-sizing: border-box;" allowfullscreen allow="autoplay" aria-label="Panopto Embedded Video Player" aria-description="Intro to Wulver: HPC Resources &amp; Allocations"></iframe>
+    <iframe src="https://njit.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=234e5295-7202-401c-b0b8-b3e9016e77cf&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=true&interactivity=all" height="405" width="720" style="border: 1px solid #464646; box-sizing: border-box;" allowfullscreen allow="autoplay" aria-label="Introduction to Wulver" aria-description="Intro to Wulver: HPC Resources &amp; Allocations"></iframe>
 
     [<span class="octicon--arrow-right-24"></span> Download Slides](../../assets/slides/Intro_to_Wulver_I_01_28_2026.pdf)
 
