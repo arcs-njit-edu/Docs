@@ -24,7 +24,7 @@ NJIT HPC provides practical training in high performance computing for students 
     * Submitting container jobs with SLURM on Wulver
 
 
-    <iframe src="https://njit.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=23f09989-da2c-4cac-92fd-b434014894d8&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=true&interactivity=all" height="405" width="720" style="border: 1px solid #464646; box-sizing: border-box;" allowfullscreen allow="autoplay" aria-label="Panopto Embedded Video Player" aria-description="Intro to Wulver: Job Scheduler &amp; Running Jobs"></iframe>
+    <iframe src="https://njit.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=23f09989-da2c-4cac-92fd-b434014894d8&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=true&interactivity=all" height="405" width="720" style="border: 1px solid #464646; box-sizing: border-box;" allowfullscreen allow="autoplay" aria-label="Introduction to Containers" aria-description="Introduction to Containers"></iframe>
 
     [<span class="octicon--arrow-right-24"></span> Download Slides](../../assets/slides/container_HPC_04-22-2026.pdf)
 
