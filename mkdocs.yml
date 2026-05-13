@@ -29,7 +29,7 @@ nav:
         - 'Current Load': 'https://hpc.njit.edu/Monitor/load.html'
         - 'Resource Usage Summary': 'https://hpc.njit.edu/Monitor/summary.html'
         - 'Resource Usage (this year so far)': 'https://hpc.njit.edu/Monitor/cy2026.html'
-        - 'Application Usage (this year so far)': 'https://hpc.njit.edu/Monitor/modules.html'
+        - 'Application Usage': 'https://hpc.njit.edu/Monitor/modules.html'
     - HPC Events and Workshops : HPC_Events_and_Workshops/
     - Running Jobs: 
         - Overview : Running_jobs/index.md        
