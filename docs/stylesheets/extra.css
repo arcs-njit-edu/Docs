@@ -37,7 +37,7 @@
 .grid.cards > ul > li, .md-typeset .grid > .card {
   background-color:  rgba(84, 15, 17, 0.05);
 }
-
+.md-nav__list:empty { display: none; }
 md-typeset .admonition.njit,
 .md-typeset details.njit {
   border-color: rgb(84, 15, 17);

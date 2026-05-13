@@ -27,8 +27,9 @@ nav:
     - 'Services': 'Services/hpc-services.md'
     - Status (on-campus or VPN):
         - 'Current Load': 'https://hpc.njit.edu/Monitor/load.html'
-        - 'Usage Summary': 'https://hpc.njit.edu/Monitor/summary.html'
-        - 'Usage (this year so far)': 'https://hpc.njit.edu/Monitor/cy2026.html'
+        - 'Resource Usage Summary': 'https://hpc.njit.edu/Monitor/summary.html'
+        - 'Resource Usage (this year so far)': 'https://hpc.njit.edu/Monitor/cy2026.html'
+        - 'Application Usage (this year so far)': 'https://hpc.njit.edu/Monitor/modules.html'
     - HPC Events and Workshops : HPC_Events_and_Workshops/
     - Running Jobs: 
         - Overview : Running_jobs/index.md        
