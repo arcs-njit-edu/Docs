@@ -163,9 +163,9 @@ Next, open a new terminal and type
 where `$port` corresponds to the port number.
 Once you open ParaView from your local machine go to `File --> Connnect`, and you will see a dialogue box with the name `Choose Server Configuration`. You need to select <kbd>Add Server</kbd> option and there you need to use the following as shown below.
 
-<video src="../../../assets/images/ParaView-add-connection.mp4" controls>
-  Your browser does not support the video tag.
-</video>
+
+<iframe src="https://njit.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=0918392c-ed18-4e54-8c03-b424010746d4&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=true&interactivity=all" height="405" width="720" style="border: 1px solid #464646; box-sizing: border-box;" allowfullscreen allow="autoplay" aria-label="ParaView-add-connection" aria-description="ParaView-add-connection"></iframe>
+
 
 Make sure to use the same port number in <kbd>Port</kbd> option.
 Once you add the server, you need to select <kbd>Connect</kbd> to connect ParaView to the cluster.
