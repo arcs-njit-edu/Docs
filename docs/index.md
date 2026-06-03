@@ -33,12 +33,22 @@ Welcome to HPC at [New Jersey Institute of Technology (NJIT)](https://www.njit.e
 -   :fontawesome-solid-door-open:{ .lg .middle } __Open Office Hours__
      
     ---       
-    This spring semester, we are offering drop-in office hours every Monday and Wednesday from 2:00 to 4:00 p.m starting January 21 in a **New Location**. Stop by to meet with our student consultants and ask any questions you have about using HPC resources. We have also added a virtual option in case students are unable to come to the office in person (See the Zoom link below). There's no need to create a ticket in advance; if follow-up is needed, the student consultants will open a ticket on your behalf, and you'll receive further instructions. 
+    Our regular weekly drop-in office hours have concluded for the summer. However, our facilitators remain available throughout the summer for **one-on-one consultations** to help you optimize your code, troubleshoot workflows, and make the most of NJIT's HPC resources. Whether you are preparing manuscripts, scaling up production runs, or planning new research directions, we are here to help you move forward.
 
-     - :material-calendar: **Every Monday and Wednesday**
-     - :material-office-building-marker: **GITC 5302N**
-     - :material-video: [Zoom](https://njit-edu.zoom.us/j/92024804621?pwd=1D7r69Dt02JZbLwE5sd4abbry3Mgay.1)
-     - :material-clock: **2:00 PM - 4:00 PM**
+     Consultations can be tailored to your specific research needs and scheduled at a time that works for you. Example topics our facilitators can assist with include:
+
+     - **Scaling applications** across multiple CPUs, GPUs, and nodes for improved performance.
+     - **Containerization** with Apptainer/Singularity for portable, reproducible workflows.
+     - **Data management strategies** for `/home`, `/project`, and `/scratch`, including transfer, backup, and purge planning.
+     - **Job optimization** — SLURM script tuning, resource right-sizing, and Service Unit (SU) efficiency.
+     - **Software installation** and environment management (modules, Conda, Python/R packages).
+     - **Workflow design** including job arrays, dependency chains, and checkpointing for long-running jobs.
+
+     **How to book:** Email us at [hpc@njit.edu](mailto:hpc@njit.edu) with a brief description of what you'd like to discuss, and we will coordinate a one-on-one session with the appropriate facilitator.
+
+     - :material-email: **Contact:** [hpc@njit.edu](mailto:hpc@njit.edu)
+     - :material-account-tie: **Format:** One-on-one consultations (in-person or virtual)
+     - :material-calendar-clock: **Availability:** By appointment throughout the summer
 </div>
 <div class="grid cards" markdown>
 
