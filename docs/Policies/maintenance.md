@@ -36,7 +36,7 @@ The SLURM scheduler is configured with a reservation for the maintenance window.
 
 !!! tip "Avoid having jobs held"
 
-    If you submit a job and notice it is held with reason *"ReqNodeNotAvail, Reserved for maintenance"*, you can either:
+    If you submit a job and notice it is held with reason `ReqNodeNotAvail, Reserved for maintenance`, you can either:
 
     - Wait until the maintenance window ends — the scheduler will start the job automatically, or
     - Cancel and resubmit the job with a shorter walltime so it finishes before maintenance begins.
@@ -50,7 +50,7 @@ For more details on the SLURM job states during maintenance, see [Managing and M
 * **Routine monthly maintenance** (second Tuesday) does not require advance announcement, as the schedule is fixed and published here.
 * **Any change** to the regular cycle, an **extended maintenance window**, or **emergency maintenance** will be communicated to all users via the user mailing list.
 * A notification is also sent to the user mailing list when the systems are returned to service or if the maintenance window is extended into the following day(s).
-* The **Message of the Day (MOTD)** displayed at login and the Ondemand portal serves as a reminder for upcoming downtimes and other crucial cluster-related information. Users are encouraged to read the MOTD at every login.
+* The **Message of the Day (MOTD)** displayed at login serves as a reminder for upcoming downtimes and other crucial cluster-related information. Users are encouraged to read the MOTD at every login.
 * Specific upcoming and past maintenance announcements are posted at [Cluster Maintenance Updates and News](../news/index.md).
 
 ## Extended and Emergency Maintenance
