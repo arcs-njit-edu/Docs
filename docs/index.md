@@ -33,16 +33,7 @@ Welcome to HPC at [New Jersey Institute of Technology (NJIT)](https://www.njit.e
 -   :fontawesome-solid-door-open:{ .lg .middle } __Open Office Hours__
      
     ---       
-    Our regular weekly drop-in office hours have concluded for the summer. However, our facilitators remain available throughout the summer for **one-on-one consultations** to help you optimize your code, troubleshoot workflows, and make the most of NJIT's HPC resources. Whether you are preparing manuscripts, scaling up production runs, or planning new research directions, we are here to help you move forward.
-
-     Consultations can be tailored to your specific research needs and scheduled at a time that works for you. Example topics our facilitators can assist with include:
-
-     - **Scaling applications** across multiple CPUs, GPUs, and nodes for improved performance.
-     - **Containerization** with Apptainer/Singularity for portable, reproducible workflows.
-     - **Data management strategies** for `/home`, `/project`, and `/scratch`, including transfer, backup, and purge planning.
-     - **Job optimization** — SLURM script tuning, resource right-sizing, and Service Unit (SU) efficiency.
-     - **Software installation** and environment management (modules, Conda, Python/R packages).
-     - **Workflow design** including job arrays, dependency chains, and checkpointing for long-running jobs.
+    Our regular weekly drop-in office hours have concluded for the summer. However, our facilitators remain available throughout the summer for **one-on-one consultations** to help you optimize your code, troubleshoot workflows, and make the most of NJIT's HPC resources.
 
      **How to book:** Email us at [hpc@njit.edu](mailto:hpc@njit.edu) with a brief description of what you'd like to discuss, and we will coordinate a one-on-one session with the appropriate facilitator.
 
