@@ -1,4 +1,4 @@
- ,General,Bigmem,GPU
+Specification,General,Bigmem,GPU
 Partition,`general`,`bigmem`,`gpu`
 Nodes,100,2,25
 CPU Type,AMD EPYC 7753,AMD EPYC 7753,AMD EPYC 7713
