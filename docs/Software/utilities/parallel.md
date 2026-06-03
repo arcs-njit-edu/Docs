@@ -81,7 +81,6 @@ parallel job_{1} ::: $(seq 1 3n)
 * https://www.gnu.org/software/parallel/parallel_tutorial.html
 * https://www.biostars.org/p/63816/
 * http://www.shakthimaan.com/posts/2014/11/27/gnu-parallel/news.html
-* https://www.msi.umn.edu/support/faq/how-can-i-use-gnu-parallel-run-lot-commands-parallel
 * https://github.com/LangilleLab/microbiome_helper/wiki/Quick-Introduction-to-GNU-Parallel
 * https://davetang.org/muse/2013/11/18/using-gnu-parallel/
 * https://sites.google.com/a/stanford.edu/rcpedia/parallel-processing/gnu-parallel-examples
