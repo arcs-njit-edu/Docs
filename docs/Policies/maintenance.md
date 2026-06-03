@@ -1,4 +1,4 @@
-# Wulver Maintenance Policy
+# Wulver Maintenance
 
 ARCS HPC performs regular maintenance on Wulver and its associated storage to apply security patches, perform hardware repairs, upgrade system software, and deploy new features. This page describes the maintenance schedule, how maintenance affects users and jobs, and how notifications are handled.
 
