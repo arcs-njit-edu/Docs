@@ -23,7 +23,7 @@ nav:
       - 'Wulver policy': 'Policies/wulver_policy.md'
       - 'Condo policy': 'Policies/condo_policy.md'
       - 'Allocation policy': 'Policies/allocation_policies/'
-      - 'Maintenance policy': 'Policies/maintenance.md'
+      - 'Wulver Maintenance': 'Policies/maintenance.md'
     - 'Facilities': 'facilities/facilities.md'
     - 'Services': 'Services/hpc-services.md'
     - Status (on-campus or VPN):
