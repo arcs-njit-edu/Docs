@@ -72,5 +72,5 @@ ARCS HPC anticipates that regular maintenance will be completed within the sched
 
 * [Cluster Maintenance Updates and News](../news/index.md) — latest maintenance announcements
 * [FAQ: Maintenance](../faq/faq.md#maintenance) — frequently asked questions
-* [Wulver Policies](wulver_policies.md) — full computing, storage, and job priority policies
+* [Wulver Policy](wulver_policy.md) — full computing, storage, and job priority policy
 * [Job Limitations](../Running_jobs/job_limitation.md) — limits and behavior of jobs on Wulver

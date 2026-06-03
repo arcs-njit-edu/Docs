@@ -13,7 +13,7 @@ One SU is defined as 1 CPU hour or 4 GB of RAM per hour.
     * The allocation resets each fiscal year.
     * Students are expected to use SUs efficiently, as excessive usage may deplete their group's SU balance quickly.
 
-If a group exhausts its SU allocation early, the PI has the option to purchase additional SUs or leverage higher [priority](#priority-use-qos) queues through investment. For more details, refer to the  [Wulver Policies](wulver_policies.md) and [Condo Policies](condo_policies.md).
+If a group exhausts its SU allocation early, the PI has the option to purchase additional SUs or leverage higher [priority](#priority-use-qos) queues through investment. For more details, refer to the  [Wulver Policy](../Policies/wulver_policy.md) and [Condo Policy](../Policies/condo_policy.md).
 Check the table below to see how SU will be charged for different partitions. 
 
 ```python exec="on"
