@@ -1,4 +1,4 @@
-# Allocation Policies
+# Allocation Policy
 
 ## Introduction
 

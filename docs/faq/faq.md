@@ -136,7 +136,7 @@ Welcome to our most frequently asked questions. If you cannot find an entry rela
     - If you have specific questions about this, please email HPC Help at [hpc@njit.edu](mailto:hpc@njit.edu) to request support.
 
 ??? question "Can I request additional resources or customization for my projects?"
-    - Please see [Wulver Usage and Condo Policy](wulver_policies.md) for resource allocation details. 
+    - Please see [Wulver Usage and Condo Policy](../Policies/wulver_policy.md) for resource allocation details. 
     - The Research Computing Advisory Board is working on establishing policies and procedures for requesting additional computing time beyond the standard **300K SU/year**.
 
 ??? question "My software requires a license, how should I proceed?"

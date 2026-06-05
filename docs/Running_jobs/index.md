@@ -44,7 +44,7 @@ Slurm (Simple Linux Utility for Resource Management) is an open-source workload 
 ???+ warning "Respect Fair Usage Policies :"
 
     - Do not monopolize shared resources by submitting excessive large jobs.
-    - Be mindful of Wulver's [usage policy](../Policies/wulver_policies.md).
+    - Be mindful of Wulver's [usage policy](../Policies/wulver_policy.md).
 
 ???+ tip "Leverage MIGs for Efficient GPU Utilization :"
 

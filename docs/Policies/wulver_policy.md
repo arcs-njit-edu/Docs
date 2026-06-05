@@ -1,4 +1,4 @@
-# Wulver Policies
+# Wulver Policy
 
 ## Computing Policy
 

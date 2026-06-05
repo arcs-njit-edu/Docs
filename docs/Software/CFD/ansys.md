@@ -18,7 +18,7 @@ The software suite is known for its high level of accuracy and versatility, and 
     ```
 
 ## Application Information, Documentation
-Please [download](https://njit.instructure.com/courses/8519/assignments/128626) ANSYS and follow the [instructions](https://ist.njit.edu/ansys-installation-instructions) to install ANSYS on your local machine.
+Please [download](https://njit.instructure.com/courses/8519/assignments/128626) ANSYS and follow the [instructions](https://ist.njit.edu/software-available-download) to install ANSYS on your local machine.
 
 ## Using ANSYS
 

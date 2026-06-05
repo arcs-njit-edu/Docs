@@ -20,9 +20,10 @@ nav:
       - 'Wulver Filesystems': 'clusters/Wulver_filesystems.md'
     - 'Policies':
       - 'Policies/index.md'
-      - 'Wulver policies': 'Policies/wulver_policies.md'
-      - 'Condo policies': 'Policies/condo_policies.md'
-      - 'Allocation polices': 'Policies/allocation_policies/'
+      - 'Wulver policy': 'Policies/wulver_policy.md'
+      - 'Condo policy': 'Policies/condo_policy.md'
+      - 'Allocation policy': 'Policies/allocation_policies/'
+      - 'Wulver Maintenance': 'Policies/maintenance.md'
     - 'Facilities': 'facilities/facilities.md'
     - 'Services': 'Services/hpc-services.md'
     - Status (on-campus or VPN):
