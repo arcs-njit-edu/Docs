@@ -13,7 +13,6 @@
         <p><a href="https://hpc.njit.edu/">NJIT HPC</a> provides access to leading-edge computational and data storage systems as well as expertise in a broad range of high-performance computing activities.</p>
       </div>
       <div class="hero-audience-links">
-        <a href="#hpc-user-guides" class="hero-link">User Guides</a>
         <a href="{{ 'Software/' | url }}" class="hero-link">Software</a>
         <a href="{{ 'HPC_Events_and_Workshops/' | url }}" class="hero-link">Workshops</a>
         <a href="{{ 'news/' | url }}" class="hero-link">News</a>
@@ -23,16 +22,9 @@
   </div>
 </section>
 <!-- Announcement banner -->
-<div class="announcement-banner">
-  <span class="announcement-icon">🎉</span>
-  <span class="announcement-text">
-    Welcome to the new RCAC Documentation Website!
-    <a href="{{ 'blog/2026/04/20/rcac-docs-website-intro/' | url }}">Discover what's new →</a>
-  </span>
-  <button class="announcement-close" onclick="this.parentElement.style.display='none'" aria-label="Dismiss">✕</button>
-</div>
+
 {% endif %}
 
-<div class="md-breadcrumb"></div>
+
 {{ super() }}
 {% endblock %}
