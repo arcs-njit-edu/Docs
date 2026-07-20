@@ -1,39 +1,38 @@
-<!-- Elements added to main will be displayed on all pages -->
 {% extends "base.html" %}
 
-
-{% block htmltitle %}
-  <title>NJIT HPC Documentation</title>
-{% endblock %}
-
-{#
-{% block announce %}
-<p style="font-size: 15px; color: white;">
-  <b>Wulver OS has been upgraded to RHEL9.</b><br>
-Please check the details at <a href="https://hpc.njit.edu/faq/rhel_9_faq/" style="color: white; text-decoration: underline; font-weight: bold;">RHEL9 OS Upgrade FAQ</a>.
-The software packages, on the Wulver new OS, have also been updated. Check the list of software at <a href="https://hpc.njit.edu/Software/" style="color: white; text-decoration: underline; font-weight: bold;">Software list</a>.
-
-</p>
-{% endblock %}
-#}
-
-{% block footer %}
-<footer class="md-footer">
-    <div class="md-footer-meta md-typeset">
-        <div class="md-footer-meta__inner md-grid">
-            <!-- Copyright and theme information -->
-            <div class="md-copyright">
-                {% if config.copyright %}
-                <div class="md-copyright__highlight">
-                    {{ config.copyright }}
-                </div>
-                {% endif %}
-
-            </div>
-            {% block social %}
-            {% include "partials/social.html" %}
-            {% endblock %}
-        </div>
+{% block content %}
+{% if page and page.is_homepage %}
+<!-- Hero Banner -->
+<section class="hero-banner">
+  <div class="hero-image" style="background-image: url('{{ config.site_url }}assets/images/HPC_data_center.png');">
+    <div class="hero-gradient"></div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <div class="hero-accent-bar"></div>
+        <h1>Advanced Research Computing</h1>
+        <p><a href="https://hpc.njit.edu/">NJIT HPC</a> provides access to leading-edge computational and data storage systems as well as expertise in a broad range of high-performance computing activities.</p>
+      </div>
+      <div class="hero-audience-links">
+        <a href="#hpc-user-guides" class="hero-link">User Guides</a>
+        <a href="{{ 'Software/' | url }}" class="hero-link">Software</a>
+        <a href="{{ 'HPC_Events_and_Workshops/' | url }}" class="hero-link">Workshops</a>
+        <a href="{{ 'news/' | url }}" class="hero-link">News</a>
+        <a href="{{ 'about/#contact' | url }}" class="hero-link">Get Help</a>
+      </div>
     </div>
-</footer>
+  </div>
+</section>
+<!-- Announcement banner -->
+<div class="announcement-banner">
+  <span class="announcement-icon">🎉</span>
+  <span class="announcement-text">
+    Welcome to the new RCAC Documentation Website!
+    <a href="{{ 'blog/2026/04/20/rcac-docs-website-intro/' | url }}">Discover what's new →</a>
+  </span>
+  <button class="announcement-close" onclick="this.parentElement.style.display='none'" aria-label="Dismiss">✕</button>
+</div>
+{% endif %}
+
+<div class="md-breadcrumb"></div>
+{{ super() }}
 {% endblock %}

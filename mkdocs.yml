@@ -1,8 +1,11 @@
 site_name: NJIT HPC Documentation
-site_url: https://arcs-njit-edu.github.io/Docs/
+site_description: Official HPC NJIT documentation website.
+site_url: https://hpc.njit.edu
 repo_url: https://github.com/arcs-njit-edu/Docs
 #repo_name: arcs-njit-edu/Docs
-
+exclude_docs: |
+  - archived/migration
+  - archived/news
 nav:
     - NJIT HPC: index.md
     - 'About Us':
@@ -69,8 +72,6 @@ nav:
     - 'RHEL 9 Upgrade FAQs' : 'faq/rhel_9_faq.md'
     - 'FAQs' : 'faq/faq.md'
     - 'News and Announcements' : news/index.md
-    # - '' : 'website_version.txt'
-    # - '' : 'archived/'
 
 
 theme: 
@@ -79,31 +80,27 @@ theme:
   custom_dir: overrides
   favicon: favicon.ico
   palette:
-
-    # Palette toggle for automatic mode
-    #- media: "(prefers-color-scheme)"
-    #  toggle:
-    #    icon: material/brightness-auto
-    #   name: Switch to light mode
-
-    # Palette toggle for light mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
     #- media: "(prefers-color-scheme: light)"
-    scheme: njit
-     # toggle:
-     #   icon: material/toggle-switch
-     #   name: Switch to dark mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
 
     # Palette toggle for dark mode
-    #- media: "(prefers-color-scheme: dark)"
-    #  scheme: slate
-    #  toggle:
-    #    icon: material/toggle-switch-off-outline
-    #    name: Switch to light mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to automatic mode
   features:
     - navigation.instant
     - navigation.instant.prefetch
     - navigation.tracking
-    #- navigation.tabs
     - navigation.tabs.sticky
     - navigation.path
     - navigation.indexes
@@ -117,7 +114,6 @@ theme:
     - announce.dismiss
     - content.tooltips
     - search.suggest
-    - search.highlight
 
 extra_css:
     - stylesheets/extra.css
@@ -127,7 +123,7 @@ extra:
       link: https://nexus.njit.edu/highlander_nexus?id=sc_cat_item&sys_id=3f1dd0320a0a0b99000a53f7604a2ef9
       name: Contact HPC support
     - icon: fontawesome/solid/paper-plane
-      link: mailto:hpc@njit.edu
+      link: mailto:<hpc@njit.edu>
       name: Email HPC support
     - icon: material/web
       link: https://ondemand.njit.edu
@@ -135,7 +131,7 @@ extra:
     - icon: material/chart-areaspline
       link: https://hpc.njit.edu/Monitor/summary.html
       name: HPC job metrics
-
+  org: Advanced Research Computing
 # Extensions
 markdown_extensions:
   - meta
