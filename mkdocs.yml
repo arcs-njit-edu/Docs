@@ -116,7 +116,8 @@ theme:
     - content.tabs.link
     - announce.dismiss
     - content.tooltips
-    #- header.autohide
+    - search.suggest
+    - search.highlight
 
 extra_css:
     - stylesheets/extra.css
@@ -154,6 +155,12 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.snippets
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+      linenums: true
   - pymdownx.inlinehilite
   - pymdownx.magiclink
   - pymdownx.mark
@@ -183,8 +190,9 @@ plugins:
   - autolinks
   - blog:
       blog_dir: news
-      #authors: false
-      #archive: false
-  - tags
+      pagination_per_page: 5
+      pagination_if_single_page: true
+  - tags:
+      enabled: true
 
 copyright: New Jersey Institute of Technology High Performance Computing &copy; 2026
