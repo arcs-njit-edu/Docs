@@ -255,3 +255,37 @@ md-typeset .admonition.question,
   }
 }
 
+/* ========================
+   Search icon positioning
+   overrides/partials/search.html uses a <div role="button">
+   instead of the stock <label for="__search">, so the
+   compiled theme CSS selector .md-search__icon[for=__search]
+   no longer matches it and the icon loses its absolute
+   overlay position. Restore it targeting the class directly.
+   ======================== */
+.md-search__form .md-search__icon {
+  position: absolute;
+  top: 0.3rem;
+  left: 0.5rem;
+  z-index: 2;
+}
+
+@media screen and (max-width: 59.984375em) {
+  .md-search__form .md-search__icon {
+    top: 0.6rem;
+    left: 0.8rem;
+  }
+  .md-search__form .md-search__icon svg:first-child {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 60em) {
+  .md-search__form .md-search__icon {
+    pointer-events: none;
+  }
+  .md-search__form .md-search__icon svg:last-child {
+    display: none;
+  }
+}
+
