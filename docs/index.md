@@ -26,7 +26,7 @@ Follow these steps to get up and running on HPC.
 
     Learn how to log in via SSH, set up your environment, and access the cluster for the first time.
 
-    [:octicons-arrow-right-24: Connection guide](cluster_access/#access-to-clusters)
+    [:octicons-arrow-right-24: Connection guide](clusters/cluster_access/#access-to-clusters)
 
 -   :material-folder-upload:{ .lg .middle } __Transfer Your Data__
 
@@ -34,7 +34,7 @@ Follow these steps to get up and running on HPC.
 
     Move files to and from the cluster using SCP, RSYNC.
 
-    [:octicons-arrow-right-24: Data transfer](cluster_access/#transfer-the-data-from-the-local-machine-to-clusters-or-vice-versa)
+    [:octicons-arrow-right-24: Data transfer](clusters/cluster_access/#transfer-the-data-from-the-local-machine-to-clusters-or-vice-versa)
 
 -   :material-play-circle:{ .lg .middle } __Submit Your First Job__
 
