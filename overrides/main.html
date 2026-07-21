@@ -2,9 +2,10 @@
 
 {% block content %}
 {% if page and page.is_homepage %}
+{% set hero_image_url = 'assets/images/HPC_data_center.png' | url %}
 <!-- Hero Banner -->
 <section class="hero-banner">
-  <div class="hero-image" style="background-image: url('{{ config.site_url }}assets/images/HPC_data_center.png');">
+  <div class="hero-image" style="background-image: url('{{ hero_image_url }}');">
     <div class="hero-gradient"></div>
     <div class="hero-content">
       <div class="hero-text">

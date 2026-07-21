@@ -5,9 +5,7 @@ hide:
   - toc
 ---
 
-# High Performance Computing (HPC)
-
-Welcome to HPC at [New Jersey Institute of Technology (NJIT)](https://www.njit.edu).
+# Welcome to HPC Documetation
 <div class="grid cards" markdown>
 
 - :material-server: __Click [here](clusters/index.md#virtual-tour-of-njit-data-center) for a virtual tour of the Data Center!__<br><br>
