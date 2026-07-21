@@ -19,3 +19,4 @@ mkdocs-table-reader-plugin~=2.0.3
 mkdocstrings~=0.23.0
 mkdocs-awesome-pages-plugin
 mkdocs-autolinks-plugin
+mkdocs-git-revision-date-localized-plugin
