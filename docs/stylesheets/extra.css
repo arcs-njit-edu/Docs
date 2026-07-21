@@ -128,3 +128,130 @@ md-typeset .admonition.question,
   vertical-align: -0.4em;
 }
 
+/* ========================
+   Hero Banner (homepage)
+   ======================== */
+.hero-banner {
+  width: 100%;
+  margin-top: -0.5rem;
+  margin-bottom: 2rem;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.hero-image {
+  position: relative;
+  width: 100%;
+  min-height: 340px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: flex-end;
+}
+
+.hero-gradient {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.0) 0%,
+    rgba(0, 0, 0, 0.1) 50%,
+    rgba(0, 0, 0, 0.2) 100%
+  );
+  pointer-events: none;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  padding: 2rem 3rem 1.5rem;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.hero-text {
+  max-width: 600px;
+  margin-bottom: 1.5rem;
+}
+
+.hero-text h1 {
+  color: #fff !important;
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem 0;
+  line-height: 1.15;
+}
+
+.hero-text p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.05rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.hero-accent-bar {
+  width: 4px;
+  height: 50px;
+  background-color: #d8272d;
+  margin-bottom: 0.75rem;
+  border-radius: 2px;
+}
+
+.hero-audience-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.hero-link {
+  display: inline-block;
+  color: #fff !important;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 4px;
+  padding: 0.5rem 1.1rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-decoration: none !important;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.hero-link:hover {
+  background: rgba(216, 39, 45, 0.55);
+  border-color: #d8272d;
+  color: #fff !important;
+}
+
+@media (max-width: 768px) {
+  .hero-image {
+    min-height: 350px;
+  }
+  .hero-content {
+    padding: 1.5rem 1.25rem 1rem;
+  }
+  .hero-text h1 {
+    font-size: 1.8rem;
+  }
+  .hero-text p {
+    font-size: 0.95rem;
+  }
+  .hero-link {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-image {
+    min-height: 300px;
+  }
+  .hero-text h1 {
+    font-size: 1.5rem;
+  }
+  .hero-audience-links {
+    gap: 0.4rem;
+  }
+}
+
