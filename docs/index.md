@@ -52,7 +52,7 @@ Follow these steps to get up and running on HPC.
 
     [:octicons-arrow-right-24: Software installation guide](faq/faq/#software-and-hardware-specifications)
 
--   :material-home:{ .lg .middle } __Open OnDemand__
+-   :material-monitor-dashboard:{ .lg .middle } __Open OnDemand__
 
     ---
 
