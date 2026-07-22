@@ -69,7 +69,6 @@ nav:
         - Overview: Courses/index.md
         - Course Configuration: Courses/course-resource-config.md
         - Submitting Jobs: Courses/course-job-submission.md
-    - 'RHEL 9 Upgrade FAQs' : 'faq/rhel_9_faq.md'
     - 'FAQs' : 'faq/faq.md'
     - 'News and Announcements' : news/index.md
 
