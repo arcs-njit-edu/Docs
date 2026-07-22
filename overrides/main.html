@@ -30,3 +30,17 @@
 
 {{ super() }}
 {% endblock %}
+
+{% block scripts %}
+{{ super() }}
+<script>
+  // Accessibility: give the breadcrumb path nav a unique landmark label so it
+  // is distinguishable from the primary "Navigation" landmark.
+  (function () {
+    var path = document.querySelector("nav.md-path[aria-label='Navigation']");
+    if (path) {
+      path.setAttribute("aria-label", "Breadcrumb");
+    }
+  })();
+</script>
+{% endblock %}
