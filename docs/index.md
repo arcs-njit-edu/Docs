@@ -1,24 +1,68 @@
 ---
 title: NJIT HPC Documentation
 hide:
+  - footer
   - toc
 ---
 
-# High Performance Computing (HPC)
+# Welcome to HPC Documentation
 
-Welcome to HPC at [New Jersey Institute of Technology (NJIT)](https://www.njit.edu).
+## :material-rocket-launch: New to HPC?
+Follow these steps to get up and running on HPC.
+
 <div class="grid cards" markdown>
 
-- :octicons-info-24: __NJIT__ provides High Performance Computing resources to support scientific computing for faculty and students. These resources include CPU nodes, GPU nodes, parallel storage, high speed, low latency Infiniband networking and a fully optimized scientific software stack.
+-   :material-account-plus:{ .lg .middle } __Get an Account__
 
-- :material-server: __Click [here](clusters/index.md#virtual-tour-of-njit-data-center) for a virtual tour of the Data Center!__<br><br>
+    ---
 
-    <figure markdown="span">
-      ![wulver](assets/images/HPC_data_center.png){ width="400" loading=lazy title="Wulver HPC data center in Piscataway, NJ" }
-      <figcaption>Wulver HPC data center in Piscataway, NJ</figcaption>
-    </figure>
+    Access to NJIT HPC computing resources requires PI aprroval. Please contact at [hpc@njit.edu](mailto:hpc@njit.edu). 
+
+    [:octicons-arrow-right-24: Wulver account](faq/faq/#login-issues-access)
+
+-   :material-connection:{ .lg .middle } __Connect to a Wulver Cluster__
+
+    ---
+
+    Learn how to log in via SSH, set up your environment, and access the cluster for the first time.
+
+    [:octicons-arrow-right-24: Connection guide](clusters/cluster_access/#access-to-clusters)
+
+-   :material-folder-upload:{ .lg .middle } __Transfer Your Data__
+
+    ---
+
+    Move files to and from the cluster using SCP, RSYNC.
+
+    [:octicons-arrow-right-24: Data transfer](clusters/cluster_access/#transfer-the-data-from-the-local-machine-to-clusters-or-vice-versa)
+
+-   :material-play-circle:{ .lg .middle } __Submit Your First Job__
+
+    ---
+
+    Write a Slurm batch script, submit it to the scheduler, and monitor your job's progress.
+
+    [:octicons-arrow-right-24: Job submission guide](faq/faq/#jobs-and-scheduling)
+
+-   :material-package-variant:{ .lg .middle } __Install Software__
+
+    ---
+
+    Find pre-installed modules via the LMOD system or request software from the HPC help desk.
+
+    [:octicons-arrow-right-24: Software installation guide](faq/faq/#software-and-hardware-specifications)
+
+-   :material-monitor-dashboard:{ .lg .middle } __Open OnDemand__
+
+    ---
+
+    Need to learn more about web based portal Open OnDemand?
+
+    [:octicons-arrow-right-24: Open OnDemand](OnDemand/)
 
 </div>
+
+
 
 ## HPC latest News!
 ---
@@ -41,25 +85,7 @@ Welcome to HPC at [New Jersey Institute of Technology (NJIT)](https://www.njit.e
      - :material-account-tie: **Format:** One-on-one consultations (in-person or virtual)
      - :material-calendar-clock: **Availability:** By appointment throughout the summer
 </div>
-<div class="grid cards" markdown>
 
--    :fontawesome-solid-calendar:{ .lg .middle } __HPC Spring Events, 2026__
-
-     ---
-     Check out our event schedule for spring [here](HPC_Events_and_Workshops/index.md)! If you have suggestions for webinar topics, please feel free to contact us at [hpc@njit.edu](mailto:hpc@njit.edu).
-
-        
-
--    :fontawesome-solid-users:{ .lg .middle } __Monthly HPC User Meeting__
-
-    ---
-    We are currently offering a new monthly event for HPC researchers at NJIT: **The HPC Monthly User Meeting**. This event is open to all NJIT students, faculty, and staff who use or are interested in NJIT's HPC resources and services. No prior registration is required.
-
-    * Date: Check the [spring schedule](HPC_Events_and_Workshops/index.md).
-    
-    
-
-</div>
 ## HPC Highlights!
 ---
 <div class="grid cards" markdown>
@@ -68,19 +94,8 @@ Welcome to HPC at [New Jersey Institute of Technology (NJIT)](https://www.njit.e
 <br>See our updated [Policies](Policies/index.md) for cluster resource allocation and investment. 
 { .card }
 
-:fontawesome-solid-rocket: __Getting started with Wulver__ 
-<br>If you are new to Wulver, and want to know how to get started, visit [Wulver Quickstart](get_started_on_Wulver.md).
-{ .card }
-
 :material-bullhorn: __Cluster Updates__
 <br>To see the latest updates on NJIT cluster, please visit [Cluster Maintenance Updates and News](news/index.md).
-{ .card }
-
-:material-layers: __Software Modules__ <br>See [Software Modules](Software/index.md) for list of software packages installed on our cluster.
-{ .card }
-
-:material-console: __Running jobs on Wulver__
-<br>See [Running jobs](Running_jobs/index.md) for differenet partitions, QoS and sample jobs scripts.
 { .card }
 
 :material-calendar: __HPC Events__

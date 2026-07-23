@@ -1,39 +1,46 @@
-<!-- Elements added to main will be displayed on all pages -->
 {% extends "base.html" %}
 
-
-{% block htmltitle %}
-  <title>NJIT HPC Documentation</title>
-{% endblock %}
-
-{#
-{% block announce %}
-<p style="font-size: 15px; color: white;">
-  <b>Wulver OS has been upgraded to RHEL9.</b><br>
-Please check the details at <a href="https://hpc.njit.edu/faq/rhel_9_faq/" style="color: white; text-decoration: underline; font-weight: bold;">RHEL9 OS Upgrade FAQ</a>.
-The software packages, on the Wulver new OS, have also been updated. Check the list of software at <a href="https://hpc.njit.edu/Software/" style="color: white; text-decoration: underline; font-weight: bold;">Software list</a>.
-
-</p>
-{% endblock %}
-#}
-
-{% block footer %}
-<footer class="md-footer">
-    <div class="md-footer-meta md-typeset">
-        <div class="md-footer-meta__inner md-grid">
-            <!-- Copyright and theme information -->
-            <div class="md-copyright">
-                {% if config.copyright %}
-                <div class="md-copyright__highlight">
-                    {{ config.copyright }}
-                </div>
-                {% endif %}
-
-            </div>
-            {% block social %}
-            {% include "partials/social.html" %}
-            {% endblock %}
-        </div>
+{% block content %}
+{% if page and page.is_homepage %}
+{% set hero_image_url = 'assets/images/HPC_data_center.png' | url %}
+<!-- Hero Banner -->
+<section class="hero-banner">
+  <div class="hero-image" style="background-image: url('{{ hero_image_url }}');">
+    <div class="hero-gradient"></div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <div class="hero-accent-bar"></div>
+        <h1>Advanced Research Computing</h1>
+        <p><a href="https://hpc.njit.edu/">NJIT HPC</a> provides High Performance Computing resources to support scientific computing for faculty and students. These resources include CPU nodes, GPU nodes, parallel storage, high speed, low latency Infiniband networking and a fully optimized scientific software stack.</p>
+      </div>
+      <div class="hero-audience-links">
+        <a href="{{ 'clusters/get_started_on_Wulver' | url }}" class="hero-link">HPC Quickstart</a>
+        <a href="{{ 'Software/' | url }}" class="hero-link">Software</a>
+        <a href="{{ 'HPC_Events_and_Workshops/' | url }}" class="hero-link">Workshops</a>
+        <a href="{{ 'news/' | url }}" class="hero-link">Announcements</a>
+        <a href="{{ 'about/contact' | url }}" class="hero-link">Get Help</a>
+      </div>
     </div>
-</footer>
+  </div>
+</section>
+<!-- Announcement banner -->
+
+{% endif %}
+
+
+{{ super() }}
+{% endblock %}
+
+{% block scripts %}
+{{ super() }}
+<script>
+  // Accessibility: give the breadcrumb path nav a unique landmark label so it
+  // is distinguishable from the primary "Navigation" landmark.
+  (function () {
+    var path = document.querySelector("nav.md-path[aria-label='Navigation']");
+    if (path) {
+      path.setAttribute("aria-label", "Breadcrumb");
+    }
+  })();
+</script>
 {% endblock %}
