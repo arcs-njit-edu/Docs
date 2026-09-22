@@ -81,7 +81,7 @@ Follow these steps to get up and running on HPC.
 
      - :material-calendar-clock: **When:** Every Monday 12pm - 2pm and Wednesday 2pm - 4 pm
      - :material-map-marker: **Where:** GITC 5302M
-     - :material-video: **Join virtually:** [Zoom link](https://njit-edu.zoom.us/j/91850887854?pwd=DvdF0pUw3mNJEoogb1OnYm6Eg2Aiju.1)
+     - :material-video: **Join virtually:** [Zoom link](https://njit-edu.zoom.us/j/91904852274?pwd=g4s1gAiBnnsbzkabuvjFaZ80GXnaFl.1)
 </div>
 
 ## HPC Highlights!
