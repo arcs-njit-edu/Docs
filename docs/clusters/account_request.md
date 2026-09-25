@@ -38,7 +38,7 @@ Every account on Wulver is sponsored by NJIT faculty. This page explains **who h
 
     !!! warning "Most common delay"
 
-    A student emails us without their advisor on the request. We reply asking the student to have their PI contact us, which adds days to the process. Students should copy their faculty advisor on the first email.
+        A student emails us without their advisor on the request. We reply asking the student to have their PI contact us, which adds days to the process. Students should copy their faculty advisor on the first email.
 
 === "Course"
 
