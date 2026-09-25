@@ -69,7 +69,7 @@ Every account on Wulver is sponsored by NJIT faculty. This page explains **who h
         information. See [Course Resource Configuration](../Courses/course-resource-config.md#course-directory)
         for details.
 
-=== "External collaborator"
+=== "Guest Access"
 
     An NJIT faculty member sponsors the guest account. Guest access lasts one year, and can be renewed annually.
 
@@ -114,6 +114,12 @@ Every account on Wulver is sponsored by NJIT faculty. This page explains **who h
 
     ```bash
     sacctmgr show assoc user=$USER format=account,partition,qos
+    ```
+
+    To check the account allocation usage:
+
+    ```bash
+    quota_info
     ```
 
 !!! tip "Off campus"
