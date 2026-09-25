@@ -36,6 +36,10 @@ Every account on Wulver is sponsored by NJIT faculty. This page explains **who h
     * **A one-line description of the work** the account is for.
     * **Software the user expects to need**, so we can confirm what is already available in the [module stack](../Software/index.md).
 
+    !!! warning "Most common delay"
+
+    A student emails us without their advisor on the request. We reply asking the student to have their PI contact us, which adds days to the process. Students should copy their faculty advisor on the first email.
+
 === "Course"
 
     The **course instructor** submits the request, including the UCIDs of the students who need accounts.
@@ -83,9 +87,11 @@ Every account on Wulver is sponsored by NJIT faculty. This page explains **who h
         request through export control review with the Office of Research Integrity
         and Compliance. Submitting without it delays activation of the guest account.
 
-!!! warning "Most common delay"
+    !!! warning "Most common delay"
 
-    A student emails us without their advisor on the request. We reply asking the student to have their PI contact us, which adds days to the process. Students should copy their faculty advisor on the first email.
+        If HPC account request is submitted without the Export Control Questionnaire. Make sure to check the HPC (Wulver) box to avoid this delay.
+
+
 
 ## What Happens Next
 
