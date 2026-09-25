@@ -27,6 +27,8 @@ def _fix_cell(s, depth):
     s = LINK_RE.sub(lambda m: _resolve_link(m, depth), s)
     s = re.sub(r'(\()([^)]*?)index\.md', r'\1\2', s)
     s = re.sub(r'(\b6_[\w\-.]+)\.md\b', r'\1', s)
+    # Other pages: foo.md -> foo/ (the URL MkDocs gives the page)
+    s = re.sub(r'\]\((?!https?:)([^)#\s]*?)\.md(?=[#)])', r'](\1/', s)
     s = s.replace('(//', '(/')
     return s
 
