@@ -9,7 +9,7 @@ hide:
 
 ## 2026
 
-=== "Fall"
+=== "Spring"
 
     <div class="grid cards" markdown>
     
