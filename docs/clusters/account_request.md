@@ -71,25 +71,21 @@ Every account on Wulver is sponsored by NJIT faculty. This page explains **who h
 
 === "Guest Access"
 
-    An NJIT faculty member sponsors the guest account. Guest access lasts one year, and can be renewed annually.
+    Guest accounts are for external collaborators and NJIT alumni, and each one must be sponsored by an NJIT faculty member. Guest access lasts one year and can be renewed annually.
 
     [Request Guest Access](https://njit.service-now.com/highlander_nexus?id=sc_cat_item&sys_id=afee4ca83b547e10ed2df90eb3e45a6f&table=sc_cat_item){ .md-button }
 
     #### What to Include in the Guest Access Request Form
 
-    * **Contact ID for each person** — enter the NJIT UCID (in "UCID") if the guest is NJIT alumni, otherwise give their institutional or personal email address (in "Guest's Email").
+    * **Contact ID for each person** — enter the NJIT UCID (in "UCID") if the guest is an NJIT alum; otherwise, give their institutional or personal email address (in "Guest's Email").
     * **Sponsor** — the UCID of the sponsoring NJIT faculty member.
     * **What are you requesting the account for?** — select "Research Computing" and check "HPC (Wulver)".
 
-    !!! warning "Select HPC (Wulver) to get the export control questions"
+    !!! warning "Most common delay: select HPC (Wulver)"
 
-        Checking **HPC (Wulver)** adds a questionnaire to the form that routes the
-        request through export control review with the Office of Research Integrity
-        and Compliance. Submitting without it delays activation of the guest account.
-
-    !!! warning "Most common delay"
-
-        If HPC account request is submitted without the Export Control Questionnaire. Make sure to check the HPC (Wulver) box to avoid this delay.
+        Checking **HPC (Wulver)** adds an export control questionnaire to the form, which routes the
+        request through review with the Office of Research Integrity and Compliance. A request
+        submitted without the questionnaire delays activation of the guest account.
 
 
 
@@ -97,7 +93,7 @@ Every account on Wulver is sponsored by NJIT faculty. This page explains **who h
 
 1. **Sponsorship is confirmed.** If the PI sent or answered the request, the account is created. If not, we write back asking for their approval.
 2. **The account is created and added to the group**, so jobs draw on that group's Service Units.
-3. **An automated welcome email** with login details and first-step instructions is sent to the NJIT email address.
+3. **An automated welcome email** with login details and first-step instructions is sent to the user's email address.
 4. **The user logs in**, either over SSH or through [Open OnDemand](https://ondemand.njit.edu). See [Access to NJIT Clusters](cluster_access.md) for connection instructions.
 
     ```
