@@ -1,3 +1,6 @@
 # MkDocs documentation
 site*/
 .DS_Store
+
+# Python
+__pycache__/
