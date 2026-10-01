@@ -11,6 +11,9 @@ While using HPC resources, here are some important things to remember:
 * Do not run larger numbers of very short (less than a minute) jobs
 Use of the clusters is also governed by our official guidelines. Violating the guidelines might result in having your access to Wulver revoked, but more often the result is your jobs will run painfully slower.
 
+## Request an Account
+Every Wulver account is sponsored by an NJIT faculty member. Faculty and PIs request accounts for their group members by emailing [hpc@njit.edu](mailto:hpc@njit.edu) with each person's UCID; students should copy their advisor on the request. Course instructors and sponsors of guest accounts use a request form instead. See [Requesting an Account on Wulver](account_request.md) for what to include and what happens next.
+
 ## Remote Access
 All users access the Wulver cluster remotely, either through ssh or a browser using the Open OnDemand portal. See these detailed [login instructions](cluster_access.md). NB: If you want to access the clusters from outside NJIT’s network, you must use the VPN.
 

@@ -6,6 +6,79 @@ hide:
 # Archived HPC Training Recordings
 
 
+
+## 2026
+
+=== "Spring"
+
+    <div class="grid cards" markdown>
+    
+    -   ### [Introduction to Containers](../index.md)
+    
+        ---
+    
+        This webinar provides a practical introduction to container technologies on the Wulver HPC cluster, including container concepts, container engines and registries, and the use of Apptainer for HPC workloads. Participants will learn how to obtain and run container images, manage files and bind mounts, enable GPU support inside containers, and integrate containers into HPC workflows for scalable and reproducible computing.
+    
+        **Key Highlights:**
+    
+        * What containers are and why they matter in HPC
+        * Container engines, registries, and the Apptainer toolchain
+        * Key commands — pull, shell, exec, run, bind, GPU support
+        * Submitting container jobs with SLURM on Wulver
+    
+        <iframe src="https://njit.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=23f09989-da2c-4cac-92fd-b434014894d8&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=true&interactivity=all" height="405" width="720" style="border: 1px solid #464646; box-sizing: border-box;" allowfullscreen allow="autoplay" aria-label="Introduction to Containers" aria-description="Introduction to Containers"></iframe>
+    
+        [<span class="octicon--arrow-right-24"></span> Download Slides](../../assets/slides/container_HPC_04-22-2026.pdf)
+    
+    </div>
+    
+    <div class="grid cards" markdown>
+    
+    -   ### [Intro to Wulver: Job Scheduler & Running Jobs](../index.md)
+    
+        ---
+    
+        This webinar provides a practical introduction to using the Wulver HPC cluster with the SLURM batch scheduling system, focusing on efficient job submission, monitoring, and troubleshooting.
+    
+        **Key Highlights:**
+    
+        * SLURM job submission basics
+        * Resource requests and allocations
+        * Software modules and environments
+        * Job monitoring and control
+        * Common errors with the job submission
+        * Interactive jobs
+        * OnDemand portal usage
+    
+        <iframe src="https://njit.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=81d97911-33c8-41ff-af7d-b3e90030122e&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=true&interactivity=all" height="405" width="720" style="border: 1px solid #464646; box-sizing: border-box;" allowfullscreen allow="autoplay" aria-label="Job Scheduler &amp; Running Jobs" aria-description="Intro to Wulver: Job Scheduler &amp; Running Jobs"></iframe>
+    
+        [<span class="octicon--arrow-right-24"></span> Download Slides](../../assets/slides/Intro_to_Wulver_II_02_04_2026.pdf)
+    
+    </div>
+    
+    <div class="grid cards" markdown>
+    
+    -   ### [Intro to Wulver: HPC Resources & Allocations](../index.md)
+    
+        ---
+    
+        This webinar provides an introductory overview of high-performance computing (HPC) resources, guiding participants through the fundamentals of HPC clusters and how to effectively access and use them for research and coursework.
+    
+        **Key Highlights:**
+    
+        * Overview of HPC concepts
+        * Cluster architecture
+        * Explanation of available partitions such as general, GPU
+        * Guidance on requesting logins and managing compute allocations
+        * Introduction to storage systems
+    
+        <iframe src="https://njit.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=234e5295-7202-401c-b0b8-b3e9016e77cf&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=true&interactivity=all" height="405" width="720" style="border: 1px solid #464646; box-sizing: border-box;" allowfullscreen allow="autoplay" aria-label="Introduction to Wulver" aria-description="Intro to Wulver: HPC Resources &amp; Allocations"></iframe>
+    
+        [<span class="octicon--arrow-right-24"></span> Download Slides](../../assets/slides/Intro_to_Wulver_I_01_28_2026.pdf)
+    
+    </div>
+
+
 ## 2025 
 
 === "Fall"
@@ -120,75 +193,3 @@ hide:
         [<span class="octicon--arrow-right-24"></span> Download Slides](../../assets/slides/Conda_training_Feb26.pdf)
     
     </div>
-
-## 2024 
-
-=== "Fall"
-
-    <div class="grid cards" markdown>
-    
-    -   ### [Job Arrays and Advanced Submission Techniques for HPC](3_slurm_advanced.md)
-    
-        ---
-    
-        This is the final in a series of three webinars in the fall semester. designed to introduce researchers, scientists, and HPC users to the fundamentals of the containers. This session aims to provide useful information on submitting SLURM jobs efficiently by covering job arrays, job dependencies, checkpointing, and addressing common SLURM job issues.
-        
-        #### Key Highlights:
-        * Understanding the concept and benefits of job arrays
-        * Syntax for submitting and managing job arrays
-        * Best practices for efficient array job design
-        * Dependency chains and complex workflows
-        * Resource optimization strategies
-        * Using SLURM's advanced options for improved job control
-        * Checkpointing the jobs and use of 3rd party checkpointing tool
-    
-        <iframe src="https://njit.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=dc23dd0c-61c4-4428-ae97-b24a01205af7&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=true&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay" aria-label="Panopto Embedded Video Player" aria-description="Advanced Slurm 1" ></iframe>
-    
-        [<span class="octicon--arrow-right-24"></span> Download Slides](../../assets/slides/HPC_Advanced_SLURM_11-20-2024.pdf)
-    
-    </div>
-    
-    <div class="grid cards" markdown>
-    
-    -   ### [SLURM Batch System Basics](1_slurm.md)
-    
-        ---
-    
-        This is the first in a series of three webinars in the fall semester. designed to introduce researchers, scientists, and HPC users to the fundamentals of the SLURM (Simple Linux Utility for Resource Management) workload manager. This virtual  session will equip you with essential skills to effectively utilize HPC resources through SLURM.
-        
-        #### Key Highlights:
-        * Introduction to SLURM and its role in HPC environments 
-        * Basic SLURM commands for job submission, monitoring, and management 
-        * How to write effective job scripts for various application types 
-        * Understanding SLURM partitions, quality of service, and job priorities 
-        * Best practices for resource requests and job optimization 
-        * Troubleshooting common issues in job submission and execution
-     
-    
-        <iframe src="https://njit.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=581f2cd1-047c-4517-a50c-b1ef015376f5&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=true&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay" aria-label="Panopto Embedded Video Player" aria-description="HPC Monthly Webinar Fall 2024" ></iframe>
-    
-        [<span class="octicon--arrow-right-24"></span> Download Slides](../../assets/slides/NJIT_HPC_Seminar-SLURM.pdf)
-    
-    </div>
-
-=== "Spring"
-
-    <div class="grid cards" markdown>
-
-    -   ### Introduction to Python and Conda
-    
-        ---
-
-        Participants will gain an introductory understanding of using Python for HPC and effectively managing their Python environments using [Conda](conda.md). This knowledge will empower them to leverage the power of Python for their scientific computing needs on HPC systems.
-    
-        #### Key Highlights:
-        * Learn how to manage Python environments for HPC using Conda.
-        * Become familiar with common tools and libraries for scientific computing in Python.
-        
-        <iframe src="https://njit.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=952312e4-d685-46c1-bbc2-b15c0150df0e&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=true&interactivity=all" height=420" width="896" style="border: 1px solid #464646;" allowfullscreen allow="autoplay" aria-label="Panopto Embedded Video Player" aria-description="NJIT HPC Training Webinar" ></iframe>
-
-        [<span class="octicon--arrow-right-24"></span> Download Slides](../../assets/slides/intro-to-Python-and-Conda.pdf)
-    
-    </div>
-
-
