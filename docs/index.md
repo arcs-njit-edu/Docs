@@ -71,7 +71,7 @@ Follow these steps to get up and running on HPC.
 -   :material-folder-wrench:{ .lg .middle } __Wulver Scheduled Maintenance__
 
     ---         
-    Wulver will be out of service for maintenance once a month for updates, repairs, and upgrades.  The schedule is 9 a.m. to 9 p.m. the second Tuesday of every month.  During the maintenance period, the logins will be disabled and the jobs that do not end before the maintenance window begins will be held until the maintenance is complete and the cluster is returned to production. 
+    Wulver will be out of service for maintenance once a month for updates, repairs, and upgrades.  The schedule is 8 a.m. to 9 p.m. the second Tuesday of every month.  During the maintenance period, the logins will be disabled and the jobs that do not end before the maintenance window begins will be held until the maintenance is complete and the cluster is returned to production. 
      <br>For example, if you submit a job the day before maintenance, your job will enter a pending state (you will see job status `PD` when using `squeue -u $LOGNAME`). You can either adjust the walltime or wait until maintenance ends. For full details, see the [Maintenance Policy](Policies/maintenance.md).
 
 -   :fontawesome-solid-door-open:{ .lg .middle } __Open Office Hours__

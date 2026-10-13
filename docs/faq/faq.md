@@ -91,7 +91,7 @@ Welcome to our most frequently asked questions. If you cannot find an entry rela
 ## Maintenance
 
 ??? question "When does maintenance occur?"
-    - Second Tuesday 9AM - 9PM monthly.
+    - Second Tuesday 8AM - 9PM monthly.
 
 ??? question "I submitted my job before maintenance, but why did it go to pending status as *"ReqNodeNotAvail, Reserved for maintenance"* ?"
     - If your job walltime request indicates the job will not finish before the maintenance starts then the scheduler will hold the job.  
@@ -100,7 +100,7 @@ Welcome to our most frequently asked questions. If you cannot find an entry rela
 
 ??? question "How will maintenance affect me?"
     - During the maintenance downtime, logins will be disabled, users will not have access to their stored data in `/project`, `/home` and `/scratch`.
-    - All jobs that do not end **before 9AM** will be held by the scheduler until the downtime is complete and the systems are returned to service.
+    - All jobs that do not end **before 8AM** will be held by the scheduler until the downtime is complete and the systems are returned to service.
 
 ??? question "Will I receive a notification before maintenance?"
     - Our regular monthly maintenance cycle is every 2nd Tuesday. If there is a change to this cycle, all users will receive notification.
