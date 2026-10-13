@@ -4,13 +4,13 @@ ARCS HPC performs regular maintenance on Wulver and its associated storage to ap
 
 ## Maintenance Schedule
 
-Wulver follows a **monthly maintenance cycle** on the **second Tuesday of every month**, from **9:00 AM to 9:00 PM (Eastern Time)**. During this window, Wulver and the associated GPFS storage are taken out of service for maintenance, repairs, patches, and upgrades.
+Wulver follows a **monthly maintenance cycle** on the **second Tuesday of every month**, from **8:00 AM to 9:00 PM (Eastern Time)**. During this window, Wulver and the associated GPFS storage are taken out of service for maintenance, repairs, patches, and upgrades.
 
 !!! important "Regular Maintenance Window"
 
     - **Frequency:** Monthly
     - **Day:** Second Tuesday of every month
-    - **Time:** 9:00 AM – 9:00 PM (ET)
+    - **Time:** 8:00 AM – 9:00 PM (ET)
     - **Systems affected:** Wulver compute nodes, login nodes, and GPFS storage (`/home`, `/project`, `/scratch`)
 
 ARCS HPC reserves the right to reboot nodes once a month for maintenance on this same schedule.
@@ -30,7 +30,7 @@ Users will see a cluster service information message upon attempting to log in t
 
 The SLURM scheduler is configured with a reservation for the maintenance window. Jobs are handled as follows:
 
-* **Jobs that complete before 9:00 AM on the maintenance day** run normally to completion.
+* **Jobs that complete before 8:00 AM on the maintenance day** run normally to completion.
 * **Jobs whose requested walltime would overlap with the maintenance window** are held by the scheduler and shown in pending state with the reason `(ReqNodeNotAvail, Reserved for maintenance)`. They will start automatically after maintenance concludes.
 * **Jobs submitted during the maintenance window** are accepted into the queue but will not start until maintenance is complete.
 
@@ -64,7 +64,7 @@ ARCS HPC anticipates that regular maintenance will be completed within the sched
 ## User Responsibilities
 
 * **Plan your work around the maintenance window.** Take the second-Tuesday cycle into account when scheduling jobs and when developing plans to meet research, course, or grant deadlines.
-* **Choose appropriate walltimes.** If your job must complete before maintenance, request a walltime that ensures completion before 9:00 AM on the second Tuesday.
+* **Choose appropriate walltimes.** If your job must complete before maintenance, request a walltime that ensures completion before 8:00 AM on the second Tuesday.
 * **Do not contact the help desk** or open SNOW tickets to request access to the cluster or data during the maintenance downtime. Tickets opened during the maintenance window asking for access will not expedite the return to service.
 * **Pay attention to the MOTD** and mailing list announcements for upcoming downtimes and other cluster-related information.
 

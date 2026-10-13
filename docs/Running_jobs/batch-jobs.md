@@ -210,11 +210,11 @@ Unlike your personal laptop where you run commands interactively, HPC jobs are q
         #SBATCH --output=%x.%j.out # %x.%j expands to slurm JobName.JobID
         #SBATCH --error=%x.%j.err
         #SBATCH --partition=bigmem
-        #SBATCH --qos=bigmem
+        #SBATCH --qos=standard
         #SBATCH --account=$PI_ucid # Replace $PI_ucid which the NJIT UCID of PI
         #SBATCH --nodes=1
         #SBATCH --ntasks-per-node=1
-        #SBATCH --time=59:00  # D-HH:MM:SS, Maximum allowable Wall Time 8 hours
+        #SBATCH --time=59:00  # D-HH:MM:SS
         #SBATCH --mem-per-cpu=16000M
 
         ./myexe <input/output options>

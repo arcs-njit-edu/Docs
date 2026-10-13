@@ -28,36 +28,37 @@ The most common commands are:
 
 ## Use these commands to manage and monitor your jobs
 
-=== "seff"
+=== "reportseff"
 
-       - The `seff` command is a handy tool to assess how efficiently your job used the requested resources **after it has completed**. 
-       - Using `seff` can help you adjust your future job scripts to **request only as much memory/time as truly needed**, improving scheduler fairness and reducing wasted resources.
+       - The `reportseff` command is a handy tool to assess how efficiently your job used the requested resources **after it has completed**. 
+       - Using `reportseff` can help you adjust your future job scripts to **request only as much memory/time as truly needed**, improving scheduler fairness and reducing wasted resources.
 
+
+       Pass the ID of a finished job to `reportseff`:
 
        ```shell
-       $ seff
-       Usage: seff [Options] <Jobid>
-              Options:
-              -h    Help menu
-              -v    Version
-              -d    Debug mode: display raw Slurm data
+       $ reportseff
+       Usage: reportseff [Options] <Jobid>
        ```
+
        **Example output**
 
        ```shell
-       $ seff 575079
+       $ reportseff 575079
 
-       Job ID: 575079
-       Cluster: wulver
-       User/Group: ls565/ls565
-       State: COMPLETED (exit code 0)
-       Cores: 1
-       CPU Utilized: 00:00:19
-       CPU Efficiency: 67.86% of 00:00:28 core-walltime
-       Job Wall-clock time: 00:00:28
-       Memory Utilized: 4.21 MB
-       Memory Efficiency: 0.11% of 3.91 GB
+       JobID   State      Elapsed  TimeEff CPUEff MemEff
+       575079  COMPLETED  00:00:28    0.4%  67.9%   0.1%
        ```
+
+       Each efficiency column compares what the job actually used with what it requested:
+
+       | Column | How it is calculated | What it tells you |
+       |--------|----------------------|-------------------|
+       | `TimeEff` | Elapsed run time ÷ requested walltime (`--time`) | How much of the requested time the job needed. A low value means `--time` can be shortened, which often lets the job start sooner. |
+       | `CPUEff` | CPU time used ÷ (allocated cores × elapsed time) | How busy the allocated cores were. A low value means cores sat idle, so request fewer, or check that the code actually runs in parallel. |
+       | `MemEff` | Peak memory used ÷ requested memory | How much of the requested memory the job used. A low value means the memory request can be lowered. |
+
+       In the example above, the job finished in 28 seconds and used only 0.4% of its requested time and 0.1% of its requested memory, so both requests were far larger than needed. Its cores were busy 67.9% of the time.
 
 === "squeue"
 
