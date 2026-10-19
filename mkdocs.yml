@@ -129,6 +129,9 @@ extra:
     - icon: material/chart-areaspline
       link: https://hpc.njit.edu/Monitor/summary.html
       name: HPC job metrics
+    - icon: fontawesome/solid/sitemap
+      link: https://hpc.njit.edu/sitemap.xml
+      name: Sitemap
   org: Advanced Research Computing
   analytics:
     provider: google
