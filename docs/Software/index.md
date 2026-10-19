@@ -7,6 +7,11 @@ If you could not find software or libraries on HPC cluster, please submit a requ
 
     When installing software on Wulver, please do not use `sudo` under any circumstances. The use of `sudo` is restricted to system administrators and is not permitted in user environments for security and stability reasons. Users should install software in their own directories using tools like [conda](conda.md), pip, or by compiling from source in their home or project space. You may come across the use of `sudo` in some software installation instructions, but please note that these are intended for personal computers only. If you require assistance with installation of a package, please contact the [HPC support](mailto:hpc@njit.edu) team or build the package in an [apptainer](apptainer.md) container.
 
+!!! tip
+
+    If you cannot find the required software or libraries on the cluster, you are welcome to install open-source tools directly into your project directory for immediate use. If you encounter any technical hurdles during a local installation, please contact us for support. However, if you believe the software would benefit the broader community, please submit a formal request for a system-wide HPC Software Installation via the [Service Catalog](https://njit.service-now.com/sp?id=sc_category).
+
+  
 ## Modules
 We use Environment Modules to manage the user environment in HPC, which help users to easily load and unload software packages, switch between different versions of software, and manage complex software dependencies. [Lmod](https://lmod.readthedocs.io/en/latest) is an extension of the Environment Modules system, implemented in Lua. It enhances the functionality of traditional Environment Modules by introducing features such as hierarchical module naming, module caching, and improved flexibility in managing environment variables.
 
