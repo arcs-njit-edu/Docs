@@ -31,6 +31,7 @@ nav:
     - 'Facilities': 'facilities/facilities.md'
     - 'Services': 'Services/hpc-services.md'
     - Status (on-campus or VPN):
+        - 'Status/index.md'
         - 'Current Load': 'https://hpc.njit.edu/Monitor/load.html'
         - 'Resource Usage Summary': 'https://hpc.njit.edu/Monitor/summary.html'
         - 'Resource Usage (this year so far)': 'https://hpc.njit.edu/Monitor/cy2026.html'
