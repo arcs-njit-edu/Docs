@@ -1,6 +1,15 @@
 # Wulver Status and Usage
 
-These dashboards show the live state of Wulver and how it has been used over time. They are updated automatically and are only reachable from the NJIT campus network or over the [NJIT VPN](https://ist.njit.edu/vpn).
+These dashboards show the live state of Wulver and how it has been used over time. They are updated automatically.
+
+!!! warning "Network requirements: on-campus or VPN only"
+
+    The status dashboards can only be reached from the NJIT network. You must either:
+
+    * be connected to the NJIT campus network (wired or the campus Wi-Fi), or
+    * be connected to the [NJIT VPN](https://ist.njit.edu/vpn) if you are off campus.
+
+    If you open one of the links below from any other network, the page will not load. Depending on your browser, you may see an error such as **"This site can't be reached"**, **"ERR_CONNECTION_TIMED_OUT"**, or **"The connection has timed out"**. This does not mean the dashboards are down. Connect to the VPN and reload the page.
 
 ## [Current Load](https://hpc.njit.edu/Monitor/load.html)
 A near real-time view of the cluster. Use it to see how busy Wulver is before submitting jobs, or to check why a job is still pending.
