@@ -31,8 +31,6 @@ NJIT HPC provides practical training in high performance computing for students 
 
 </div>
 
-</div>
-
 <div class="grid cards" markdown>
 
 -   ### [Introduction to Wulver: Job Submission and Resource Requests](../index.md)
