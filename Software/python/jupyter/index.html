@@ -90,7 +90,7 @@
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
-    <label class="md-overlay" for="__drawer"></label>
+    <label class="md-overlay" for="__drawer" aria-hidden="true"></label>
     <div data-md-component="skip">
       
         
@@ -210,8 +210,7 @@
         <div class="md-search__suggest" data-md-component="search-suggest"></div>
       
     </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+    <div class="md-search__output"><div class="md-search__scrollwrap" tabindex="0" role="region" aria-label="Search results" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
             Initializing search
@@ -331,7 +330,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" aria-labelledby="__nav_2_label" >
+        
         
           
           <div class="md-nav__link md-nav__container">
@@ -354,17 +355,18 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-label="About Us" aria-expanded="false">
-          <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_2');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_2');if(t)t.checked=false;}">
-            <span class="md-nav__icon md-icon"></span>
-            About Us
-          </div>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
+        
+          <nav class="md-nav" data-md-level="1" aria-label="About Us">
+            <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_2');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_2');if(t)t.checked=false;}">
+              <span class="md-nav__icon md-icon"></span>
+              About Us
+            </div>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+              
+                
+                  
   
   
   
@@ -384,10 +386,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -407,10 +409,11 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
@@ -447,7 +450,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" aria-labelledby="__nav_3_label" >
+        
         
           
           <div class="md-nav__link md-nav__container">
@@ -470,17 +475,18 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-label="Clusters" aria-expanded="false">
-          <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_3');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_3');if(t)t.checked=false;}">
-            <span class="md-nav__icon md-icon"></span>
-            Clusters
-          </div>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
+        
+          <nav class="md-nav" data-md-level="1" aria-label="Clusters">
+            <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_3');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_3');if(t)t.checked=false;}">
+              <span class="md-nav__icon md-icon"></span>
+              Clusters
+            </div>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+              
+                
+                  
   
   
   
@@ -500,10 +506,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -523,7 +529,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
+          <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" aria-labelledby="__nav_3_3_label" >
+        
         
           
           <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
@@ -539,15 +547,16 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-label="Decommissioned" aria-expanded="false">
-          <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_3_3');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_3_3');if(t)t.checked=false;}">
-            <span class="md-nav__icon md-icon"></span>
-            Decommissioned
-          </div>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+        
+          <nav class="md-nav" data-md-level="2" aria-label="Decommissioned">
+            <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_3_3');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_3_3');if(t)t.checked=false;}">
+              <span class="md-nav__icon md-icon"></span>
+              Decommissioned
+            </div>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -567,10 +576,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -590,18 +599,19 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -621,10 +631,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -644,10 +654,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -667,10 +677,11 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
@@ -727,7 +738,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" aria-labelledby="__nav_5_label" >
+        
         
           
           <div class="md-nav__link md-nav__container">
@@ -750,17 +763,18 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-label="Policies" aria-expanded="false">
-          <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_5');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_5');if(t)t.checked=false;}">
-            <span class="md-nav__icon md-icon"></span>
-            Policies
-          </div>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
+        
+          <nav class="md-nav" data-md-level="1" aria-label="Policies">
+            <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_5');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_5');if(t)t.checked=false;}">
+              <span class="md-nav__icon md-icon"></span>
+              Policies
+            </div>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+              
+                
+                  
   
   
   
@@ -780,10 +794,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -803,10 +817,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -838,7 +852,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_4" >
+        
+          <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_4" aria-labelledby="__nav_5_4_label" >
+        
         
           
           <div class="md-nav__link md-nav__container">
@@ -861,17 +877,18 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-label="Allocation policy" aria-expanded="false">
-          <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_5_4');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_5_4');if(t)t.checked=false;}">
-            <span class="md-nav__icon md-icon"></span>
-            Allocation policy
-          </div>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
+        
+          <nav class="md-nav" data-md-level="2" aria-label="Allocation policy">
+            <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_5_4');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_5_4');if(t)t.checked=false;}">
+              <span class="md-nav__icon md-icon"></span>
+              Allocation policy
+            </div>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+              
+                
+                  
   
   
   
@@ -891,10 +908,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -914,10 +931,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -937,10 +954,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -960,10 +977,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -983,10 +1000,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1006,18 +1023,19 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1037,10 +1055,11 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
@@ -1119,7 +1138,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" aria-labelledby="__nav_8_label" >
+        
         
           
           <div class="md-nav__link md-nav__container">
@@ -1142,17 +1163,18 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-label="Status (on-campus or VPN)" aria-expanded="false">
-          <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_8');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_8');if(t)t.checked=false;}">
-            <span class="md-nav__icon md-icon"></span>
-            Status (on-campus or VPN)
-          </div>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
+        
+          <nav class="md-nav" data-md-level="1" aria-label="Status (on-campus or VPN)">
+            <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_8');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_8');if(t)t.checked=false;}">
+              <span class="md-nav__icon md-icon"></span>
+              Status (on-campus or VPN)
+            </div>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+              
+                
+                  
   
   
   
@@ -1172,10 +1194,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1195,10 +1217,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1218,10 +1240,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1241,10 +1263,11 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
@@ -1275,7 +1298,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" aria-labelledby="__nav_9_label" >
+        
         
           
           <div class="md-nav__link md-nav__container">
@@ -1298,17 +1323,18 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-label="HPC Events and Workshops" aria-expanded="false">
-          <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_9');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_9');if(t)t.checked=false;}">
-            <span class="md-nav__icon md-icon"></span>
-            HPC Events and Workshops
-          </div>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
+        
+          <nav class="md-nav" data-md-level="1" aria-label="HPC Events and Workshops">
+            <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_9');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_9');if(t)t.checked=false;}">
+              <span class="md-nav__icon md-icon"></span>
+              HPC Events and Workshops
+            </div>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+              
+                
+                  
   
   
   
@@ -1330,7 +1356,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_2" >
+        
+          <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_2" aria-labelledby="__nav_9_2_label" >
+        
         
           
           <div class="md-nav__link md-nav__container">
@@ -1353,17 +1381,18 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-label="Workshop and Training Videos" aria-expanded="false">
-          <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_9_2');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_9_2');if(t)t.checked=false;}">
-            <span class="md-nav__icon md-icon"></span>
-            Workshop and Training Videos
-          </div>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
+        
+          <nav class="md-nav" data-md-level="2" aria-label="Workshop and Training Videos">
+            <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_9_2');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_9_2');if(t)t.checked=false;}">
+              <span class="md-nav__icon md-icon"></span>
+              Workshop and Training Videos
+            </div>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+              
+                
+                  
   
   
   
@@ -1383,18 +1412,19 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1418,7 +1448,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_3" >
+        
+          <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_3" aria-labelledby="__nav_9_3_label" >
+        
         
           
           <div class="md-nav__link md-nav__container">
@@ -1441,17 +1473,18 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-label="Archived" aria-expanded="false">
-          <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_9_3');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_9_3');if(t)t.checked=false;}">
-            <span class="md-nav__icon md-icon"></span>
-            Archived
-          </div>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
+        
+          <nav class="md-nav" data-md-level="2" aria-label="Archived">
+            <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_9_3');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_9_3');if(t)t.checked=false;}">
+              <span class="md-nav__icon md-icon"></span>
+              Archived
+            </div>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+              
+                
+                  
   
   
   
@@ -1481,7 +1514,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_3_2" >
+        
+          <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_3_2" aria-labelledby="__nav_9_3_2_label" >
+        
         
           
           <label class="md-nav__link" for="__nav_9_3_2" id="__nav_9_3_2_label" tabindex="0">
@@ -1497,15 +1532,16 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-label="2024" aria-expanded="false">
-          <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_9_3_2');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_9_3_2');if(t)t.checked=false;}">
-            <span class="md-nav__icon md-icon"></span>
-            2024
-          </div>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+        
+          <nav class="md-nav" data-md-level="3" aria-label="2024">
+            <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_9_3_2');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_9_3_2');if(t)t.checked=false;}">
+              <span class="md-nav__icon md-icon"></span>
+              2024
+            </div>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -1525,10 +1561,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1548,10 +1584,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1571,10 +1607,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1594,10 +1630,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1617,10 +1653,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1640,10 +1676,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1663,18 +1699,19 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1700,7 +1737,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_3_3" >
+        
+          <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_3_3" aria-labelledby="__nav_9_3_3_label" >
+        
         
           
           <label class="md-nav__link" for="__nav_9_3_3" id="__nav_9_3_3_label" tabindex="0">
@@ -1716,15 +1755,16 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-label="2025" aria-expanded="false">
-          <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_9_3_3');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_9_3_3');if(t)t.checked=false;}">
-            <span class="md-nav__icon md-icon"></span>
-            2025
-          </div>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+        
+          <nav class="md-nav" data-md-level="3" aria-label="2025">
+            <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_9_3_3');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_9_3_3');if(t)t.checked=false;}">
+              <span class="md-nav__icon md-icon"></span>
+              2025
+            </div>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -1744,10 +1784,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1767,10 +1807,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1790,10 +1830,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1813,10 +1853,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1836,26 +1876,29 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
@@ -1904,7 +1947,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" aria-labelledby="__nav_10_label" >
+        
         
           
           <div class="md-nav__link md-nav__container">
@@ -1927,17 +1972,18 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-label="Running Jobs" aria-expanded="false">
-          <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_10');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_10');if(t)t.checked=false;}">
-            <span class="md-nav__icon md-icon"></span>
-            Running Jobs
-          </div>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
+        
+          <nav class="md-nav" data-md-level="1" aria-label="Running Jobs">
+            <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_10');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_10');if(t)t.checked=false;}">
+              <span class="md-nav__icon md-icon"></span>
+              Running Jobs
+            </div>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+              
+                
+                  
   
   
   
@@ -1957,10 +2003,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1980,10 +2026,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2003,10 +2049,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2026,10 +2072,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2049,10 +2095,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2072,10 +2118,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2095,10 +2141,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2118,10 +2164,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2141,10 +2187,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2164,10 +2210,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2187,10 +2233,11 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
@@ -2239,7 +2286,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" checked>
+        
+          <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" aria-labelledby="__nav_11_label" checked>
+        
         
           
           <div class="md-nav__link md-nav__container">
@@ -2262,17 +2311,18 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-label="Software" aria-expanded="true">
-          <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_11');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_11');if(t)t.checked=false;}">
-            <span class="md-nav__icon md-icon"></span>
-            Software
-          </div>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
+        
+          <nav class="md-nav" data-md-level="1" aria-label="Software">
+            <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_11');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_11');if(t)t.checked=false;}">
+              <span class="md-nav__icon md-icon"></span>
+              Software
+            </div>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+              
+                
+                  
   
   
   
@@ -2296,7 +2346,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_2" >
+        
+          <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_2" aria-labelledby="__nav_11_2_label" >
+        
         
           
           <label class="md-nav__link" for="__nav_11_2" id="__nav_11_2_label" tabindex="0">
@@ -2312,15 +2364,16 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-label="CFD" aria-expanded="false">
-          <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_11_2');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_11_2');if(t)t.checked=false;}">
-            <span class="md-nav__icon md-icon"></span>
-            CFD
-          </div>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+        
+          <nav class="md-nav" data-md-level="2" aria-label="CFD">
+            <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_11_2');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_11_2');if(t)t.checked=false;}">
+              <span class="md-nav__icon md-icon"></span>
+              CFD
+            </div>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -2340,10 +2393,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2363,10 +2416,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2386,10 +2439,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2409,18 +2462,19 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2438,7 +2492,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_3" >
+        
+          <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_3" aria-labelledby="__nav_11_3_label" >
+        
         
           
           <label class="md-nav__link" for="__nav_11_3" id="__nav_11_3_label" tabindex="0">
@@ -2454,15 +2510,16 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-label="IDE" aria-expanded="false">
-          <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_11_3');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_11_3');if(t)t.checked=false;}">
-            <span class="md-nav__icon md-icon"></span>
-            IDE
-          </div>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+        
+          <nav class="md-nav" data-md-level="2" aria-label="IDE">
+            <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_11_3');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_11_3');if(t)t.checked=false;}">
+              <span class="md-nav__icon md-icon"></span>
+              IDE
+            </div>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -2482,18 +2539,19 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2515,7 +2573,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_4" >
+        
+          <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_4" aria-labelledby="__nav_11_4_label" >
+        
         
           
           <div class="md-nav__link md-nav__container">
@@ -2538,17 +2598,18 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-label="MATLAB" aria-expanded="false">
-          <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_11_4');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_11_4');if(t)t.checked=false;}">
-            <span class="md-nav__icon md-icon"></span>
-            MATLAB
-          </div>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
+        
+          <nav class="md-nav" data-md-level="2" aria-label="MATLAB">
+            <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_11_4');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_11_4');if(t)t.checked=false;}">
+              <span class="md-nav__icon md-icon"></span>
+              MATLAB
+            </div>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+              
+                
+                  
   
   
   
@@ -2568,18 +2629,19 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2601,7 +2663,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_5" >
+        
+          <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_5" aria-labelledby="__nav_11_5_label" >
+        
         
           
           <label class="md-nav__link" for="__nav_11_5" id="__nav_11_5_label" tabindex="0">
@@ -2617,15 +2681,16 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-label="Molecular Dynamics" aria-expanded="false">
-          <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_11_5');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_11_5');if(t)t.checked=false;}">
-            <span class="md-nav__icon md-icon"></span>
-            Molecular Dynamics
-          </div>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+        
+          <nav class="md-nav" data-md-level="2" aria-label="Molecular Dynamics">
+            <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_11_5');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_11_5');if(t)t.checked=false;}">
+              <span class="md-nav__icon md-icon"></span>
+              Molecular Dynamics
+            </div>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -2645,10 +2710,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2668,10 +2733,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2691,18 +2756,19 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2730,7 +2796,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_6" >
+        
+          <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_6" aria-labelledby="__nav_11_6_label" >
+        
         
           
           <label class="md-nav__link" for="__nav_11_6" id="__nav_11_6_label" tabindex="0">
@@ -2746,15 +2814,16 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-label="Chemistry" aria-expanded="false">
-          <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_11_6');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_11_6');if(t)t.checked=false;}">
-            <span class="md-nav__icon md-icon"></span>
-            Chemistry
-          </div>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+        
+          <nav class="md-nav" data-md-level="2" aria-label="Chemistry">
+            <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_11_6');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_11_6');if(t)t.checked=false;}">
+              <span class="md-nav__icon md-icon"></span>
+              Chemistry
+            </div>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -2774,10 +2843,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2797,10 +2866,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2820,10 +2889,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2843,10 +2912,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2866,10 +2935,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2889,18 +2958,19 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2918,7 +2988,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_7" >
+        
+          <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_7" aria-labelledby="__nav_11_7_label" >
+        
         
           
           <label class="md-nav__link" for="__nav_11_7" id="__nav_11_7_label" tabindex="0">
@@ -2934,15 +3006,16 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-label="Programming" aria-expanded="false">
-          <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_11_7');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_11_7');if(t)t.checked=false;}">
-            <span class="md-nav__icon md-icon"></span>
-            Programming
-          </div>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+        
+          <nav class="md-nav" data-md-level="2" aria-label="Programming">
+            <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_11_7');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_11_7');if(t)t.checked=false;}">
+              <span class="md-nav__icon md-icon"></span>
+              Programming
+            </div>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -2962,18 +3035,19 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
     
@@ -2999,7 +3073,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_8" checked>
+        
+          <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_8" aria-labelledby="__nav_11_8_label" checked>
+        
         
           
           <div class="md-nav__link md-nav__container">
@@ -3022,17 +3098,18 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-label="Python" aria-expanded="true">
-          <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_11_8');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_11_8');if(t)t.checked=false;}">
-            <span class="md-nav__icon md-icon"></span>
-            Python
-          </div>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
+        
+          <nav class="md-nav" data-md-level="2" aria-label="Python">
+            <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_11_8');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_11_8');if(t)t.checked=false;}">
+              <span class="md-nav__icon md-icon"></span>
+              Python
+            </div>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+              
+                
+                  
   
   
   
@@ -3052,10 +3129,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
     
@@ -3151,18 +3228,19 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -3182,7 +3260,7 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_9" >
+        
         
           
           <div class="md-nav__link md-nav__container">
@@ -3200,25 +3278,15 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-label="Slurm" aria-expanded="false">
-          <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_11_9');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_11_9');if(t)t.checked=false;}">
-            <span class="md-nav__icon md-icon"></span>
-            Slurm
-          </div>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
-          </ul>
-        </nav>
+        
       
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -3240,7 +3308,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_10" >
+        
+          <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_10" aria-labelledby="__nav_11_10_label" >
+        
         
           
           <label class="md-nav__link" for="__nav_11_10" id="__nav_11_10_label" tabindex="0">
@@ -3256,15 +3326,16 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-label="Utilities" aria-expanded="false">
-          <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_11_10');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_11_10');if(t)t.checked=false;}">
-            <span class="md-nav__icon md-icon"></span>
-            Utilities
-          </div>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+        
+          <nav class="md-nav" data-md-level="2" aria-label="Utilities">
+            <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_11_10');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_11_10');if(t)t.checked=false;}">
+              <span class="md-nav__icon md-icon"></span>
+              Utilities
+            </div>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -3284,10 +3355,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -3307,10 +3378,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -3330,18 +3401,19 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -3365,7 +3437,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_11" >
+        
+          <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_11" aria-labelledby="__nav_11_11_label" >
+        
         
           
           <label class="md-nav__link" for="__nav_11_11" id="__nav_11_11_label" tabindex="0">
@@ -3381,15 +3455,16 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-label="Visualization" aria-expanded="false">
-          <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_11_11');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_11_11');if(t)t.checked=false;}">
-            <span class="md-nav__icon md-icon"></span>
-            Visualization
-          </div>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+        
+          <nav class="md-nav" data-md-level="2" aria-label="Visualization">
+            <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_11_11');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_11_11');if(t)t.checked=false;}">
+              <span class="md-nav__icon md-icon"></span>
+              Visualization
+            </div>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -3409,10 +3484,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -3432,10 +3507,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -3455,10 +3530,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -3478,18 +3553,20 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
@@ -3522,7 +3599,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" >
+        
+          <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" aria-labelledby="__nav_12_label" >
+        
         
           
           <div class="md-nav__link md-nav__container">
@@ -3545,17 +3624,18 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-label="MIG (Multi-Instance GPU)" aria-expanded="false">
-          <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_12');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_12');if(t)t.checked=false;}">
-            <span class="md-nav__icon md-icon"></span>
-            MIG (Multi-Instance GPU)
-          </div>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
+        
+          <nav class="md-nav" data-md-level="1" aria-label="MIG (Multi-Instance GPU)">
+            <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_12');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_12');if(t)t.checked=false;}">
+              <span class="md-nav__icon md-icon"></span>
+              MIG (Multi-Instance GPU)
+            </div>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+              
+                
+                  
   
   
   
@@ -3575,10 +3655,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -3598,10 +3678,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -3621,10 +3701,11 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
@@ -3669,7 +3750,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_13" >
+        
+          <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_13" aria-labelledby="__nav_13_label" >
+        
         
           
           <div class="md-nav__link md-nav__container">
@@ -3692,17 +3775,18 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-label="OnDemand" aria-expanded="false">
-          <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_13');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_13');if(t)t.checked=false;}">
-            <span class="md-nav__icon md-icon"></span>
-            OnDemand
-          </div>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
+        
+          <nav class="md-nav" data-md-level="1" aria-label="OnDemand">
+            <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_13');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_13');if(t)t.checked=false;}">
+              <span class="md-nav__icon md-icon"></span>
+              OnDemand
+            </div>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+              
+                
+                  
   
   
   
@@ -3722,10 +3806,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -3745,10 +3829,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -3768,10 +3852,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -3795,7 +3879,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_13_5" >
+        
+          <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_13_5" aria-labelledby="__nav_13_5_label" >
+        
         
           
           <div class="md-nav__link md-nav__container">
@@ -3818,17 +3904,18 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-label="Jobs" aria-expanded="false">
-          <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_13_5');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_13_5');if(t)t.checked=false;}">
-            <span class="md-nav__icon md-icon"></span>
-            Jobs
-          </div>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
+        
+          <nav class="md-nav" data-md-level="2" aria-label="Jobs">
+            <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_13_5');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_13_5');if(t)t.checked=false;}">
+              <span class="md-nav__icon md-icon"></span>
+              Jobs
+            </div>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+              
+                
+                  
   
   
   
@@ -3848,10 +3935,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -3871,18 +3958,19 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -3902,10 +3990,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -3931,7 +4019,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_13_7" >
+        
+          <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_13_7" aria-labelledby="__nav_13_7_label" >
+        
         
           
           <div class="md-nav__link md-nav__container">
@@ -3954,17 +4044,18 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-label="Interactive Apps" aria-expanded="false">
-          <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_13_7');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_13_7');if(t)t.checked=false;}">
-            <span class="md-nav__icon md-icon"></span>
-            Interactive Apps
-          </div>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
+        
+          <nav class="md-nav" data-md-level="2" aria-label="Interactive Apps">
+            <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_13_7');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_13_7');if(t)t.checked=false;}">
+              <span class="md-nav__icon md-icon"></span>
+              Interactive Apps
+            </div>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+              
+                
+                  
   
   
   
@@ -3984,10 +4075,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -4007,10 +4098,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -4030,18 +4121,19 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -4061,10 +4153,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -4084,10 +4176,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -4107,10 +4199,11 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
@@ -4141,7 +4234,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_14" >
+        
+          <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_14" aria-labelledby="__nav_14_label" >
+        
         
           
           <div class="md-nav__link md-nav__container">
@@ -4164,17 +4259,18 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-label="HPC for Courses" aria-expanded="false">
-          <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_14');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_14');if(t)t.checked=false;}">
-            <span class="md-nav__icon md-icon"></span>
-            HPC for Courses
-          </div>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
+        
+          <nav class="md-nav" data-md-level="1" aria-label="HPC for Courses">
+            <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_14');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_14');if(t)t.checked=false;}">
+              <span class="md-nav__icon md-icon"></span>
+              HPC for Courses
+            </div>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+              
+                
+                  
   
   
   
@@ -4194,10 +4290,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -4217,10 +4313,11 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
@@ -4422,9 +4519,9 @@
   
 
 
-<h1 id="jupyter-notebook">Jupyter Notebook<a class="headerlink" aria-label="Permanent link to Jupyter Notebook" href="#jupyter-notebook" title="Permanent link">&para;</a></h1>
+<h1 id="jupyter-notebook">Jupyter Notebook<a class="headerlink" href="#jupyter-notebook" title="Permanent link"><span aria-hidden="true">&para;</span><span class="md-sr-only">Permanent link to Jupyter Notebook</span></a></h1>
 <p>The Jupyter Notebook is a web-based interactive computing platform. The notebook combines live code, equations, narrative text, and visualizations. In our cluster, we have JupyterLab which is the next-generation user interface for Project Jupyter offering all the familiar building blocks of the classic Jupyter Notebook (notebook, terminal, text editor, file browser, rich outputs, etc.) in a flexible and powerful user interface. </p>
-<h2 id="using-jupyter-notebook-on-wulver">Using Jupyter Notebook on Wulver<a class="headerlink" aria-label="Permanent link to Using Jupyter Notebook on Wulver" href="#using-jupyter-notebook-on-wulver" title="Permanent link">&para;</a></h2>
+<h2 id="using-jupyter-notebook-on-wulver">Using Jupyter Notebook on Wulver<a class="headerlink" href="#using-jupyter-notebook-on-wulver" title="Permanent link"><span aria-hidden="true">&para;</span><span class="md-sr-only">Permanent link to Using Jupyter Notebook on Wulver</span></a></h2>
 <div class="admonition warning">
 <p class="admonition-title">Jupyter Notebook via slurm on Wulver is deprecated </p>
 <p>Since two-factor authentication has been implemented on Wulver, the use of Jupyter Notebook via SLURM scripts has been discontinued and is no longer supported. Users should use <a href="https://ondemand.njit.edu">OnDemand</a> to use <a href="../../../OnDemand/Interactive_Apps/Notebook/">Jupyter Notebook on Wulver</a>. First, users need to install Jupyter Notebook in their Conda environment. Once the <a href="../conda/#activate-and-deactivate-conda-environment">Conda Environment</a> is activated, users can install Jupyter Notebook using the command <code>conda install -c conda-forge jupyter notebook</code>. Then, you need to specify the environment in OnDemand to start the Jupyter Notebook session. Check <a href="../../../OnDemand/Interactive_Apps/Notebook/">here</a> for details.</p>
@@ -4436,104 +4533,104 @@ Users can install Jupyter Notebook on the Conda Environment. Once the [Conda Env
 
     === "Wulver"
 
-        <div class="language-slurm highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
-<span class="normal"><a href="#__codelineno-0-2"> 2</a></span>
-<span class="normal"><a href="#__codelineno-0-3"> 3</a></span>
-<span class="normal"><a href="#__codelineno-0-4"> 4</a></span>
-<span class="normal"><a href="#__codelineno-0-5"> 5</a></span>
-<span class="normal"><a href="#__codelineno-0-6"> 6</a></span>
-<span class="normal"><a href="#__codelineno-0-7"> 7</a></span>
-<span class="normal"><a href="#__codelineno-0-8"> 8</a></span>
-<span class="normal"><a href="#__codelineno-0-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-0-10">10</a></span>
-<span class="normal"><a href="#__codelineno-0-11">11</a></span>
-<span class="normal"><a href="#__codelineno-0-12">12</a></span>
-<span class="normal"><a href="#__codelineno-0-13">13</a></span>
-<span class="normal"><a href="#__codelineno-0-14">14</a></span>
-<span class="normal"><a href="#__codelineno-0-15">15</a></span>
-<span class="normal"><a href="#__codelineno-0-16">16</a></span>
-<span class="normal"><a href="#__codelineno-0-17">17</a></span>
-<span class="normal"><a href="#__codelineno-0-18">18</a></span>
-<span class="normal"><a href="#__codelineno-0-19">19</a></span>
-<span class="normal"><a href="#__codelineno-0-20">20</a></span>
-<span class="normal"><a href="#__codelineno-0-21">21</a></span>
-<span class="normal"><a href="#__codelineno-0-22">22</a></span>
-<span class="normal"><a href="#__codelineno-0-23">23</a></span>
-<span class="normal"><a href="#__codelineno-0-24">24</a></span>
-<span class="normal"><a href="#__codelineno-0-25">25</a></span>
-<span class="normal"><a href="#__codelineno-0-26">26</a></span>
-<span class="normal"><a href="#__codelineno-0-27">27</a></span>
-<span class="normal"><a href="#__codelineno-0-28">28</a></span>
-<span class="normal"><a href="#__codelineno-0-29">29</a></span>
-<span class="normal"><a href="#__codelineno-0-30">30</a></span>
-<span class="normal"><a href="#__codelineno-0-31">31</a></span>
-<span class="normal"><a href="#__codelineno-0-32">32</a></span>
-<span class="normal"><a href="#__codelineno-0-33">33</a></span>
-<span class="normal"><a href="#__codelineno-0-34">34</a></span>
-<span class="normal"><a href="#__codelineno-0-35">35</a></span>
-<span class="normal"><a href="#__codelineno-0-36">36</a></span>
-<span class="normal"><a href="#__codelineno-0-37">37</a></span>
-<span class="normal"><a href="#__codelineno-0-38">38</a></span>
-<span class="normal"><a href="#__codelineno-0-39">39</a></span>
-<span class="normal"><a href="#__codelineno-0-40">40</a></span>
-<span class="normal"><a href="#__codelineno-0-41">41</a></span>
-<span class="normal"><a href="#__codelineno-0-42">42</a></span>
-<span class="normal"><a href="#__codelineno-0-43">43</a></span>
-<span class="normal"><a href="#__codelineno-0-44">44</a></span>
-<span class="normal"><a href="#__codelineno-0-45">45</a></span>
-<span class="normal"><a href="#__codelineno-0-46">46</a></span>
-<span class="normal"><a href="#__codelineno-0-47">47</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="ch">#!/bin/bash -l                                                                                                                                                                                                                          </span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="kp">#SBATCH --job-name=jupyter_test                                                                         </span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="kp">#SBATCH --output=%x.%j.out                                                                                    </span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="kp">#SBATCH --tasks-per-node=1</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="kp">#SBATCH --partition=gpu</span>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="kp">#SBATCH --gres=gpu:1</span>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="kp">#SBATCH --mem=4G</span>
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="kp">#SBATCH --account=PI_ucid # Replace PI_ucid which the NJIT UCID of PI</span>
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9"></a><span class="kp">#SBATCH --qos=standard</span>
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10"></a><span class="kp">#SBATCH --time=71:59:59 # D-HH:MM:SS</span>
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11"></a>
-</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12"></a><span class="c1">######################################                                                                                                                                                                                               </span>
-</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13"></a>module<span class="w"> </span>purge<span class="w"> </span>&gt;<span class="w"> </span>/dev/null<span class="w"> </span><span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span>
-</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14"></a>module<span class="w"> </span>restore
-</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15"></a>module<span class="w"> </span>load<span class="w"> </span>Miniforge3
-</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16"></a><span class="nb">source</span><span class="w"> </span>conda.sh<span class="w"> </span>
-</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17"></a>conda<span class="w"> </span>activate<span class="w"> </span>ENV<span class="w"> </span><span class="c1"># Replace the name of the environment with the environment you are using. For example, if your environment is torch-cuda then use cond to activate torch-cuda</span>
-</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18"></a>
-</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19"></a><span class="nv">port</span><span class="o">=</span><span class="k">$(</span>shuf<span class="w"> </span>-i<span class="w"> </span><span class="m">6000</span>-9999<span class="w"> </span>-n<span class="w"> </span><span class="m">1</span><span class="k">)</span>
-</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20"></a>/usr/bin/ssh<span class="w"> </span>-N<span class="w"> </span>-f<span class="w"> </span>-R<span class="w"> </span><span class="nv">$port</span>:localhost:<span class="nv">$port</span><span class="w"> </span>login01.tartan.njit.edu
-</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21"></a>
-</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22"></a>cat<span class="s">&lt;&lt;EOF</span>
-</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23"></a>
-</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24"></a><span class="s">Jupyter server is running on: $(hostname)</span>
-</span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25"></a><span class="s">Job starts at: $(date)</span>
-</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26"></a><span class="s">Step 1: Create SSH tunnel</span>
-</span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27"></a>
-</span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28"></a><span class="s">Open new terminal window, and run:</span>
-</span><span id="__span-0-29"><a id="__codelineno-0-29" name="__codelineno-0-29"></a><span class="s">(If you are off campus you will need VPN running)</span>
-</span><span id="__span-0-30"><a id="__codelineno-0-30" name="__codelineno-0-30"></a>
-</span><span id="__span-0-31"><a id="__codelineno-0-31" name="__codelineno-0-31"></a><span class="s">ssh -L $port:localhost:$port $USER@login01.tartan.njit.edu</span>
-</span><span id="__span-0-32"><a id="__codelineno-0-32" name="__codelineno-0-32"></a>
-</span><span id="__span-0-33"><a id="__codelineno-0-33" name="__codelineno-0-33"></a><span class="s">Step 2: Connect to Jupyter</span>
-</span><span id="__span-0-34"><a id="__codelineno-0-34" name="__codelineno-0-34"></a>
-</span><span id="__span-0-35"><a id="__codelineno-0-35" name="__codelineno-0-35"></a><span class="s">Keep the terminal in the previouse step open. Now open browser, find the line with</span>
-</span><span id="__span-0-36"><a id="__codelineno-0-36" name="__codelineno-0-36"></a>
-</span><span id="__span-0-37"><a id="__codelineno-0-37" name="__codelineno-0-37"></a><span class="s">Or copy and paste one of these URLs:</span>
-</span><span id="__span-0-38"><a id="__codelineno-0-38" name="__codelineno-0-38"></a>
-</span><span id="__span-0-39"><a id="__codelineno-0-39" name="__codelineno-0-39"></a><span class="s">the URL will be something like:</span>
-</span><span id="__span-0-40"><a id="__codelineno-0-40" name="__codelineno-0-40"></a>
-</span><span id="__span-0-41"><a id="__codelineno-0-41" name="__codelineno-0-41"></a><span class="s">http://localhost:${port}/?token=XXXXXXXX</span>
-</span><span id="__span-0-42"><a id="__codelineno-0-42" name="__codelineno-0-42"></a>
-</span><span id="__span-0-43"><a id="__codelineno-0-43" name="__codelineno-0-43"></a><span class="s">you should be able to connect to Jupyter Notebook running remotely on a Wulver compute node with the above url</span>
-</span><span id="__span-0-44"><a id="__codelineno-0-44" name="__codelineno-0-44"></a>
-</span><span id="__span-0-45"><a id="__codelineno-0-45" name="__codelineno-0-45"></a><span class="s">EOF</span>
-</span><span id="__span-0-46"><a id="__codelineno-0-46" name="__codelineno-0-46"></a>
-</span><span id="__span-0-47"><a id="__codelineno-0-47" name="__codelineno-0-47"></a>jupyter<span class="w"> </span>notebook<span class="w"> </span>--no-browser<span class="w"> </span>--port<span class="w"> </span><span class="nv">$port</span><span class="w"> </span>--notebook-dir<span class="o">=</span><span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span>
+        <div class="language-slurm highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span>
+<span class="normal">42</span>
+<span class="normal">43</span>
+<span class="normal">44</span>
+<span class="normal">45</span>
+<span class="normal">46</span>
+<span class="normal">47</span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><span class="ch">#!/bin/bash -l                                                                                                                                                                                                                          </span>
+</span><span id="__span-0-2"><span class="kp">#SBATCH --job-name=jupyter_test                                                                         </span>
+</span><span id="__span-0-3"><span class="kp">#SBATCH --output=%x.%j.out                                                                                    </span>
+</span><span id="__span-0-4"><span class="kp">#SBATCH --tasks-per-node=1</span>
+</span><span id="__span-0-5"><span class="kp">#SBATCH --partition=gpu</span>
+</span><span id="__span-0-6"><span class="kp">#SBATCH --gres=gpu:1</span>
+</span><span id="__span-0-7"><span class="kp">#SBATCH --mem=4G</span>
+</span><span id="__span-0-8"><span class="kp">#SBATCH --account=PI_ucid # Replace PI_ucid which the NJIT UCID of PI</span>
+</span><span id="__span-0-9"><span class="kp">#SBATCH --qos=standard</span>
+</span><span id="__span-0-10"><span class="kp">#SBATCH --time=71:59:59 # D-HH:MM:SS</span>
+</span><span id="__span-0-11">
+</span><span id="__span-0-12"><span class="c1">######################################                                                                                                                                                                                               </span>
+</span><span id="__span-0-13">module<span class="w"> </span>purge<span class="w"> </span>&gt;<span class="w"> </span>/dev/null<span class="w"> </span><span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span>
+</span><span id="__span-0-14">module<span class="w"> </span>restore
+</span><span id="__span-0-15">module<span class="w"> </span>load<span class="w"> </span>Miniforge3
+</span><span id="__span-0-16"><span class="nb">source</span><span class="w"> </span>conda.sh<span class="w"> </span>
+</span><span id="__span-0-17">conda<span class="w"> </span>activate<span class="w"> </span>ENV<span class="w"> </span><span class="c1"># Replace the name of the environment with the environment you are using. For example, if your environment is torch-cuda then use cond to activate torch-cuda</span>
+</span><span id="__span-0-18">
+</span><span id="__span-0-19"><span class="nv">port</span><span class="o">=</span><span class="k">$(</span>shuf<span class="w"> </span>-i<span class="w"> </span><span class="m">6000</span>-9999<span class="w"> </span>-n<span class="w"> </span><span class="m">1</span><span class="k">)</span>
+</span><span id="__span-0-20">/usr/bin/ssh<span class="w"> </span>-N<span class="w"> </span>-f<span class="w"> </span>-R<span class="w"> </span><span class="nv">$port</span>:localhost:<span class="nv">$port</span><span class="w"> </span>login01.tartan.njit.edu
+</span><span id="__span-0-21">
+</span><span id="__span-0-22">cat<span class="s">&lt;&lt;EOF</span>
+</span><span id="__span-0-23">
+</span><span id="__span-0-24"><span class="s">Jupyter server is running on: $(hostname)</span>
+</span><span id="__span-0-25"><span class="s">Job starts at: $(date)</span>
+</span><span id="__span-0-26"><span class="s">Step 1: Create SSH tunnel</span>
+</span><span id="__span-0-27">
+</span><span id="__span-0-28"><span class="s">Open new terminal window, and run:</span>
+</span><span id="__span-0-29"><span class="s">(If you are off campus you will need VPN running)</span>
+</span><span id="__span-0-30">
+</span><span id="__span-0-31"><span class="s">ssh -L $port:localhost:$port $USER@login01.tartan.njit.edu</span>
+</span><span id="__span-0-32">
+</span><span id="__span-0-33"><span class="s">Step 2: Connect to Jupyter</span>
+</span><span id="__span-0-34">
+</span><span id="__span-0-35"><span class="s">Keep the terminal in the previouse step open. Now open browser, find the line with</span>
+</span><span id="__span-0-36">
+</span><span id="__span-0-37"><span class="s">Or copy and paste one of these URLs:</span>
+</span><span id="__span-0-38">
+</span><span id="__span-0-39"><span class="s">the URL will be something like:</span>
+</span><span id="__span-0-40">
+</span><span id="__span-0-41"><span class="s">http://localhost:${port}/?token=XXXXXXXX</span>
+</span><span id="__span-0-42">
+</span><span id="__span-0-43"><span class="s">you should be able to connect to Jupyter Notebook running remotely on a Wulver compute node with the above url</span>
+</span><span id="__span-0-44">
+</span><span id="__span-0-45"><span class="s">EOF</span>
+</span><span id="__span-0-46">
+</span><span id="__span-0-47">jupyter<span class="w"> </span>notebook<span class="w"> </span>--no-browser<span class="w"> </span>--port<span class="w"> </span><span class="nv">$port</span><span class="w"> </span>--notebook-dir<span class="o">=</span><span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span>
 </span></code></pre></div></td></tr></table></div>
 Once you submit this job script, you will see an output file indicating the port number that you need to use to connect to Wulver in a new terminal window. Please follow further instructions from the output file.
 -->
 
-<h2 id="user-contributed-information">User Contributed Information<a class="headerlink" aria-label="Permanent link to User Contributed Information" href="#user-contributed-information" title="Permanent link">&para;</a></h2>
+<h2 id="user-contributed-information">User Contributed Information<a class="headerlink" href="#user-contributed-information" title="Permanent link"><span aria-hidden="true">&para;</span><span class="md-sr-only">Permanent link to User Contributed Information</span></a></h2>
 <div class="admonition info">
 <p class="admonition-title">Please help us improve this page</p>
 <p>Users are invited to contribute helpful information and corrections through our <a href="https://github.com/arcs-njit-edu/Docs/issues">Github repository</a>.</p>
@@ -4783,6 +4880,8 @@ Once you submit this job script, you will see an output file indicating the port
       <script src="../../../assets/javascripts/bundle.a5f9d56c.min.js"></script>
       
         <script src="../../../assets/_markdown_exec_pyodide.js"></script>
+      
+        <script src="../../../javascripts/a11y.js"></script>
       
     
 <script>

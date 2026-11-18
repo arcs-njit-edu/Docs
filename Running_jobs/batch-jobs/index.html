@@ -90,7 +90,7 @@
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
-    <label class="md-overlay" for="__drawer"></label>
+    <label class="md-overlay" for="__drawer" aria-hidden="true"></label>
     <div data-md-component="skip">
       
         
@@ -210,8 +210,7 @@
         <div class="md-search__suggest" data-md-component="search-suggest"></div>
       
     </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+    <div class="md-search__output"><div class="md-search__scrollwrap" tabindex="0" role="region" aria-label="Search results" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
             Initializing search
@@ -331,7 +330,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" aria-labelledby="__nav_2_label" >
+        
         
           
           <div class="md-nav__link md-nav__container">
@@ -354,17 +355,18 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-label="About Us" aria-expanded="false">
-          <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_2');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_2');if(t)t.checked=false;}">
-            <span class="md-nav__icon md-icon"></span>
-            About Us
-          </div>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
+        
+          <nav class="md-nav" data-md-level="1" aria-label="About Us">
+            <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_2');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_2');if(t)t.checked=false;}">
+              <span class="md-nav__icon md-icon"></span>
+              About Us
+            </div>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+              
+                
+                  
   
   
   
@@ -384,10 +386,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -407,10 +409,11 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
@@ -447,7 +450,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" aria-labelledby="__nav_3_label" >
+        
         
           
           <div class="md-nav__link md-nav__container">
@@ -470,17 +475,18 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-label="Clusters" aria-expanded="false">
-          <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_3');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_3');if(t)t.checked=false;}">
-            <span class="md-nav__icon md-icon"></span>
-            Clusters
-          </div>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
+        
+          <nav class="md-nav" data-md-level="1" aria-label="Clusters">
+            <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_3');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_3');if(t)t.checked=false;}">
+              <span class="md-nav__icon md-icon"></span>
+              Clusters
+            </div>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+              
+                
+                  
   
   
   
@@ -500,10 +506,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -523,7 +529,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
+          <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" aria-labelledby="__nav_3_3_label" >
+        
         
           
           <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
@@ -539,15 +547,16 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-label="Decommissioned" aria-expanded="false">
-          <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_3_3');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_3_3');if(t)t.checked=false;}">
-            <span class="md-nav__icon md-icon"></span>
-            Decommissioned
-          </div>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+        
+          <nav class="md-nav" data-md-level="2" aria-label="Decommissioned">
+            <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_3_3');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_3_3');if(t)t.checked=false;}">
+              <span class="md-nav__icon md-icon"></span>
+              Decommissioned
+            </div>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -567,10 +576,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -590,18 +599,19 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -621,10 +631,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -644,10 +654,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -667,10 +677,11 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
@@ -727,7 +738,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" aria-labelledby="__nav_5_label" >
+        
         
           
           <div class="md-nav__link md-nav__container">
@@ -750,17 +763,18 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-label="Policies" aria-expanded="false">
-          <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_5');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_5');if(t)t.checked=false;}">
-            <span class="md-nav__icon md-icon"></span>
-            Policies
-          </div>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
+        
+          <nav class="md-nav" data-md-level="1" aria-label="Policies">
+            <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_5');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_5');if(t)t.checked=false;}">
+              <span class="md-nav__icon md-icon"></span>
+              Policies
+            </div>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+              
+                
+                  
   
   
   
@@ -780,10 +794,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -803,10 +817,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -838,7 +852,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_4" >
+        
+          <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_4" aria-labelledby="__nav_5_4_label" >
+        
         
           
           <div class="md-nav__link md-nav__container">
@@ -861,17 +877,18 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-label="Allocation policy" aria-expanded="false">
-          <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_5_4');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_5_4');if(t)t.checked=false;}">
-            <span class="md-nav__icon md-icon"></span>
-            Allocation policy
-          </div>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
+        
+          <nav class="md-nav" data-md-level="2" aria-label="Allocation policy">
+            <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_5_4');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_5_4');if(t)t.checked=false;}">
+              <span class="md-nav__icon md-icon"></span>
+              Allocation policy
+            </div>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+              
+                
+                  
   
   
   
@@ -891,10 +908,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -914,10 +931,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -937,10 +954,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -960,10 +977,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -983,10 +1000,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1006,18 +1023,19 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1037,10 +1055,11 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
@@ -1119,7 +1138,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" aria-labelledby="__nav_8_label" >
+        
         
           
           <div class="md-nav__link md-nav__container">
@@ -1142,17 +1163,18 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-label="Status (on-campus or VPN)" aria-expanded="false">
-          <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_8');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_8');if(t)t.checked=false;}">
-            <span class="md-nav__icon md-icon"></span>
-            Status (on-campus or VPN)
-          </div>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
+        
+          <nav class="md-nav" data-md-level="1" aria-label="Status (on-campus or VPN)">
+            <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_8');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_8');if(t)t.checked=false;}">
+              <span class="md-nav__icon md-icon"></span>
+              Status (on-campus or VPN)
+            </div>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+              
+                
+                  
   
   
   
@@ -1172,10 +1194,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1195,10 +1217,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1218,10 +1240,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1241,10 +1263,11 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
@@ -1275,7 +1298,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" aria-labelledby="__nav_9_label" >
+        
         
           
           <div class="md-nav__link md-nav__container">
@@ -1298,17 +1323,18 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-label="HPC Events and Workshops" aria-expanded="false">
-          <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_9');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_9');if(t)t.checked=false;}">
-            <span class="md-nav__icon md-icon"></span>
-            HPC Events and Workshops
-          </div>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
+        
+          <nav class="md-nav" data-md-level="1" aria-label="HPC Events and Workshops">
+            <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_9');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_9');if(t)t.checked=false;}">
+              <span class="md-nav__icon md-icon"></span>
+              HPC Events and Workshops
+            </div>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+              
+                
+                  
   
   
   
@@ -1330,7 +1356,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_2" >
+        
+          <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_2" aria-labelledby="__nav_9_2_label" >
+        
         
           
           <div class="md-nav__link md-nav__container">
@@ -1353,17 +1381,18 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-label="Workshop and Training Videos" aria-expanded="false">
-          <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_9_2');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_9_2');if(t)t.checked=false;}">
-            <span class="md-nav__icon md-icon"></span>
-            Workshop and Training Videos
-          </div>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
+        
+          <nav class="md-nav" data-md-level="2" aria-label="Workshop and Training Videos">
+            <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_9_2');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_9_2');if(t)t.checked=false;}">
+              <span class="md-nav__icon md-icon"></span>
+              Workshop and Training Videos
+            </div>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+              
+                
+                  
   
   
   
@@ -1383,18 +1412,19 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1418,7 +1448,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_3" >
+        
+          <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_3" aria-labelledby="__nav_9_3_label" >
+        
         
           
           <div class="md-nav__link md-nav__container">
@@ -1441,17 +1473,18 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-label="Archived" aria-expanded="false">
-          <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_9_3');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_9_3');if(t)t.checked=false;}">
-            <span class="md-nav__icon md-icon"></span>
-            Archived
-          </div>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
+        
+          <nav class="md-nav" data-md-level="2" aria-label="Archived">
+            <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_9_3');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_9_3');if(t)t.checked=false;}">
+              <span class="md-nav__icon md-icon"></span>
+              Archived
+            </div>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+              
+                
+                  
   
   
   
@@ -1481,7 +1514,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_3_2" >
+        
+          <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_3_2" aria-labelledby="__nav_9_3_2_label" >
+        
         
           
           <label class="md-nav__link" for="__nav_9_3_2" id="__nav_9_3_2_label" tabindex="0">
@@ -1497,15 +1532,16 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-label="2024" aria-expanded="false">
-          <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_9_3_2');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_9_3_2');if(t)t.checked=false;}">
-            <span class="md-nav__icon md-icon"></span>
-            2024
-          </div>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+        
+          <nav class="md-nav" data-md-level="3" aria-label="2024">
+            <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_9_3_2');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_9_3_2');if(t)t.checked=false;}">
+              <span class="md-nav__icon md-icon"></span>
+              2024
+            </div>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -1525,10 +1561,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1548,10 +1584,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1571,10 +1607,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1594,10 +1630,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1617,10 +1653,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1640,10 +1676,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1663,18 +1699,19 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1700,7 +1737,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_3_3" >
+        
+          <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_3_3" aria-labelledby="__nav_9_3_3_label" >
+        
         
           
           <label class="md-nav__link" for="__nav_9_3_3" id="__nav_9_3_3_label" tabindex="0">
@@ -1716,15 +1755,16 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-label="2025" aria-expanded="false">
-          <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_9_3_3');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_9_3_3');if(t)t.checked=false;}">
-            <span class="md-nav__icon md-icon"></span>
-            2025
-          </div>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+        
+          <nav class="md-nav" data-md-level="3" aria-label="2025">
+            <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_9_3_3');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_9_3_3');if(t)t.checked=false;}">
+              <span class="md-nav__icon md-icon"></span>
+              2025
+            </div>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -1744,10 +1784,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1767,10 +1807,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1790,10 +1830,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1813,10 +1853,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1836,26 +1876,29 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
@@ -1906,7 +1949,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" checked>
+        
+          <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" aria-labelledby="__nav_10_label" checked>
+        
         
           
           <div class="md-nav__link md-nav__container">
@@ -1929,17 +1974,18 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-label="Running Jobs" aria-expanded="true">
-          <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_10');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_10');if(t)t.checked=false;}">
-            <span class="md-nav__icon md-icon"></span>
-            Running Jobs
-          </div>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
+        
+          <nav class="md-nav" data-md-level="1" aria-label="Running Jobs">
+            <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_10');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_10');if(t)t.checked=false;}">
+              <span class="md-nav__icon md-icon"></span>
+              Running Jobs
+            </div>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+              
+                
+                  
   
   
   
@@ -1959,10 +2005,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1982,10 +2028,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
     
@@ -2083,10 +2129,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2106,10 +2152,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2129,10 +2175,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2152,10 +2198,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2175,10 +2221,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2198,10 +2244,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2221,10 +2267,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2244,10 +2290,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2267,10 +2313,11 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
@@ -2317,7 +2364,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
+        
+          <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" aria-labelledby="__nav_11_label" >
+        
         
           
           <div class="md-nav__link md-nav__container">
@@ -2340,17 +2389,18 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-label="Software" aria-expanded="false">
-          <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_11');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_11');if(t)t.checked=false;}">
-            <span class="md-nav__icon md-icon"></span>
-            Software
-          </div>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
+        
+          <nav class="md-nav" data-md-level="1" aria-label="Software">
+            <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_11');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_11');if(t)t.checked=false;}">
+              <span class="md-nav__icon md-icon"></span>
+              Software
+            </div>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+              
+                
+                  
   
   
   
@@ -2374,7 +2424,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_2" >
+        
+          <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_2" aria-labelledby="__nav_11_2_label" >
+        
         
           
           <label class="md-nav__link" for="__nav_11_2" id="__nav_11_2_label" tabindex="0">
@@ -2390,15 +2442,16 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-label="CFD" aria-expanded="false">
-          <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_11_2');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_11_2');if(t)t.checked=false;}">
-            <span class="md-nav__icon md-icon"></span>
-            CFD
-          </div>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+        
+          <nav class="md-nav" data-md-level="2" aria-label="CFD">
+            <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_11_2');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_11_2');if(t)t.checked=false;}">
+              <span class="md-nav__icon md-icon"></span>
+              CFD
+            </div>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -2418,10 +2471,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2441,10 +2494,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2464,10 +2517,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2487,18 +2540,19 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2516,7 +2570,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_3" >
+        
+          <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_3" aria-labelledby="__nav_11_3_label" >
+        
         
           
           <label class="md-nav__link" for="__nav_11_3" id="__nav_11_3_label" tabindex="0">
@@ -2532,15 +2588,16 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-label="IDE" aria-expanded="false">
-          <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_11_3');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_11_3');if(t)t.checked=false;}">
-            <span class="md-nav__icon md-icon"></span>
-            IDE
-          </div>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+        
+          <nav class="md-nav" data-md-level="2" aria-label="IDE">
+            <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_11_3');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_11_3');if(t)t.checked=false;}">
+              <span class="md-nav__icon md-icon"></span>
+              IDE
+            </div>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -2560,18 +2617,19 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2593,7 +2651,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_4" >
+        
+          <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_4" aria-labelledby="__nav_11_4_label" >
+        
         
           
           <div class="md-nav__link md-nav__container">
@@ -2616,17 +2676,18 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-label="MATLAB" aria-expanded="false">
-          <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_11_4');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_11_4');if(t)t.checked=false;}">
-            <span class="md-nav__icon md-icon"></span>
-            MATLAB
-          </div>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
+        
+          <nav class="md-nav" data-md-level="2" aria-label="MATLAB">
+            <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_11_4');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_11_4');if(t)t.checked=false;}">
+              <span class="md-nav__icon md-icon"></span>
+              MATLAB
+            </div>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+              
+                
+                  
   
   
   
@@ -2646,18 +2707,19 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2679,7 +2741,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_5" >
+        
+          <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_5" aria-labelledby="__nav_11_5_label" >
+        
         
           
           <label class="md-nav__link" for="__nav_11_5" id="__nav_11_5_label" tabindex="0">
@@ -2695,15 +2759,16 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-label="Molecular Dynamics" aria-expanded="false">
-          <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_11_5');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_11_5');if(t)t.checked=false;}">
-            <span class="md-nav__icon md-icon"></span>
-            Molecular Dynamics
-          </div>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+        
+          <nav class="md-nav" data-md-level="2" aria-label="Molecular Dynamics">
+            <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_11_5');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_11_5');if(t)t.checked=false;}">
+              <span class="md-nav__icon md-icon"></span>
+              Molecular Dynamics
+            </div>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -2723,10 +2788,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2746,10 +2811,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2769,18 +2834,19 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2808,7 +2874,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_6" >
+        
+          <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_6" aria-labelledby="__nav_11_6_label" >
+        
         
           
           <label class="md-nav__link" for="__nav_11_6" id="__nav_11_6_label" tabindex="0">
@@ -2824,15 +2892,16 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-label="Chemistry" aria-expanded="false">
-          <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_11_6');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_11_6');if(t)t.checked=false;}">
-            <span class="md-nav__icon md-icon"></span>
-            Chemistry
-          </div>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+        
+          <nav class="md-nav" data-md-level="2" aria-label="Chemistry">
+            <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_11_6');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_11_6');if(t)t.checked=false;}">
+              <span class="md-nav__icon md-icon"></span>
+              Chemistry
+            </div>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -2852,10 +2921,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2875,10 +2944,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2898,10 +2967,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2921,10 +2990,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2944,10 +3013,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2967,18 +3036,19 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2996,7 +3066,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_7" >
+        
+          <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_7" aria-labelledby="__nav_11_7_label" >
+        
         
           
           <label class="md-nav__link" for="__nav_11_7" id="__nav_11_7_label" tabindex="0">
@@ -3012,15 +3084,16 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-label="Programming" aria-expanded="false">
-          <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_11_7');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_11_7');if(t)t.checked=false;}">
-            <span class="md-nav__icon md-icon"></span>
-            Programming
-          </div>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+        
+          <nav class="md-nav" data-md-level="2" aria-label="Programming">
+            <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_11_7');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_11_7');if(t)t.checked=false;}">
+              <span class="md-nav__icon md-icon"></span>
+              Programming
+            </div>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -3040,18 +3113,19 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -3075,7 +3149,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_8" >
+        
+          <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_8" aria-labelledby="__nav_11_8_label" >
+        
         
           
           <div class="md-nav__link md-nav__container">
@@ -3098,17 +3174,18 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-label="Python" aria-expanded="false">
-          <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_11_8');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_11_8');if(t)t.checked=false;}">
-            <span class="md-nav__icon md-icon"></span>
-            Python
-          </div>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
+        
+          <nav class="md-nav" data-md-level="2" aria-label="Python">
+            <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_11_8');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_11_8');if(t)t.checked=false;}">
+              <span class="md-nav__icon md-icon"></span>
+              Python
+            </div>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+              
+                
+                  
   
   
   
@@ -3128,10 +3205,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -3151,18 +3228,19 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -3182,7 +3260,7 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_9" >
+        
         
           
           <div class="md-nav__link md-nav__container">
@@ -3200,25 +3278,15 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-label="Slurm" aria-expanded="false">
-          <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_11_9');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_11_9');if(t)t.checked=false;}">
-            <span class="md-nav__icon md-icon"></span>
-            Slurm
-          </div>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
-          </ul>
-        </nav>
+        
       
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -3240,7 +3308,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_10" >
+        
+          <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_10" aria-labelledby="__nav_11_10_label" >
+        
         
           
           <label class="md-nav__link" for="__nav_11_10" id="__nav_11_10_label" tabindex="0">
@@ -3256,15 +3326,16 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-label="Utilities" aria-expanded="false">
-          <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_11_10');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_11_10');if(t)t.checked=false;}">
-            <span class="md-nav__icon md-icon"></span>
-            Utilities
-          </div>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+        
+          <nav class="md-nav" data-md-level="2" aria-label="Utilities">
+            <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_11_10');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_11_10');if(t)t.checked=false;}">
+              <span class="md-nav__icon md-icon"></span>
+              Utilities
+            </div>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -3284,10 +3355,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -3307,10 +3378,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -3330,18 +3401,19 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -3365,7 +3437,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_11" >
+        
+          <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_11" aria-labelledby="__nav_11_11_label" >
+        
         
           
           <label class="md-nav__link" for="__nav_11_11" id="__nav_11_11_label" tabindex="0">
@@ -3381,15 +3455,16 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-label="Visualization" aria-expanded="false">
-          <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_11_11');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_11_11');if(t)t.checked=false;}">
-            <span class="md-nav__icon md-icon"></span>
-            Visualization
-          </div>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+        
+          <nav class="md-nav" data-md-level="2" aria-label="Visualization">
+            <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_11_11');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_11_11');if(t)t.checked=false;}">
+              <span class="md-nav__icon md-icon"></span>
+              Visualization
+            </div>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -3409,10 +3484,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -3432,10 +3507,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -3455,10 +3530,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -3478,18 +3553,20 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
@@ -3522,7 +3599,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" >
+        
+          <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" aria-labelledby="__nav_12_label" >
+        
         
           
           <div class="md-nav__link md-nav__container">
@@ -3545,17 +3624,18 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-label="MIG (Multi-Instance GPU)" aria-expanded="false">
-          <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_12');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_12');if(t)t.checked=false;}">
-            <span class="md-nav__icon md-icon"></span>
-            MIG (Multi-Instance GPU)
-          </div>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
+        
+          <nav class="md-nav" data-md-level="1" aria-label="MIG (Multi-Instance GPU)">
+            <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_12');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_12');if(t)t.checked=false;}">
+              <span class="md-nav__icon md-icon"></span>
+              MIG (Multi-Instance GPU)
+            </div>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+              
+                
+                  
   
   
   
@@ -3575,10 +3655,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -3598,10 +3678,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -3621,10 +3701,11 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
@@ -3669,7 +3750,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_13" >
+        
+          <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_13" aria-labelledby="__nav_13_label" >
+        
         
           
           <div class="md-nav__link md-nav__container">
@@ -3692,17 +3775,18 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-label="OnDemand" aria-expanded="false">
-          <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_13');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_13');if(t)t.checked=false;}">
-            <span class="md-nav__icon md-icon"></span>
-            OnDemand
-          </div>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
+        
+          <nav class="md-nav" data-md-level="1" aria-label="OnDemand">
+            <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_13');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_13');if(t)t.checked=false;}">
+              <span class="md-nav__icon md-icon"></span>
+              OnDemand
+            </div>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+              
+                
+                  
   
   
   
@@ -3722,10 +3806,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -3745,10 +3829,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -3768,10 +3852,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -3795,7 +3879,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_13_5" >
+        
+          <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_13_5" aria-labelledby="__nav_13_5_label" >
+        
         
           
           <div class="md-nav__link md-nav__container">
@@ -3818,17 +3904,18 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-label="Jobs" aria-expanded="false">
-          <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_13_5');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_13_5');if(t)t.checked=false;}">
-            <span class="md-nav__icon md-icon"></span>
-            Jobs
-          </div>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
+        
+          <nav class="md-nav" data-md-level="2" aria-label="Jobs">
+            <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_13_5');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_13_5');if(t)t.checked=false;}">
+              <span class="md-nav__icon md-icon"></span>
+              Jobs
+            </div>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+              
+                
+                  
   
   
   
@@ -3848,10 +3935,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -3871,18 +3958,19 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -3902,10 +3990,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -3931,7 +4019,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_13_7" >
+        
+          <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_13_7" aria-labelledby="__nav_13_7_label" >
+        
         
           
           <div class="md-nav__link md-nav__container">
@@ -3954,17 +4044,18 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-label="Interactive Apps" aria-expanded="false">
-          <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_13_7');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_13_7');if(t)t.checked=false;}">
-            <span class="md-nav__icon md-icon"></span>
-            Interactive Apps
-          </div>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
+        
+          <nav class="md-nav" data-md-level="2" aria-label="Interactive Apps">
+            <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_13_7');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_13_7');if(t)t.checked=false;}">
+              <span class="md-nav__icon md-icon"></span>
+              Interactive Apps
+            </div>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+              
+                
+                  
   
   
   
@@ -3984,10 +4075,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -4007,10 +4098,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -4030,18 +4121,19 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -4061,10 +4153,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -4084,10 +4176,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -4107,10 +4199,11 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
@@ -4141,7 +4234,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_14" >
+        
+          <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_14" aria-labelledby="__nav_14_label" >
+        
         
           
           <div class="md-nav__link md-nav__container">
@@ -4164,17 +4259,18 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-label="HPC for Courses" aria-expanded="false">
-          <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_14');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_14');if(t)t.checked=false;}">
-            <span class="md-nav__icon md-icon"></span>
-            HPC for Courses
-          </div>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
+        
+          <nav class="md-nav" data-md-level="1" aria-label="HPC for Courses">
+            <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_14');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_14');if(t)t.checked=false;}">
+              <span class="md-nav__icon md-icon"></span>
+              HPC for Courses
+            </div>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+              
+                
+                  
   
   
   
@@ -4194,10 +4290,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -4217,10 +4313,11 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
@@ -4410,7 +4507,7 @@
 
   <h1>Batch Jobs</h1>
 
-<h2 id="overview">Overview<a class="headerlink" aria-label="Permanent link to Overview" href="#overview" title="Permanent link">&para;</a></h2>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link"><span aria-hidden="true">&para;</span><span class="md-sr-only">Permanent link to Overview</span></a></h2>
 <p>Batch jobs are like pre-written instructions handed over to the cluster to be executed when resources become available.</p>
 <p>Unlike your personal laptop where you run commands interactively, HPC jobs are queued and run asynchronously using a job script — a text file that tells Slurm:</p>
 <ul>
@@ -4419,7 +4516,7 @@
 <li>What programs or commands are needed to run job?</li>
 <li>How long your job may take?</li>
 </ul>
-<h3 id="example-of-batch-job-slurm-script">Example of batch job slurm script<a class="headerlink" aria-label="Permanent link to Example of batch job slurm script" href="#example-of-batch-job-slurm-script" title="Permanent link">&para;</a></h3>
+<h3 id="example-of-batch-job-slurm-script">Example of batch job slurm script<a class="headerlink" href="#example-of-batch-job-slurm-script" title="Permanent link"><span aria-hidden="true">&para;</span><span class="md-sr-only">Permanent link to Example of batch job slurm script</span></a></h3>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:4"><input checked="checked" id="example-of-batch-job-slurm-script-cpu-nodes" name="__tabbed_1" type="radio" /><input id="example-of-batch-job-slurm-script-gpu-nodes" name="__tabbed_1" type="radio" /><input id="example-of-batch-job-slurm-script-debug-node" name="__tabbed_1" type="radio" /><input id="example-of-batch-job-slurm-script-bigmem-node" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="example-of-batch-job-slurm-script-cpu-nodes">CPU Nodes</label><label for="example-of-batch-job-slurm-script-gpu-nodes">GPU Nodes</label><label for="example-of-batch-job-slurm-script-debug-node">Debug Node</label><label for="example-of-batch-job-slurm-script-bigmem-node">Bigmem Node</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -4428,118 +4525,118 @@
 <div class="tabbed-set tabbed-alternate" data-tabs="2:4"><input checked="checked" id="example-of-batch-job-slurm-script-using-1-core" name="__tabbed_2" type="radio" /><input id="example-of-batch-job-slurm-script-using-multiple-cores" name="__tabbed_2" type="radio" /><input id="example-of-batch-job-slurm-script-using-multiple-threads" name="__tabbed_2" type="radio" /><input id="example-of-batch-job-slurm-script-using-multiple-cores-and-threads" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="example-of-batch-job-slurm-script-using-1-core">Using 1 core</label><label for="example-of-batch-job-slurm-script-using-multiple-cores">Using multiple cores</label><label for="example-of-batch-job-slurm-script-using-multiple-threads">Using multiple threads</label><label for="example-of-batch-job-slurm-script-using-multiple-cores-and-threads">Using multiple cores and threads</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="language-slurm highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
-<span class="normal"><a href="#__codelineno-0-2"> 2</a></span>
-<span class="normal"><a href="#__codelineno-0-3"> 3</a></span>
-<span class="normal"><a href="#__codelineno-0-4"> 4</a></span>
-<span class="normal"><a href="#__codelineno-0-5"> 5</a></span>
-<span class="normal"><a href="#__codelineno-0-6"> 6</a></span>
-<span class="normal"><a href="#__codelineno-0-7"> 7</a></span>
-<span class="normal"><a href="#__codelineno-0-8"> 8</a></span>
-<span class="normal"><a href="#__codelineno-0-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-0-10">10</a></span>
-<span class="normal"><a href="#__codelineno-0-11">11</a></span>
-<span class="normal"><a href="#__codelineno-0-12">12</a></span>
-<span class="normal"><a href="#__codelineno-0-13">13</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="ch">#!/bin/bash -l</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="kp">#SBATCH --job-name=job_name</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="kp">#SBATCH --output=%x.%j.out # %x.%j expands to slurm JobName.JobID</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="kp">#SBATCH --error=%x.%j.err</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="kp">#SBATCH --partition=general</span>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="kp">#SBATCH --qos=standard</span>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="kp">#SBATCH --account=$PI_ucid # Replace $PI_ucid which the NJIT UCID of PI</span>
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="kp">#SBATCH --nodes=1</span>
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9"></a><span class="kp">#SBATCH --ntasks=1</span>
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10"></a><span class="kp">#SBATCH --time=59:00  # D-HH:MM:SS</span>
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11"></a><span class="kp">#SBATCH --mem-per-cpu=4000M</span>
-</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12"></a>
-</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13"></a>./myexe<span class="w"> </span>&lt;input/output<span class="w"> </span>options&gt;<span class="w"> </span><span class="c1"># myexe is the executable in this example.</span>
+<div class="language-slurm highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><span class="ch">#!/bin/bash -l</span>
+</span><span id="__span-0-2"><span class="kp">#SBATCH --job-name=job_name</span>
+</span><span id="__span-0-3"><span class="kp">#SBATCH --output=%x.%j.out # %x.%j expands to slurm JobName.JobID</span>
+</span><span id="__span-0-4"><span class="kp">#SBATCH --error=%x.%j.err</span>
+</span><span id="__span-0-5"><span class="kp">#SBATCH --partition=general</span>
+</span><span id="__span-0-6"><span class="kp">#SBATCH --qos=standard</span>
+</span><span id="__span-0-7"><span class="kp">#SBATCH --account=$PI_ucid # Replace $PI_ucid which the NJIT UCID of PI</span>
+</span><span id="__span-0-8"><span class="kp">#SBATCH --nodes=1</span>
+</span><span id="__span-0-9"><span class="kp">#SBATCH --ntasks=1</span>
+</span><span id="__span-0-10"><span class="kp">#SBATCH --time=59:00  # D-HH:MM:SS</span>
+</span><span id="__span-0-11"><span class="kp">#SBATCH --mem-per-cpu=4000M</span>
+</span><span id="__span-0-12">
+</span><span id="__span-0-13">./myexe<span class="w"> </span>&lt;input/output<span class="w"> </span>options&gt;<span class="w"> </span><span class="c1"># myexe is the executable in this example.</span>
 </span></code></pre></div></td></tr></table></div>
 </div>
 <div class="tabbed-block">
-<div class="language-slurm highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1"> 1</a></span>
-<span class="normal"><a href="#__codelineno-1-2"> 2</a></span>
-<span class="normal"><a href="#__codelineno-1-3"> 3</a></span>
-<span class="normal"><a href="#__codelineno-1-4"> 4</a></span>
-<span class="normal"><a href="#__codelineno-1-5"> 5</a></span>
-<span class="normal"><a href="#__codelineno-1-6"> 6</a></span>
-<span class="normal"><a href="#__codelineno-1-7"> 7</a></span>
-<span class="normal"><a href="#__codelineno-1-8"> 8</a></span>
-<span class="normal"><a href="#__codelineno-1-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-1-10">10</a></span>
-<span class="normal"><a href="#__codelineno-1-11">11</a></span>
-<span class="normal"><a href="#__codelineno-1-12">12</a></span>
-<span class="normal"><a href="#__codelineno-1-13">13</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="ch">#!/bin/bash -l</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="kp">#SBATCH --job-name=job_name</span>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="kp">#SBATCH --output=%x.%j.out # %x.%j expands to slurm JobName.JobID</span>
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="kp">#SBATCH --error=%x.%j.err</span>
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="kp">#SBATCH --partition=general</span>
-</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6"></a><span class="kp">#SBATCH --qos=standard</span>
-</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7"></a><span class="kp">#SBATCH --account=$PI_ucid # Replace $PI_ucid which the NJIT UCID of PI</span>
-</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8"></a><span class="kp">#SBATCH --nodes=1</span>
-</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9"></a><span class="kp">#SBATCH --ntasks-per-node=8</span>
-</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10"></a><span class="kp">#SBATCH --time=59:00  # D-HH:MM:SS</span>
-</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11"></a><span class="kp">#SBATCH --mem-per-cpu=4000M</span>
-</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12"></a>
-</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13"></a><span class="nb">srun</span><span class="w"> </span>./myexe<span class="w"> </span>&lt;input/output<span class="w"> </span>options&gt;<span class="w"> </span><span class="c1"># myexe is the executable in this example.</span>
+<div class="language-slurm highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-1"><span class="ch">#!/bin/bash -l</span>
+</span><span id="__span-1-2"><span class="kp">#SBATCH --job-name=job_name</span>
+</span><span id="__span-1-3"><span class="kp">#SBATCH --output=%x.%j.out # %x.%j expands to slurm JobName.JobID</span>
+</span><span id="__span-1-4"><span class="kp">#SBATCH --error=%x.%j.err</span>
+</span><span id="__span-1-5"><span class="kp">#SBATCH --partition=general</span>
+</span><span id="__span-1-6"><span class="kp">#SBATCH --qos=standard</span>
+</span><span id="__span-1-7"><span class="kp">#SBATCH --account=$PI_ucid # Replace $PI_ucid which the NJIT UCID of PI</span>
+</span><span id="__span-1-8"><span class="kp">#SBATCH --nodes=1</span>
+</span><span id="__span-1-9"><span class="kp">#SBATCH --ntasks-per-node=8</span>
+</span><span id="__span-1-10"><span class="kp">#SBATCH --time=59:00  # D-HH:MM:SS</span>
+</span><span id="__span-1-11"><span class="kp">#SBATCH --mem-per-cpu=4000M</span>
+</span><span id="__span-1-12">
+</span><span id="__span-1-13"><span class="nb">srun</span><span class="w"> </span>./myexe<span class="w"> </span>&lt;input/output<span class="w"> </span>options&gt;<span class="w"> </span><span class="c1"># myexe is the executable in this example.</span>
 </span></code></pre></div></td></tr></table></div>
 </div>
 <div class="tabbed-block">
-<p><div class="language-slurm highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1"> 1</a></span>
-<span class="normal"><a href="#__codelineno-2-2"> 2</a></span>
-<span class="normal"><a href="#__codelineno-2-3"> 3</a></span>
-<span class="normal"><a href="#__codelineno-2-4"> 4</a></span>
-<span class="normal"><a href="#__codelineno-2-5"> 5</a></span>
-<span class="normal"><a href="#__codelineno-2-6"> 6</a></span>
-<span class="normal"><a href="#__codelineno-2-7"> 7</a></span>
-<span class="normal"><a href="#__codelineno-2-8"> 8</a></span>
-<span class="normal"><a href="#__codelineno-2-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-2-10">10</a></span>
-<span class="normal"><a href="#__codelineno-2-11">11</a></span>
-<span class="normal"><a href="#__codelineno-2-12">12</a></span>
-<span class="normal"><a href="#__codelineno-2-13">13</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="ch">#!/bin/bash -l</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="kp">#SBATCH --job-name=job_name</span>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="kp">#SBATCH --output=%x.%j.out # %x.%j expands to slurm JobName.JobID</span>
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4"></a><span class="kp">#SBATCH --error=%x.%j.err</span>
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5"></a><span class="kp">#SBATCH --partition=general</span>
-</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6"></a><span class="kp">#SBATCH --qos=standard</span>
-</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7"></a><span class="kp">#SBATCH --account=$PI_ucid # Replace $PI_ucid which the NJIT UCID of PI</span>
-</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8"></a><span class="kp">#SBATCH --nodes=1</span>
-</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9"></a><span class="kp">#SBATCH --ntasks-per-node=8</span>
-</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10"></a><span class="kp">#SBATCH --time=59:00  # D-HH:MM:SS</span>
-</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11"></a><span class="kp">#SBATCH --mem-per-cpu=4000M</span>
-</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12"></a>
-</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13"></a><span class="nv">OMP_NUM_THREADS</span><span class="o">=</span><span class="nv">$SLURM_NTASKS</span><span class="w"> </span>./myexe<span class="w"> </span>&lt;input/output<span class="w"> </span>options&gt;
+<p><div class="language-slurm highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-2-1"><span class="ch">#!/bin/bash -l</span>
+</span><span id="__span-2-2"><span class="kp">#SBATCH --job-name=job_name</span>
+</span><span id="__span-2-3"><span class="kp">#SBATCH --output=%x.%j.out # %x.%j expands to slurm JobName.JobID</span>
+</span><span id="__span-2-4"><span class="kp">#SBATCH --error=%x.%j.err</span>
+</span><span id="__span-2-5"><span class="kp">#SBATCH --partition=general</span>
+</span><span id="__span-2-6"><span class="kp">#SBATCH --qos=standard</span>
+</span><span id="__span-2-7"><span class="kp">#SBATCH --account=$PI_ucid # Replace $PI_ucid which the NJIT UCID of PI</span>
+</span><span id="__span-2-8"><span class="kp">#SBATCH --nodes=1</span>
+</span><span id="__span-2-9"><span class="kp">#SBATCH --ntasks-per-node=8</span>
+</span><span id="__span-2-10"><span class="kp">#SBATCH --time=59:00  # D-HH:MM:SS</span>
+</span><span id="__span-2-11"><span class="kp">#SBATCH --mem-per-cpu=4000M</span>
+</span><span id="__span-2-12">
+</span><span id="__span-2-13"><span class="nv">OMP_NUM_THREADS</span><span class="o">=</span><span class="nv">$SLURM_NTASKS</span><span class="w"> </span>./myexe<span class="w"> </span>&lt;input/output<span class="w"> </span>options&gt;
 </span></code></pre></div></td></tr></table></div>
 Use this script, if your code relies on threads instead of cores. </p>
 </div>
 <div class="tabbed-block">
-<p><div class="language-slurm highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1"> 1</a></span>
-<span class="normal"><a href="#__codelineno-3-2"> 2</a></span>
-<span class="normal"><a href="#__codelineno-3-3"> 3</a></span>
-<span class="normal"><a href="#__codelineno-3-4"> 4</a></span>
-<span class="normal"><a href="#__codelineno-3-5"> 5</a></span>
-<span class="normal"><a href="#__codelineno-3-6"> 6</a></span>
-<span class="normal"><a href="#__codelineno-3-7"> 7</a></span>
-<span class="normal"><a href="#__codelineno-3-8"> 8</a></span>
-<span class="normal"><a href="#__codelineno-3-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-3-10">10</a></span>
-<span class="normal"><a href="#__codelineno-3-11">11</a></span>
-<span class="normal"><a href="#__codelineno-3-12">12</a></span>
-<span class="normal"><a href="#__codelineno-3-13">13</a></span>
-<span class="normal"><a href="#__codelineno-3-14">14</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="ch">#!/bin/bash -l</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2"></a><span class="kp">#SBATCH --job-name=job_name</span>
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3"></a><span class="kp">#SBATCH --output=%x.%j.out # %x.%j expands to slurm JobName.JobID</span>
-</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4"></a><span class="kp">#SBATCH --error=%x.%j.err</span>
-</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5"></a><span class="kp">#SBATCH --partition=general</span>
-</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6"></a><span class="kp">#SBATCH --qos=standard</span>
-</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7"></a><span class="kp">#SBATCH --account=$PI_ucid # Replace $PI_ucid which the NJIT UCID of PI</span>
-</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8"></a><span class="kp">#SBATCH --nodes=1</span>
-</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9"></a><span class="kp">#SBATCH --ntasks=64</span>
-</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10"></a><span class="kp">#SBATCH --cpus-per-task=2</span>
-</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11"></a><span class="kp">#SBATCH --time=59:00  # D-HH:MM:SS</span>
-</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12"></a><span class="kp">#SBATCH --mem-per-cpu=4000M</span>
-</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13"></a>
-</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14"></a><span class="nb">srun</span><span class="w"> </span>gmx_mpi<span class="w"> </span>mdrun<span class="w"> </span>...<span class="w"> </span>-ntomp<span class="w"> </span><span class="nv">$SLURM_CPUS_PER_TASK</span><span class="w"> </span>...
+<p><div class="language-slurm highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-3-1"><span class="ch">#!/bin/bash -l</span>
+</span><span id="__span-3-2"><span class="kp">#SBATCH --job-name=job_name</span>
+</span><span id="__span-3-3"><span class="kp">#SBATCH --output=%x.%j.out # %x.%j expands to slurm JobName.JobID</span>
+</span><span id="__span-3-4"><span class="kp">#SBATCH --error=%x.%j.err</span>
+</span><span id="__span-3-5"><span class="kp">#SBATCH --partition=general</span>
+</span><span id="__span-3-6"><span class="kp">#SBATCH --qos=standard</span>
+</span><span id="__span-3-7"><span class="kp">#SBATCH --account=$PI_ucid # Replace $PI_ucid which the NJIT UCID of PI</span>
+</span><span id="__span-3-8"><span class="kp">#SBATCH --nodes=1</span>
+</span><span id="__span-3-9"><span class="kp">#SBATCH --ntasks=64</span>
+</span><span id="__span-3-10"><span class="kp">#SBATCH --cpus-per-task=2</span>
+</span><span id="__span-3-11"><span class="kp">#SBATCH --time=59:00  # D-HH:MM:SS</span>
+</span><span id="__span-3-12"><span class="kp">#SBATCH --mem-per-cpu=4000M</span>
+</span><span id="__span-3-13">
+</span><span id="__span-3-14"><span class="nb">srun</span><span class="w"> </span>gmx_mpi<span class="w"> </span>mdrun<span class="w"> </span>...<span class="w"> </span>-ntomp<span class="w"> </span><span class="nv">$SLURM_CPUS_PER_TASK</span><span class="w"> </span>...
 </span></code></pre></div></td></tr></table></div>
 This is the example script of <a href="../../Software/Molecular_Dynamics/gromacs/">GROAMCS</a> which uses both CPUs and threads.      </p>
 </div>
@@ -4556,9 +4653,9 @@ This is the example script of <a href="../../Software/Molecular_Dynamics/gromacs
 <li>In this above script <code>--time</code> indicates the wall time which is used to specify the maximum amount of time that a job is allowed to run. The maximum allowable wall time depends on SLURM QoS, which you can find in <a href="../node-memory-config/">QoS</a>). </li>
 <li>To submit the job, use <code>sbatch submit.sh</code> where the <code>submit.sh</code> is the job script. Once the job has been submitted, the jobs will be in the queue, which will be executed based on priority-based scheduling. </li>
 <li>To check the status of the job use <code>squeue -u $LOGNAME</code> and you should see the following 
-<div class="language-bash highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span>
-<span class="normal"><a href="#__codelineno-4-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1"></a>JOBID<span class="w"> </span>PARTITION<span class="w">     </span>NAME<span class="w">     </span>USER<span class="w">  </span>ST<span class="w">    </span>TIME<span class="w">    </span>NODES<span class="w">  </span>NODELIST<span class="o">(</span>REASON<span class="o">)</span>
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2"></a><span class="m">635</span><span class="w">   </span>general<span class="w">     </span>job_nme<span class="w">   </span>ucid<span class="w">   </span>R<span class="w">   </span><span class="m">00</span>:02:19<span class="w">    </span><span class="m">1</span><span class="w">      </span>n0088
+<div class="language-bash highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-4-1">JOBID<span class="w"> </span>PARTITION<span class="w">     </span>NAME<span class="w">     </span>USER<span class="w">  </span>ST<span class="w">    </span>TIME<span class="w">    </span>NODES<span class="w">  </span>NODELIST<span class="o">(</span>REASON<span class="o">)</span>
+</span><span id="__span-4-2"><span class="m">635</span><span class="w">   </span>general<span class="w">     </span>job_nme<span class="w">   </span>ucid<span class="w">   </span>R<span class="w">   </span><span class="m">00</span>:02:19<span class="w">    </span><span class="m">1</span><span class="w">      </span>n0088
 </span></code></pre></div></td></tr></table></div>
 Here, the <code>ST</code> stands for the status of the job. You may see the status of the job <code>ST</code> as <code>PD</code> which means the job is pending and has not been assigned yet. The status change depends upon the number of users using the partition and resources requested in the job. Once the job starts, you will see the output file with an extension of <code>.out</code>. If the job causes any errors, you can check the details of the error in the file with the <code>.err</code> extension.</li>
 </ul>
@@ -4570,123 +4667,123 @@ Here, the <code>ST</code> stands for the status of the job. You may see the stat
 <div class="tabbed-set tabbed-alternate" data-tabs="3:4"><input checked="checked" id="example-of-batch-job-slurm-script-using-1-core-1-gpu" name="__tabbed_3" type="radio" /><input id="example-of-batch-job-slurm-script-using-multiple-cores-1-gpu" name="__tabbed_3" type="radio" /><input id="example-of-batch-job-slurm-script-using-multiple-cores-gpus" name="__tabbed_3" type="radio" /><input id="example-of-batch-job-slurm-script-using-migs" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="example-of-batch-job-slurm-script-using-1-core-1-gpu">Using 1 core, 1 GPU</label><label for="example-of-batch-job-slurm-script-using-multiple-cores-1-gpu">Using multiple cores, 1 GPU</label><label for="example-of-batch-job-slurm-script-using-multiple-cores-gpus">Using multiple cores, GPUs</label><label for="example-of-batch-job-slurm-script-using-migs">Using MIGs</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="language-slurm highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1"> 1</a></span>
-<span class="normal"><a href="#__codelineno-5-2"> 2</a></span>
-<span class="normal"><a href="#__codelineno-5-3"> 3</a></span>
-<span class="normal"><a href="#__codelineno-5-4"> 4</a></span>
-<span class="normal"><a href="#__codelineno-5-5"> 5</a></span>
-<span class="normal"><a href="#__codelineno-5-6"> 6</a></span>
-<span class="normal"><a href="#__codelineno-5-7"> 7</a></span>
-<span class="normal"><a href="#__codelineno-5-8"> 8</a></span>
-<span class="normal"><a href="#__codelineno-5-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-5-10">10</a></span>
-<span class="normal"><a href="#__codelineno-5-11">11</a></span>
-<span class="normal"><a href="#__codelineno-5-12">12</a></span>
-<span class="normal"><a href="#__codelineno-5-13">13</a></span>
-<span class="normal"><a href="#__codelineno-5-14">14</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="ch">#!/bin/bash -l</span>
-</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2"></a><span class="kp">#SBATCH --job-name=gpu_job</span>
-</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3"></a><span class="kp">#SBATCH --output=%x.%j.out # %x.%j expands to slurm JobName.JobID</span>
-</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4"></a><span class="kp">#SBATCH --error=%x.%j.err</span>
-</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5"></a><span class="kp">#SBATCH --partition=gpu</span>
-</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6"></a><span class="kp">#SBATCH --qos=standard</span>
-</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7"></a><span class="kp">#SBATCH --account=$PI_ucid # Replace $PI_ucid which the NJIT UCID of PI</span>
-</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8"></a><span class="kp">#SBATCH --nodes=1</span>
-</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9"></a><span class="kp">#SBATCH --ntasks-per-node=1</span>
-</span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10"></a><span class="kp">#SBATCH --gres=gpu:1</span>
-</span><span id="__span-5-11"><a id="__codelineno-5-11" name="__codelineno-5-11"></a><span class="kp">#SBATCH --time=59:00  # D-HH:MM:SS</span>
-</span><span id="__span-5-12"><a id="__codelineno-5-12" name="__codelineno-5-12"></a><span class="kp">#SBATCH --mem-per-cpu=4000M</span>
-</span><span id="__span-5-13"><a id="__codelineno-5-13" name="__codelineno-5-13"></a>
-</span><span id="__span-5-14"><a id="__codelineno-5-14" name="__codelineno-5-14"></a>./myexe<span class="w"> </span>&lt;input/output<span class="w"> </span>options&gt;<span class="w"> </span><span class="c1"># myexe is the executable in this example.</span>
+<div class="language-slurm highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-5-1"><span class="ch">#!/bin/bash -l</span>
+</span><span id="__span-5-2"><span class="kp">#SBATCH --job-name=gpu_job</span>
+</span><span id="__span-5-3"><span class="kp">#SBATCH --output=%x.%j.out # %x.%j expands to slurm JobName.JobID</span>
+</span><span id="__span-5-4"><span class="kp">#SBATCH --error=%x.%j.err</span>
+</span><span id="__span-5-5"><span class="kp">#SBATCH --partition=gpu</span>
+</span><span id="__span-5-6"><span class="kp">#SBATCH --qos=standard</span>
+</span><span id="__span-5-7"><span class="kp">#SBATCH --account=$PI_ucid # Replace $PI_ucid which the NJIT UCID of PI</span>
+</span><span id="__span-5-8"><span class="kp">#SBATCH --nodes=1</span>
+</span><span id="__span-5-9"><span class="kp">#SBATCH --ntasks-per-node=1</span>
+</span><span id="__span-5-10"><span class="kp">#SBATCH --gres=gpu:1</span>
+</span><span id="__span-5-11"><span class="kp">#SBATCH --time=59:00  # D-HH:MM:SS</span>
+</span><span id="__span-5-12"><span class="kp">#SBATCH --mem-per-cpu=4000M</span>
+</span><span id="__span-5-13">
+</span><span id="__span-5-14">./myexe<span class="w"> </span>&lt;input/output<span class="w"> </span>options&gt;<span class="w"> </span><span class="c1"># myexe is the executable in this example.</span>
 </span></code></pre></div></td></tr></table></div>
 </div>
 <div class="tabbed-block">
-<div class="language-slurm highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-6-1"> 1</a></span>
-<span class="normal"><a href="#__codelineno-6-2"> 2</a></span>
-<span class="normal"><a href="#__codelineno-6-3"> 3</a></span>
-<span class="normal"><a href="#__codelineno-6-4"> 4</a></span>
-<span class="normal"><a href="#__codelineno-6-5"> 5</a></span>
-<span class="normal"><a href="#__codelineno-6-6"> 6</a></span>
-<span class="normal"><a href="#__codelineno-6-7"> 7</a></span>
-<span class="normal"><a href="#__codelineno-6-8"> 8</a></span>
-<span class="normal"><a href="#__codelineno-6-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-6-10">10</a></span>
-<span class="normal"><a href="#__codelineno-6-11">11</a></span>
-<span class="normal"><a href="#__codelineno-6-12">12</a></span>
-<span class="normal"><a href="#__codelineno-6-13">13</a></span>
-<span class="normal"><a href="#__codelineno-6-14">14</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1"></a><span class="ch">#!/bin/bash -l</span>
-</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2"></a><span class="kp">#SBATCH --job-name=gpu_job</span>
-</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3"></a><span class="kp">#SBATCH --output=%x.%j.out # %x.%j expands to slurm JobName.JobID</span>
-</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4"></a><span class="kp">#SBATCH --error=%x.%j.err</span>
-</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5"></a><span class="kp">#SBATCH --partition=gpu</span>
-</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6"></a><span class="kp">#SBATCH --qos=standard</span>
-</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7"></a><span class="kp">#SBATCH --account=$PI_ucid # Replace $PI_ucid which the NJIT UCID of PI</span>
-</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8"></a><span class="kp">#SBATCH --nodes=1</span>
-</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9"></a><span class="kp">#SBATCH --ntasks-per-node=8</span>
-</span><span id="__span-6-10"><a id="__codelineno-6-10" name="__codelineno-6-10"></a><span class="kp">#SBATCH --gres=gpu:1</span>
-</span><span id="__span-6-11"><a id="__codelineno-6-11" name="__codelineno-6-11"></a><span class="kp">#SBATCH --time=59:00  # D-HH:MM:SS</span>
-</span><span id="__span-6-12"><a id="__codelineno-6-12" name="__codelineno-6-12"></a><span class="kp">#SBATCH --mem-per-cpu=4000M</span>
-</span><span id="__span-6-13"><a id="__codelineno-6-13" name="__codelineno-6-13"></a>
-</span><span id="__span-6-14"><a id="__codelineno-6-14" name="__codelineno-6-14"></a><span class="nb">srun</span><span class="w"> </span>./myexe<span class="w"> </span>&lt;input/output<span class="w"> </span>options&gt;<span class="w"> </span><span class="c1"># myexe is the executable in this example.</span>
+<div class="language-slurm highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-6-1"><span class="ch">#!/bin/bash -l</span>
+</span><span id="__span-6-2"><span class="kp">#SBATCH --job-name=gpu_job</span>
+</span><span id="__span-6-3"><span class="kp">#SBATCH --output=%x.%j.out # %x.%j expands to slurm JobName.JobID</span>
+</span><span id="__span-6-4"><span class="kp">#SBATCH --error=%x.%j.err</span>
+</span><span id="__span-6-5"><span class="kp">#SBATCH --partition=gpu</span>
+</span><span id="__span-6-6"><span class="kp">#SBATCH --qos=standard</span>
+</span><span id="__span-6-7"><span class="kp">#SBATCH --account=$PI_ucid # Replace $PI_ucid which the NJIT UCID of PI</span>
+</span><span id="__span-6-8"><span class="kp">#SBATCH --nodes=1</span>
+</span><span id="__span-6-9"><span class="kp">#SBATCH --ntasks-per-node=8</span>
+</span><span id="__span-6-10"><span class="kp">#SBATCH --gres=gpu:1</span>
+</span><span id="__span-6-11"><span class="kp">#SBATCH --time=59:00  # D-HH:MM:SS</span>
+</span><span id="__span-6-12"><span class="kp">#SBATCH --mem-per-cpu=4000M</span>
+</span><span id="__span-6-13">
+</span><span id="__span-6-14"><span class="nb">srun</span><span class="w"> </span>./myexe<span class="w"> </span>&lt;input/output<span class="w"> </span>options&gt;<span class="w"> </span><span class="c1"># myexe is the executable in this example.</span>
 </span></code></pre></div></td></tr></table></div>
 </div>
 <div class="tabbed-block">
-<div class="language-slurm highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-7-1"> 1</a></span>
-<span class="normal"><a href="#__codelineno-7-2"> 2</a></span>
-<span class="normal"><a href="#__codelineno-7-3"> 3</a></span>
-<span class="normal"><a href="#__codelineno-7-4"> 4</a></span>
-<span class="normal"><a href="#__codelineno-7-5"> 5</a></span>
-<span class="normal"><a href="#__codelineno-7-6"> 6</a></span>
-<span class="normal"><a href="#__codelineno-7-7"> 7</a></span>
-<span class="normal"><a href="#__codelineno-7-8"> 8</a></span>
-<span class="normal"><a href="#__codelineno-7-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-7-10">10</a></span>
-<span class="normal"><a href="#__codelineno-7-11">11</a></span>
-<span class="normal"><a href="#__codelineno-7-12">12</a></span>
-<span class="normal"><a href="#__codelineno-7-13">13</a></span>
-<span class="normal"><a href="#__codelineno-7-14">14</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1"></a><span class="ch">#!/bin/bash -l</span>
-</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2"></a><span class="kp">#SBATCH --job-name=gpu_job</span>
-</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3"></a><span class="kp">#SBATCH --output=%x.%j.out # %x.%j expands to slurm JobName.JobID</span>
-</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4"></a><span class="kp">#SBATCH --error=%x.%j.err</span>
-</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5"></a><span class="kp">#SBATCH --partition=gpu</span>
-</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6"></a><span class="kp">#SBATCH --qos=standard</span>
-</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7"></a><span class="kp">#SBATCH --account=$PI_ucid # Replace $PI_ucid which the NJIT UCID of PI</span>
-</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8"></a><span class="kp">#SBATCH --nodes=1</span>
-</span><span id="__span-7-9"><a id="__codelineno-7-9" name="__codelineno-7-9"></a><span class="kp">#SBATCH --ntasks-per-node=8</span>
-</span><span id="__span-7-10"><a id="__codelineno-7-10" name="__codelineno-7-10"></a><span class="kp">#SBATCH --gres=gpu:2</span>
-</span><span id="__span-7-11"><a id="__codelineno-7-11" name="__codelineno-7-11"></a><span class="kp">#SBATCH --time=59:00  # D-HH:MM:SS</span>
-</span><span id="__span-7-12"><a id="__codelineno-7-12" name="__codelineno-7-12"></a><span class="kp">#SBATCH --mem-per-cpu=4000M</span>
-</span><span id="__span-7-13"><a id="__codelineno-7-13" name="__codelineno-7-13"></a>
-</span><span id="__span-7-14"><a id="__codelineno-7-14" name="__codelineno-7-14"></a><span class="nb">srun</span><span class="w"> </span>./myexe<span class="w"> </span>&lt;input/output<span class="w"> </span>options&gt;<span class="w"> </span><span class="c1"># myexe is the executable in this example.</span>
+<div class="language-slurm highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-7-1"><span class="ch">#!/bin/bash -l</span>
+</span><span id="__span-7-2"><span class="kp">#SBATCH --job-name=gpu_job</span>
+</span><span id="__span-7-3"><span class="kp">#SBATCH --output=%x.%j.out # %x.%j expands to slurm JobName.JobID</span>
+</span><span id="__span-7-4"><span class="kp">#SBATCH --error=%x.%j.err</span>
+</span><span id="__span-7-5"><span class="kp">#SBATCH --partition=gpu</span>
+</span><span id="__span-7-6"><span class="kp">#SBATCH --qos=standard</span>
+</span><span id="__span-7-7"><span class="kp">#SBATCH --account=$PI_ucid # Replace $PI_ucid which the NJIT UCID of PI</span>
+</span><span id="__span-7-8"><span class="kp">#SBATCH --nodes=1</span>
+</span><span id="__span-7-9"><span class="kp">#SBATCH --ntasks-per-node=8</span>
+</span><span id="__span-7-10"><span class="kp">#SBATCH --gres=gpu:2</span>
+</span><span id="__span-7-11"><span class="kp">#SBATCH --time=59:00  # D-HH:MM:SS</span>
+</span><span id="__span-7-12"><span class="kp">#SBATCH --mem-per-cpu=4000M</span>
+</span><span id="__span-7-13">
+</span><span id="__span-7-14"><span class="nb">srun</span><span class="w"> </span>./myexe<span class="w"> </span>&lt;input/output<span class="w"> </span>options&gt;<span class="w"> </span><span class="c1"># myexe is the executable in this example.</span>
 </span></code></pre></div></td></tr></table></div>
 </div>
 <div class="tabbed-block">
-<div class="language-slurm highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-8-1"> 1</a></span>
-<span class="normal"><a href="#__codelineno-8-2"> 2</a></span>
-<span class="normal"><a href="#__codelineno-8-3"> 3</a></span>
-<span class="normal"><a href="#__codelineno-8-4"> 4</a></span>
-<span class="normal"><a href="#__codelineno-8-5"> 5</a></span>
-<span class="normal"><a href="#__codelineno-8-6"> 6</a></span>
-<span class="normal"><a href="#__codelineno-8-7"> 7</a></span>
-<span class="normal"><a href="#__codelineno-8-8"> 8</a></span>
-<span class="normal"><a href="#__codelineno-8-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-8-10">10</a></span>
-<span class="normal"><a href="#__codelineno-8-11">11</a></span>
-<span class="normal"><a href="#__codelineno-8-12">12</a></span>
-<span class="normal"><a href="#__codelineno-8-13">13</a></span>
-<span class="normal"><a href="#__codelineno-8-14">14</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1"></a><span class="ch">#!/bin/bash -l</span>
-</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2"></a><span class="kp">#SBATCH --job-name=gpu_job</span>
-</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3"></a><span class="kp">#SBATCH --output=%x.%j.out # %x.%j expands to slurm JobName.JobID</span>
-</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4"></a><span class="kp">#SBATCH --error=%x.%j.err</span>
-</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5"></a><span class="kp">#SBATCH --partition=gpu</span>
-</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6"></a><span class="kp">#SBATCH --qos=standard</span>
-</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7"></a><span class="kp">#SBATCH --account=$PI_ucid # Replace $PI_ucid which the NJIT UCID of PI</span>
-</span><span id="__span-8-8"><a id="__codelineno-8-8" name="__codelineno-8-8"></a><span class="kp">#SBATCH --nodes=1</span>
-</span><span id="__span-8-9"><a id="__codelineno-8-9" name="__codelineno-8-9"></a><span class="kp">#SBATCH --ntasks-per-node=8</span>
-</span><span id="__span-8-10"><a id="__codelineno-8-10" name="__codelineno-8-10"></a><span class="kp">#SBATCH --gres=gpu:a100_10g:1  # This uses 10G MIG, to use 20G or 40G MIG, modify 10g to 20g or 40g </span>
-</span><span id="__span-8-11"><a id="__codelineno-8-11" name="__codelineno-8-11"></a><span class="kp">#SBATCH --time=59:00  # D-HH:MM:SS</span>
-</span><span id="__span-8-12"><a id="__codelineno-8-12" name="__codelineno-8-12"></a><span class="kp">#SBATCH --mem-per-cpu=4000M</span>
-</span><span id="__span-8-13"><a id="__codelineno-8-13" name="__codelineno-8-13"></a>
-</span><span id="__span-8-14"><a id="__codelineno-8-14" name="__codelineno-8-14"></a><span class="nb">srun</span><span class="w"> </span>./myexe<span class="w"> </span>&lt;input/output<span class="w"> </span>options&gt;<span class="w"> </span><span class="c1"># myexe is the executable in this example.</span>
+<div class="language-slurm highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-8-1"><span class="ch">#!/bin/bash -l</span>
+</span><span id="__span-8-2"><span class="kp">#SBATCH --job-name=gpu_job</span>
+</span><span id="__span-8-3"><span class="kp">#SBATCH --output=%x.%j.out # %x.%j expands to slurm JobName.JobID</span>
+</span><span id="__span-8-4"><span class="kp">#SBATCH --error=%x.%j.err</span>
+</span><span id="__span-8-5"><span class="kp">#SBATCH --partition=gpu</span>
+</span><span id="__span-8-6"><span class="kp">#SBATCH --qos=standard</span>
+</span><span id="__span-8-7"><span class="kp">#SBATCH --account=$PI_ucid # Replace $PI_ucid which the NJIT UCID of PI</span>
+</span><span id="__span-8-8"><span class="kp">#SBATCH --nodes=1</span>
+</span><span id="__span-8-9"><span class="kp">#SBATCH --ntasks-per-node=8</span>
+</span><span id="__span-8-10"><span class="kp">#SBATCH --gres=gpu:a100_10g:1  # This uses 10G MIG, to use 20G or 40G MIG, modify 10g to 20g or 40g </span>
+</span><span id="__span-8-11"><span class="kp">#SBATCH --time=59:00  # D-HH:MM:SS</span>
+</span><span id="__span-8-12"><span class="kp">#SBATCH --mem-per-cpu=4000M</span>
+</span><span id="__span-8-13">
+</span><span id="__span-8-14"><span class="nb">srun</span><span class="w"> </span>./myexe<span class="w"> </span>&lt;input/output<span class="w"> </span>options&gt;<span class="w"> </span><span class="c1"># myexe is the executable in this example.</span>
 </span></code></pre></div></td></tr></table></div>
 </div>
 </div>
@@ -4701,31 +4798,31 @@ Here, the <code>ST</code> stands for the status of the job. You may see the stat
 <p>The <code>debug</code> QoS in Slurm is intended for debugging and testing jobs. It usually provides a shorter queue wait time and quicker job turnaround. Jobs submitted with the <code>debug</code> QoS have access to a limited set of resources (Only 4 CPUS on Wulver), making it suitable for rapid testing and debugging of applications without tying up cluster resources for extended periods. </p>
 <details class="example">
 <summary>Sample Job Script to use: debug_submit.sh</summary>
-<div class="language-slurm highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-9-1"> 1</a></span>
-<span class="normal"><a href="#__codelineno-9-2"> 2</a></span>
-<span class="normal"><a href="#__codelineno-9-3"> 3</a></span>
-<span class="normal"><a href="#__codelineno-9-4"> 4</a></span>
-<span class="normal"><a href="#__codelineno-9-5"> 5</a></span>
-<span class="normal"><a href="#__codelineno-9-6"> 6</a></span>
-<span class="normal"><a href="#__codelineno-9-7"> 7</a></span>
-<span class="normal"><a href="#__codelineno-9-8"> 8</a></span>
-<span class="normal"><a href="#__codelineno-9-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-9-10">10</a></span>
-<span class="normal"><a href="#__codelineno-9-11">11</a></span>
-<span class="normal"><a href="#__codelineno-9-12">12</a></span>
-<span class="normal"><a href="#__codelineno-9-13">13</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1"></a><span class="ch">#!/bin/bash -l</span>
-</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2"></a><span class="kp">#SBATCH --job-name=debug</span>
-</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3"></a><span class="kp">#SBATCH --output=%x.%j.out # %x.%j expands to slurm JobName.JobID</span>
-</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4"></a><span class="kp">#SBATCH --error=%x.%j.err</span>
-</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5"></a><span class="kp">#SBATCH --partition=debug</span>
-</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6"></a><span class="kp">#SBATCH --qos=debug</span>
-</span><span id="__span-9-7"><a id="__codelineno-9-7" name="__codelineno-9-7"></a><span class="kp">#SBATCH --account=$PI_ucid # Replace $PI_ucid which the NJIT UCID of PI</span>
-</span><span id="__span-9-8"><a id="__codelineno-9-8" name="__codelineno-9-8"></a><span class="kp">#SBATCH --nodes=1</span>
-</span><span id="__span-9-9"><a id="__codelineno-9-9" name="__codelineno-9-9"></a><span class="kp">#SBATCH --ntasks-per-node=1</span>
-</span><span id="__span-9-10"><a id="__codelineno-9-10" name="__codelineno-9-10"></a><span class="kp">#SBATCH --time=7:59:00  # D-HH:MM:SS, Maximum allowable Wall Time 8 hours</span>
-</span><span id="__span-9-11"><a id="__codelineno-9-11" name="__codelineno-9-11"></a><span class="kp">#SBATCH --mem-per-cpu=4000M</span>
-</span><span id="__span-9-12"><a id="__codelineno-9-12" name="__codelineno-9-12"></a>
-</span><span id="__span-9-13"><a id="__codelineno-9-13" name="__codelineno-9-13"></a>./myexe<span class="w"> </span>&lt;input/output<span class="w"> </span>options&gt;
+<div class="language-slurm highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-9-1"><span class="ch">#!/bin/bash -l</span>
+</span><span id="__span-9-2"><span class="kp">#SBATCH --job-name=debug</span>
+</span><span id="__span-9-3"><span class="kp">#SBATCH --output=%x.%j.out # %x.%j expands to slurm JobName.JobID</span>
+</span><span id="__span-9-4"><span class="kp">#SBATCH --error=%x.%j.err</span>
+</span><span id="__span-9-5"><span class="kp">#SBATCH --partition=debug</span>
+</span><span id="__span-9-6"><span class="kp">#SBATCH --qos=debug</span>
+</span><span id="__span-9-7"><span class="kp">#SBATCH --account=$PI_ucid # Replace $PI_ucid which the NJIT UCID of PI</span>
+</span><span id="__span-9-8"><span class="kp">#SBATCH --nodes=1</span>
+</span><span id="__span-9-9"><span class="kp">#SBATCH --ntasks-per-node=1</span>
+</span><span id="__span-9-10"><span class="kp">#SBATCH --time=7:59:00  # D-HH:MM:SS, Maximum allowable Wall Time 8 hours</span>
+</span><span id="__span-9-11"><span class="kp">#SBATCH --mem-per-cpu=4000M</span>
+</span><span id="__span-9-12">
+</span><span id="__span-9-13">./myexe<span class="w"> </span>&lt;input/output<span class="w"> </span>options&gt;
 </span></code></pre></div></td></tr></table></div>
 </details>
 </div>
@@ -4733,31 +4830,31 @@ Here, the <code>ST</code> stands for the status of the job. You may see the stat
 <p>The bigmem nodes provide 2 TB of RAM in total. By default, each CPU core is allocated 16 GB of memory, but you can request additional memory if your job requires it.</p>
 <details class="example">
 <summary>Sample Job Script to use: bigmem_submit.sh</summary>
-<div class="language-slurm highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-10-1"> 1</a></span>
-<span class="normal"><a href="#__codelineno-10-2"> 2</a></span>
-<span class="normal"><a href="#__codelineno-10-3"> 3</a></span>
-<span class="normal"><a href="#__codelineno-10-4"> 4</a></span>
-<span class="normal"><a href="#__codelineno-10-5"> 5</a></span>
-<span class="normal"><a href="#__codelineno-10-6"> 6</a></span>
-<span class="normal"><a href="#__codelineno-10-7"> 7</a></span>
-<span class="normal"><a href="#__codelineno-10-8"> 8</a></span>
-<span class="normal"><a href="#__codelineno-10-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-10-10">10</a></span>
-<span class="normal"><a href="#__codelineno-10-11">11</a></span>
-<span class="normal"><a href="#__codelineno-10-12">12</a></span>
-<span class="normal"><a href="#__codelineno-10-13">13</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1"></a><span class="ch">#!/bin/bash -l</span>
-</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2"></a><span class="kp">#SBATCH --job-name=bigmem_job</span>
-</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3"></a><span class="kp">#SBATCH --output=%x.%j.out # %x.%j expands to slurm JobName.JobID</span>
-</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4"></a><span class="kp">#SBATCH --error=%x.%j.err</span>
-</span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5"></a><span class="kp">#SBATCH --partition=bigmem</span>
-</span><span id="__span-10-6"><a id="__codelineno-10-6" name="__codelineno-10-6"></a><span class="kp">#SBATCH --qos=standard</span>
-</span><span id="__span-10-7"><a id="__codelineno-10-7" name="__codelineno-10-7"></a><span class="kp">#SBATCH --account=$PI_ucid # Replace $PI_ucid which the NJIT UCID of PI</span>
-</span><span id="__span-10-8"><a id="__codelineno-10-8" name="__codelineno-10-8"></a><span class="kp">#SBATCH --nodes=1</span>
-</span><span id="__span-10-9"><a id="__codelineno-10-9" name="__codelineno-10-9"></a><span class="kp">#SBATCH --ntasks-per-node=1</span>
-</span><span id="__span-10-10"><a id="__codelineno-10-10" name="__codelineno-10-10"></a><span class="kp">#SBATCH --time=59:00  # D-HH:MM:SS</span>
-</span><span id="__span-10-11"><a id="__codelineno-10-11" name="__codelineno-10-11"></a><span class="kp">#SBATCH --mem-per-cpu=16000M</span>
-</span><span id="__span-10-12"><a id="__codelineno-10-12" name="__codelineno-10-12"></a>
-</span><span id="__span-10-13"><a id="__codelineno-10-13" name="__codelineno-10-13"></a>./myexe<span class="w"> </span>&lt;input/output<span class="w"> </span>options&gt;
+<div class="language-slurm highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-10-1"><span class="ch">#!/bin/bash -l</span>
+</span><span id="__span-10-2"><span class="kp">#SBATCH --job-name=bigmem_job</span>
+</span><span id="__span-10-3"><span class="kp">#SBATCH --output=%x.%j.out # %x.%j expands to slurm JobName.JobID</span>
+</span><span id="__span-10-4"><span class="kp">#SBATCH --error=%x.%j.err</span>
+</span><span id="__span-10-5"><span class="kp">#SBATCH --partition=bigmem</span>
+</span><span id="__span-10-6"><span class="kp">#SBATCH --qos=standard</span>
+</span><span id="__span-10-7"><span class="kp">#SBATCH --account=$PI_ucid # Replace $PI_ucid which the NJIT UCID of PI</span>
+</span><span id="__span-10-8"><span class="kp">#SBATCH --nodes=1</span>
+</span><span id="__span-10-9"><span class="kp">#SBATCH --ntasks-per-node=1</span>
+</span><span id="__span-10-10"><span class="kp">#SBATCH --time=59:00  # D-HH:MM:SS</span>
+</span><span id="__span-10-11"><span class="kp">#SBATCH --mem-per-cpu=16000M</span>
+</span><span id="__span-10-12">
+</span><span id="__span-10-13">./myexe<span class="w"> </span>&lt;input/output<span class="w"> </span>options&gt;
 </span></code></pre></div></td></tr></table></div>
 </details>
 </div>
@@ -5009,6 +5106,8 @@ Here, the <code>ST</code> stands for the status of the job. You may see the stat
       <script src="../../assets/javascripts/bundle.a5f9d56c.min.js"></script>
       
         <script src="../../assets/_markdown_exec_pyodide.js"></script>
+      
+        <script src="../../javascripts/a11y.js"></script>
       
     
 <script>

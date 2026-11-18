@@ -90,7 +90,7 @@
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
-    <label class="md-overlay" for="__drawer"></label>
+    <label class="md-overlay" for="__drawer" aria-hidden="true"></label>
     <div data-md-component="skip">
       
         
@@ -210,8 +210,7 @@
         <div class="md-search__suggest" data-md-component="search-suggest"></div>
       
     </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+    <div class="md-search__output"><div class="md-search__scrollwrap" tabindex="0" role="region" aria-label="Search results" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
             Initializing search
@@ -331,7 +330,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" aria-labelledby="__nav_2_label" >
+        
         
           
           <div class="md-nav__link md-nav__container">
@@ -354,17 +355,18 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-label="About Us" aria-expanded="false">
-          <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_2');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_2');if(t)t.checked=false;}">
-            <span class="md-nav__icon md-icon"></span>
-            About Us
-          </div>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
+        
+          <nav class="md-nav" data-md-level="1" aria-label="About Us">
+            <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_2');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_2');if(t)t.checked=false;}">
+              <span class="md-nav__icon md-icon"></span>
+              About Us
+            </div>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+              
+                
+                  
   
   
   
@@ -384,10 +386,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -407,10 +409,11 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
@@ -447,7 +450,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" aria-labelledby="__nav_3_label" >
+        
         
           
           <div class="md-nav__link md-nav__container">
@@ -470,17 +475,18 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-label="Clusters" aria-expanded="false">
-          <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_3');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_3');if(t)t.checked=false;}">
-            <span class="md-nav__icon md-icon"></span>
-            Clusters
-          </div>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
+        
+          <nav class="md-nav" data-md-level="1" aria-label="Clusters">
+            <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_3');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_3');if(t)t.checked=false;}">
+              <span class="md-nav__icon md-icon"></span>
+              Clusters
+            </div>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+              
+                
+                  
   
   
   
@@ -500,10 +506,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -523,7 +529,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
+          <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" aria-labelledby="__nav_3_3_label" >
+        
         
           
           <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
@@ -539,15 +547,16 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-label="Decommissioned" aria-expanded="false">
-          <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_3_3');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_3_3');if(t)t.checked=false;}">
-            <span class="md-nav__icon md-icon"></span>
-            Decommissioned
-          </div>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+        
+          <nav class="md-nav" data-md-level="2" aria-label="Decommissioned">
+            <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_3_3');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_3_3');if(t)t.checked=false;}">
+              <span class="md-nav__icon md-icon"></span>
+              Decommissioned
+            </div>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -567,10 +576,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -590,18 +599,19 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -621,10 +631,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -644,10 +654,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -667,10 +677,11 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
@@ -727,7 +738,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" aria-labelledby="__nav_5_label" >
+        
         
           
           <div class="md-nav__link md-nav__container">
@@ -750,17 +763,18 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-label="Policies" aria-expanded="false">
-          <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_5');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_5');if(t)t.checked=false;}">
-            <span class="md-nav__icon md-icon"></span>
-            Policies
-          </div>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
+        
+          <nav class="md-nav" data-md-level="1" aria-label="Policies">
+            <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_5');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_5');if(t)t.checked=false;}">
+              <span class="md-nav__icon md-icon"></span>
+              Policies
+            </div>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+              
+                
+                  
   
   
   
@@ -780,10 +794,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -803,10 +817,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -838,7 +852,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_4" >
+        
+          <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_4" aria-labelledby="__nav_5_4_label" >
+        
         
           
           <div class="md-nav__link md-nav__container">
@@ -861,17 +877,18 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-label="Allocation policy" aria-expanded="false">
-          <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_5_4');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_5_4');if(t)t.checked=false;}">
-            <span class="md-nav__icon md-icon"></span>
-            Allocation policy
-          </div>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
+        
+          <nav class="md-nav" data-md-level="2" aria-label="Allocation policy">
+            <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_5_4');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_5_4');if(t)t.checked=false;}">
+              <span class="md-nav__icon md-icon"></span>
+              Allocation policy
+            </div>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+              
+                
+                  
   
   
   
@@ -891,10 +908,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -914,10 +931,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -937,10 +954,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -960,10 +977,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -983,10 +1000,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1006,18 +1023,19 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1037,10 +1055,11 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
@@ -1119,7 +1138,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" aria-labelledby="__nav_8_label" >
+        
         
           
           <div class="md-nav__link md-nav__container">
@@ -1142,17 +1163,18 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-label="Status (on-campus or VPN)" aria-expanded="false">
-          <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_8');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_8');if(t)t.checked=false;}">
-            <span class="md-nav__icon md-icon"></span>
-            Status (on-campus or VPN)
-          </div>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
+        
+          <nav class="md-nav" data-md-level="1" aria-label="Status (on-campus or VPN)">
+            <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_8');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_8');if(t)t.checked=false;}">
+              <span class="md-nav__icon md-icon"></span>
+              Status (on-campus or VPN)
+            </div>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+              
+                
+                  
   
   
   
@@ -1172,10 +1194,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1195,10 +1217,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1218,10 +1240,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1241,10 +1263,11 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
@@ -1275,7 +1298,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" aria-labelledby="__nav_9_label" >
+        
         
           
           <div class="md-nav__link md-nav__container">
@@ -1298,17 +1323,18 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-label="HPC Events and Workshops" aria-expanded="false">
-          <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_9');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_9');if(t)t.checked=false;}">
-            <span class="md-nav__icon md-icon"></span>
-            HPC Events and Workshops
-          </div>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
+        
+          <nav class="md-nav" data-md-level="1" aria-label="HPC Events and Workshops">
+            <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_9');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_9');if(t)t.checked=false;}">
+              <span class="md-nav__icon md-icon"></span>
+              HPC Events and Workshops
+            </div>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+              
+                
+                  
   
   
   
@@ -1330,7 +1356,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_2" >
+        
+          <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_2" aria-labelledby="__nav_9_2_label" >
+        
         
           
           <div class="md-nav__link md-nav__container">
@@ -1353,17 +1381,18 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-label="Workshop and Training Videos" aria-expanded="false">
-          <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_9_2');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_9_2');if(t)t.checked=false;}">
-            <span class="md-nav__icon md-icon"></span>
-            Workshop and Training Videos
-          </div>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
+        
+          <nav class="md-nav" data-md-level="2" aria-label="Workshop and Training Videos">
+            <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_9_2');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_9_2');if(t)t.checked=false;}">
+              <span class="md-nav__icon md-icon"></span>
+              Workshop and Training Videos
+            </div>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+              
+                
+                  
   
   
   
@@ -1383,18 +1412,19 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1418,7 +1448,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_3" >
+        
+          <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_3" aria-labelledby="__nav_9_3_label" >
+        
         
           
           <div class="md-nav__link md-nav__container">
@@ -1441,17 +1473,18 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-label="Archived" aria-expanded="false">
-          <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_9_3');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_9_3');if(t)t.checked=false;}">
-            <span class="md-nav__icon md-icon"></span>
-            Archived
-          </div>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
+        
+          <nav class="md-nav" data-md-level="2" aria-label="Archived">
+            <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_9_3');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_9_3');if(t)t.checked=false;}">
+              <span class="md-nav__icon md-icon"></span>
+              Archived
+            </div>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+              
+                
+                  
   
   
   
@@ -1481,7 +1514,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_3_2" >
+        
+          <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_3_2" aria-labelledby="__nav_9_3_2_label" >
+        
         
           
           <label class="md-nav__link" for="__nav_9_3_2" id="__nav_9_3_2_label" tabindex="0">
@@ -1497,15 +1532,16 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-label="2024" aria-expanded="false">
-          <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_9_3_2');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_9_3_2');if(t)t.checked=false;}">
-            <span class="md-nav__icon md-icon"></span>
-            2024
-          </div>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+        
+          <nav class="md-nav" data-md-level="3" aria-label="2024">
+            <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_9_3_2');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_9_3_2');if(t)t.checked=false;}">
+              <span class="md-nav__icon md-icon"></span>
+              2024
+            </div>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -1525,10 +1561,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1548,10 +1584,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1571,10 +1607,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1594,10 +1630,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1617,10 +1653,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1640,10 +1676,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1663,18 +1699,19 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1700,7 +1737,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_3_3" >
+        
+          <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_3_3" aria-labelledby="__nav_9_3_3_label" >
+        
         
           
           <label class="md-nav__link" for="__nav_9_3_3" id="__nav_9_3_3_label" tabindex="0">
@@ -1716,15 +1755,16 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-label="2025" aria-expanded="false">
-          <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_9_3_3');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_9_3_3');if(t)t.checked=false;}">
-            <span class="md-nav__icon md-icon"></span>
-            2025
-          </div>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+        
+          <nav class="md-nav" data-md-level="3" aria-label="2025">
+            <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_9_3_3');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_9_3_3');if(t)t.checked=false;}">
+              <span class="md-nav__icon md-icon"></span>
+              2025
+            </div>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -1744,10 +1784,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1767,10 +1807,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1790,10 +1830,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1813,10 +1853,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1836,26 +1876,29 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
@@ -1904,7 +1947,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" aria-labelledby="__nav_10_label" >
+        
         
           
           <div class="md-nav__link md-nav__container">
@@ -1927,17 +1972,18 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-label="Running Jobs" aria-expanded="false">
-          <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_10');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_10');if(t)t.checked=false;}">
-            <span class="md-nav__icon md-icon"></span>
-            Running Jobs
-          </div>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
+        
+          <nav class="md-nav" data-md-level="1" aria-label="Running Jobs">
+            <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_10');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_10');if(t)t.checked=false;}">
+              <span class="md-nav__icon md-icon"></span>
+              Running Jobs
+            </div>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+              
+                
+                  
   
   
   
@@ -1957,10 +2003,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1980,10 +2026,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2003,10 +2049,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2026,10 +2072,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2049,10 +2095,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2072,10 +2118,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2095,10 +2141,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2118,10 +2164,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2141,10 +2187,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2164,10 +2210,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2187,10 +2233,11 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
@@ -2239,7 +2286,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" checked>
+        
+          <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" aria-labelledby="__nav_11_label" checked>
+        
         
           
           <div class="md-nav__link md-nav__container">
@@ -2262,17 +2311,18 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-label="Software" aria-expanded="true">
-          <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_11');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_11');if(t)t.checked=false;}">
-            <span class="md-nav__icon md-icon"></span>
-            Software
-          </div>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
+        
+          <nav class="md-nav" data-md-level="1" aria-label="Software">
+            <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_11');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_11');if(t)t.checked=false;}">
+              <span class="md-nav__icon md-icon"></span>
+              Software
+            </div>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+              
+                
+                  
   
   
   
@@ -2296,7 +2346,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_2" >
+        
+          <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_2" aria-labelledby="__nav_11_2_label" >
+        
         
           
           <label class="md-nav__link" for="__nav_11_2" id="__nav_11_2_label" tabindex="0">
@@ -2312,15 +2364,16 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-label="CFD" aria-expanded="false">
-          <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_11_2');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_11_2');if(t)t.checked=false;}">
-            <span class="md-nav__icon md-icon"></span>
-            CFD
-          </div>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+        
+          <nav class="md-nav" data-md-level="2" aria-label="CFD">
+            <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_11_2');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_11_2');if(t)t.checked=false;}">
+              <span class="md-nav__icon md-icon"></span>
+              CFD
+            </div>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -2340,10 +2393,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2363,10 +2416,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2386,10 +2439,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2409,18 +2462,19 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2438,7 +2492,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_3" >
+        
+          <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_3" aria-labelledby="__nav_11_3_label" >
+        
         
           
           <label class="md-nav__link" for="__nav_11_3" id="__nav_11_3_label" tabindex="0">
@@ -2454,15 +2510,16 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-label="IDE" aria-expanded="false">
-          <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_11_3');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_11_3');if(t)t.checked=false;}">
-            <span class="md-nav__icon md-icon"></span>
-            IDE
-          </div>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+        
+          <nav class="md-nav" data-md-level="2" aria-label="IDE">
+            <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_11_3');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_11_3');if(t)t.checked=false;}">
+              <span class="md-nav__icon md-icon"></span>
+              IDE
+            </div>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -2482,18 +2539,19 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
     
@@ -2517,7 +2575,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_4" checked>
+        
+          <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_4" aria-labelledby="__nav_11_4_label" checked>
+        
         
           
           <div class="md-nav__link md-nav__container">
@@ -2540,17 +2600,18 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-label="MATLAB" aria-expanded="true">
-          <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_11_4');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_11_4');if(t)t.checked=false;}">
-            <span class="md-nav__icon md-icon"></span>
-            MATLAB
-          </div>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
+        
+          <nav class="md-nav" data-md-level="2" aria-label="MATLAB">
+            <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_11_4');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_11_4');if(t)t.checked=false;}">
+              <span class="md-nav__icon md-icon"></span>
+              MATLAB
+            </div>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+              
+                
+                  
   
   
     
@@ -2696,18 +2757,19 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2729,7 +2791,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_5" >
+        
+          <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_5" aria-labelledby="__nav_11_5_label" >
+        
         
           
           <label class="md-nav__link" for="__nav_11_5" id="__nav_11_5_label" tabindex="0">
@@ -2745,15 +2809,16 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-label="Molecular Dynamics" aria-expanded="false">
-          <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_11_5');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_11_5');if(t)t.checked=false;}">
-            <span class="md-nav__icon md-icon"></span>
-            Molecular Dynamics
-          </div>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+        
+          <nav class="md-nav" data-md-level="2" aria-label="Molecular Dynamics">
+            <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_11_5');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_11_5');if(t)t.checked=false;}">
+              <span class="md-nav__icon md-icon"></span>
+              Molecular Dynamics
+            </div>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -2773,10 +2838,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2796,10 +2861,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2819,18 +2884,19 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2858,7 +2924,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_6" >
+        
+          <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_6" aria-labelledby="__nav_11_6_label" >
+        
         
           
           <label class="md-nav__link" for="__nav_11_6" id="__nav_11_6_label" tabindex="0">
@@ -2874,15 +2942,16 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-label="Chemistry" aria-expanded="false">
-          <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_11_6');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_11_6');if(t)t.checked=false;}">
-            <span class="md-nav__icon md-icon"></span>
-            Chemistry
-          </div>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+        
+          <nav class="md-nav" data-md-level="2" aria-label="Chemistry">
+            <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_11_6');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_11_6');if(t)t.checked=false;}">
+              <span class="md-nav__icon md-icon"></span>
+              Chemistry
+            </div>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -2902,10 +2971,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2925,10 +2994,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2948,10 +3017,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2971,10 +3040,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2994,10 +3063,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -3017,18 +3086,19 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -3046,7 +3116,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_7" >
+        
+          <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_7" aria-labelledby="__nav_11_7_label" >
+        
         
           
           <label class="md-nav__link" for="__nav_11_7" id="__nav_11_7_label" tabindex="0">
@@ -3062,15 +3134,16 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-label="Programming" aria-expanded="false">
-          <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_11_7');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_11_7');if(t)t.checked=false;}">
-            <span class="md-nav__icon md-icon"></span>
-            Programming
-          </div>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+        
+          <nav class="md-nav" data-md-level="2" aria-label="Programming">
+            <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_11_7');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_11_7');if(t)t.checked=false;}">
+              <span class="md-nav__icon md-icon"></span>
+              Programming
+            </div>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -3090,18 +3163,19 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -3125,7 +3199,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_8" >
+        
+          <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_8" aria-labelledby="__nav_11_8_label" >
+        
         
           
           <div class="md-nav__link md-nav__container">
@@ -3148,17 +3224,18 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-label="Python" aria-expanded="false">
-          <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_11_8');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_11_8');if(t)t.checked=false;}">
-            <span class="md-nav__icon md-icon"></span>
-            Python
-          </div>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
+        
+          <nav class="md-nav" data-md-level="2" aria-label="Python">
+            <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_11_8');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_11_8');if(t)t.checked=false;}">
+              <span class="md-nav__icon md-icon"></span>
+              Python
+            </div>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+              
+                
+                  
   
   
   
@@ -3178,10 +3255,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -3201,18 +3278,19 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -3232,7 +3310,7 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_9" >
+        
         
           
           <div class="md-nav__link md-nav__container">
@@ -3250,25 +3328,15 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-label="Slurm" aria-expanded="false">
-          <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_11_9');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_11_9');if(t)t.checked=false;}">
-            <span class="md-nav__icon md-icon"></span>
-            Slurm
-          </div>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
-          </ul>
-        </nav>
+        
       
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -3290,7 +3358,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_10" >
+        
+          <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_10" aria-labelledby="__nav_11_10_label" >
+        
         
           
           <label class="md-nav__link" for="__nav_11_10" id="__nav_11_10_label" tabindex="0">
@@ -3306,15 +3376,16 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-label="Utilities" aria-expanded="false">
-          <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_11_10');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_11_10');if(t)t.checked=false;}">
-            <span class="md-nav__icon md-icon"></span>
-            Utilities
-          </div>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+        
+          <nav class="md-nav" data-md-level="2" aria-label="Utilities">
+            <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_11_10');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_11_10');if(t)t.checked=false;}">
+              <span class="md-nav__icon md-icon"></span>
+              Utilities
+            </div>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -3334,10 +3405,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -3357,10 +3428,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -3380,18 +3451,19 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -3415,7 +3487,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_11" >
+        
+          <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_11" aria-labelledby="__nav_11_11_label" >
+        
         
           
           <label class="md-nav__link" for="__nav_11_11" id="__nav_11_11_label" tabindex="0">
@@ -3431,15 +3505,16 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-label="Visualization" aria-expanded="false">
-          <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_11_11');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_11_11');if(t)t.checked=false;}">
-            <span class="md-nav__icon md-icon"></span>
-            Visualization
-          </div>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+        
+          <nav class="md-nav" data-md-level="2" aria-label="Visualization">
+            <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_11_11');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_11_11');if(t)t.checked=false;}">
+              <span class="md-nav__icon md-icon"></span>
+              Visualization
+            </div>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -3459,10 +3534,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -3482,10 +3557,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -3505,10 +3580,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -3528,18 +3603,20 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
@@ -3572,7 +3649,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" >
+        
+          <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" aria-labelledby="__nav_12_label" >
+        
         
           
           <div class="md-nav__link md-nav__container">
@@ -3595,17 +3674,18 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-label="MIG (Multi-Instance GPU)" aria-expanded="false">
-          <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_12');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_12');if(t)t.checked=false;}">
-            <span class="md-nav__icon md-icon"></span>
-            MIG (Multi-Instance GPU)
-          </div>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
+        
+          <nav class="md-nav" data-md-level="1" aria-label="MIG (Multi-Instance GPU)">
+            <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_12');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_12');if(t)t.checked=false;}">
+              <span class="md-nav__icon md-icon"></span>
+              MIG (Multi-Instance GPU)
+            </div>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+              
+                
+                  
   
   
   
@@ -3625,10 +3705,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -3648,10 +3728,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -3671,10 +3751,11 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
@@ -3719,7 +3800,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_13" >
+        
+          <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_13" aria-labelledby="__nav_13_label" >
+        
         
           
           <div class="md-nav__link md-nav__container">
@@ -3742,17 +3825,18 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-label="OnDemand" aria-expanded="false">
-          <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_13');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_13');if(t)t.checked=false;}">
-            <span class="md-nav__icon md-icon"></span>
-            OnDemand
-          </div>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
+        
+          <nav class="md-nav" data-md-level="1" aria-label="OnDemand">
+            <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_13');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_13');if(t)t.checked=false;}">
+              <span class="md-nav__icon md-icon"></span>
+              OnDemand
+            </div>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+              
+                
+                  
   
   
   
@@ -3772,10 +3856,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -3795,10 +3879,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -3818,10 +3902,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -3845,7 +3929,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_13_5" >
+        
+          <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_13_5" aria-labelledby="__nav_13_5_label" >
+        
         
           
           <div class="md-nav__link md-nav__container">
@@ -3868,17 +3954,18 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-label="Jobs" aria-expanded="false">
-          <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_13_5');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_13_5');if(t)t.checked=false;}">
-            <span class="md-nav__icon md-icon"></span>
-            Jobs
-          </div>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
+        
+          <nav class="md-nav" data-md-level="2" aria-label="Jobs">
+            <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_13_5');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_13_5');if(t)t.checked=false;}">
+              <span class="md-nav__icon md-icon"></span>
+              Jobs
+            </div>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+              
+                
+                  
   
   
   
@@ -3898,10 +3985,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -3921,18 +4008,19 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -3952,10 +4040,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -3981,7 +4069,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_13_7" >
+        
+          <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_13_7" aria-labelledby="__nav_13_7_label" >
+        
         
           
           <div class="md-nav__link md-nav__container">
@@ -4004,17 +4094,18 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-label="Interactive Apps" aria-expanded="false">
-          <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_13_7');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_13_7');if(t)t.checked=false;}">
-            <span class="md-nav__icon md-icon"></span>
-            Interactive Apps
-          </div>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
+        
+          <nav class="md-nav" data-md-level="2" aria-label="Interactive Apps">
+            <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_13_7');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_13_7');if(t)t.checked=false;}">
+              <span class="md-nav__icon md-icon"></span>
+              Interactive Apps
+            </div>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+              
+                
+                  
   
   
   
@@ -4034,10 +4125,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -4057,10 +4148,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -4080,18 +4171,19 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -4111,10 +4203,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -4134,10 +4226,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -4157,10 +4249,11 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
@@ -4191,7 +4284,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_14" >
+        
+          <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_14" aria-labelledby="__nav_14_label" >
+        
         
           
           <div class="md-nav__link md-nav__container">
@@ -4214,17 +4309,18 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-label="HPC for Courses" aria-expanded="false">
-          <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_14');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_14');if(t)t.checked=false;}">
-            <span class="md-nav__icon md-icon"></span>
-            HPC for Courses
-          </div>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
+        
+          <nav class="md-nav" data-md-level="1" aria-label="HPC for Courses">
+            <div class="md-nav__title" role="button" tabindex="0" onclick="var t=document.getElementById('__nav_14');if(t)t.checked=false;" onkeydown="if(event.key==='Enter'||event.key===' '){var t=document.getElementById('__nav_14');if(t)t.checked=false;}">
+              <span class="md-nav__icon md-icon"></span>
+              HPC for Courses
+            </div>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+              
+                
+                  
   
   
   
@@ -4244,10 +4340,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -4267,10 +4363,11 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
@@ -4522,12 +4619,12 @@
   
 
 
-<h1 id="use-matlab-on-njit-hpc">Use MATLAB on NJIT HPC<a class="headerlink" aria-label="Permanent link to Use MATLAB on NJIT HPC" href="#use-matlab-on-njit-hpc" title="Permanent link">&para;</a></h1>
+<h1 id="use-matlab-on-njit-hpc">Use MATLAB on NJIT HPC<a class="headerlink" href="#use-matlab-on-njit-hpc" title="Permanent link"><span aria-hidden="true">&para;</span><span class="md-sr-only">Permanent link to Use MATLAB on NJIT HPC</span></a></h1>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>Since MFA is enabled, the instructions for running MATLAB via HPC resources have been modified. If you already installed MATLAB on the local machine, skip to <a href="./#setup-slurm-profile-to-run-matlab-on-wulver">Setup Slurm profile to run MATLAB on Wulver</a>. </p>
 </div>
-<h2 id="installation-steps-of-matlab-on-local-machine">Installation steps of MATLAB on local machine<a class="headerlink" aria-label="Permanent link to Installation steps of MATLAB on local machine" href="#installation-steps-of-matlab-on-local-machine" title="Permanent link">&para;</a></h2>
+<h2 id="installation-steps-of-matlab-on-local-machine">Installation steps of MATLAB on local machine<a class="headerlink" href="#installation-steps-of-matlab-on-local-machine" title="Permanent link"><span aria-hidden="true">&para;</span><span class="md-sr-only">Permanent link to Installation steps of MATLAB on local machine</span></a></h2>
 <ul>
 <li>Go to <a href="https://www.mathworks.com/downloads/">Mathworks Download</a> and register with your NJIT email address.</li>
 <li>Select the <a href="../#availability">MATLAB version</a> installed on Wulver.</li>
@@ -4543,7 +4640,7 @@
 <ul>
 <li>Continue by selecting <strong>Next</strong> and MATLAB will be installed on your computer.</li>
 </ul>
-<h2 id="setup-slurm-profile-to-run-matlab-on-wulver">Setup Slurm profile to run MATLAB on Wulver<a class="headerlink" aria-label="Permanent link to Setup Slurm profile to run MATLAB on Wulver" href="#setup-slurm-profile-to-run-matlab-on-wulver" title="Permanent link">&para;</a></h2>
+<h2 id="setup-slurm-profile-to-run-matlab-on-wulver">Setup Slurm profile to run MATLAB on Wulver<a class="headerlink" href="#setup-slurm-profile-to-run-matlab-on-wulver" title="Permanent link"><span aria-hidden="true">&para;</span><span class="md-sr-only">Permanent link to Setup Slurm profile to run MATLAB on Wulver</span></a></h2>
 <ul>
 <li>Open MATLAB &rarr; select <kbd>Create and Manage Clusters</kbd>.</li>
 </ul>
@@ -4566,76 +4663,76 @@
 <p>c. <code>NumWorkers</code> - 512</p>
 <p>d. <code>NumThreads</code> - No Change</p>
 <p>e. <code>ClusterMatlabRoot</code> - Use <code>module av MATLAB</code> command first.</p>
-<p><div class="language-bash highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
-<span class="normal"><a href="#__codelineno-0-2">2</a></span>
-<span class="normal"><a href="#__codelineno-0-3">3</a></span>
-<span class="normal"><a href="#__codelineno-0-4">4</a></span>
-<span class="normal"><a href="#__codelineno-0-5">5</a></span>
-<span class="normal"><a href="#__codelineno-0-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="w">  </span>login-1-45<span class="w"> </span>~<span class="w"> </span>&gt;:<span class="w"> </span>module<span class="w"> </span>av<span class="w"> </span>MATLAB
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="w">  </span>------------------------------------/apps/easybuild/modules/all/Core---------------------------------------------------------
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="w">   </span>MATLAB/2024a
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4"></a>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5"></a>Use<span class="w"> </span><span class="s2">"module spider"</span><span class="w"> </span>to<span class="w"> </span>find<span class="w"> </span>all<span class="w"> </span>possible<span class="w"> </span>modules<span class="w"> </span>and<span class="w"> </span>extensions.
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6"></a>Use<span class="w"> </span><span class="s2">"module keyword key1 key2 ..."</span><span class="w"> </span>to<span class="w"> </span>search<span class="w"> </span><span class="k">for</span><span class="w"> </span>all<span class="w"> </span>possible<span class="w"> </span>modules<span class="w"> </span>matching<span class="w"> </span>any<span class="w"> </span>of<span class="w"> </span>the<span class="w"> </span><span class="s2">"keys"</span>.
+<p><div class="language-bash highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><span class="w">  </span>login-1-45<span class="w"> </span>~<span class="w"> </span>&gt;:<span class="w"> </span>module<span class="w"> </span>av<span class="w"> </span>MATLAB
+</span><span id="__span-0-2"><span class="w">  </span>------------------------------------/apps/easybuild/modules/all/Core---------------------------------------------------------
+</span><span id="__span-0-3"><span class="w">   </span>MATLAB/2024a
+</span><span id="__span-0-4">
+</span><span id="__span-0-5">Use<span class="w"> </span><span class="s2">"module spider"</span><span class="w"> </span>to<span class="w"> </span>find<span class="w"> </span>all<span class="w"> </span>possible<span class="w"> </span>modules<span class="w"> </span>and<span class="w"> </span>extensions.
+</span><span id="__span-0-6">Use<span class="w"> </span><span class="s2">"module keyword key1 key2 ..."</span><span class="w"> </span>to<span class="w"> </span>search<span class="w"> </span><span class="k">for</span><span class="w"> </span>all<span class="w"> </span>possible<span class="w"> </span>modules<span class="w"> </span>matching<span class="w"> </span>any<span class="w"> </span>of<span class="w"> </span>the<span class="w"> </span><span class="s2">"keys"</span>.
 </span></code></pre></div></td></tr></table></div>
 This will show you the list of MATLAB versions installed on Wulver. Next, use <code>module show MATLAB/2024a</code> to check MATLAB installation path.</p>
-<p><div class="language-bash highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1"> 1</a></span>
-<span class="normal"><a href="#__codelineno-1-2"> 2</a></span>
-<span class="normal"><a href="#__codelineno-1-3"> 3</a></span>
-<span class="normal"><a href="#__codelineno-1-4"> 4</a></span>
-<span class="normal"><a href="#__codelineno-1-5"> 5</a></span>
-<span class="normal"><a href="#__codelineno-1-6"> 6</a></span>
-<span class="normal"><a href="#__codelineno-1-7"> 7</a></span>
-<span class="normal"><a href="#__codelineno-1-8"> 8</a></span>
-<span class="normal"><a href="#__codelineno-1-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-1-10">10</a></span>
-<span class="normal"><a href="#__codelineno-1-11">11</a></span>
-<span class="normal"><a href="#__codelineno-1-12">12</a></span>
-<span class="normal"><a href="#__codelineno-1-13">13</a></span>
-<span class="normal"><a href="#__codelineno-1-14">14</a></span>
-<span class="normal"><a href="#__codelineno-1-15">15</a></span>
-<span class="normal"><a href="#__codelineno-1-16">16</a></span>
-<span class="normal"><a href="#__codelineno-1-17">17</a></span>
-<span class="normal"><a href="#__codelineno-1-18">18</a></span>
-<span class="normal"><a href="#__codelineno-1-19">19</a></span>
-<span class="normal"><a href="#__codelineno-1-20">20</a></span>
-<span class="normal"><a href="#__codelineno-1-21">21</a></span>
-<span class="normal"><a href="#__codelineno-1-22">22</a></span>
-<span class="normal"><a href="#__codelineno-1-23">23</a></span>
-<span class="normal"><a href="#__codelineno-1-24">24</a></span>
-<span class="normal"><a href="#__codelineno-1-25">25</a></span>
-<span class="normal"><a href="#__codelineno-1-26">26</a></span>
-<span class="normal"><a href="#__codelineno-1-27">27</a></span>
-<span class="normal"><a href="#__codelineno-1-28">28</a></span>
-<span class="normal"><a href="#__codelineno-1-29">29</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="w">   </span>login-1-45<span class="w"> </span>~<span class="w"> </span>&gt;:<span class="w"> </span>module<span class="w"> </span>show<span class="w"> </span>MATLAB/2024a
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2"></a>---------------------------------------------------------------------------------------------------------------------------------
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="w">   </span>/apps/easybuild/modules/all/Core/MATLAB/2024a.lua:
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4"></a>---------------------------------------------------------------------------------------------------------------------------------
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5"></a>help<span class="o">([[</span>
-</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6"></a><span class="nv">Description</span>
-</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7"></a><span class="o">===========</span>
-</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8"></a>The<span class="w"> </span>MATLAB<span class="w"> </span>Parallel<span class="w"> </span>Server<span class="w"> </span>Toolbox.
-</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9"></a>
-</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10"></a>
-</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11"></a>More<span class="w"> </span><span class="nv">information</span>
-</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12"></a><span class="o">================</span>
-</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13"></a><span class="w"> </span>-<span class="w"> </span>Homepage:<span class="w"> </span>https://www.mathworks.com/help/matlab/matlab-engine-for-python.html
-</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14"></a><span class="o">]])</span>
-</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15"></a>whatis<span class="o">(</span><span class="s2">"Description: The MATLAB Parallel Server Toolbox."</span><span class="o">)</span>
-</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16"></a>whatis<span class="o">(</span><span class="s2">"Homepage: https://www.mathworks.com/help/matlab/matlab-engine-for-python.html"</span><span class="o">)</span>
-</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17"></a>whatis<span class="o">(</span><span class="s2">"URL: https://www.mathworks.com/help/matlab/matlab-engine-for-python.html"</span><span class="o">)</span>
-</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18"></a>conflict<span class="o">(</span><span class="s2">"MATLAB"</span><span class="o">)</span>
-</span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19"></a>prepend_path<span class="o">(</span><span class="s2">"CMAKE_PREFIX_PATH"</span>,<span class="s2">"/apps/easybuild/software/MATLAB/2024a"</span><span class="o">)</span>
-</span><span id="__span-1-20"><a id="__codelineno-1-20" name="__codelineno-1-20"></a>prepend_path<span class="o">(</span><span class="s2">"PATH"</span>,<span class="s2">"/apps/easybuild/software/MATLAB/2024a/bin"</span><span class="o">)</span>
-</span><span id="__span-1-21"><a id="__codelineno-1-21" name="__codelineno-1-21"></a>setenv<span class="o">(</span><span class="s2">"EBROOTMATLAB"</span>,<span class="s2">"/apps/easybuild/software/MATLAB/2024a"</span><span class="o">)</span>
-</span><span id="__span-1-22"><a id="__codelineno-1-22" name="__codelineno-1-22"></a>setenv<span class="o">(</span><span class="s2">"EBVERSIONMATLAB"</span>,<span class="s2">"2024a"</span><span class="o">)</span>
-</span><span id="__span-1-23"><a id="__codelineno-1-23" name="__codelineno-1-23"></a>setenv<span class="o">(</span><span class="s2">"EBDEVELMATLAB"</span>,<span class="s2">"/apps/easybuild/software/MATLAB/R2023a/easybuild/Core-MATLAB-2023a-easybuild-devel"</span><span class="o">)</span>
-</span><span id="__span-1-24"><a id="__codelineno-1-24" name="__codelineno-1-24"></a>prepend_path<span class="o">(</span><span class="s2">"PATH"</span>,<span class="s2">"/apps/easybuild/software/MATLAB/2024a/toolbox/parallel/bin"</span><span class="o">)</span>
-</span><span id="__span-1-25"><a id="__codelineno-1-25" name="__codelineno-1-25"></a>prepend_path<span class="o">(</span><span class="s2">"PATH"</span>,<span class="s2">"/apps/easybuild/software/MATLAB/2024a"</span><span class="o">)</span>
-</span><span id="__span-1-26"><a id="__codelineno-1-26" name="__codelineno-1-26"></a>prepend_path<span class="o">(</span><span class="s2">"LD_LIBRARY_PATH"</span>,<span class="s2">"/apps/easybuild/software/MATLAB/2024a/runtime/glnxa64"</span><span class="o">)</span>
-</span><span id="__span-1-27"><a id="__codelineno-1-27" name="__codelineno-1-27"></a>prepend_path<span class="o">(</span><span class="s2">"LD_LIBRARY_PATH"</span>,<span class="s2">"/apps/easybuild/software/MATLAB/2024a/bin/glnxa64"</span><span class="o">)</span>
-</span><span id="__span-1-28"><a id="__codelineno-1-28" name="__codelineno-1-28"></a>prepend_path<span class="o">(</span><span class="s2">"LD_LIBRARY_PATH"</span>,<span class="s2">"/apps/easybuild/software/MATLAB/2024a/sys/os/glnxa64"</span><span class="o">)</span>
-</span><span id="__span-1-29"><a id="__codelineno-1-29" name="__codelineno-1-29"></a>setenv<span class="o">(</span><span class="s2">"_JAVA_OPTIONS"</span>,<span class="s2">"-Xmx2048m"</span><span class="o">)</span>
+<p><div class="language-bash highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-1"><span class="w">   </span>login-1-45<span class="w"> </span>~<span class="w"> </span>&gt;:<span class="w"> </span>module<span class="w"> </span>show<span class="w"> </span>MATLAB/2024a
+</span><span id="__span-1-2">---------------------------------------------------------------------------------------------------------------------------------
+</span><span id="__span-1-3"><span class="w">   </span>/apps/easybuild/modules/all/Core/MATLAB/2024a.lua:
+</span><span id="__span-1-4">---------------------------------------------------------------------------------------------------------------------------------
+</span><span id="__span-1-5">help<span class="o">([[</span>
+</span><span id="__span-1-6"><span class="nv">Description</span>
+</span><span id="__span-1-7"><span class="o">===========</span>
+</span><span id="__span-1-8">The<span class="w"> </span>MATLAB<span class="w"> </span>Parallel<span class="w"> </span>Server<span class="w"> </span>Toolbox.
+</span><span id="__span-1-9">
+</span><span id="__span-1-10">
+</span><span id="__span-1-11">More<span class="w"> </span><span class="nv">information</span>
+</span><span id="__span-1-12"><span class="o">================</span>
+</span><span id="__span-1-13"><span class="w"> </span>-<span class="w"> </span>Homepage:<span class="w"> </span>https://www.mathworks.com/help/matlab/matlab-engine-for-python.html
+</span><span id="__span-1-14"><span class="o">]])</span>
+</span><span id="__span-1-15">whatis<span class="o">(</span><span class="s2">"Description: The MATLAB Parallel Server Toolbox."</span><span class="o">)</span>
+</span><span id="__span-1-16">whatis<span class="o">(</span><span class="s2">"Homepage: https://www.mathworks.com/help/matlab/matlab-engine-for-python.html"</span><span class="o">)</span>
+</span><span id="__span-1-17">whatis<span class="o">(</span><span class="s2">"URL: https://www.mathworks.com/help/matlab/matlab-engine-for-python.html"</span><span class="o">)</span>
+</span><span id="__span-1-18">conflict<span class="o">(</span><span class="s2">"MATLAB"</span><span class="o">)</span>
+</span><span id="__span-1-19">prepend_path<span class="o">(</span><span class="s2">"CMAKE_PREFIX_PATH"</span>,<span class="s2">"/apps/easybuild/software/MATLAB/2024a"</span><span class="o">)</span>
+</span><span id="__span-1-20">prepend_path<span class="o">(</span><span class="s2">"PATH"</span>,<span class="s2">"/apps/easybuild/software/MATLAB/2024a/bin"</span><span class="o">)</span>
+</span><span id="__span-1-21">setenv<span class="o">(</span><span class="s2">"EBROOTMATLAB"</span>,<span class="s2">"/apps/easybuild/software/MATLAB/2024a"</span><span class="o">)</span>
+</span><span id="__span-1-22">setenv<span class="o">(</span><span class="s2">"EBVERSIONMATLAB"</span>,<span class="s2">"2024a"</span><span class="o">)</span>
+</span><span id="__span-1-23">setenv<span class="o">(</span><span class="s2">"EBDEVELMATLAB"</span>,<span class="s2">"/apps/easybuild/software/MATLAB/R2023a/easybuild/Core-MATLAB-2023a-easybuild-devel"</span><span class="o">)</span>
+</span><span id="__span-1-24">prepend_path<span class="o">(</span><span class="s2">"PATH"</span>,<span class="s2">"/apps/easybuild/software/MATLAB/2024a/toolbox/parallel/bin"</span><span class="o">)</span>
+</span><span id="__span-1-25">prepend_path<span class="o">(</span><span class="s2">"PATH"</span>,<span class="s2">"/apps/easybuild/software/MATLAB/2024a"</span><span class="o">)</span>
+</span><span id="__span-1-26">prepend_path<span class="o">(</span><span class="s2">"LD_LIBRARY_PATH"</span>,<span class="s2">"/apps/easybuild/software/MATLAB/2024a/runtime/glnxa64"</span><span class="o">)</span>
+</span><span id="__span-1-27">prepend_path<span class="o">(</span><span class="s2">"LD_LIBRARY_PATH"</span>,<span class="s2">"/apps/easybuild/software/MATLAB/2024a/bin/glnxa64"</span><span class="o">)</span>
+</span><span id="__span-1-28">prepend_path<span class="o">(</span><span class="s2">"LD_LIBRARY_PATH"</span>,<span class="s2">"/apps/easybuild/software/MATLAB/2024a/sys/os/glnxa64"</span><span class="o">)</span>
+</span><span id="__span-1-29">setenv<span class="o">(</span><span class="s2">"_JAVA_OPTIONS"</span>,<span class="s2">"-Xmx2048m"</span><span class="o">)</span>
 </span></code></pre></div></td></tr></table></div>
 The MATLAB installation path is defined by the <code>EBROOTMATLAB</code> environment variable, which, in the above example, is set to <code>/apps/easybuild/software/MATLAB/2024a</code>.</p>
 <p>f. <code>RequireOnlineLicensing</code> - false</p>
@@ -4683,20 +4780,20 @@ The MATLAB installation path is defined by the <code>EBROOTMATLAB</code> environ
 </tbody>
 </table>
 <p>Replace <code>$PATH</code> with the actual path of Wulver where you want to save the output file. Make sure to use <code>/project</code> directory for remote job storage as <code>$HOME</code> has fixed quota of 50GB and cannot be increased. See <a href="../../../clusters/Wulver_filesystems/">Wulver Filesystems</a> for details. Replace <code>$UCID</code> with the NJIT UCID.</p>
-<h2 id="submitting-a-serial-job">Submitting a Serial Job<a class="headerlink" aria-label="Permanent link to Submitting a Serial Job" href="#submitting-a-serial-job" title="Permanent link">&para;</a></h2>
+<h2 id="submitting-a-serial-job">Submitting a Serial Job<a class="headerlink" href="#submitting-a-serial-job" title="Permanent link"><span aria-hidden="true">&para;</span><span class="md-sr-only">Permanent link to Submitting a Serial Job</span></a></h2>
 <p>This section will demonstrate how to create a cluster object and submit a simple job to the cluster. The job will run the 'hostname' command on the node assigned to the job. The output will indicate clearly that the job ran on the cluster and not on the local computer.</p>
 <p>The hostname.m file used in this demonstration can be downloaded <a href="https://www.mathworks.com/matlabcentral/fileexchange/24096-hostname-m">here</a>.</p>
-<div class="language-text highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1"></a> &gt;&gt; c=parcluster 
+<div class="language-text highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-2-1"> &gt;&gt; c=parcluster 
 </span></code></pre></div></td></tr></table></div>
 <p>Certain arguments need to be passed to SLURM in order for the job to run properly. Here we will set values for partition, and time. In the Matlab window enter:
-<div class="language-text highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1"></a> &gt;&gt; c.AdditionalProperties.AdditionalSubmitArgs=['--partition=general --qos=standard --account=$PI_UCID --time=2-00:00:00'] 
+<div class="language-text highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-3-1"> &gt;&gt; c.AdditionalProperties.AdditionalSubmitArgs=['--partition=general --qos=standard --account=$PI_UCID --time=2-00:00:00'] 
 </span></code></pre></div></td></tr></table></div>
 Replace <code>$PI_UCID</code> with the UCID of PI. Check the <a href="../../../Running_jobs/batch-jobs/">Batch Jobs</a> for other SLURM parameters.
 To make this persistent between Matlab sessions these arguments need to be saved to the profile. In the Matlab window enter:
-<div class="language-text highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1"></a> &gt;&gt; c.saveProfile 
+<div class="language-text highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-4-1"> &gt;&gt; c.saveProfile 
 </span></code></pre></div></td></tr></table></div></p>
 <p>We will now submit the hostname.m function to the cluster. In the Matlab window enter the following:
-<div class="language-text highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1"></a>&gt;&gt; j=c.batch(@hostname, 1, {}, 'AutoAddClientPath', false); 
+<div class="language-text highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-5-1">&gt;&gt; j=c.batch(@hostname, 1, {}, 'AutoAddClientPath', false); 
 </span></code></pre></div></td></tr></table></div></p>
 <ul>
 <li>
@@ -4714,167 +4811,167 @@ To make this persistent between Matlab sessions these arguments need to be saved
 </ul>
 <p>When the job is submitted, you will be prompted for your password.</p>
 <p>To wait for the job to finish, enter the following in the Matlab window:
-<div class="language-text highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-6-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1"></a> &gt;&gt;j.wait
+<div class="language-text highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-6-1"> &gt;&gt;j.wait
 </span></code></pre></div></td></tr></table></div>
 Finally, to get the results:
-<div class="language-text highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-7-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1"></a> &gt;&gt;fetchOutputs(j)
+<div class="language-text highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-7-1"> &gt;&gt;fetchOutputs(j)
 </span></code></pre></div></td></tr></table></div></p>
-<h3 id="submitting-a-parallel-function">Submitting a Parallel Function<a class="headerlink" aria-label="Permanent link to Submitting a Parallel Function" href="#submitting-a-parallel-function" title="Permanent link">&para;</a></h3>
+<h3 id="submitting-a-parallel-function">Submitting a Parallel Function<a class="headerlink" href="#submitting-a-parallel-function" title="Permanent link"><span aria-hidden="true">&para;</span><span class="md-sr-only">Permanent link to Submitting a Parallel Function</span></a></h3>
 <p>The <code>Job Monitor</code> is a convenient way to monitor jobs submitted to the cluster. In the Matlab window select <code>Parallel</code> and then <code>Monitor Jobs</code>.</p>
 <p>For more information see the Mathworks page: <a href="https://www.mathworks.com/help/parallel-computing/job-monitor.html">Job Monitor</a>.</p>
 <p>Here we will submit a simple function using a "parfor" loop. The code for this example is as follows:
-<div class="language-text highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-8-1">1</a></span>
-<span class="normal"><a href="#__codelineno-8-2">2</a></span>
-<span class="normal"><a href="#__codelineno-8-3">3</a></span>
-<span class="normal"><a href="#__codelineno-8-4">4</a></span>
-<span class="normal"><a href="#__codelineno-8-5">5</a></span>
-<span class="normal"><a href="#__codelineno-8-6">6</a></span>
-<span class="normal"><a href="#__codelineno-8-7">7</a></span>
-<span class="normal"><a href="#__codelineno-8-8">8</a></span>
-<span class="normal"><a href="#__codelineno-8-9">9</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1"></a>function t = parallel_example
-</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2"></a>
-</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3"></a>t0 = tic;
-</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4"></a>parfor idx = 1:16
-</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5"></a>        A(idx) = idx;
-</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6"></a>        pause (2)
-</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7"></a>end
-</span><span id="__span-8-8"><a id="__codelineno-8-8" name="__codelineno-8-8"></a>
-</span><span id="__span-8-9"><a id="__codelineno-8-9" name="__codelineno-8-9"></a>t=toc(t0);
+<div class="language-text highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span>
+<span class="normal">9</span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-8-1">function t = parallel_example
+</span><span id="__span-8-2">
+</span><span id="__span-8-3">t0 = tic;
+</span><span id="__span-8-4">parfor idx = 1:16
+</span><span id="__span-8-5">        A(idx) = idx;
+</span><span id="__span-8-6">        pause (2)
+</span><span id="__span-8-7">end
+</span><span id="__span-8-8">
+</span><span id="__span-8-9">t=toc(t0);
 </span></code></pre></div></td></tr></table></div>
 To submit this job:
-<div class="language-text highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-9-1">1</a></span>
-<span class="normal"><a href="#__codelineno-9-2">2</a></span>
-<span class="normal"><a href="#__codelineno-9-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1"></a> &gt;&gt; c.AdditionalProperties.AdditionalSubmitArgs=['--partition=general --qos=standard --account=$PI_UCID --ntasks=8 --time=2-00:00:00'] 
-</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2"></a> &gt;&gt; c.saveProfile
-</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3"></a> &gt;&gt; j=c.batch(@parallel_example, 1, {}, 'AutoAddClientPath', false, 'Pool', 7)
+<div class="language-text highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-9-1"> &gt;&gt; c.AdditionalProperties.AdditionalSubmitArgs=['--partition=general --qos=standard --account=$PI_UCID --ntasks=8 --time=2-00:00:00'] 
+</span><span id="__span-9-2"> &gt;&gt; c.saveProfile
+</span><span id="__span-9-3"> &gt;&gt; j=c.batch(@parallel_example, 1, {}, 'AutoAddClientPath', false, 'Pool', 7)
 </span></code></pre></div></td></tr></table></div>
 Since this is a parallel job a 'Pool' must be started. The actual number of tasks started will be one more than requested in the pool. In this case, the batch command calls for a pool of seven. Eight tasks will be started on the cluster.</p>
 <p>The job takes a few minutes to run and the state of the job changes to "finished."</p>
 <p>Once again to get the results enter:
-<div class="language-text highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-10-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1"></a> &gt;&gt; fetchOutputs(j) 
+<div class="language-text highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-10-1"> &gt;&gt; fetchOutputs(j) 
 </span></code></pre></div></td></tr></table></div>
 As can be seen the parfor loop was completed in 6.7591 seconds.</p>
 <p><img 70_ alt="matlab_fetch" height src="../img/FetchOutputs.png" width="70%" /></p>
-<h2 id="submitting-a-script-requiring-a-gpu">Submitting a Script Requiring a GPU<a class="headerlink" aria-label="Permanent link to Submitting a Script Requiring a GPU" href="#submitting-a-script-requiring-a-gpu" title="Permanent link">&para;</a></h2>
+<h2 id="submitting-a-script-requiring-a-gpu">Submitting a Script Requiring a GPU<a class="headerlink" href="#submitting-a-script-requiring-a-gpu" title="Permanent link"><span aria-hidden="true">&para;</span><span class="md-sr-only">Permanent link to Submitting a Script Requiring a GPU</span></a></h2>
 <p>In this section we will submit a matlab script using a GPU. The results will be written to the job diary. The code for this example is as follows:
-<div class="language-text highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-11-1"> 1</a></span>
-<span class="normal"><a href="#__codelineno-11-2"> 2</a></span>
-<span class="normal"><a href="#__codelineno-11-3"> 3</a></span>
-<span class="normal"><a href="#__codelineno-11-4"> 4</a></span>
-<span class="normal"><a href="#__codelineno-11-5"> 5</a></span>
-<span class="normal"><a href="#__codelineno-11-6"> 6</a></span>
-<span class="normal"><a href="#__codelineno-11-7"> 7</a></span>
-<span class="normal"><a href="#__codelineno-11-8"> 8</a></span>
-<span class="normal"><a href="#__codelineno-11-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-11-10">10</a></span>
-<span class="normal"><a href="#__codelineno-11-11">11</a></span>
-<span class="normal"><a href="#__codelineno-11-12">12</a></span>
-<span class="normal"><a href="#__codelineno-11-13">13</a></span>
-<span class="normal"><a href="#__codelineno-11-14">14</a></span>
-<span class="normal"><a href="#__codelineno-11-15">15</a></span>
-<span class="normal"><a href="#__codelineno-11-16">16</a></span>
-<span class="normal"><a href="#__codelineno-11-17">17</a></span>
-<span class="normal"><a href="#__codelineno-11-18">18</a></span>
-<span class="normal"><a href="#__codelineno-11-19">19</a></span>
-<span class="normal"><a href="#__codelineno-11-20">20</a></span>
-<span class="normal"><a href="#__codelineno-11-21">21</a></span>
-<span class="normal"><a href="#__codelineno-11-22">22</a></span>
-<span class="normal"><a href="#__codelineno-11-23">23</a></span>
-<span class="normal"><a href="#__codelineno-11-24">24</a></span>
-<span class="normal"><a href="#__codelineno-11-25">25</a></span>
-<span class="normal"><a href="#__codelineno-11-26">26</a></span>
-<span class="normal"><a href="#__codelineno-11-27">27</a></span>
-<span class="normal"><a href="#__codelineno-11-28">28</a></span>
-<span class="normal"><a href="#__codelineno-11-29">29</a></span>
-<span class="normal"><a href="#__codelineno-11-30">30</a></span>
-<span class="normal"><a href="#__codelineno-11-31">31</a></span>
-<span class="normal"><a href="#__codelineno-11-32">32</a></span>
-<span class="normal"><a href="#__codelineno-11-33">33</a></span>
-<span class="normal"><a href="#__codelineno-11-34">34</a></span>
-<span class="normal"><a href="#__codelineno-11-35">35</a></span>
-<span class="normal"><a href="#__codelineno-11-36">36</a></span>
-<span class="normal"><a href="#__codelineno-11-37">37</a></span>
-<span class="normal"><a href="#__codelineno-11-38">38</a></span>
-<span class="normal"><a href="#__codelineno-11-39">39</a></span>
-<span class="normal"><a href="#__codelineno-11-40">40</a></span>
-<span class="normal"><a href="#__codelineno-11-41">41</a></span>
-<span class="normal"><a href="#__codelineno-11-42">42</a></span>
-<span class="normal"><a href="#__codelineno-11-43">43</a></span>
-<span class="normal"><a href="#__codelineno-11-44">44</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1"></a>% MATLAB script that defines a random matrix and does FFT
-</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2"></a>%
-</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3"></a>% The first FFT is without a GPU
-</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4"></a>% The second is with the GPU
-</span><span id="__span-11-5"><a id="__codelineno-11-5" name="__codelineno-11-5"></a>%
-</span><span id="__span-11-6"><a id="__codelineno-11-6" name="__codelineno-11-6"></a>% MATLAB knows to use the GPU the second time because it
-</span><span id="__span-11-7"><a id="__codelineno-11-7" name="__codelineno-11-7"></a>%   is passed a type gpuArray as an argument to FFT
-</span><span id="__span-11-8"><a id="__codelineno-11-8" name="__codelineno-11-8"></a>% We do the FFT a bunch of times to make using the GPU worth it,
-</span><span id="__span-11-9"><a id="__codelineno-11-9" name="__codelineno-11-9"></a>%   or else it spends more time offloading to the GPU
-</span><span id="__span-11-10"><a id="__codelineno-11-10" name="__codelineno-11-10"></a>%   than performning the calculation
-</span><span id="__span-11-11"><a id="__codelineno-11-11" name="__codelineno-11-11"></a>%
-</span><span id="__span-11-12"><a id="__codelineno-11-12" name="__codelineno-11-12"></a>% This example is meant to provide a general understanding
-</span><span id="__span-11-13"><a id="__codelineno-11-13" name="__codelineno-11-13"></a>%   of MATLAB GPU usage
-</span><span id="__span-11-14"><a id="__codelineno-11-14" name="__codelineno-11-14"></a>% Meaningful performance measurements depend on many factors
-</span><span id="__span-11-15"><a id="__codelineno-11-15" name="__codelineno-11-15"></a>%   beyond the scope of this example
-</span><span id="__span-11-16"><a id="__codelineno-11-16" name="__codelineno-11-16"></a>% Downloaded from https://projects.ncsu.edu/hpc/Software/examples/matlab/gpu/gpu_m
-</span><span id="__span-11-17"><a id="__codelineno-11-17" name="__codelineno-11-17"></a>
-</span><span id="__span-11-18"><a id="__codelineno-11-18" name="__codelineno-11-18"></a>% Define a matrix
-</span><span id="__span-11-19"><a id="__codelineno-11-19" name="__codelineno-11-19"></a>A1 = rand(3000,3000);
-</span><span id="__span-11-20"><a id="__codelineno-11-20" name="__codelineno-11-20"></a>
-</span><span id="__span-11-21"><a id="__codelineno-11-21" name="__codelineno-11-21"></a>% Just use the compute node, no GPU
-</span><span id="__span-11-22"><a id="__codelineno-11-22" name="__codelineno-11-22"></a>tic;
-</span><span id="__span-11-23"><a id="__codelineno-11-23" name="__codelineno-11-23"></a>% Do 1000 FFT's
-</span><span id="__span-11-24"><a id="__codelineno-11-24" name="__codelineno-11-24"></a>for i = 1:1000
-</span><span id="__span-11-25"><a id="__codelineno-11-25" name="__codelineno-11-25"></a>      B2 = fft(A1);
-</span><span id="__span-11-26"><a id="__codelineno-11-26" name="__codelineno-11-26"></a>end
-</span><span id="__span-11-27"><a id="__codelineno-11-27" name="__codelineno-11-27"></a>time1 = toc;
-</span><span id="__span-11-28"><a id="__codelineno-11-28" name="__codelineno-11-28"></a>fprintf('%s\n',"Time to run FFT on the node:")
-</span><span id="__span-11-29"><a id="__codelineno-11-29" name="__codelineno-11-29"></a>disp(time1);
-</span><span id="__span-11-30"><a id="__codelineno-11-30" name="__codelineno-11-30"></a>
-</span><span id="__span-11-31"><a id="__codelineno-11-31" name="__codelineno-11-31"></a>% Use GPU
-</span><span id="__span-11-32"><a id="__codelineno-11-32" name="__codelineno-11-32"></a>tic;
-</span><span id="__span-11-33"><a id="__codelineno-11-33" name="__codelineno-11-33"></a>A2 = gpuArray(A1);
-</span><span id="__span-11-34"><a id="__codelineno-11-34" name="__codelineno-11-34"></a>% Do 1000 FFT's
-</span><span id="__span-11-35"><a id="__codelineno-11-35" name="__codelineno-11-35"></a>for i = 1:1000
-</span><span id="__span-11-36"><a id="__codelineno-11-36" name="__codelineno-11-36"></a>      % MALAB knows to use GPU FFT because A2 is defined by gpuArray
-</span><span id="__span-11-37"><a id="__codelineno-11-37" name="__codelineno-11-37"></a>        B2 = fft(A2);
-</span><span id="__span-11-38"><a id="__codelineno-11-38" name="__codelineno-11-38"></a>end
-</span><span id="__span-11-39"><a id="__codelineno-11-39" name="__codelineno-11-39"></a>time2 = toc;
-</span><span id="__span-11-40"><a id="__codelineno-11-40" name="__codelineno-11-40"></a>fprintf('%s\n',"Time to run FFT on the GPU:")
-</span><span id="__span-11-41"><a id="__codelineno-11-41" name="__codelineno-11-41"></a>disp(time2);
-</span><span id="__span-11-42"><a id="__codelineno-11-42" name="__codelineno-11-42"></a>
-</span><span id="__span-11-43"><a id="__codelineno-11-43" name="__codelineno-11-43"></a>% Will be greater than 1 if GPU is faster
-</span><span id="__span-11-44"><a id="__codelineno-11-44" name="__codelineno-11-44"></a>speedup = time1/time2 
+<div class="language-text highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span>
+<span class="normal">42</span>
+<span class="normal">43</span>
+<span class="normal">44</span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-11-1">% MATLAB script that defines a random matrix and does FFT
+</span><span id="__span-11-2">%
+</span><span id="__span-11-3">% The first FFT is without a GPU
+</span><span id="__span-11-4">% The second is with the GPU
+</span><span id="__span-11-5">%
+</span><span id="__span-11-6">% MATLAB knows to use the GPU the second time because it
+</span><span id="__span-11-7">%   is passed a type gpuArray as an argument to FFT
+</span><span id="__span-11-8">% We do the FFT a bunch of times to make using the GPU worth it,
+</span><span id="__span-11-9">%   or else it spends more time offloading to the GPU
+</span><span id="__span-11-10">%   than performning the calculation
+</span><span id="__span-11-11">%
+</span><span id="__span-11-12">% This example is meant to provide a general understanding
+</span><span id="__span-11-13">%   of MATLAB GPU usage
+</span><span id="__span-11-14">% Meaningful performance measurements depend on many factors
+</span><span id="__span-11-15">%   beyond the scope of this example
+</span><span id="__span-11-16">% Downloaded from https://projects.ncsu.edu/hpc/Software/examples/matlab/gpu/gpu_m
+</span><span id="__span-11-17">
+</span><span id="__span-11-18">% Define a matrix
+</span><span id="__span-11-19">A1 = rand(3000,3000);
+</span><span id="__span-11-20">
+</span><span id="__span-11-21">% Just use the compute node, no GPU
+</span><span id="__span-11-22">tic;
+</span><span id="__span-11-23">% Do 1000 FFT's
+</span><span id="__span-11-24">for i = 1:1000
+</span><span id="__span-11-25">      B2 = fft(A1);
+</span><span id="__span-11-26">end
+</span><span id="__span-11-27">time1 = toc;
+</span><span id="__span-11-28">fprintf('%s\n',"Time to run FFT on the node:")
+</span><span id="__span-11-29">disp(time1);
+</span><span id="__span-11-30">
+</span><span id="__span-11-31">% Use GPU
+</span><span id="__span-11-32">tic;
+</span><span id="__span-11-33">A2 = gpuArray(A1);
+</span><span id="__span-11-34">% Do 1000 FFT's
+</span><span id="__span-11-35">for i = 1:1000
+</span><span id="__span-11-36">      % MALAB knows to use GPU FFT because A2 is defined by gpuArray
+</span><span id="__span-11-37">        B2 = fft(A2);
+</span><span id="__span-11-38">end
+</span><span id="__span-11-39">time2 = toc;
+</span><span id="__span-11-40">fprintf('%s\n',"Time to run FFT on the GPU:")
+</span><span id="__span-11-41">disp(time2);
+</span><span id="__span-11-42">
+</span><span id="__span-11-43">% Will be greater than 1 if GPU is faster
+</span><span id="__span-11-44">speedup = time1/time2 
 </span></code></pre></div></td></tr></table></div>
 We will need to change the partition to <code>gpu</code> to request a gpu. In the Matlab window enter:
-<div class="language-text highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-12-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1"></a> &gt;&gt; c.AdditionalProperties.AdditionalSubmitArgs=['--partition=gpu --qos=standard --account=PI_UCID --gres=gpu:1 --mem-per-cpu=4G --time=2-00:00:00'] 
+<div class="language-text highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-12-1"> &gt;&gt; c.AdditionalProperties.AdditionalSubmitArgs=['--partition=gpu --qos=standard --account=PI_UCID --gres=gpu:1 --mem-per-cpu=4G --time=2-00:00:00'] 
 </span></code></pre></div></td></tr></table></div>
  <img 70_ alt="matlab_profile12" height src="../img/md8jfxI.jpeg" width="70%" /></p>
 <p>Submit the job as before. Since a script is submitted as opposed to a function, only the name of the script is included in the batch command. Do not include the <code>@</code> symbol. In a script there are no inputs or ouptuts.
-<div class="language-text highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-13-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1"></a> &gt;&gt; j=c.batch('gpu', 'AutoAddClientPath', false) 
+<div class="language-text highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-13-1"> &gt;&gt; j=c.batch('gpu', 'AutoAddClientPath', false) 
 </span></code></pre></div></td></tr></table></div></p>
 <p>To get the result:
-<div class="language-text highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-14-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1"></a> &gt;&gt; j.diary 
+<div class="language-text highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-14-1"> &gt;&gt; j.diary 
 </span></code></pre></div></td></tr></table></div></p>
-<h2 id="load-and-plot-results-from-a-job">Load and Plot Results from A Job<a class="headerlink" aria-label="Permanent link to Load and Plot Results from A Job" href="#load-and-plot-results-from-a-job" title="Permanent link">&para;</a></h2>
+<h2 id="load-and-plot-results-from-a-job">Load and Plot Results from A Job<a class="headerlink" href="#load-and-plot-results-from-a-job" title="Permanent link"><span aria-hidden="true">&para;</span><span class="md-sr-only">Permanent link to Load and Plot Results from A Job</span></a></h2>
 <p>In this section we will run a job on the cluster and then load and plot the results in the local Matlab workspace. The code for this example is as follows:
-<div class="language-text highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-15-1">1</a></span>
-<span class="normal"><a href="#__codelineno-15-2">2</a></span>
-<span class="normal"><a href="#__codelineno-15-3">3</a></span>
-<span class="normal"><a href="#__codelineno-15-4">4</a></span>
-<span class="normal"><a href="#__codelineno-15-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1"></a>n=100;
-</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2"></a>disp("n = " + n);
-</span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3"></a>A = gallery('poisson',n-2);
-</span><span id="__span-15-4"><a id="__codelineno-15-4" name="__codelineno-15-4"></a>b = convn(([1,zeros(1,n-2),1]'|[1,zeros(1,n-1)]), 0.5*ones(3,3),'valid')';
-</span><span id="__span-15-5"><a id="__codelineno-15-5" name="__codelineno-15-5"></a>x = reshape(A\b(:),n-2,n-2)';%
+<div class="language-text highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-15-1">n=100;
+</span><span id="__span-15-2">disp("n = " + n);
+</span><span id="__span-15-3">A = gallery('poisson',n-2);
+</span><span id="__span-15-4">b = convn(([1,zeros(1,n-2),1]'|[1,zeros(1,n-1)]), 0.5*ones(3,3),'valid')';
+</span><span id="__span-15-5">x = reshape(A\b(:),n-2,n-2)';%
 </span></code></pre></div></td></tr></table></div>
 As before submit the job:
-<div class="language-text highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-16-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1"></a> &gt;&gt; j=c.batch('plot_demo', 'AutoAddClientPath', false);
+<div class="language-text highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-16-1"> &gt;&gt; j=c.batch('plot_demo', 'AutoAddClientPath', false);
 </span></code></pre></div></td></tr></table></div></p>
 <p>To load 'x' into the local Matlab workspace:
-<div class="language-text highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-17-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1"></a> &gt;&gt; load(j,'x') 
+<div class="language-text highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-17-1"> &gt;&gt; load(j,'x') 
 </span></code></pre></div></td></tr></table></div></p>
 <p>Finally, plot the results:
-<div class="language-text highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-18-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1"></a> &gt;&gt; plot(x) 
+<div class="language-text highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-18-1"> &gt;&gt; plot(x) 
 </span></code></pre></div></td></tr></table></div></p>
 
 
@@ -5121,6 +5218,8 @@ As before submit the job:
       <script src="../../../assets/javascripts/bundle.a5f9d56c.min.js"></script>
       
         <script src="../../../assets/_markdown_exec_pyodide.js"></script>
+      
+        <script src="../../../javascripts/a11y.js"></script>
       
     
 <script>
